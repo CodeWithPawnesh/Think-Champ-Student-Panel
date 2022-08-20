@@ -1,0 +1,47 @@
+@font-face {
+    font-family: flaticon;
+    src: url("../fonts/flaticon.ttf?b92c0e615f80bd32f56880e54992b804") format("truetype"), url("../fonts/flaticon.woff?b92c0e615f80bd32f56880e54992b804") format("woff"), url("../fonts/flaticon.woff2?b92c0e615f80bd32f56880e54992b804") format("woff2"), url("../fonts/flaticon.eot?b92c0e615f80bd32f56880e54992b804#iefix") format("embedded-opentype"), url("../fonts/flaticon.svg?b92c0e615f80bd32f56880e54992b804#flaticon") format("svg")
+}
+
+i[class*=" flaticon-"]:before,
+i[class^=flaticon-]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: 400 !important;
+    font-variant: normal;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.flaticon-tick:before {
+    content: "\f101"
+}
+
+.flaticon-branding:before {
+    content: "\f102"
+}
+
+.flaticon-play-button-arrowhead:before {
+    content: "\f103"
+}
+
+.flaticon-location:before {
+    content: "\f104"
+}
+
+.flaticon-mail:before {
+    content: "\f105"
+}
+
+.flaticon-call:before {
+    content: "\f106"
+}
+
+.flaticon-chevron:before {
+    content: "\f107"
+}
+
+.flaticon-share:before {
+    content: "\f108"
+}

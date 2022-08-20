@@ -1,0 +1,1372 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@500&family=Rochester&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Convergence&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Nunito+Sans&display=swap');
+
+/* *{
+    box-sizing: border-box;
+    padding: 0;
+} */
+
+
+/* nav bar css */
+.card-course{
+    height: 600px;
+    border: 1px solid rgb(242, 232, 232);
+}
+.card-img-top{
+    height: 300px;
+}
+.card-course:hover{
+    box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+    border-color: white;
+}
+.logo-nav {
+    text-align: center;
+    margin-left: 10%;
+}
+
+.menu-links {
+    color: black;
+    font-size: 18px;
+}
+
+.menu-links:hover {
+    color: black;
+}
+
+.login-btn {
+    width: 100px;
+    height: 40px;
+    background-color: #2500F9;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 25px;
+    margin-left: 15px;
+}
+
+.login-btn a:hover{
+    color: #2500F9;
+}
+
+.login-btn:hover {
+    color: #2500F9;
+    background-color: white;
+    border: 2px #2500F9 solid;
+    width: 104px;
+    height: 42px;
+    transition-duration: 0.5s;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    border-bottom: 1px rgb(175, 175, 175) solid;
+}
+
+.header-logo {
+    width: 12%;
+    margin-top: 10px;
+    height: 80px;
+    float: left;
+    text-align: center;
+    border-right: 2px rgb(219, 219, 219) solid;
+}
+
+nav {
+    width: 60%;
+    float: left;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.menu {
+    list-style: none;
+    padding-top: 25px;
+}
+
+.nav-item {
+    padding: 15px;
+    display: inline;
+    font-family: 'Poppins', sans-serif;
+}
+
+.wp-btn {
+    margin-top: 20px;
+    margin-left: 30px;
+    background-color: #F6F6F6;
+    color: #869AF4;
+    border: none;
+    border-radius: 50%;
+    font-size: 35px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+}
+
+.wp-text {
+    margin-top: 28px;
+    margin-left: 10px;
+    float: left;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.2;
+    color: #484848;
+}
+
+
+
+/* first_section css */
+
+.first_section {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding-bottom: 200px;
+    position: relative;
+    background-color: #F0ECF6;
+    background-image: url(http://localhost/Think-Champ/assets/images/home/first-section-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: left;
+    margin-bottom: 100px;
+}
+
+.first_section_col1 {
+    width: 60%;
+    height: 600px;
+    box-sizing: border-box;
+    float: left;
+    padding: 50px;
+    padding-top: 200px;
+    padding-left: 80px;
+}
+.layer-anim-2{
+    width: 100px;
+    height: 10px;
+    position: relative;
+    right: -920px;
+    top: 20px;
+
+    animation-name: layer ;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+.layer-anim{
+    
+    width: 100px;
+    height: 10px;
+    position: relative;
+    left: 285px;
+    top: 20px;
+
+    animation-name: layer ;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+@keyframes layer {
+    0%{
+        top: 150px;
+    }
+   25%{
+    transform: rotate(360deg);
+   }
+    50%{
+        top:600px;
+    }  
+   
+
+}
+
+.circle-anim {
+    width: 100px;
+    height: 50px;
+    position: relative;
+    animation-name: example;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example {
+    0% {
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        left: 560px;
+        top: 0px;
+    }
+
+    50% {
+        left: 200px;
+        top: -200px;
+    }
+
+    100% {
+        left: 0px;
+        top: 0px;
+    }
+}
+
+.square-anim{
+    width:100px;
+    height:100px;
+    margin-left:80px;   
+    position: relative;
+    top:150px;
+    left:260px;
+    animation-name: square;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes square {
+    0% {
+        left: 290px;
+        top: 0px;
+    }
+
+50%{
+    left: 290px;
+    top: 220px;
+}
+
+    100% {
+        left: 290px;
+        top: 0px;
+    }
+}
+.first_heading {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 45px;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+.th-ch {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 70px;
+    color: #2E3192;
+    margin: 0;
+    padding: 0;
+}
+
+.first_heading_text {
+    font-family: 'Poppins', sans-serif;
+    color: #484848;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.grab-btn {
+    margin-top: 10px;
+    background-color: #2500F9;
+    color: white;
+    padding: 14px 45px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 5px;
+    font-weight: 600;
+    float: left;
+}
+
+.grab-btn:hover,
+.grab-btn:active {
+    background-color: transparent;
+    color: #2500F9;
+    border:2px solid #2500F9;
+    transition-duration: 0.5s;
+}
+
+
+
+.first_section_col2 {
+    width: 40%;
+    height: 600px;
+    vertical-align: middle;
+    box-sizing: border-box;
+    float: left;
+    padding-top: 70px;
+}
+
+.bg-img {
+    width: 500px;
+    height: 700px;
+    text-align: center;
+}
+
+.square-anim {
+    width: 100px;
+    height: 100px;
+}
+
+
+
+/*End of first section */
+
+/*star of second section */
+
+.second-section {
+    width: 100%;
+    height: auto;
+    float: left;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.second-section-col-1 {
+    width: 28%;
+    height: 600px;
+    float: left;
+    padding: 20px;
+}
+
+.skill-box {
+    width: 80%;
+    height: 100px;
+    margin: 0 auto;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #FFE5DE;
+    border-radius: 15px;
+    border: 2px solid white;
+    text-align: center;
+}
+
+.skill-box:hover {
+    width: 82%;
+    height: 105px;
+    background-color: #deeaff;
+    border-color: #deeaff;
+    transition-duration: 0.5s;
+}
+
+.skill-img {
+    width: 80px;
+    height: 80px;
+    float: left;
+}
+
+.skill-text {
+
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    margin-top: 28px;
+    font-weight: 500;
+    color: #282828;
+}
+
+.second-section-col-2 {
+    width: 44%;
+    height: 600px;
+    float: left;
+    background-image: url(http://localhost/Think-Champ/assets/images/home/features.jpg);
+    background-size: 100% 400px;
+    background-repeat: no-repeat;    
+    background-position: bottom center;
+}
+
+.second-section-col-3 {
+    width: 28%;
+    height: 600px;
+    float: left;
+    padding: 20px;
+}
+
+.first-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: #2E3192;
+    margin-bottom: 20px;
+}
+
+.first-heading-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    color: #484848;
+    margin-bottom: 50px;
+}
+
+
+
+/* waves css  */
+
+/* End of second-section */
+
+/*Start of third section */
+
+.mission{
+    display: block;
+}
+.vision{
+    display: none;
+
+}
+.passion{
+    display: none;
+}
+.third-section {
+    width: 100%;
+    height: auto;
+    float: left;
+    padding-top: 50px;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.abt-us-btn {
+    width: 15%;
+    height: 70px;
+    margin-top: 50px;
+    border: 2px solid white;
+    margin: 15px;
+    background-color: white;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 22px;
+    border-radius: 8px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.abt-us-btn:hover {
+    border-color: #FF805D;
+    color: #FF805D;
+    transition-duration: 0.5s;
+}
+
+.abt-us-btn:active {
+    border-color: #FF805D;
+    color: #FF805D;
+}
+
+.about-tab{
+    width:100%;
+    height: auto;
+    position: relative;
+}
+
+.mission-container {
+    width: 100%;
+    height: 350px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+#mission{
+    transform: translateX(0);
+}
+
+.active_class{
+    border-color: #FF805D;
+    color: #FF805D;
+}
+
+.mission-img-col {
+    width: 40%;
+    height: 300px;
+    padding: 20px;
+    float: left;
+    background-image: url(http://localhost/Think-Champ/assets/images/home/mission.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.vission-img-col {
+    width: 40%;
+    height: 300px;
+    padding: 20px;
+    float: left;
+    background-image: url(http://localhost/Think-Champ/assets/images/home/vision.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.passion-img-col {
+    width: 40%;
+    height: 300px;
+    padding: 20px;
+    float: left;
+    background-image: url(http://localhost/Think-Champ/assets/images/home/passion.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.mission-text-container {
+    width: 60%;
+    height: 300px;
+    padding: 20px;
+    float: left;
+    padding-left:100px;
+    padding-right:100px;
+}
+
+.mission-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    float: left;
+    border-bottom: 3px #FF805D solid;
+}
+
+.mission-txt {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: #808080;
+    text-align: justify;
+}
+
+/* End of third-section */
+
+/* Start of Student Placed  */
+
+.student-placed{
+    width:100%;
+    padding-left:5%;
+    padding-right:5%;
+    float: left;
+    box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+    border-color: white;
+}
+
+.student-left-col{
+    width: 30%;
+    height: auto;
+    float: left;
+    padding: 50px;
+    padding-top: 70px;
+}
+
+.our-student-heading{
+    font-family: 'Mulish', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: #2E3192;
+    padding: 0;
+    margin: 0;
+}
+
+.student-right-col{
+    width: 70%;
+    height: auto;
+    float: left;
+    padding: 20px;
+    padding-top:30px;
+    padding-right:10px;
+}
+
+.student-right-col img{
+    margin:10px;
+}
+
+/* End of Student Placed  */
+
+
+/* start of forth section */
+
+.forth-section {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    float: left;
+    text-align: center;
+    padding-left: 5%;
+    padding-bottom: 5%;
+    margin-bottom: 70px;
+}
+
+.services-box {
+    width: 18%;
+    height: 225px;
+    text-align: center;
+    padding-top: 50px;
+    margin-right: 20px;
+    float: left;
+    margin-top: 30px;
+    background-color: #E9F7FE;
+}
+
+.services-box:hover {
+    box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+    border-color: white;
+}
+
+.service-box-heading {
+    font-family: 'Convergence', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: black;
+}
+
+.sbox-1 {
+    margin-top: 0px;
+    padding-top: 65px;
+    background-color: #e9feee;
+}
+
+.sbox-2 {
+    margin-top: 30px;
+    background-color: #fddafc;
+}
+
+/* End of forth section  */
+
+/* Start of fifth Section  */
+
+.fifth-section {
+    width: 100%;
+    height: auto;
+    float: left;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin: 0 auto;
+    padding: 50px;
+    margin-bottom: 50px;
+}
+
+.fifth-sec-left-col {
+    width: 30%;
+    height: auto;
+    float: left;
+    padding: 50px;
+    padding-top: 100px;
+}
+
+.why-choose-heading {
+    font-family: 'Mulish', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: #2E3192;
+    padding: 0;
+    margin: 0;
+}
+
+.why-choose-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #979797;
+}
+
+.fifth-sec-right-col {
+    width: 70%;
+    height: auto;
+    float: left;
+    padding: 20px;
+}
+
+.why-choose-box {
+    width: 220px;
+    height: auto;
+    padding: 30px;
+    text-align: center;
+    float: left;
+    margin: 8px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    border-radius: 15px;
+    box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+    border-color: white;
+}
+
+.why-choose-box:hover{
+    background-color: #1a00ac;
+    color:white;
+    transition-duration: 0.5s;
+}
+
+.box-1 {
+    margin-top: 0px;
+}
+
+.box-2 {
+    margin-top: 40px;
+}
+
+.box-3{
+    margin-top:-25px;
+}
+
+
+.why-choose-count {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 2px solid blue;
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.why-choose-box-heading {
+    font-family: 'Mulish', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+/* End of fifth section  */
+
+/* Start of Sixth Section "Courses" */
+
+.sixth-section {
+    width: 100%;
+    height: auto;
+    float: left;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin: 0 auto;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    margin-bottom: 50px;
+}
+
+
+.course-card {
+    width: 30%;
+    height: 520px;
+    float: left;
+    border: 1px solid blue;
+    margin-left: 2.5%;
+    border: 1px #777777 solid;
+}
+
+.course-card:hover {
+    box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+    border-color: white;
+}
+
+.course-card-img {
+    text-align: center;
+    width: 100%;
+    height: 250px;
+    border-bottom: 1px black solid;
+}
+
+.course {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+    color: #2E3192;
+    margin-top: 25px;
+}
+
+.course-fee {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+    float: left;
+    margin-left: 20px;
+    color: #777777;
+    margin-bottom: 0;
+    margin-top: 15px;
+}
+
+.course-price {
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    margin-left: 20px;
+    color: #423b3c;
+    float: left;
+}
+
+.enroll-btn {
+    margin-top: 10px;
+    background-color: #2e3192d4;
+    color: white;
+    padding: 14px 45px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 5px;
+    font-weight: 600;
+    border: none;
+    float: left;
+    margin-left: 20px;
+}
+
+.enroll-btn,
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.enroll-btn,
+a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.enroll-btn:hover,
+.enroll-btn:active {
+    background-color: #2E3192;
+    color: white;
+}
+
+/* End of Sixth section */
+
+/* Start of seventh Section  */
+
+
+/* End of Seventh Section  */
+
+.seventh-section {
+    width: 100%;
+    height: auto;
+    float: left;
+    margin: 0 auto;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.instructor-box {
+    width: 24%;
+    height: 500px;
+    border: 2px solid;
+    float: left;
+    margin-left: 10px;
+    background-image: url(http://localhost/Think-Champ/assets/images/home/inst-1.jpg);
+    background-position: center;
+    border-radius: 10px;
+}
+
+.instructor-box:hover {
+    box-shadow: 0 0 20px rgba(75, 75, 75, 0.468);
+}
+
+.instructor-content {
+    width: 100%;
+    height: 130px;
+    background-color: rgba(255, 255, 255, 0.177);
+    margin-top: 340px;
+    padding: 10px;
+}
+
+.inst-name {
+    font-family: 'Montserrat', sans-serif;
+    color: #cdcdcd;
+    font-size: 18px;
+}
+
+.inst-skill {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+    color: #a4a4a4;
+}
+
+/* Start of Eighth section */
+
+.eighth-section {
+    width: 100%;
+    height: auto;
+    float: left;
+    padding: 50px;
+    margin: 0 auto;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    position: relative;
+}
+
+.testimonial-container {
+    width: 570px;
+    height: 350px;
+    border: 5px solid #4e52c5;
+    padding: 10px;
+    padding-top: 20px;
+    padding-right: 15px;
+    margin-left: 24px;
+    border-radius: 25px;
+    float: left;
+}
+
+.testimonial-img-container {
+    width: 150px;
+    height: 300px;
+    float: left;
+    margin-right: 10px;
+}
+
+.testimonial-img {
+    width: 148px;
+    height: 148px;
+    border-radius: 50%;
+    box-shadow: 8px 0px 1px 1px #3b3c8cdf;
+}
+
+.carousel-control-next-icon {
+    background-color: #2E3192;
+    margin-left: -220px;
+}
+
+.carousel-control-prev-icon {
+    background-color: #2E3192;
+    margin-right: -220px;
+}
+
+.social-logo-testi {
+    width: 30px;
+    height: 30px;
+    background-color: #25213F;
+    border-radius: 50%;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-top: 5px;
+    float: left;
+    margin-right: 5px;
+}
+
+.testi-name {
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+    font-size: 18px;
+    margin-top: 8px;
+    margin-left: 5px;
+}
+
+.testi-skill {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #2E3192;
+}
+
+.testi-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.carousel-control-next-icon{
+    margin-right:-400px;
+}
+
+.carousel-control-prev-icon{
+    margin-left:-400px;
+}
+
+
+
+/* End of Eight section */
+
+
+/* Start of footer  */
+
+footer {
+    width: 100%;
+    height: auto;
+    float: left;
+    padding-top: 50px;
+    padding-bottom: 25px;
+    background-color: #0C0829;
+}
+
+.footer-section {
+    width: 80%;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.footer-col1 {
+    width: 25%;
+    height: 200px;
+    float: left;
+    padding: 20px;
+}
+
+.logo-img {
+    margin-top: -50px;
+}
+.logo-text {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(187, 187, 187);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.social-logo {
+    width: 40px;
+    height: 40px;
+    background-color: #25213F;
+    border-radius: 50%;
+    font-size: 14px;
+    padding-left: 15px;
+    padding-top: 10px;
+    float: left;
+    margin-right: 10px;
+}
+
+.youtube {
+    padding-left: 13px;
+}
+
+.social-logo:hover {
+    background-color: #2500F9;
+}
+
+.footer-col2 {
+    width: 22%;
+    height: 200px;
+    float: left;
+    padding: 20px;
+    padding-left: 60px;
+}
+
+.footer-company {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.footer-list {
+    list-style: none;
+    margin-left: -35px;
+    margin-top: -10px;
+}
+
+.footer-link {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #777777;
+}
+
+.footer-link:hover {
+    color: white;
+}
+
+.footer-col3 {
+    width: 22%;
+    height: 200px;
+    float: left;
+    padding: 20px;
+}
+
+.headqauter-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #777777;
+}
+
+.footer-col4 {
+    width: 31%;
+    height: 200px;
+    float: left;
+    padding: 20px;
+}
+
+input {
+    width: 200px;
+    height: 40px;
+    background-color: #25213F;
+    border: none;
+    color: #bfbfbf;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    padding: 5px;
+}
+
+.subs-btn {
+    width: 100px;
+    height: 40px;
+    background-color: #2500F9;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: white;
+    margin-left: -2px;
+}
+
+.subs-btn:hover {
+    background-color: #1a00ac;
+}
+
+.copyright {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    text-align: center;
+    color: #777777;
+    margin-top: 70px;
+}
+
+/* End of Footer  */
+
+/* STart of Faq page section  */
+
+.faq-section {
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    padding-top: 70px;
+    padding-bottom: 250px;
+    padding-left: 10%;
+    padding-right: 10%;
+    position: relative;
+}
+
+.faq-question {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+.faq-answer {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+.custom-shape-divider-bottom-1660665139 {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1660665139 svg {
+    display: block;
+    width: calc(161% + 1.3px);
+    height: 240px;
+}
+
+.custom-shape-divider-bottom-1660665139 .shape-fill {
+    fill: #0C0829;
+}
+
+/* End of Faq page section  */
+
+/* Start of Contact Us page */
+
+.cont-section {
+    width: 80%;
+    height: 950px;
+    margin: 0 auto;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.cont-col1 {
+    width: 50%;
+    float: left;
+    padding-top: 50px;
+    padding-right: 20px;
+}
+
+.cont-col2 {
+    width: 50%;
+    float: left;
+}
+
+.contact-form {
+    border: 2px solid #616161;
+    padding: 20px;
+    padding-left: 50px;
+    border-radius: 25px;
+    box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+    border-color: white;
+}
+
+.input-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: #2E3192;
+}
+
+.cont-form {
+    width: 80%;
+    height: 50px;
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    padding: 5px;
+    font-size: 16px;
+    color: #000000;
+    padding-left: 10px;
+    border: 2px black solid;
+    border-radius: 25px;
+}
+
+.textarea {
+    height: 200px;
+    padding: 10px;
+}
+
+.submit-btn {
+    width: 160px;
+    height: 50px;
+    background-color: #2E3192;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    border: none;
+    border-radius: 25px;
+}
+
+.submit-btn:hover {
+    background-color: #3b3e8d;
+}
+
+
+/* End of Contact us page  */
+
+/* Start of login page  */
+
+.login-first-section {
+    width: 80%;
+    height: 800px;
+    margin: 0 auto;
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+
+.login-col1 {
+    width: 50%;
+    height: 600px;
+    padding: 20px;
+    float: left;
+}
+
+.login-col2 {
+    width: 50%;
+    height: 600px;
+    padding: 20px;
+    float: left;
+    padding-top: 130px;
+}
+
+.login-form-box {
+    width: 80%;
+    border: 1px solid grey;
+    padding: 35px;
+    margin: 0 auto;
+    border-radius: 25px;
+    box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+    border-color: white;
+}
+
+.login-form {
+    width: 100%;
+    height: 50px;
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    padding: 5px;
+    font-size: 16px;
+    color: #000000;
+    padding-left: 10px;
+    border: 2px black solid;
+    border-radius: 25px;
+}
+
+/* End of Login Page  */
+
+/* Start of About us Page  */
+
+.about-us-first-section {
+    width: 80%;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.about-us-col1 {
+    width: 50%;
+    height: 500px;
+    float: left;
+    padding-top: 170px;
+    text-align: center;
+}
+
+.about-us-col2 {
+    width: 50%;
+    height: 500px;
+    float: left;
+    text-align: center;
+    padding: 70px;
+}
+
+.our-teachers-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 45px;
+    color: #2E3192;
+}
+
+.our-teacher {
+    width: 400px;
+    height: 350px;
+    margin: 0 auto;
+    border-radius: 50px;
+    background-image: url(http://localhost/Think-Champ/assets/images/home/our-teachers.jpg);
+    background-position: center;
+    background-size: 400px 420px;
+    box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+    border-color: white;
+}
+
+.about-us-second-section {
+    width: 80%;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.about-second-col1 {
+    width: 50%;
+    height: 500px;
+    float: left;
+    padding-top: 70px;
+}
+
+.about-second-col2 {
+    width: 50%;
+    height: 500px;
+    float: left;
+    text-align: center;
+    padding: 50px;
+}
+
+.about-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+.about-img {
+    width: 400px;
+    height: 350px;
+    margin: 0 auto;
+    border-radius: 50px;
+    background-image: url(http://localhost/Think-Champ/assets/images/home/about-img.jpg);
+    background-position: center;
+    background-size: 400px 420px;
+    box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+    border-color: white;
+}
+
+/* End of About us Page  */
