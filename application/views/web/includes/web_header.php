@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
     integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <title>Think Champ</title>
+  <title>Think Champ Student Panel</title>
 </head>
 
 <body>
@@ -27,7 +27,7 @@
     <button class="wp-btn"><i class="fa fa-volume-control-phone" aria-hidden="true"></i>
     </button>
     <p class="wp-text"><span class="wp-chat">Phone</span><br>
-      +91 999999999</p>
+      +91 8851411809</p>
     <nav>
       <ul class="menu">
         <li class="nav-item"><a href="<?= base_url('Home') ?>" class="menu-links active-menu">HOME</a></li>
