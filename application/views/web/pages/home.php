@@ -189,16 +189,18 @@
                     <div class="levels">BEGINNER</div>
                     <h1 class="course">Python Programming</h1><br>
                     <hr style="width:80% ;margin:0;text-align:center;margin:0 auto;">
+                    <center><div class="star-rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    </div></center>
+                    <div class="course-left-col">
                     <p class="course-fee">Course Fee : </p><br><br>
-                    <h2 class="course-price">₹ 9999/-</h2><br><br>
-                    <div class="star-rating">
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    </div>
-                    <button class="enroll-btn"><a href="#">Enroll Now</a></button>
+                    <h2 class="course-price">₹ 9999/-</h2></div>
+                   <div class="course-right-col">
+                    <button class="enroll-btn"><a href="#">Enroll Now</a></button></div>
                 </div>
             </div>
         </div>
@@ -209,16 +211,18 @@
                     <div class="levels">INTERMEDIATE</div>
                     <h1 class="course">Desigining and Development</h1><br>
                     <hr style="width:80% ;margin:0;text-align:center;margin:0 auto;">
+                    <center><div class="star-rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    </div></center>
+                    <div class="course-left-col">
                     <p class="course-fee">Course Fee : </p><br><br>
-                    <h2 class="course-price">₹ 9999/-</h2><br><br>
-                    <div class="star-rating">
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    </div>
-                    <button class="enroll-btn"><a href="#">Enroll Now</a></button>
+                    <h2 class="course-price">₹ 9999/-</h2></div>
+                   <div class="course-right-col">
+                    <button class="enroll-btn"><a href="#">Enroll Now</a></button></div>
                 </div>
             </div>
         </div>
@@ -229,20 +233,25 @@
                     <div class="levels">ADVANCE</div>
                     <h1 class="course">Programming and Development</h1><br>
                     <hr style="width:80% ;margin:0;text-align:center;margin:0 auto;">
+                    <center><div class="star-rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    </div></center>
+                    <div class="course-left-col">
                     <p class="course-fee">Course Fee : </p><br><br>
-                    <h2 class="course-price">₹ 9999/-</h2><br><br>
-                    <div class="star-rating">
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    </div>
-                    <button class="enroll-btn"><a href="#">Enroll Now</a></button>
+                    <h2 class="course-price">₹ 9999/-</h2></div>
+                   <div class="course-right-col">
+                    <button class="enroll-btn"><a href="#">Enroll Now</a></button></div>
                 </div>
             </div>
         </div>
+        
+        
     </div>
+    
 
 
 </section>
