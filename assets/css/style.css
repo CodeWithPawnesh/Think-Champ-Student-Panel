@@ -11,17 +11,7 @@
 
 
 /* nav bar css */
-.card-course{
-    height: 600px;
-    border: 1px solid rgb(242, 232, 232);
-}
-.card-img-top{
-    height: 300px;
-}
-.card-course:hover{
-    box-shadow: 0 0 11px rgba(33, 33, 33, .2);
-    border-color: white;
-}
+
 .logo-nav {
     text-align: center;
     margin-left: 10%;
@@ -256,6 +246,7 @@ nav {
     color: #000000;
     margin: 0;
     padding: 0;
+    margin-bottom:20px;
 }
 
 .th-ch {
@@ -333,7 +324,7 @@ nav {
     padding-right: 5%;
     text-align: center;
     margin: 0 auto;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 .second-section-col-1 {
@@ -403,7 +394,7 @@ nav {
     margin: 0;
     padding: 0;
     color: #2E3192;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .first-heading-text {
@@ -442,6 +433,7 @@ nav {
     padding-right: 5%;
     margin: 0 auto;
     text-align: center;
+    margin-bottom: 60px;
 }
 
 .abt-us-btn {
@@ -487,7 +479,7 @@ nav {
 }
 
 .active_class{
-    border-color: #FF805D;
+    border:1px solid #FF805D;
     color: #FF805D;
 }
 
@@ -558,6 +550,7 @@ nav {
     float: left;
     box-shadow: 0 0 11px rgba(33, 33, 33, .2);
     border-color: white;
+    margin-bottom: 60px;
 }
 
 .student-left-col{
@@ -686,9 +679,11 @@ nav {
 }
 
 .why-choose-box {
-    width: 220px;
+    width: 31%;
     height: auto;
-    padding: 30px;
+    padding: 15px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     text-align: center;
     float: left;
     margin: 8px;
@@ -710,11 +705,20 @@ nav {
 }
 
 .box-2 {
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .box-3{
-    margin-top:-25px;
+    margin-top:0px;
+}
+
+.box-5{
+    margin-top:-210px;
+    
+}
+
+.box-6{
+    margin-top:-180px;
 }
 
 
@@ -753,6 +757,24 @@ nav {
     margin-bottom: 50px;
 }
 
+.card-course{
+    height: 640px;
+    border: 1px solid rgb(242, 232, 232);
+    margin-left:45px;
+}
+
+.card-img-top{
+    height: 300px;
+}
+
+.card-course:hover{
+    box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+    border-color: white;
+}
+
+.checked{
+    color: orange;
+}
 
 .course-card {
     width: 30%;
@@ -775,13 +797,25 @@ nav {
     border-bottom: 1px black solid;
 }
 
+.levels{
+    margin: 0 auto;
+    padding:5px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    background-color: #a3f9fc;
+}
+
 .course {
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     text-align: center;
-    margin-top: 10px;
     color: #2E3192;
     margin-top: 25px;
+}
+
+.star-rating{
+    margin-left:20px;
 }
 
 .course-fee {
@@ -901,22 +935,20 @@ a:hover {
 }
 
 .testimonial-container {
-    width: 570px;
-    height: 350px;
-    border: 5px solid #4e52c5;
-    padding: 10px;
-    padding-top: 20px;
-    padding-right: 15px;
+    width: 580px;
+    height: auto;
+    padding: 50px;
     margin-left: 24px;
-    border-radius: 25px;
+    border-radius: 50%;
     float: left;
+    text-align: center;
+    background-color: #e68c8c;
 }
 
 .testimonial-img-container {
     width: 150px;
-    height: 300px;
-    float: left;
-    margin-right: 10px;
+    height:auto;
+    margin:0 auto;
 }
 
 .testimonial-img {
@@ -927,11 +959,13 @@ a:hover {
 }
 
 .carousel-control-next-icon {
+    padding:20px;
     background-color: #2E3192;
-    margin-left: -220px;
+    margin-left: -190px;
 }
 
 .carousel-control-prev-icon {
+    padding:20px;
     background-color: #2E3192;
     margin-right: -220px;
 }
@@ -939,13 +973,14 @@ a:hover {
 .social-logo-testi {
     width: 30px;
     height: 30px;
+    margin:0 auto;
     background-color: #25213F;
     border-radius: 50%;
     font-size: 14px;
     padding-left: 10px;
     padding-top: 5px;
     float: left;
-    margin-right: 5px;
+    margin-left:12px;
 }
 
 .testi-name {
@@ -966,7 +1001,9 @@ a:hover {
 .testi-text {
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
-    text-align: justify;
+    text-align: center;
+    padding-right:35px;
+    padding-left:35px;
 }
 
 .carousel-control-next-icon{
