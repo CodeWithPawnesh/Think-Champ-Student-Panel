@@ -32,7 +32,7 @@
       <ul class="menu">
         <li class="nav-item"><a href="<?= base_url('Home') ?>" class="menu-links active-menu">HOME</a></li>
         <li class="nav-item"><a href="<?= base_url('About-Us') ?>" class="menu-links ">ABOUT US</a></li>
-        <li class="nav-item"><a href="<?= base_url('Course') ?>" class="menu-links">COURSES</a></li>
+        <li class="nav-item"><a href="<?= base_url('Courses') ?>" class="menu-links">COURSES</a></li>
         <li class="nav-item"><a href="<?= base_url('Contact') ?>" class="menu-links">CONTACT</a></li>
         <li class="nav-item"><a href="<?= base_url('Workshop') ?>" class="menu-links">WORKSHOP</a></li>
         <li class="nav-item"><a href="<?= base_url('FAQ') ?>" class="menu-links">FAQ</a></li>

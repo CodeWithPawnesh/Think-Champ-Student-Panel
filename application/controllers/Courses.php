@@ -7,4 +7,9 @@ class Courses extends CI_Controller {
 	{
 		$this->load->web_temp('courses');
 	}
+	public function CourseDetail(){
+
+		$this->load->web_temp('course_detail');
+
+	}
 }

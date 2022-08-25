@@ -54,6 +54,7 @@ $route['FAQ'] = 'Home/Faq';
 $route['Contact'] = 'Home/Contact';
 $route['About-Us'] = 'Home/AboutUs';
 $route['Courses'] = 'Courses';
+$route['Course-Detail'] = 'Courses/CourseDetail';
 
 $route['Login'] = 'Home/Login';
 $route['Privacy-Policy'] = 'Home/PrivacyPolicy';
