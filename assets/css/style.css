@@ -39,7 +39,7 @@
     margin-left: 15px;
 }
 
-.login-btn a:hover{
+.login-btn a:hover {
     color: #2500F9;
 }
 
@@ -146,40 +146,45 @@ nav {
     padding-top: 200px;
     padding-left: 80px;
 }
-.layer-anim-2{
+
+.layer-anim-2 {
     width: 100px;
     height: 10px;
     position: relative;
     right: -920px;
     top: 20px;
 
-    animation-name: layer ;
+    animation-name: layer;
     animation-duration: 7s;
     animation-iteration-count: infinite;
 }
-.layer-anim{
-    
+
+.layer-anim {
+
     width: 100px;
     height: 10px;
     position: relative;
     left: 285px;
     top: 20px;
 
-    animation-name: layer ;
+    animation-name: layer;
     animation-duration: 7s;
     animation-iteration-count: infinite;
 }
+
 @keyframes layer {
-    0%{
+    0% {
         top: 150px;
     }
-   25%{
-    transform: rotate(360deg);
-   }
-    50%{
-        top:600px;
-    }  
-   
+
+    25% {
+        transform: rotate(360deg);
+    }
+
+    50% {
+        top: 600px;
+    }
+
 
 }
 
@@ -214,13 +219,13 @@ nav {
     }
 }
 
-.square-anim{
-    width:100px;
-    height:100px;
-    margin-left:80px;   
+.square-anim {
+    width: 100px;
+    height: 100px;
+    margin-left: 80px;
     position: relative;
-    top:150px;
-    left:260px;
+    top: 150px;
+    left: 260px;
     animation-name: square;
     animation-duration: 5s;
     animation-iteration-count: infinite;
@@ -232,16 +237,17 @@ nav {
         top: 0px;
     }
 
-50%{
-    left: 290px;
-    top: 220px;
-}
+    50% {
+        left: 290px;
+        top: 220px;
+    }
 
     100% {
         left: 290px;
         top: 0px;
     }
 }
+
 .first_heading {
     font-family: 'Montserrat', sans-serif;
     font-weight: bolder;
@@ -249,7 +255,7 @@ nav {
     color: #000000;
     margin: 0;
     padding: 0;
-    margin-bottom:20px;
+    margin-bottom: 20px;
 }
 
 .th-ch {
@@ -285,7 +291,7 @@ nav {
 .grab-btn:active {
     background-color: transparent;
     color: #2500F9;
-    border:2px solid #2500F9;
+    border: 2px solid #2500F9;
     transition-duration: 0.5s;
 }
 
@@ -378,7 +384,7 @@ nav {
     float: left;
     background-image: url(http://localhost/Think-Champ/assets/images/home/features.jpg);
     background-size: 100% 400px;
-    background-repeat: no-repeat;    
+    background-repeat: no-repeat;
     background-position: bottom center;
 }
 
@@ -417,16 +423,19 @@ nav {
 
 /*Start of third section */
 
-.mission{
+.mission {
     display: block;
 }
-.vision{
+
+.vision {
     display: none;
 
 }
-.passion{
+
+.passion {
     display: none;
 }
+
 .third-section {
     width: 100%;
     height: auto;
@@ -464,8 +473,8 @@ nav {
     color: #FF805D;
 }
 
-.about-tab{
-    width:100%;
+.about-tab {
+    width: 100%;
     height: auto;
     position: relative;
 }
@@ -477,12 +486,12 @@ nav {
     margin: 0 auto;
 }
 
-#mission{
+#mission {
     transform: translateX(0);
 }
 
-.active_class{
-    border:1px solid #FF805D;
+.active_class {
+    border: 1px solid #FF805D;
     color: #FF805D;
 }
 
@@ -524,8 +533,8 @@ nav {
     height: 300px;
     padding: 20px;
     float: left;
-    padding-left:100px;
-    padding-right:100px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 .mission-heading {
@@ -546,17 +555,17 @@ nav {
 
 /* Start of Student Placed  */
 
-.student-placed{
-    width:100%;
-    padding-left:5%;
-    padding-right:5%;
+.student-placed {
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
     float: left;
     box-shadow: 0 0 11px rgba(33, 33, 33, .2);
     border-color: white;
     margin-bottom: 60px;
 }
 
-.student-left-col{
+.student-left-col {
     width: 30%;
     height: auto;
     float: left;
@@ -564,7 +573,7 @@ nav {
     padding-top: 70px;
 }
 
-.our-student-heading{
+.our-student-heading {
     font-family: 'Mulish', sans-serif;
     font-size: 28px;
     font-weight: 600;
@@ -573,17 +582,17 @@ nav {
     margin: 0;
 }
 
-.student-right-col{
+.student-right-col {
     width: 70%;
     height: auto;
     float: left;
     padding: 20px;
-    padding-top:30px;
-    padding-right:10px;
+    padding-top: 30px;
+    padding-right: 10px;
 }
 
-.student-right-col img{
-    margin:10px;
+.student-right-col img {
+    margin: 10px;
 }
 
 /* End of Student Placed  */
@@ -697,9 +706,9 @@ nav {
     border-color: white;
 }
 
-.why-choose-box:hover{
+.why-choose-box:hover {
     background-color: #1a00ac;
-    color:white;
+    color: white;
     transition-duration: 0.5s;
 }
 
@@ -711,17 +720,17 @@ nav {
     margin-top: 30px;
 }
 
-.box-3{
-    margin-top:0px;
+.box-3 {
+    margin-top: 0px;
 }
 
-.box-5{
-    margin-top:-210px;
-    
+.box-5 {
+    margin-top: -210px;
+
 }
 
-.box-6{
-    margin-top:-180px;
+.box-6 {
+    margin-top: -180px;
 }
 
 
@@ -760,23 +769,23 @@ nav {
     margin-bottom: 50px;
 }
 
-.card-course{
-    width:95%;
+.card-course {
+    width: 95%;
     height: 600px;
     border: 1px solid rgb(242, 232, 232);
-    margin-left:40px;
+    margin-left: 40px;
 }
 
-.card-img-top{
+.card-img-top {
     height: 300px;
 }
 
-.card-course:hover{
+.card-course:hover {
     box-shadow: 0 0 11px rgba(33, 33, 33, .2);
     border-color: white;
 }
 
-.checked{
+.checked {
     color: orange;
 }
 
@@ -788,9 +797,9 @@ nav {
     border-bottom: 1px black solid;
 }
 
-.levels{
+.levels {
     margin: 0 auto;
-    padding:5px;
+    padding: 5px;
     text-align: center;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
@@ -805,15 +814,15 @@ nav {
     margin-top: 25px;
 }
 
-.course-left-col{
-    width:50%;
-    float:left;
+.course-left-col {
+    width: 50%;
+    float: left;
 }
 
-.course-right-col{
-    width:50%;
-    float:left;
-    padding-top:22px;
+.course-right-col {
+    width: 50%;
+    float: left;
+    padding-top: 22px;
 }
 
 .course-fee {
@@ -945,8 +954,8 @@ a:hover {
 
 .testimonial-img-container {
     width: 150px;
-    height:auto;
-    margin:0 auto;
+    height: auto;
+    margin: 0 auto;
 }
 
 .testimonial-img {
@@ -957,13 +966,13 @@ a:hover {
 }
 
 .carousel-control-next-icon {
-    padding:20px;
+    padding: 20px;
     background-color: #2E3192;
     margin-left: -190px;
 }
 
 .carousel-control-prev-icon {
-    padding:20px;
+    padding: 20px;
     background-color: #2E3192;
     margin-right: -220px;
 }
@@ -971,14 +980,14 @@ a:hover {
 .social-logo-testi {
     width: 30px;
     height: 30px;
-    margin:0 auto;
+    margin: 0 auto;
     background-color: #25213F;
     border-radius: 50%;
     font-size: 14px;
     padding-left: 10px;
     padding-top: 5px;
     float: left;
-    margin-left:12px;
+    margin-left: 12px;
 }
 
 .testi-name {
@@ -1000,16 +1009,16 @@ a:hover {
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
     text-align: center;
-    padding-right:35px;
-    padding-left:35px;
+    padding-right: 35px;
+    padding-left: 35px;
 }
 
-.carousel-control-next-icon{
-    margin-right:-400px;
+.carousel-control-next-icon {
+    margin-right: -400px;
 }
 
-.carousel-control-prev-icon{
-    margin-left:-400px;
+.carousel-control-prev-icon {
+    margin-left: -400px;
 }
 
 
@@ -1044,6 +1053,7 @@ footer {
 .logo-img {
     margin-top: -50px;
 }
+
 .logo-text {
     font-family: 'Poppins', sans-serif;
     color: rgb(187, 187, 187);
@@ -1165,7 +1175,7 @@ input {
     margin: 0 auto;
     height: auto;
     padding-top: 70px;
-    padding-bottom: 250px;
+    padding-bottom: 50px;
     padding-left: 10%;
     padding-right: 10%;
     position: relative;
@@ -1179,6 +1189,16 @@ input {
 .faq-answer {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
+}
+
+.btn-link {
+    text-decoration: none;
+    color: #000000;
+}
+
+.btn-link:hover {
+    text-decoration: none;
+    color: #2E3192;
 }
 
 .custom-shape-divider-bottom-1660665139 {
@@ -1327,81 +1347,103 @@ input {
 /* Start of About us Page  */
 
 .about-us-first-section {
-    width: 80%;
-    height: 500px;
+    width: 100%;
+    height: auto;
     margin: 0 auto;
+    margin-bottom: 70px;
+    padding-top: 90px;
+    padding-bottom: 70px;
+    background-image: url(http://localhost/Think-Champ/assets/images/home/first-section-bg.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
-.about-us-col1 {
-    width: 50%;
-    height: 500px;
+.abt-first-section {
+    width: 100%;
+    margin-bottom: 100px;
     float: left;
-    padding-top: 170px;
-    text-align: center;
 }
 
-.about-us-col2 {
-    width: 50%;
-    height: 500px;
+.abt-left-col {
+    width: 60%;
     float: left;
-    text-align: center;
+}
+
+.abt-right-col {
+    width: 40%;
+    float: left;
     padding: 70px;
 }
 
-.our-teachers-text {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 45px;
-    color: #2E3192;
-}
-
-.our-teacher {
-    width: 400px;
-    height: 350px;
-    margin: 0 auto;
-    border-radius: 50px;
-    background-image: url(http://localhost/Think-Champ/assets/images/home/our-teachers.jpg);
-    background-position: center;
-    background-size: 400px 420px;
-    box-shadow: 0 0 11px rgba(33, 33, 33, .2);
-    border-color: white;
-}
-
-.about-us-second-section {
-    width: 80%;
-    height: 500px;
-    margin: 0 auto;
-}
-
-.about-second-col1 {
-    width: 50%;
-    height: 500px;
-    float: left;
-    padding-top: 70px;
-}
-
-.about-second-col2 {
-    width: 50%;
-    height: 500px;
-    float: left;
-    text-align: center;
-    padding: 50px;
-}
-
-.about-text {
+.abt-company {
+    color: red;
     font-family: 'Poppins', sans-serif;
-    font-size: 18px;
+    font-size: 14px;
+    letter-spacing: 1px;
 }
 
-.about-img {
-    width: 400px;
-    height: 350px;
-    margin: 0 auto;
-    border-radius: 50px;
-    background-image: url(http://localhost/Think-Champ/assets/images/home/about-img.jpg);
-    background-position: center;
-    background-size: 400px 420px;
-    box-shadow: 0 0 11px rgba(33, 33, 33, .2);
-    border-color: white;
+.abt-right-col h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 35px;
+    margin: 0;
+    padding: 0;
+}
+
+.abt-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: rgb(133, 133, 133);
+    margin: 0;
+    padding: 0;
+}
+
+.abt-second-section {
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.abt-second-col {
+    width: 25%;
+    padding:40px;
+    text-align: center;
+    float: left;
+    border-radius: 50%;
+    background-color: #7dc8dd83;
+}
+
+.circle {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    margin:0 auto;
+    border: 5px solid #1080D0;
+    background-color: rgb(243, 243, 243);
+    margin-bottom: 20px;
+    padding-top:55px;
+}
+
+.num {
+    font-family: 'Poppins', sans-serif;
+    font-size: 35px;
+    color:#1080D0;
+}
+
+.abt-second-col h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+}
+
+.col1{
+    margin-top:100px;
+}
+
+.percent{
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    color:#1080D0;
 }
 
 /* End of About us Page  */
