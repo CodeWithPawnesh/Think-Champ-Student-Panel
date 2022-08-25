@@ -189,18 +189,22 @@
                     <div class="levels">BEGINNER</div>
                     <h1 class="course">Python Programming</h1><br>
                     <hr style="width:80% ;margin:0;text-align:center;margin:0 auto;">
-                    <center><div class="star-rating">
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    </div></center>
+                    <center>
+                        <div class="star-rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                    </center>
                     <div class="course-left-col">
-                    <p class="course-fee">Course Fee : </p><br><br>
-                    <h2 class="course-price">₹ 9999/-</h2></div>
-                   <div class="course-right-col">
-                    <button class="enroll-btn"><a href="#">Enroll Now</a></button></div>
+                        <p class="course-fee">Course Fee : </p><br><br>
+                        <h2 class="course-price">₹ 9999/-</h2>
+                    </div>
+                    <div class="course-right-col">
+                        <button class="enroll-btn"><a href="#">Enroll Now</a></button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -211,18 +215,22 @@
                     <div class="levels">INTERMEDIATE</div>
                     <h1 class="course">Desigining and Development</h1><br>
                     <hr style="width:80% ;margin:0;text-align:center;margin:0 auto;">
-                    <center><div class="star-rating">
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    </div></center>
+                    <center>
+                        <div class="star-rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                    </center>
                     <div class="course-left-col">
-                    <p class="course-fee">Course Fee : </p><br><br>
-                    <h2 class="course-price">₹ 9999/-</h2></div>
-                   <div class="course-right-col">
-                    <button class="enroll-btn"><a href="#">Enroll Now</a></button></div>
+                        <p class="course-fee">Course Fee : </p><br><br>
+                        <h2 class="course-price">₹ 9999/-</h2>
+                    </div>
+                    <div class="course-right-col">
+                        <button class="enroll-btn"><a href="#">Enroll Now</a></button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -233,25 +241,29 @@
                     <div class="levels">ADVANCE</div>
                     <h1 class="course">Programming and Development</h1><br>
                     <hr style="width:80% ;margin:0;text-align:center;margin:0 auto;">
-                    <center><div class="star-rating">
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    </div></center>
+                    <center>
+                        <div class="star-rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                    </center>
                     <div class="course-left-col">
-                    <p class="course-fee">Course Fee : </p><br><br>
-                    <h2 class="course-price">₹ 9999/-</h2></div>
-                   <div class="course-right-col">
-                    <button class="enroll-btn"><a href="#">Enroll Now</a></button></div>
+                        <p class="course-fee">Course Fee : </p><br><br>
+                        <h2 class="course-price">₹ 9999/-</h2>
+                    </div>
+                    <div class="course-right-col">
+                        <button class="enroll-btn"><a href="#">Enroll Now</a></button>
+                    </div>
                 </div>
             </div>
         </div>
-        
-        
+
+
     </div>
-    
+
 
 
 </section>
@@ -260,24 +272,38 @@
 <section class="forth-section">
     <h1 class="first-heading">SERVICES</h1>
     <div class="services-box">
-        <img src="https://img.icons8.com/external-others-phat-plus/64/000000/external-courses-online-courses-outline-others-phat-plus-6.png" />
+        <img src="assets/images/home/professional-course.png" alt="" class="service-img">
         <h2 class="service-box-heading">PROFESSIONAL COURSES</h2>
+        <hr class="service-box-heading-underline">
+        <p class="service-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ipsa ea sint sit. Dignissimos delectus ea itaque adipisci, aut aspernatur?</p>
     </div>
-    <div class="services-box sbox-1">
-        <img src="https://img.icons8.com/external-glyph-geotatah/64/000000/external-expert-life-coach-glyph-glyph-geotatah.png" />
+    <div class="services-box">
+        <img src="assets/images/home/coach.png" alt="" class="service-img">
         <h2 class="service-box-heading">EXPERT TRAINERS</h2>
+        <hr class="service-box-heading-underline">
+
+        <p class="service-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ipsa ea sint sit. Dignissimos delectus ea itaque adipisci, aut aspernatur?</p>
     </div>
-    <div class="services-box sbox-2">
-        <img src="https://img.icons8.com/external-others-pike-picture/80/000000/external-Advertiser-advertising-others-pike-picture-2.png" />
+    <div class="services-box">
+        <img src="assets/images/home/recruitment.png" alt="" class="service-img">
         <h2 class="service-box-heading">PLACEMENT ASSISTENCE</h2>
+        <hr class="service-box-heading-underline">
+
+        <p class="service-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ipsa ea sint sit. Dignissimos delectus ea itaque adipisci, aut aspernatur?</p>
     </div>
-    <div class="services-box sbox-1">
-        <img src="https://img.icons8.com/dotty/80/000000/certificate.png" />
+    <div class="services-box">
+        <img src="assets/images/home/certificate.png" alt="" class="service-img">
         <h2 class="service-box-heading">CERTIFICATION</h2>
+        <hr class="service-box-heading-underline">
+
+        <p class="service-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ipsa ea sint sit. Dignissimos delectus ea itaque adipisci, aut aspernatur?</p>
     </div>
-    <div class="services-box sbox-2">
-        <img src="https://img.icons8.com/ios/60/000000/internship.png" />
+    <div class="services-box">
+        <img src="assets/images/home/internship.png" alt="" class="service-img">
         <h2 class="service-box-heading">INTERNSHIP OPPORTUNITIES</h2>
+        <hr class="service-box-heading-underline">
+
+        <p class="service-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ipsa ea sint sit. Dignissimos delectus ea itaque adipisci, aut aspernatur?</p>
     </div>
 </section>
 
@@ -334,155 +360,182 @@
 
     <!-- carosuel reviews  -->
 
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="testimonial-container">
-                    <div class="testimonial-img-container"><img src="assets/images/home/test-img.jpg" alt="" class="testimonial-img">
-                        <h3 class="testi-name">Jhon Deo</h3>
-                        <p class="testi-skill">Full Stack Developer</p>
-                        <div class="social-logo-testi"><a href="#" class="fa fa-facebook "></a></div>
-                        <div class="social-logo-testi "><a href="#" class="fa fa-twitter "></a></div>
-                        <div class="social-logo-testi "><a href="#" class="fa fa-instagram "></a></div>
-                    </div><br><br>
-                    <p class="testi-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit esse dicta
-                        veritatis
-                        quis nemo,
-                        repellat quisquam explicabo dolor. Obcaecati cumque quam unde rem porro ad dolores temporibus
-                        dolore
-                        consequatur odit,
-                        qui accusamus delectus soluta hic ab, facere eum harum inventore! Veniam aspernatur
-                        voluptatibus, fugiat
-                        suscipit excepturi
-                        impedit laboriosam, dolorem ratione cum dolore neque reiciendis molestiae! Quisquam earum harum
-                        optio
-                        inventore fuga
-                    </p>
-                </div>
-                <div class="testimonial-container">
-                    <div class="testimonial-img-container"><img src="assets/images/home/test-img.jpg" alt="" class="testimonial-img">
-                        <h3 class="testi-name">Jhon Deo</h3>
-                        <p class="testi-skill">Full Stack Developer</p>
-                        <div class="social-logo-testi"><a href="#" class="fa fa-facebook "></a></div>
-                        <div class="social-logo-testi "><a href="#" class="fa fa-twitter "></a></div>
-                        <div class="social-logo-testi "><a href="#" class="fa fa-instagram "></a></div>
-                    </div><br><br>
-                    <p class="testi-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit esse dicta
-                        veritatis
-                        quis nemo,
-                        repellat quisquam explicabo dolor. Obcaecati cumque quam unde rem porro ad dolores temporibus
-                        dolore
-                        consequatur odit,
-                        qui accusamus delectus soluta hic ab, facere eum harum inventore! Veniam aspernatur
-                        voluptatibus, fugiat
-                        suscipit excepturi
-                        impedit laboriosam, dolorem ratione cum dolore neque reiciendis molestiae! Quisquam earum harum
-                        optio
-                        inventore fuga
-                    </p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="testimonial-container">
-                    <div class="testimonial-img-container"><img src="assets/images/home/test-img.jpg" alt="" class="testimonial-img">
-                        <h3 class="testi-name">Jhon Deo</h3>
-                        <p class="testi-skill">Full Stack Developer</p>
-                        <div class="social-logo-testi"><a href="#" class="fa fa-facebook "></a></div>
-                        <div class="social-logo-testi "><a href="#" class="fa fa-twitter "></a></div>
-                        <div class="social-logo-testi "><a href="#" class="fa fa-instagram "></a></div>
-                    </div><br><br>
-                    <p class="testi-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit esse dicta
-                        veritatis
-                        quis nemo,
-                        repellat quisquam explicabo dolor. Obcaecati cumque quam unde rem porro ad dolores temporibus
-                        dolore
-                        consequatur odit,
-                        qui accusamus delectus soluta hic ab, facere eum harum inventore! Veniam aspernatur
-                        voluptatibus, fugiat
-                        suscipit excepturi
-                        impedit laboriosam, dolorem ratione cum dolore neque reiciendis molestiae! Quisquam earum harum
-                        optio
-                        inventore fuga
-                    </p>
-                </div>
-                <div class="testimonial-container">
-                    <div class="testimonial-img-container"><img src="assets/images/home/test-img.jpg" alt="" class="testimonial-img">
-                        <h3 class="testi-name">Jhon Deo</h3>
-                        <p class="testi-skill">Full Stack Developer</p>
-                        <div class="social-logo-testi"><a href="#" class="fa fa-facebook "></a></div>
-                        <div class="social-logo-testi "><a href="#" class="fa fa-twitter "></a></div>
-                        <div class="social-logo-testi "><a href="#" class="fa fa-instagram "></a></div>
-                    </div><br><br>
-                    <p class="testi-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit esse dicta
-                        veritatis
-                        quis nemo,
-                        repellat quisquam explicabo dolor. Obcaecati cumque quam unde rem porro ad dolores temporibus
-                        dolore
-                        consequatur odit,
-                        qui accusamus delectus soluta hic ab, facere eum harum inventore! Veniam aspernatur
-                        voluptatibus, fugiat
-                        suscipit excepturi
-                        impedit laboriosam, dolorem ratione cum dolore neque reiciendis molestiae! Quisquam earum harum
-                        optio
-                        inventore fuga
-                    </p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="testimonial-container">
-                    <div class="testimonial-img-container"><img src="assets/images/home/test-img.jpg" alt="" class="testimonial-img">
-                        <h3 class="testi-name">Jhon Deo</h3>
-                        <p class="testi-skill">Full Stack Developer</p>
-                        <div class="social-logo-testi"><a href="#" class="fa fa-facebook "></a></div>
-                        <div class="social-logo-testi "><a href="#" class="fa fa-twitter "></a></div>
-                        <div class="social-logo-testi "><a href="#" class="fa fa-instagram "></a></div>
-                    </div><br><br>
-                    <p class="testi-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit esse dicta
-                        veritatis
-                        quis nemo,
-                        repellat quisquam explicabo dolor. Obcaecati cumque quam unde rem porro ad dolores temporibus
-                        dolore
-                        consequatur odit,
-                        qui accusamus delectus soluta hic ab, facere eum harum inventore! Veniam aspernatur
-                        voluptatibus, fugiat
-                        suscipit excepturi
-                        impedit laboriosam, dolorem ratione cum dolore neque reiciendis molestiae! Quisquam earum harum
-                        optio
-                        inventore fuga
-                    </p>
-                </div>
-                <div class="testimonial-container">
-                    <div class="testimonial-img-container"><img src="assets/images/home/test-img.jpg" alt="" class="testimonial-img">
-                        <h3 class="testi-name">Jhon Deo</h3>
-                        <p class="testi-skill">Full Stack Developer</p>
-                        <div class="social-logo-testi"><a href="#" class="fa fa-facebook "></a></div>
-                        <div class="social-logo-testi "><a href="#" class="fa fa-twitter "></a></div>
-                        <div class="social-logo-testi "><a href="#" class="fa fa-instagram "></a></div>
-                    </div><br><br>
-                    <p class="testi-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit esse dicta
-                        veritatis
-                        quis nemo,
-                        repellat quisquam explicabo dolor. Obcaecati cumque quam unde rem porro ad dolores temporibus
-                        dolore
-                        consequatur odit,
-                        qui accusamus delectus soluta hic ab, facere eum harum inventore! Veniam aspernatur
-                        voluptatibus, fugiat
-                        suscipit excepturi
-                        impedit laboriosam, dolorem ratione cum dolore neque reiciendis molestiae! Quisquam earum harum
-                        optio
-                        inventore fuga
-                    </p>
+    <div class="container-lg">
+        <div class="row">
+            <div class="col-sm-12">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <h2 class="std-review">Student <b>Reviews</b></h2>
+                    <!-- Carousel indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <!-- Wrapper for carousel items -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="testimonial">
+                                        <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante.</p>
+                                    </div>
+                                    <div class="media">
+                                        <img src="assets/images/home/test-img.jpg" class="mr-3" alt="">
+                                        <div class="media-body">
+                                            <div class="overview">
+                                                <div class="name"><b>Paula Wilson</b></div>
+                                                <div class="details">Media Analyst / SkyNet</div>
+                                                <div class="star-rating">
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="testimonial">
+                                        <p class="testimonial-text">Vestibulum quis quam ut magna consequat faucibu. Eget mi suscipit tincidunt. Utmtc tempus dictum. Pellentesque virra. Quis quam ut magna consequat faucibus quam.</p>
+                                    </div>
+                                    <div class="media">
+                                    <img src="assets/images/home/test-img.jpg" class="mr-3" alt="">
+                                        <div class="media-body">
+                                            <div class="overview">
+                                                <div class="name"><b>Antonio Moreno</b></div>
+                                                <div class="details">Web Developer / SoftBee</div>
+                                                <div class="star-rating">
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="testimonial">
+                                        <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante.</p>
+                                    </div>
+                                    <div class="media">
+                                    <img src="assets/images/home/test-img.jpg" class="mr-3" alt="">
+                                        <div class="media-body">
+                                            <div class="overview">
+                                                <div class="name"><b>Michael Holz</b></div>
+                                                <div class="details">Web Developer / DevCorp</div>
+                                                <div class="star-rating">
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="testimonial">
+                                        <p class="testimonial-text">Vestibulum quis quam ut magna consequat faucibu. Eget mi suscipit tincidunt. Utmtc tempus dictum. Pellentesque virra. Quis quam ut magna consequat faucibus quam.</p>
+                                    </div>
+                                    <div class="media">
+                                    <img src="assets/images/home/test-img.jpg" class="mr-3" alt="">
+                                        <div class="media-body">
+                                            <div class="overview">
+                                                <div class="name"><b>Mary Saveley</b></div>
+                                                <div class="details">Graphic Designer / MarsMedia</div>
+                                                <div class="star-rating">
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="testimonial">
+                                        <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante.</p>
+                                    </div>
+                                    <div class="media">
+                                    <img src="assets/images/home/test-img.jpg" class="mr-3" alt="">
+                                        <div class="media-body">
+                                            <div class="overview">
+                                                <div class="name"><b>Martin Sommer</b></div>
+                                                <div class="details">SEO Analyst / RealSearch</div>
+                                                <div class="star-rating">
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="testimonial">
+                                        <p class="testimonial-text">Vestibulum quis quam ut magna consequat faucibu. Eget mi suscipit tincidunt. Utmtc tempus dictum. Pellentesque virra. Quis quam ut magna consequat faucibus quam.</p>
+                                    </div>
+                                    <div class="media">
+                                        <div class="media-left d-flex mr-3">
+                                        <img src="assets/images/home/test-img.jpg" class="mr-3" alt="">
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="overview">
+                                                <div class="name"><b>John Williams</b></div>
+                                                <div class="details">Web Designer / UniqueDesign</div>
+                                                <div class="star-rating">
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Carousel controls -->
+                    <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                        <i class="fa fa-chevron-left"></i>
+                    </a>
+                    <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                        <i class="fa fa-chevron-right"></i>
+                    </a>
                 </div>
             </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
     </div>
 
     <!-- carosuel reviews  -->
