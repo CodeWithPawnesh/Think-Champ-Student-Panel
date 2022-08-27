@@ -27,7 +27,7 @@
     <button class="wp-btn"><i class="fa fa-volume-control-phone" aria-hidden="true"></i>
     </button>
     <p class="wp-text"><span class="wp-chat">Phone</span><br>
-      +91 9998989898 </p>
+      +91 999999999 </p>
     <nav>
       <ul class="menu">
         <li class="nav-item"><a href="<?= base_url('Home') ?>" class="menu-links active-menu">HOME</a></li>
