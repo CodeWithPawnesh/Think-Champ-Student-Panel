@@ -1,62 +1,143 @@
-<section class="first_section">
-    <div class="first_section_col1">
-        <h1 class="first_heading">Join Online Classes <br>
-            <span class="th-ch">@ Think Champ.</span>
-        </h1>
-    </div>
-    </div>
-    <div class="first_section_col2" style="background-image: url(assets/images/home/6461.jpg)">
-    </div>
+<section class="about-us-first-section">
+    <h1 class="first-heading">OUR COURSES</h1>
 </section>
-<section class="second-section" style="height:500px">
-    <h1 class="first-heading">Who Can Join Our Program?</h1>
-    <p class="text-center" style="font-size:20px;">Our online program is designed for anyone who is interested in acquiring technical skills. No prior programming knowledge is required.</p>
-    <div class="skill-box">
-        <center><img src="assets/images/home/Critical thinking-bro.png" alt="html" height="150" width="150"></center>
-        <h2 class="skill-box-heading"> PROFESSIONALS</h2>
+
+<section class="course-first-section">
+    <div class="course-first-section-left-col">
+        <h2 class="course-heading">Python Programming</h2>
+        <p class="course-heading-text">Become a Python Developer by learning for Basic to Advanced Level. This master-level course is for you if you are looking to learn Python programming in and out within a short time!</p>
+        <span class="note">Note: Limited Seats Available</span><br><br><br>
+        <a href="#" class="enroll-btn2">Enroll Now</a>
+        <a href="#" class="demo-btn">Watch Demo</a>
+    </div>
+    <div class="course-first-section-right-col">
+    <iframe width="560" height="315" src="https://www.youtube.com/watch?v=3nQNiWdeH2Q" frameborder="0" allowfullscreen></iframe>
     </div>
 
-    <div class="skill-box box-2">
-        <center><img src="assets/images/home/mock.png" alt="html" height="150" width="150"></center>
-        <h2 class="skill-box-heading">STUDENTS</h2>
+</section>
+<section class="course-second-section">
+    <div class="card course-card" style="width: 20rem;">
+        <div class="wrapper">
+            <div class="parent" onclick="">
+                <div class="child bg-one" style="background-image:url(assets/images/courses/react-js.jpg);">
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="course-teacher">
+                <img src="assets/images/home/test-img.jpg" alt="" class="course-teacher-img">
+                <p class="course-teacher-name">Pawnesh</p>
+            </div>
+            <div class="course-star-rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <p class="total-rating">(10)</p>
+            </div>
+        </div>
+        <h5 class="card-title">Learn React JS Tutorial For Beginners</h5>
+        <hr style="border-top: dotted 1px;" />
+        <ul class="course-item">
+            <li><i class="fa fa-file-text-o" aria-hidden="true"></i> Lessons 8</li>
+            <li><i class="fa fa-user-o" aria-hidden="true"></i> Students 50</li>
+            <li><i class="fa fa-eye" aria-hidden="true"></i> Views : 1.5k</li>
+        </ul>
     </div>
 
-    <div class="skill-box box-3">
-        <center><img src="assets/images/home/Programming-amico.png" alt="html" height="150" width="150"></center>
-        <h2 class="skill-box-heading">FREELANCERS</h2>
-</div>
-</section>
-<section class="sixth-section">
-    <h1 class="first-heading">Our COURSES</h1>
-    <div class="course-card">
-        <div class="course-card-img">
-            <img src="assets/images/courses/pyhton.jpg" alt="" width="350" height="248">
+    <div class="card course-card" style="width: 20rem;">
+        <div class="wrapper">
+            <div class="parent" onclick="">
+                <div class="child bg-one" style="background-image:url(assets/images/courses/react-js.jpg);">
+                </div>
+            </div>
         </div>
-        <h1 class="course">Python Programming</h1><br>
-        <hr style="width:80% ;margin:0;text-align:center;margin:0 auto;">
-        <p class="course-fee">Course Fee : </p><br><br>
-        <h2 class="course-price">₹ 9999/-</h2><br><br>
-        <button class="enroll-btn"><a href="#">Enroll Now</a></button>
-    </div>
-    <div class="course-card">
-        <div class="course-card-img">
-            <img src="assets/images/courses/front-end.jpg" alt="" width="360" height="248">
+        <div class="card-body">
+            <div class="course-teacher">
+                <img src="assets/images/home/test-img.jpg" alt="" class="course-teacher-img">
+                <p class="course-teacher-name">Pawnesh</p>
+            </div>
+                <div class="course-star-rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <p class="total-rating">(10)</p>
+                </div>
+            </div>
+            <h5 class="card-title">Techs HTML5 JS Tutorial For Newbies</h5>
+            <hr style="border-top: dotted 1px;" />
+            <ul class="course-item" >
+                <li><i class="fa fa-file-text-o" aria-hidden="true"></i> Lessons 8</li>
+                <li><i class="fa fa-user-o" aria-hidden="true"></i> Students 50</li>
+                <li><i class="fa fa-eye" aria-hidden="true"></i> Views : 1.5k</li>
+            </ul>
         </div>
-        <h1 class="course">Desigining and Development</h1><br>
-        <hr style="width:80% ;margin:0;text-align:center;margin:0 auto;">
-        <p class="course-fee">Course Fee : </p><br><br>
-        <h2 class="course-price">₹ 9999/-</h2><br><br>
-        <button class="enroll-btn"><a href="#">Enroll Now</a></button>
     </div>
-    <div class="course-card">
-        <div class="course-card-img">
-            <img src="assets/images/courses/programing.jpg" alt="" width="350" height="248">
+
+    <div class="card course-card" style="width: 20rem;">
+        <div class="wrapper">
+            <div class="parent" onclick="">
+                <div class="child bg-one" style="background-image:url(assets/images/courses/react-js.jpg);">
+                </div>
+            </div>
         </div>
-        <h1 class="course">Programming and Development</h1><br>
-        <hr style="width:80% ;margin:0;text-align:center;margin:0 auto;">
-        <p class="course-fee">Course Fee : </p><br><br>
-        <h2 class="course-price">₹ 9999/-</h2><br><br>
-        <button class="enroll-btn"><a href="#">Enroll Now</a></button>
+        <div class="card-body">
+            <div class="course-teacher">
+                <img src="assets/images/home/test-img.jpg" alt="" class="course-teacher-img">
+                <p class="course-teacher-name">Pawnesh</p>
+            </div>
+                <div class="course-star-rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <p class="total-rating">(10)</p>
+                </div>
+            </div>
+            <h5 class="card-title">Start Java3 JS Tutorial For Adanceds</h5>
+            <hr style="border-top: dotted 1px;" />
+            <ul class="course-item" >
+                <li><i class="fa fa-file-text-o" aria-hidden="true"></i> Lessons 8</li>
+                <li><i class="fa fa-user-o" aria-hidden="true"></i> Students 50</li>
+                <li><i class="fa fa-eye" aria-hidden="true"></i> Views : 1.5k</li>
+            </ul>
+        </div>
     </div>
-    
+
+    <div class="card course-card" style="width: 20rem;">
+        <div class="wrapper">
+            <div class="parent" onclick="">
+                <div class="child bg-one" style="background-image:url(assets/images/courses/react-js.jpg);">
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="course-teacher">
+                <img src="assets/images/home/test-img.jpg" alt="" class="course-teacher-img">
+                <p class="course-teacher-name">Pawnesh</p>
+            </div>
+                <div class="course-star-rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <p class="total-rating">(10)</p>
+                </div>
+            </div>
+            <h5 class="card-title">Learn Python Tutorial For Beginners</h5>
+            <hr style="border-top: dotted 1px;" />
+            <ul class="course-item" >
+                <li><i class="fa fa-file-text-o" aria-hidden="true"></i> Lessons 8</li>
+                <li><i class="fa fa-user-o" aria-hidden="true"></i> Students 50</li>
+                <li><i class="fa fa-eye" aria-hidden="true"></i> Views : 1.5k</li>
+            </ul>
+        </div>
+    </div>
+
+
 </section>

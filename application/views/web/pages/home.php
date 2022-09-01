@@ -305,7 +305,41 @@
 
         <p class="service-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ipsa ea sint sit. Dignissimos delectus ea itaque adipisci, aut aspernatur?</p>
     </div>
+    <div class="services-box">
+        <img src="assets/images/home/internship.png" alt="" class="service-img">
+        <h2 class="service-box-heading">FINAL YEAR PROJECTS</h2>
+        <hr class="service-box-heading-underline">
+
+        <p class="service-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ipsa ea sint sit. Dignissimos delectus ea itaque adipisci, aut aspernatur?</p>
+    </div>
+    <div class="services-box">
+        <img src="assets/images/home/internship.png" alt="" class="service-img">
+        <h2 class="service-box-heading">COLLEGE TRAINING</h2>
+        <hr class="service-box-heading-underline">
+
+        <p class="service-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ipsa ea sint sit. Dignissimos delectus ea itaque adipisci, aut aspernatur?</p>
+    </div>
 </section>
+
+
+<!-- Start of our students comes from -->
+
+<section class="student-placed">
+    <div class="student-left-col">
+        <h2 class="our-student-heading">Students Comes From:</h2>
+    </div>
+    <div class="student-right-col">
+        <marquee>
+            <img src="assets/images/home/stan.png" alt="stan" width="150" height="60">
+            <img src="assets/images/home/IIT-Bombay.png" alt="stan" width="120" height="100">
+            <img src="assets/images/home/Amazon logo.png" alt="stan" width="120" height="60">
+            <img src="assets/images/home/iitd.png" alt="stan" width="220" height="80">
+            <img src="assets/images/home/Microsoft-Logo-PNG.png" alt="stan" width="180" height="60">
+        </marquee>
+    </div>
+</section>
+
+<!-- End of our students Comes from -->
 
 <!-- Start of Fifth Section  -->
 

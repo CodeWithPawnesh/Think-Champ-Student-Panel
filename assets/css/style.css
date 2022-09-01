@@ -617,16 +617,16 @@ nav {
     margin-right: 20px;
     float: left;
     margin-top: 30px;
-    border:4px solid rgb(47, 124, 187);
+    border: 4px solid rgb(47, 124, 187);
 }
 
 .services-box:hover {
     box-shadow: 0 0 14px rgba(33, 33, 33, .2);
 }
 
-.service-img{
-    width:20%;
-    height:20%;
+.service-img {
+    width: 20%;
+    height: 20%;
     margin-bottom: 10px;
 }
 
@@ -637,17 +637,18 @@ nav {
     color: rgb(47, 124, 187);
     letter-spacing: 1px;
 }
-.service-box-heading-underline{
-    background-color:#ff5555;
+
+.service-box-heading-underline {
+    background-color: #ff5555;
     width: 40%;
     height: 2px;
-    margin-left:0px;
+    margin-left: 0px;
 }
 
-.service-text{
+.service-text {
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
-    color:#8d8d8d;
+    color: #8d8d8d;
     text-align: justify;
 }
 
@@ -948,73 +949,84 @@ a:hover {
     position: relative;
 }
 
- .std-review{
-	color: #000;
+.std-review {
+    color: #000;
     font-family: 'Poppins', sans-serif;
-	font-size: 26px;
-	font-weight: 300;
-	position: relative;
-	margin: 0 0 50px 0;
-	text-transform: uppercase;
-	display: inline-block;
+    font-size: 26px;
+    font-weight: 300;
+    position: relative;
+    margin: 0 0 50px 0;
+    text-transform: uppercase;
+    display: inline-block;
 }
+
 .std-review::after {
-	content: "";
-	width: 50%;
-	position: absolute;
-	height: 4px;
-	border-radius: 1px;
-	background: #ff5555;
-	left: 0;
-	bottom: -20px;
+    content: "";
+    width: 50%;
+    position: absolute;
+    height: 4px;
+    border-radius: 1px;
+    background: #ff5555;
+    left: 0;
+    bottom: -20px;
 }
-.testimonial-text{
+
+.testimonial-text {
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
-    color:white;
+    color: white;
 }
+
 .carousel {
-	margin: 50px auto;
+    margin: 50px auto;
 }
+
 .carousel .carousel-item {
-	color: #999;
-	overflow: hidden;
+    color: #999;
+    overflow: hidden;
     min-height: 120px;
-	font-size: 13px;
+    font-size: 13px;
 }
+
 .carousel .media {
-	position: relative;
-	padding: 0 0 0 20px;
-	margin-left: 20px;
+    position: relative;
+    padding: 0 0 0 20px;
+    margin-left: 20px;
 }
+
 .carousel .media img {
-	width: 75px;
-	height: 75px;
-	display: block;
-	border-radius: 50%;
-	box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    width: 75px;
+    height: 75px;
+    display: block;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     border: 2px solid #fff;
 }
+
 .carousel .testimonial {
     color: #fff;
-    position: relative;    
+    position: relative;
     background: #9b9b9b;
-	padding: 15px;
-	margin: 0 0 20px 20px;
+    padding: 15px;
+    margin: 0 0 20px 20px;
 }
-.carousel .testimonial::before, .carousel .testimonial::after {
-	content: "";
-	display: inline-block;
-	position: absolute;
-	left: 0;
-	bottom: -20px;
+
+.carousel .testimonial::before,
+.carousel .testimonial::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    bottom: -20px;
 }
+
 .carousel .testimonial::before {
     width: 20px;
     height: 20px;
-	background: #9b9b9b;
-	box-shadow: inset 12px 0 13px rgba(0,0,0,0.5);
+    background: #9b9b9b;
+    box-shadow: inset 12px 0 13px rgba(0, 0, 0, 0.5);
 }
+
 .carousel .testimonial::after {
     width: 0;
     height: 0;
@@ -1022,20 +1034,24 @@ a:hover {
     border-bottom-color: #fff;
     border-left-color: #fff;
 }
-.carousel .carousel-item .row > div:first-child .testimonial {
-	margin: 0 20px 20px 0;
+
+.carousel .carousel-item .row>div:first-child .testimonial {
+    margin: 0 20px 20px 0;
 }
-.carousel .carousel-item .row > div:first-child .media {
-	margin-left: 0;
+
+.carousel .carousel-item .row>div:first-child .media {
+    margin-left: 0;
 }
+
 .carousel .testimonial p {
-	text-indent: 40px;
+    text-indent: 40px;
     line-height: 21px;
-	margin: 0;
+    margin: 0;
 }
+
 .carousel .testimonial p::before {
-	content: "\201D";
-  	font-family: Arial,sans-serif;
+    content: "\201D";
+    font-family: Arial, sans-serif;
     color: #fff;
     font-weight: bold;
     font-size: 68px;
@@ -1044,58 +1060,74 @@ a:hover {
     left: -25px;
     top: 0;
 }
+
 .carousel .overview {
-	padding: 3px 0 0 15px;
+    padding: 3px 0 0 15px;
 }
+
 .carousel .overview .details {
-	padding: 5px 0 8px;
+    padding: 5px 0 8px;
 }
+
 .carousel .overview b {
-	text-transform: uppercase;
-	color: #ff5555;
+    text-transform: uppercase;
+    color: #ff5555;
 }
-.carousel-control-prev, .carousel-control-next {
-	width: 30px;
-	height: 30px;
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 30px;
+    height: 30px;
     background: #666;
     text-shadow: none;
-	top: 4px;
+    top: 4px;
 }
-.carousel-control-prev i, .carousel-control-next i {
-	font-size: 16px;
+
+.carousel-control-prev i,
+.carousel-control-next i {
+    font-size: 16px;
 }
+
 .carousel-control-prev {
-	left: auto;
-	right: 40px;
+    left: auto;
+    right: 40px;
 }
+
 .carousel-control-next {
-	left: auto;
+    left: auto;
 }
+
 .carousel-indicators {
-	bottom: -80px;
+    bottom: -80px;
 }
-.carousel-indicators li, .carousel-indicators li.active {
-	width: 17px;
+
+.carousel-indicators li,
+.carousel-indicators li.active {
+    width: 17px;
     height: 17px;
-	border-radius: 0;
-	margin: 1px 5px;
-  	box-sizing: border-box;
+    border-radius: 0;
+    margin: 1px 5px;
+    box-sizing: border-box;
 }
-.carousel-indicators li {	
+
+.carousel-indicators li {
     background: #e2e2e2;
     border: 4px solid #fff;
 }
+
 .carousel-indicators li.active {
-	color: #fff;
+    color: #fff;
     background: #ff5555;
-    border: 5px double;    
+    border: 5px double;
 }
+
 .star-rating li {
-	padding: 0 2px;
+    padding: 0 2px;
 }
+
 .star-rating i {
-	font-size: 14px;
-	color: #ffdc12;
+    font-size: 14px;
+    color: #ffdc12;
 }
 
 /* End of Eight section */
@@ -1276,23 +1308,6 @@ input {
     color: #2E3192;
 }
 
-.custom-shape-divider-bottom-1660665139 {
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.custom-shape-divider-bottom-1660665139 svg {
-    display: block;
-    width: calc(161% + 1.3px);
-    height: 240px;
-}
-
-.custom-shape-divider-bottom-1660665139 .shape-fill {
-    fill: #0C0829;
-}
 
 /* End of Faq page section  */
 
@@ -1425,7 +1440,6 @@ input {
     width: 100%;
     height: auto;
     margin: 0 auto;
-    margin-bottom: 70px;
     padding-top: 90px;
     padding-bottom: 70px;
     background-image: url(http://localhost/Think-Champ/assets/images/home/first-section-bg.jpg);
@@ -1478,11 +1492,12 @@ input {
     padding-bottom: 100px;
     padding-left: 10%;
     padding-right: 10%;
+    margin-bottom: 100px;
 }
 
 .abt-second-col {
     width: 25%;
-    padding:40px;
+    padding: 40px;
     text-align: center;
     float: left;
     border-radius: 50%;
@@ -1493,17 +1508,17 @@ input {
     width: 170px;
     height: 170px;
     border-radius: 50%;
-    margin:0 auto;
+    margin: 0 auto;
     border: 5px solid #1080D0;
     background-color: rgb(243, 243, 243);
     margin-bottom: 20px;
-    padding-top:55px;
+    padding-top: 55px;
 }
 
 .num {
     font-family: 'Poppins', sans-serif;
     font-size: 35px;
-    color:#1080D0;
+    color: #1080D0;
 }
 
 .abt-second-col h2 {
@@ -1511,14 +1526,511 @@ input {
     font-size: 22px;
 }
 
-.col1{
+.col1 {
+    margin-top: 100px;
+}
+
+.percent {
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    color: #1080D0;
+}
+
+.abt-third-section{
+    width: 100%;
+    height:auto;
+    float: left;
+    margin-top: 70px;
+    padding-top:100px;
+    padding-bottom: 150px;
+    background-color: #1a00ac;
+    text-align: center;
+}
+
+.abt-third-section h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    color:rgb(255, 255, 255);
+}
+
+.abt-third-section p{
+    font-family: 'Poppins', sans-serif;
+    font-size:16px;
+    color:#dcdcdc;
+}
+
+.abt-forth-section{
+    width:100%;
+    padding-top:50px;
+    padding-bottom:50px;
+    padding-left:10%;
+    padding-right: 10%;
+    margin-top:-150px;
+    float: left;
+}
+
+.abt-forth-section-card{
+    width:22%;
+    height:auto;
+    padding:40px;
+    background-color: white;
+    border-radius:10px;
+    margin-left:20px;
+    float: left;
+    text-align: center;
+    border:1px solid grey;
+}
+
+.abt-forth-section-card:hover{
+    box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+}
+
+.abt-forth-section-card img{
+    text-align: center;
+}
+
+.abt-forth-section-card h3{
+    font-family: 'Poppins',sans-serif;
+    font-size: 16px;
+    color: rgb(221, 128, 57);
+    margin-bottom:10px;
+} 
+
+.abt-forth-section-card p{
+    font-family: 'Poppins',sans-serif;
+    font-size: 12px;
+    color: rgb(96, 96, 96);
+}
+
+.abt-fifth-section{
+    width:100%;
+    height:auto;
+    padding:50px;
+    float: left;
+    margin-bottom: 50px;
+}
+
+.abt-fifth-section-left-col{
+    width:45%;
+    height:auto;
+    float: left;
+    margin:30px;
+    padding:20px;
+    border:2px solid #ccc;
+    border-radius:20px;
+}
+
+.abt-fifth-section-left-col:hover{
+    border-color:white;
+    box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+}
+
+
+.abt-fifth-section-img{
+    width:40%;
+    height:auto;
+    float:left;
+}
+
+.abt-fifth-section-content{
+    width:60%;
+    height:auto;
+    padding:20px;
+    float:left;
+}
+
+.abt-fifth-section-content h2{
+    font-family: 'Poppins', sans-serif;
+    font-size:18px;
+    color:rgb(244, 121, 77);
+}
+
+.abt-fifth-section-content p{
+    font-family: 'Poppins', sans-serif;
+    font-size:14px;
+    color:rgb(97, 97, 97);
+}
+
+.abt-fifth-section-content h4{
+    font-family: 'Poppins', sans-serif;
+    font-size:17px;
+    color:rgb(77, 172, 244);
+}
+
+.abt-fifth-section-content button{
+    background-color: rgb(244, 121, 77);
+    padding:5px 15px 7px 15px ;
+    border:2px solid rgb(244, 121, 77);
+    border-radius: 20px;
+}
+
+.abt-fifth-section-content button:hover{
+    background-color: inherit;
+    color:rgb(244, 121, 77);
+}
+
+.abt-fifth-section-content a{
+    font-family: 'Poppins',sans-serif;
+    font-size: 12px;
+    text-decoration: none;
+    color:#fff;
+}
+
+.abt-fifth-section-content a:hover{
+    color:rgb(244, 121, 77);
+}
+
+.abt-fifth-section-right-col{
+    width:45%;
+    height:auto;
+    float: left;
+    margin:30px;
+    padding:20px;
+    border:2px solid #ccc;
+    border-radius:20px;
+}
+
+.abt-fifth-section-right-col:hover{
+    border-color:white;
+    box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+}
+
+.abt-sixth-section{
+    width:100%;
+    height: auto;
+    float: left;
+    padding:50px;
+    margin-bottom: 70px;
+    padding-left:170px;
+}
+
+.abt-sixth-section-col{
+    width:250px;
+    height:auto;
+    float:left;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.abt-sixth-section-col:hover{
+    box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+}
+
+.small-circle{
+    width:40px;
+    height:40px;
+    border:1px solid blue;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 10;
+    top: 25px;
+    left:60px;
+    background-color: #140342;
+}
+
+.small-circle p{
+    margin-top: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color:white;
+}
+
+.bigger-circle{
+    width:120px;
+    height:120px;
+    border-radius: 50%;
+    margin:0 auto;
+    margin-bottom:10px;
+    padding-top:35px;
+    background-color: #F7F8FB;
+}
+
+.abt-sixth-section-col h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color:#2E3192;
+}
+
+.arrow{
+    float: left;
+    margin:30px;
     margin-top:100px;
 }
 
-.percent{
+.arrow2{
+    float: left;
+    margin:30px;
+    margin-top:120px;
+}
+
+.abt-seventh-section{
+    width:100%;
+    height: auto;
+    padding-top:200px;
+    padding-bottom: 200px;
+    background-image: url(http://localhost/Think-Champ/assets/images/about/bg3-about-us.jpg);
+    background-position: center;
+    float: left;
+    background-size: stretch;
+    text-align:center;
+}
+
+.abt-seventh-section h4{
     font-family: 'Poppins', sans-serif;
-    font-size: 25px;
-    color:#1080D0;
+    font-size:20px;
+    color:#1a00ac;
+}
+
+.abt-seventh-text{
+    font-family: 'Poppins', sans-serif;
+    font-size:16px;
+    color:#727272;
+}
+
+.abt-seventh-section button{
+    background-color: rgb(244, 121, 77);
+    padding:15px;
+    border:2px solid rgb(244, 121, 77);
+    border-radius: 30px;
+}
+
+.abt-seventh-section button:hover{
+    background-color: inherit;
+    color:rgb(244, 121, 77);
+}
+
+.abt-seventh-section img{
+    float:left;
+}
+
+.abt-seventh-section a{
+    font-family: 'Poppins',sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    color:#fff;
+    margin-left:5px;
+}
+
+.abt-seventh-section a:hover{
+    color:rgb(244, 121, 77);
 }
 
 /* End of About us Page  */
+
+/* Start of Course Page  */
+
+.course-first-section {
+    width: 100%;
+    height: auto;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    padding-left: 5%;
+    padding-right: 5%;
+    float: left;
+    margin-bottom: 50px;
+    background-image: url(http://localhost/Think-Champ/assets/images/courses/section-2bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.course-first-section-left-col {
+    width: 50%;
+    padding: 50px;
+    float: left;
+    padding-top:70px;
+}
+
+.course-heading {
+    font-family: 'Poppins', sans-serif;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.course-heading-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: rgb(111, 111, 111);
+    line-height: 20px;
+    margin-bottom: 50px;
+}
+
+.note {
+    width: 100%;
+    padding: 15px;
+    padding-right: 140px;
+    padding-left: 140px;
+    background-color: #2E3192;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    border-radius: 15px;
+}
+
+.enroll-btn2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: white;
+    padding: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: #2500F9;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.demo-btn {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: white;
+    padding: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: #2500F9;
+    border-radius: 20px;
+}
+
+.course-first-section-right-col {
+    width: 50%;
+    padding: 50px;
+    float: left;
+}
+
+.course-second-section {
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    float: left;
+    margin-bottom: 50px;
+}
+
+.course-card {
+    float: left;
+    margin-left: 15px;
+    padding: 20px;
+    position: relative;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+.parent {
+    width: 100%;
+    height: 200px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    /* position: relative; */
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.child {
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+.parent:hover .child,
+.parent:focus .child {
+    -ms-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.parent:hover .child:before,
+.parent:focus .child:before {
+    display: block;
+}
+
+.parent:hover a,
+.parent:focus a {
+    display: block;
+}
+
+.child:before {
+    content: "";
+    display: none;
+    height: 100%;
+    width: 100%;
+}
+
+.course-teacher {
+    width: 60%;
+    /* border: 1px solid green; */
+    float: left;
+}
+
+.course-teacher-img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    /* border: 1px solid red; */
+    float: left;
+}
+
+.course-teacher-name {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #2E3192;
+    float: left;
+    margin-top: 10px;
+    margin-left: 2px;
+    text-align:left;
+}
+
+.course-star-rating {
+    width: 40%;
+    float: left;
+    /* border: 1px solid blue; */
+    padding-top: 10px;
+}
+
+.course-star-rating span {
+    font-size: 10px;
+    float: left;
+    margin-top: 5px;
+}
+
+.total-rating {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    float: left;
+    margin-left: 5px;
+}
+
+.star-inline {
+    float: left;
+}
+
+.card-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+.course-item{
+    margin: 0;
+    padding: 0;
+}
+
+.course-item li{
+    display: inline;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    padding:5px;
+    float: left;
+}
+
+/* End of Course Page  */

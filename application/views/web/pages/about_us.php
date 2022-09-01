@@ -13,6 +13,8 @@
     </div>
 </section>
 
+<!-- Start of Abt-second-section  -->
+
 <section class="abt-second-section">
     <div class="abt-second-col col1">
         <div class="circle"><span class="num" data-val="89%">00</span><span class="percent">%</span></div>
@@ -31,6 +33,123 @@
         <h2>Assurance</h2>
     </div>
 </section>
+
+<!-- End of Abt Second Section  -->
+
+<!-- Start of ABt Third Section  -->
+
+<section class="abt-third-section">
+    <h1>START YOUR LEARNING JOURNEY TODAY!</h1>
+    <p>Lorem ipsum dolor sit amet.</p>
+</section>
+
+<!-- End Of Abt Third Section  -->
+
+<!-- Start of Abt Forth Section  -->
+
+<section class="abt-forth-section">
+    <div class="abt-forth-section-card">
+        <img src="assets/images/about/rating.png" alt="rating" class="service-img">
+        <h3>Learn with Experts</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, blanditiis!</p>
+    </div>
+    <div class="abt-forth-section-card">
+        <img src="assets/images/about/online-lesson.png" alt="rating" class="service-img">
+        <h3>Learn Anything</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, blanditiis!</p>
+    </div>
+    <div class="abt-forth-section-card">
+        <img src="assets/images/about/time.png" alt="rating" class="service-img">
+        <h3>Flexible learning</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, blanditiis!</p>
+    </div>
+    <div class="abt-forth-section-card">
+        <img src="assets/images/about/monitoring.png" alt="rating" class="service-img">
+        <h3>Industrial Standart</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, blanditiis!</p>
+    </div>
+</section>
+
+<!-- End Of Abt Forth Section  -->
+
+<!-- Start of Abt Fifth Section  -->
+
+<section class="abt-fifth-section">
+    <div class="abt-fifth-section-left-col">
+        <div class="abt-fifth-section-img">
+            <img src="assets/images/about/instructor.jpg" alt="" width="250" height="200">
+        </div>
+        <div class="abt-fifth-section-content">
+            <h2>Become an Instructor</h2>
+            <p>Have a passion to train the students to meet the industry level</p>
+            <button><a href="#">START TEACHING</a></button>
+        </div>
+    </div>
+    <div class="abt-fifth-section-right-col">
+        <div class="abt-fifth-section-img">
+            <img src="assets/images/about/doing-business.jpg" alt="" width="250" height="200">
+
+        </div>
+        <div class="abt-fifth-section-content">
+            <h2>Access for Business</h2>
+            <p>wants to become our edtech partner or any other related business</p>
+            <h4>COLLABORATE WITH US</h4>
+            <button><a href="#">DOING BUSINESS</a></button>
+        </div>
+    </div>
+</section>
+
+<!-- End of Abt Fifth Section  -->
+
+<!-- Start of Abt Sixth Section  -->
+
+<section class="abt-sixth-section">
+    <div class="abt-sixth-section-col">
+        <div class="small-circle">
+            <p>01</p>
+        </div>
+        <div class="bigger-circle">
+            <img src="assets/images/about/1.svg" alt="image">
+        </div>
+        <h2>Browse courses from our expert contributors.</h2>
+    </div>
+    <img src="assets/images/about/arrow2.svg" alt="" class="arrow">
+    <div class="abt-sixth-section-col">
+        <div class="small-circle">
+            <p>02</p>
+        </div>
+        <div class="bigger-circle">
+            <img src="assets/images/about/2.svg" alt="image">
+        </div>
+        <h2>Browse courses from our expert contributors.</h2>
+    </div>
+    <img src="assets/images/about/arrow1.svg" alt="" class="arrow2">
+    <div class="abt-sixth-section-col">
+        <div class="small-circle">
+            <p>03</p>
+        </div>
+        <div class="bigger-circle">
+            <img src="assets/images/about/3.svg" alt="image">
+        </div>
+        <h2>Browse courses from our expert contributors.</h2>
+    </div>
+</section>
+
+<!-- End of Abt Sixth Section  -->
+
+<!-- start of Abt Seventh Section  -->
+
+<section class="abt-seventh-section">
+    <p class="abt-company">/ LEARN TOGETHER /</p>
+    <h4>If you want to know more info about training and career guidance</h4>
+    <p class="abt-seventh-text">why are you waiting to set your career
+        we will guide you,<br> train you, groom you, assist you in all the ways
+    </p>
+    <button><a href="#"><img src="assets/images/about/whatsapp.png" alt="whatsapp-icon" width="25" height="25"> TALK TO OUR EXPERTS</a></button>
+</section>
+
+<!-- End of Abt Seventh Section  -->
+
 
 <script>
     let valueDisplays = document.querySelectorAll(".num");
