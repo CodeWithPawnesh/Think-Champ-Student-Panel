@@ -346,21 +346,21 @@
     </div>
 
     <div class="services-box">
-        <img src="assets/images/home/internship.png" alt="" class="service-img">
+        <img src="assets/images/home/clipboard.png" alt="" class="service-img">
         <h2 class="service-box-heading">FINAL YEAR PROJECTS</h2>
         <hr class="service-box-heading-underline">
         <p class="service-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ipsa ea sint sit. Dignissimos delectus ea itaque adipisci, aut aspernatur?</p>
     </div>
 
     <div class="services-box">
-        <img src="assets/images/home/internship.png" alt="" class="service-img">
+        <img src="assets/images/home/student.png" alt="" class="service-img">
         <h2 class="service-box-heading">COLLEGE TRAINING</h2>
         <hr class="service-box-heading-underline">
         <p class="service-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ipsa ea sint sit. Dignissimos delectus ea itaque adipisci, aut aspernatur?</p>
     </div>
 
     <div class="services-box">
-        <img src="assets/images/home/internship.png" alt="" class="service-img">
+        <img src="assets/images/home/direction.png" alt="" class="service-img">
         <h2 class="service-box-heading">CAREER GUIDANCE</h2>
         <hr class="service-box-heading-underline">
         <p class="service-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ipsa ea sint sit. Dignissimos delectus ea itaque adipisci, aut aspernatur?</p>
