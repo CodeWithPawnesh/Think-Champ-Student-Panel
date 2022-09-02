@@ -13,8 +13,8 @@
     <div class="course-first-section-right-col">
     <iframe width="560" height="315" src="https://www.youtube.com/watch?v=3nQNiWdeH2Q" frameborder="0" allowfullscreen></iframe>
     </div>
-
 </section>
+
 <section class="course-second-section">
     <div class="card course-card" style="width: 20rem;">
         <div class="wrapper">

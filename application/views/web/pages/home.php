@@ -181,88 +181,126 @@
 <!-- Start Of Sixth Section  -->
 <section class="sixth-section">
     <h1 class="first-heading">COURSES</h1>
-    <div class="row">
-        <div class="col-lg-3.5">
-            <div class="card card-course">
-                <img class="card-img-top" src="assets/images/courses/pyhton.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <div class="levels">BEGINNER</div>
-                    <h1 class="course">Python Programming</h1><br>
-                    <hr style="width:80% ;margin:0;text-align:center;margin:0 auto;">
-                    <center>
-                        <div class="star-rating">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                        </div>
-                    </center>
-                    <div class="course-left-col">
-                        <p class="course-fee">Course Fee : </p><br><br>
-                        <h2 class="course-price">₹ 9999/-</h2>
-                    </div>
-                    <div class="course-right-col">
-                        <button class="enroll-btn"><a href="#">Enroll Now</a></button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3.5">
-            <div class="card card-course">
-                <img class="card-img-top" src="assets/images/courses/front-end.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <div class="levels">INTERMEDIATE</div>
-                    <h1 class="course">Desigining and Development</h1><br>
-                    <hr style="width:80% ;margin:0;text-align:center;margin:0 auto;">
-                    <center>
-                        <div class="star-rating">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                        </div>
-                    </center>
-                    <div class="course-left-col">
-                        <p class="course-fee">Course Fee : </p><br><br>
-                        <h2 class="course-price">₹ 9999/-</h2>
-                    </div>
-                    <div class="course-right-col">
-                        <button class="enroll-btn"><a href="#">Enroll Now</a></button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3.5">
-            <div class="card card-course">
-                <img class="card-img-top" src="assets/images/courses/programing.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <div class="levels">ADVANCE</div>
-                    <h1 class="course">Programming and Development</h1><br>
-                    <hr style="width:80% ;margin:0;text-align:center;margin:0 auto;">
-                    <center>
-                        <div class="star-rating">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                        </div>
-                    </center>
-                    <div class="course-left-col">
-                        <p class="course-fee">Course Fee : </p><br><br>
-                        <h2 class="course-price">₹ 9999/-</h2>
-                    </div>
-                    <div class="course-right-col">
-                        <button class="enroll-btn"><a href="#">Enroll Now</a></button>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="swiper mySwiper container slider-services">
+        <div class="swiper-wrapper content slider-content">
 
+            <div class="swiper-slide card">
+                <div class="col-lg-3.5">
+                    <div class="card card-course">
+                        <img class="card-img-top" src="assets/images/courses/pyhton.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <div class="levels">BEGINNER</div>
+                            <h1 class="course">Python Programming</h1><br>
+                            <hr style="width:80% ;margin:0;text-align:center;margin:0 auto;">
+                            <center>
+                                <div class="star-rating">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                            </center>
+                            <div class="course-left-col">
+                                <p class="course-fee">Course Fee : </p><br><br>
+                                <h2 class="course-price">₹ 9999/-</h2>
+                            </div>
+                            <div class="course-right-col">
+                                <button class="enroll-btn"><a href="#">Enroll Now</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <div class="swiper-slide card">
+                <div class="card card-course">
+                    <img class="card-img-top" src="assets/images/courses/front-end.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <div class="levels">INTERMEDIATE</div>
+                        <h1 class="course">Desigining and Development</h1><br>
+                        <hr style="width:80% ;margin:0;text-align:center;margin:0 auto;">
+                        <center>
+                            <div class="star-rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </center>
+                        <div class="course-left-col">
+                            <p class="course-fee">Course Fee : </p><br><br>
+                            <h2 class="course-price">₹ 9999/-</h2>
+                        </div>
+                        <div class="course-right-col">
+                            <button class="enroll-btn"><a href="#">Enroll Now</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide card">
+                <div class="col-lg-3.5">
+                    <div class="card card-course">
+                        <img class="card-img-top" src="assets/images/courses/programing.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <div class="levels">ADVANCE</div>
+                            <h1 class="course">Programming and Development</h1><br>
+                            <hr style="width:80% ;margin:0;text-align:center;margin:0 auto;">
+                            <center>
+                                <div class="star-rating">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                            </center>
+                            <div class="course-left-col">
+                                <p class="course-fee">Course Fee : </p><br><br>
+                                <h2 class="course-price">₹ 9999/-</h2>
+                            </div>
+                            <div class="course-right-col">
+                                <button class="enroll-btn"><a href="#">Enroll Now</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide card">
+                <div class="card card-course">
+                    <img class="card-img-top" src="assets/images/courses/front-end.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <div class="levels">INTERMEDIATE</div>
+                        <h1 class="course">Desigining and Development</h1><br>
+                        <hr style="width:80% ;margin:0;text-align:center;margin:0 auto;">
+                        <center>
+                            <div class="star-rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </center>
+                        <div class="course-left-col">
+                            <p class="course-fee">Course Fee : </p><br><br>
+                            <h2 class="course-price">₹ 9999/-</h2>
+                        </div>
+                        <div class="course-right-col">
+                            <button class="enroll-btn"><a href="#">Enroll Now</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
+    <div class="swiper-button-next slider-nxt"></div>
+    <div class="swiper-button-prev slider-prev"></div>
+    <div class="swiper-pagination slider-pagination"></div>
 
 
 
@@ -271,53 +309,66 @@
 
 <section class="forth-section">
     <h1 class="first-heading">SERVICES</h1>
+
     <div class="services-box">
         <img src="assets/images/home/professional-course.png" alt="" class="service-img">
         <h2 class="service-box-heading">PROFESSIONAL COURSES</h2>
         <hr class="service-box-heading-underline">
         <p class="service-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ipsa ea sint sit. Dignissimos delectus ea itaque adipisci, aut aspernatur?</p>
     </div>
+
     <div class="services-box">
         <img src="assets/images/home/coach.png" alt="" class="service-img">
         <h2 class="service-box-heading">EXPERT TRAINERS</h2>
         <hr class="service-box-heading-underline">
-
         <p class="service-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ipsa ea sint sit. Dignissimos delectus ea itaque adipisci, aut aspernatur?</p>
     </div>
+
     <div class="services-box">
         <img src="assets/images/home/recruitment.png" alt="" class="service-img">
         <h2 class="service-box-heading">PLACEMENT ASSISTENCE</h2>
         <hr class="service-box-heading-underline">
-
         <p class="service-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ipsa ea sint sit. Dignissimos delectus ea itaque adipisci, aut aspernatur?</p>
     </div>
+
     <div class="services-box">
         <img src="assets/images/home/certificate.png" alt="" class="service-img">
         <h2 class="service-box-heading">CERTIFICATION</h2>
         <hr class="service-box-heading-underline">
-
         <p class="service-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ipsa ea sint sit. Dignissimos delectus ea itaque adipisci, aut aspernatur?</p>
     </div>
+
     <div class="services-box">
         <img src="assets/images/home/internship.png" alt="" class="service-img">
         <h2 class="service-box-heading">INTERNSHIP OPPORTUNITIES</h2>
         <hr class="service-box-heading-underline">
-
         <p class="service-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ipsa ea sint sit. Dignissimos delectus ea itaque adipisci, aut aspernatur?</p>
     </div>
+
     <div class="services-box">
         <img src="assets/images/home/internship.png" alt="" class="service-img">
         <h2 class="service-box-heading">FINAL YEAR PROJECTS</h2>
         <hr class="service-box-heading-underline">
-
         <p class="service-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ipsa ea sint sit. Dignissimos delectus ea itaque adipisci, aut aspernatur?</p>
     </div>
+
     <div class="services-box">
         <img src="assets/images/home/internship.png" alt="" class="service-img">
         <h2 class="service-box-heading">COLLEGE TRAINING</h2>
         <hr class="service-box-heading-underline">
-
         <p class="service-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ipsa ea sint sit. Dignissimos delectus ea itaque adipisci, aut aspernatur?</p>
+    </div>
+
+    <div class="services-box">
+        <img src="assets/images/home/internship.png" alt="" class="service-img">
+        <h2 class="service-box-heading">CAREER GUIDANCE</h2>
+        <hr class="service-box-heading-underline">
+        <p class="service-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ipsa ea sint sit. Dignissimos delectus ea itaque adipisci, aut aspernatur?</p>
+    </div>
+    </div>
+
+
+    </div>
     </div>
 </section>
 
@@ -437,7 +488,7 @@
                                         <p class="testimonial-text">Vestibulum quis quam ut magna consequat faucibu. Eget mi suscipit tincidunt. Utmtc tempus dictum. Pellentesque virra. Quis quam ut magna consequat faucibus quam.</p>
                                     </div>
                                     <div class="media">
-                                    <img src="assets/images/home/test-img.jpg" class="mr-3" alt="">
+                                        <img src="assets/images/home/test-img.jpg" class="mr-3" alt="">
                                         <div class="media-body">
                                             <div class="overview">
                                                 <div class="name"><b>Antonio Moreno</b></div>
@@ -464,7 +515,7 @@
                                         <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante.</p>
                                     </div>
                                     <div class="media">
-                                    <img src="assets/images/home/test-img.jpg" class="mr-3" alt="">
+                                        <img src="assets/images/home/test-img.jpg" class="mr-3" alt="">
                                         <div class="media-body">
                                             <div class="overview">
                                                 <div class="name"><b>Michael Holz</b></div>
@@ -487,7 +538,7 @@
                                         <p class="testimonial-text">Vestibulum quis quam ut magna consequat faucibu. Eget mi suscipit tincidunt. Utmtc tempus dictum. Pellentesque virra. Quis quam ut magna consequat faucibus quam.</p>
                                     </div>
                                     <div class="media">
-                                    <img src="assets/images/home/test-img.jpg" class="mr-3" alt="">
+                                        <img src="assets/images/home/test-img.jpg" class="mr-3" alt="">
                                         <div class="media-body">
                                             <div class="overview">
                                                 <div class="name"><b>Mary Saveley</b></div>
@@ -514,7 +565,7 @@
                                         <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante.</p>
                                     </div>
                                     <div class="media">
-                                    <img src="assets/images/home/test-img.jpg" class="mr-3" alt="">
+                                        <img src="assets/images/home/test-img.jpg" class="mr-3" alt="">
                                         <div class="media-body">
                                             <div class="overview">
                                                 <div class="name"><b>Martin Sommer</b></div>
@@ -538,7 +589,7 @@
                                     </div>
                                     <div class="media">
                                         <div class="media-left d-flex mr-3">
-                                        <img src="assets/images/home/test-img.jpg" class="mr-3" alt="">
+                                            <img src="assets/images/home/test-img.jpg" class="mr-3" alt="">
                                         </div>
                                         <div class="media-body">
                                             <div class="overview">
@@ -629,4 +680,23 @@
             passion.style.display = "block";
         }
     }
+</script>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        slidesPerGroup: 1,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
 </script>
