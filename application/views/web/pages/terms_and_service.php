@@ -1,5 +1,9 @@
-<section class="faq-section">
+<section class="about-us-first-section">
     <h1 class="first-heading">TERMS OF SERVICE</h1>
+</section>
+
+
+<section class="faq-section">
 <p>LAST REVISION: [10-08-2022]</p>
 
 <p>PLEASE READ THIS TERMS OF SERVICE AGREEMENT CAREFULLY. BY USING THIS WEBSITE OR ORDERING PRODUCTS OR SERVICES FROM THIS WEBSITE YOU AGREE TO BE BOUND BY ALL OF THE TERMS AND CONDITIONS OF THIS AGREEMENT.</p>

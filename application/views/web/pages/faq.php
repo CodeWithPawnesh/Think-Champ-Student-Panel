@@ -1,7 +1,9 @@
-<section class="faq-section">
-    <h1 class="first-heading">FREQUENTLY ASKED QUESTION</h1>
 
- 
+<section class="about-us-first-section">
+    <h1 class="first-heading">FREQUENTLY ASKED QUESTION</h1>
+</section>
+
+<section class="faq-section">
 <!-- bootstrap 4 accordion  -->
 
 <div id="accordion">

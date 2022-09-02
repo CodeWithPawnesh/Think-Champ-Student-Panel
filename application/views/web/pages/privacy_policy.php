@@ -1,5 +1,9 @@
+<section class="about-us-first-section">
+    <h1 class="first-heading">THIS PRIVACY POLICY APPLIES TO THE THINK CHAMP</h1>
+</section>
+
 <section class="faq-section">
-    <h1 class="first-heading">This Privacy Policy applies to the Tink Champ</h1>
+    <h1 class="first-heading"></h1>
 <p>Think Champ recognizes the importance of maintaining your privacy. We value your privacy and appreciate your trust in us. This Policy describes how we treat user information we collect on&nbsp;<strong>https://think-champ.com/&nbsp;</strong>and other offline sources. This Privacy Policy applies to current and former visitors to our website and to our online customers. By visiting and/or using our website, you agree to this Privacy Policy.</p>
 
 <p>Website Name is a property of Tink Champ, an Indian Company registered under the Companies Act, 2013 having its registered office at&nbsp;Nellore(Dist), Andhra Pradesh</p>

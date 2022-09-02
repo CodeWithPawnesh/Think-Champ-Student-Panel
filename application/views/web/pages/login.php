@@ -1,5 +1,9 @@
+
+<section class="about-us-first-section">
+    <h1 class="first-heading">LOGIN</h1>
+</section>
 <section class="login-first-section">
-        <h1 class="first-heading">LOGIN</h1>
+
         <div class="login-col1">
             <img src="assets/images/home/login.jpg" alt="login-img" width="500" height="500">
         </div>

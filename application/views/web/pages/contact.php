@@ -1,6 +1,9 @@
 
+<section class="about-us-first-section">
+    <h1 class="first-heading">CONTACT US</h1>
+</section>
 <section class="cont-section">
-        <h1 class="first-heading">CONTACT US</h1>
+        
         <div class="cont-col1">
             <center><img src="assets/images/home/13184991_5138237.jpg" alt="contact-img" width="600" height="500"></center>
         </div>

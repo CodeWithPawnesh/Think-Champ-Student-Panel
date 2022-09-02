@@ -441,7 +441,7 @@
 <!-- Start of Eight Section  -->
 
 <section class="eighth-section">
-    <h1 class="first-heading">SEE WHY STUDENTS LOVES US</h1>
+    <!-- <h1 class="first-heading">SEE WHY STUDENTS LOVES US</h1> -->
 
     <!-- carosuel reviews  -->
 
@@ -449,7 +449,7 @@
         <div class="row">
             <div class="col-sm-12">
                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                    <h2 class="std-review">Student <b>Reviews</b></h2>
+                    <h2 class="std-review">SEE WHY STUDENTS LOVES US</h2>
                     <!-- Carousel indicators -->
                     <ol class="carousel-indicators">
                         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
