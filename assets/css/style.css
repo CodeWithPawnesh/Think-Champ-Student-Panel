@@ -1218,19 +1218,19 @@ footer {
 .social-logo {
     width: 40px;
     height: 40px;
-    background-color: #25213F;
+    background-color: #fff;
     border-radius: 50%;
     font-size: 14px;
-    padding-left: 15px;
-    padding-top: 10px;
+    padding-left: 12px;
+    padding-top: 8px;
     float: left;
     margin-right: 10px;
 }
 
-.youtube {
-    padding-left: 13px;
+.social-icons{
+    width:18px;
+    height:18px;
 }
-
 .social-logo:hover {
     background-color: #2500F9;
 }

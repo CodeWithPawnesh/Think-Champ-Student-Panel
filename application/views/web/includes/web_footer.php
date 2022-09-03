@@ -4,10 +4,10 @@
     <div class="footer-col1">
       <img src="assets/images/home/Tc_Logo.png"  class="logo-img" alt="logo" width="150" height="120">
       <p class="logo-text">Enhance your knowledge with THINK-CHAMP.</p>
-      <div class="social-logo"><a href="#" class="fa fa-facebook "></a></div>
-      <div class="social-logo youtube"><a href="#" class="fa fa-twitter "></a></div>
-      <div class="social-logo youtube"><a href="#" class="fa fa-instagram "></a></div>
-      <div class="social-logo youtube"><a href="#" class="fa fa-youtube-play"></a></div>
+      <div class="social-logo"> <img src="assets/images/home/facebook.png" alt="social" class="social-icons"> </div> 
+      <div class="social-logo youtube"><img src="assets/images/home/twitter.png" alt="social" class="social-icons"> </div>
+      <div class="social-logo youtube"><img src="assets/images/home/instagram.png" alt="social" class="social-icons"> </div>
+      <div class="social-logo youtube"><img src="assets/images/home/youtube.png" alt="social" class="social-icons"> </div>
   
     </div>
     <div class="footer-col2">
