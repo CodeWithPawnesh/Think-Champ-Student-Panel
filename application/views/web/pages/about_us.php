@@ -13,24 +13,65 @@
     </div>
 </section>
 
+<!-- Start of Abt Sixth Section  -->
+
+<section class="abt-sixth-section">
+    <div class="abt-sixth-section-col">
+        <div class="small-circle">
+            <p>01</p>
+        </div>
+        <div class="bigger-circle">
+            <img src="assets/images/about/1.svg" alt="image">
+        </div>
+        <h2>Browse courses from our expert contributors.</h2>
+    </div>
+    <img src="assets/images/about/arrow2.svg" alt="" class="arrow">
+    <div class="abt-sixth-section-col">
+        <div class="small-circle">
+            <p>02</p>
+        </div>
+        <div class="bigger-circle">
+            <img src="assets/images/about/2.svg" alt="image">
+        </div>
+        <h2>Purchase quickly and securely</h2>
+    </div>
+    <img src="assets/images/about/arrow1.svg" alt="" class="arrow2">
+    <div class="abt-sixth-section-col">
+        <div class="small-circle">
+            <p>03</p>
+        </div>
+        <div class="bigger-circle">
+            <img src="assets/images/about/3.svg" alt="image">
+        </div>
+        <h2>That's it! Start learning right away.</h2>
+    </div>
+</section>
+
+<!-- End of Abt Sixth Section  -->
+
+
 <!-- Start of Abt-second-section  -->
 
 <section class="abt-second-section">
     <div class="abt-second-col col1">
-        <div class="circle"><span class="num" data-val="89%">00</span><span class="percent">%</span></div>
-        <h2>Prosperity</h2>
+        <div class="circle"><span class="num" data-val="1998">00</span><span class="percent">+</span></div>
+        <h2>Students</h2>
     </div>
     <div class="abt-second-col">
-        <div class="circle"><span class="num" data-val="91%">00</span><span class="percent">%</span></div>
-        <h2>Security</h2>
+        <div class="circle"><span class="num" data-val="10">00</span><span class="percent">+</span></div>
+        <h2>Course</h2>
     </div>
     <div class="abt-second-col col1">
-        <div class="circle"><span class="num" data-val="75%">00</span><span class="percent">%</span></div>
-        <h2>Surity</h2>
+        <div class="circle"><span class="num" data-val="14">00</span><span class="percent">+</span></div>
+        <h2>Professional Trainers</h2>
     </div>
     <div class="abt-second-col">
-        <div class="circle"><span class="num" data-val="82%">00</span><span class="percent">%</span></div>
-        <h2>Assurance</h2>
+        <div class="circle"><span class="num" data-val="100">00</span><span class="percent">+</span></div>
+        <h2>Internships</h2>
+    </div>
+    <div class="abt-second-col col1">
+        <div class="circle"><span class="num" data-val="8">00</span><span class="percent">+</span></div>
+        <h2>Workshops</h2>
     </div>
 </section>
 
@@ -51,22 +92,22 @@
     <div class="abt-forth-section-card">
         <img src="assets/images/about/rating.png" alt="rating" class="service-img">
         <h3>Learn with Experts</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, blanditiis!</p>
+        <p>Our experts provide insights into the nature of thinking and problem-solving.</p>
     </div>
     <div class="abt-forth-section-card">
         <img src="assets/images/about/online-lesson.png" alt="rating" class="service-img">
         <h3>Learn Anything</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, blanditiis!</p>
+        <p>Our platform for knowledge discovery helps you understand any topic through the most efficient paths</p>
     </div>
     <div class="abt-forth-section-card">
         <img src="assets/images/about/time.png" alt="rating" class="service-img">
         <h3>Flexible learning</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, blanditiis!</p>
+        <p>learn new skills when and where you like</p>
     </div>
     <div class="abt-forth-section-card">
         <img src="assets/images/about/monitoring.png" alt="rating" class="service-img">
-        <h3>Industrial Standart</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, blanditiis!</p>
+        <h3>Industry Standards</h3>
+        <p>Our service makes it easier and simpler to understand the new technologies</p>
     </div>
 </section>
 
@@ -101,41 +142,7 @@
 
 <!-- End of Abt Fifth Section  -->
 
-<!-- Start of Abt Sixth Section  -->
 
-<section class="abt-sixth-section">
-    <div class="abt-sixth-section-col">
-        <div class="small-circle">
-            <p>01</p>
-        </div>
-        <div class="bigger-circle">
-            <img src="assets/images/about/1.svg" alt="image">
-        </div>
-        <h2>Browse courses from our expert contributors.</h2>
-    </div>
-    <img src="assets/images/about/arrow2.svg" alt="" class="arrow">
-    <div class="abt-sixth-section-col">
-        <div class="small-circle">
-            <p>02</p>
-        </div>
-        <div class="bigger-circle">
-            <img src="assets/images/about/2.svg" alt="image">
-        </div>
-        <h2>Browse courses from our expert contributors.</h2>
-    </div>
-    <img src="assets/images/about/arrow1.svg" alt="" class="arrow2">
-    <div class="abt-sixth-section-col">
-        <div class="small-circle">
-            <p>03</p>
-        </div>
-        <div class="bigger-circle">
-            <img src="assets/images/about/3.svg" alt="image">
-        </div>
-        <h2>Browse courses from our expert contributors.</h2>
-    </div>
-</section>
-
-<!-- End of Abt Sixth Section  -->
 
 <!-- start of Abt Seventh Section  -->
 
