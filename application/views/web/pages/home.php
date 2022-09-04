@@ -111,7 +111,7 @@
         <h1 class="first-heading">SPOT CLARIFICATION DOUBT</h1>
         <p class="skill-text-center">WE SOLVE ALL YOUR DOUBTS ON THE SPOT, SO THAT YOU'LL NEVER FACE DIFFICULTIES.</p>
     </div>
-    <div id="rb" class="second-section-col-2 job-hidden" style="background-image: url(assets/images/home/resume.png);">
+    <div id="r" class="second-section-col-2 job-hidden" style="background-image: url(assets/images/home/resume.png);">
         <h1 class="first-heading">RESUME BUILDING</h1>
         <p class="skill-text-center">WE HELPS YOU TO BUILD UP YOUR RESUME AND SUGGESTS A PATH TO ACHEIVE YOUR DREAM GOALS.</p>
     </div>
@@ -140,7 +140,7 @@
             <h3 class="skill-text">Spot Clarification Doubt</h3>
         </div>
     </a>
-    <a href="javascript:;" onclick="skill('rb')">
+    <a href="javascript:;" onclick="skill('r')">
         <div class="skill-box">
             <img src="assets/images/home/resume.png" alt="" class="skill-img">
             <h3 class="skill-text">Resume Building</h3>
@@ -1123,7 +1123,7 @@
             scd.style.display = "block";
             r.style.display = "none";
         }
-        if (i == 'rb') {
+        if (i == 'r') {
             var job = document.getElementById("job");
             var ps = document.getElementById("ps");
             var fmi = document.getElementById("fmi");
@@ -1134,7 +1134,7 @@
             var lc = document.getElementById("lc");
             var bv = document.getElementById("bv");
             var scd = document.getElementById("scd");
-            var rb = document.getElementById("rb");
+            var r = document.getElementById("r");
             job.style.display = "none";
             ps.style.display = "none";
             fmi.style.display = "none";
@@ -1145,7 +1145,7 @@
             lc.style.display = "none";
             bv.style.display = "none";
             scd.style.display = "none";
-            rb.style.display = "block";
+            r.style.display = "block";
         }
     }
 </script>
