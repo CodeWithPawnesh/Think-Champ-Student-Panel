@@ -40,52 +40,112 @@
     </div>
 
     <div class="second-section-col-1">
+        <a href="javascript:;" onclick="skill('ps')">
         <div class="skill-box">
-            <img src="assets/images/home/Critical thinking-bro.png" alt="" class="skill-img">
+            <img src="assets/images/home/problem.png" alt="" class="skill-img">
             <h3 class="skill-text">Problem Solving</h3>
 
         </div>
+        </a>
+        <a href="javascript:;" onclick="skill('fmi')">
         <div class="skill-box">
             <img src="assets/images/home/mock.png" alt="" class="skill-img">
             <h3 class="skill-text">Free Mock Interviews</h3>
         </div>
+        </a>
+        <a href="javascript:;" onclick="skill('lcod')">
         <div class="skill-box">
-            <img src="assets/images/home/Programming-amico.png" alt="" class="skill-img">
+            <img src="assets/images/home/live-coding.png" alt="" class="skill-img">
             <h3 class="skill-text">Live Coding</h3>
         </div>
+        </a>
+        <a href="javascript:;" onclick="skill('p')">
         <div class="skill-box">
-            <img src="assets/images/home/Website Creator-amico.png" alt="" class="skill-img">
+            <img src="assets/images/home/projects.png" alt="" class="skill-img">
             <h3 class="skill-text">Projects</h3>
         </div>
+        </a>
+        <a href="javascript:;" onclick="skill('i')">
         <div class="skill-box">
-            <img src="assets/images/home/Internship-rafiki.png" alt="" class="skill-img">
+            <img src="assets/images/home/Internship-2.png" alt="" class="skill-img">
             <h3 class="skill-text">Internship</h3>
         </div>
+        </a>
     </div>
-    <div class="second-section-col-2">
+    <div id="job" class="second-section-col-2" style="background-image: url(assets/images/home/features.jpg);">
         <h1 class="first-heading">HOW TO HELP YOU TO GET A JOB?</h1>
     </div>
+    <div id="ps" class="second-section-col-2 job-hidden" style="background-image: url(assets/images/home/problem.png);">
+        <h1 class="first-heading">PROBLEM SOLVING</h1>
+        <p class="skill-text-center">THE PROBLEM IS NOT TO FIND THE ANSWER, IT'S TO FACE THE ANSWER.</p>
+    </div>
+    <div id="fmi" class="second-section-col-2 job-hidden" style="background-image: url(assets/images/home/mock.png);">
+        <h1 class="first-heading">FREE MOCK INTERVIEW</h1>
+        <p class="skill-text-center">A MOCK INTERVIEW IS NOT A TEST OF YOUR KNOWLEDGE, BUT YOUR ABILITY TO USE IT AT THE RIGHT TIME.</p>
+    </div>
+    <div id="lcod" class="second-section-col-2 job-hidden" style="background-image: url(assets/images/home/live-coding.png);">
+        <h1 class="first-heading">LIVE CODING</h1>
+        <p class="skill-text-center">LIVE CODING ISN'T, ABOUT WHAT YOU KNOW; ITS ABOUT WHAT YOU FIGURE OUT.</p>
+    </div>
+    <div id="p" class="second-section-col-2 job-hidden" style="background-image: url(assets/images/home/projects.png);">
+        <h1 class="first-heading">PROJECTS</h1>
+        <p class="skill-text-center">A PROJECT IS COMPLETE WHEN IT STARTS WORKING FOR YOU, RATHER THAN YOU WORKING FOR IT.</p>
+    </div>
+    <div id="i" class="second-section-col-2 job-hidden" style="background-image: url(assets/images/home/Internship-2.png);">
+        <h1 class="first-heading">INTERNSHIP</h1>
+        <p class="skill-text-center">JUST LIKE FOOTPRINTS IN THE SAND, EACH STEP SIGNIFIES THE JOURNEY TAKEN.</p>
+    </div>
+    <div id="cd" class="second-section-col-2 job-hidden" style="background-image: url(assets/images/home/Company-drives.png);">
+        <h1 class="first-heading">COMPANY DRIVES</h1>
+        <p class="skill-text-center">DON'T SIT AND WAIT FOR OPPOURTUNITIES TO COME, GET UP AND MAKE THEM.</p>
+    </div>
+    <div id="lc" class="second-section-col-2 job-hidden" style="background-image: url(assets/images/home/live-classes.png);">
+        <h1 class="first-heading">LIVE CLASSES</h1>
+        <p class="skill-text-center">IT FEELS CLASSES ATTENDING PHYSICALLY</p>
+    </div>
+    <div id="bv" class="second-section-col-2 job-hidden" style="background-image: url(assets/images/home/backup.png);">
+        <h1 class="first-heading">BACKUP VIDEOS</h1>
+        <p class="skill-text-center">OUR BACKUP RECODING VIDEOS HELPS YOU TO RECOVER FROM MISSED LIVE SESSIONS</p>
+    </div>
+    <div id="scd" class="second-section-col-2 job-hidden" style="background-image: url(assets/images/home/Questions-amico.png);">
+        <h1 class="first-heading">SPOT CLARIFICATION DOUBT</h1>
+        <p class="skill-text-center">WE SOLVE ALL YOUR DOUBTS ON THE SPOT, SO THAT YOU'LL NEVER FACE DIFFICULTIES.</p>
+    </div>
+    <div id="rb" class="second-section-col-2 job-hidden" style="background-image: url(assets/images/home/resume.png);">
+        <h1 class="first-heading">RESUME BUILDING</h1>
+        <p class="skill-text-center">WE HELPS YOU TO BUILD UP YOUR RESUME AND SUGGESTS A PATH TO ACHEIVE YOUR DREAM GOALS.</p>
+    </div>
     <div class="second-section-col-3">
+    <a href="javascript:;" onclick="skill('cd')">
         <div class="skill-box">
-            <img src="assets/images/home/Company-rafiki.png" alt="" class="skill-img">
+            <img src="assets/images/home/Company-drives.png" alt="" class="skill-img">
             <h3 class="skill-text">Company Drives</h3>
         </div>
+    </a>
+    <a href="javascript:;" onclick="skill('lc')">
         <div class="skill-box">
-            <img src="assets/images/home/Webinar-pana.png" alt="" class="skill-img">
+            <img src="assets/images/home/live-classes.png" alt="" class="skill-img">
             <h3 class="skill-text">Live Classes</h3>
         </div>
+    </a>
+    <a href="javascript:;" onclick="skill('bv')">
         <div class="skill-box">
-            <img src="assets/images/home/Upload-bro.png" alt="" class="skill-img">
+            <img src="assets/images/home/backup.png" alt="" class="skill-img">
             <h3 class="skill-text">Backup Videos</h3>
         </div>
+    </a>
+    <a href="javascript:;" onclick="skill('scd')">
         <div class="skill-box">
             <img src="assets/images/home/Questions-amico.png" alt="" class="skill-img">
             <h3 class="skill-text">Spot Clarification Doubt</h3>
         </div>
+    </a>
+    <a href="javascript:;" onclick="skill('rb')">
         <div class="skill-box">
-            <img src="assets/images/home/Profile data-rafiki.png" alt="" class="skill-img">
+            <img src="assets/images/home/resume.png" alt="" class="skill-img">
             <h3 class="skill-text">Resume Building</h3>
         </div>
+    </a>
     </div>
 
 </section>
@@ -846,4 +906,246 @@
             prevEl: ".swiper-button-prev",
         },
     });
+    function skill(i) {
+        if (i == 'ps') {
+            var job = document.getElementById("job");
+            var ps = document.getElementById("ps");
+            var fmi = document.getElementById("fmi");
+            var lcod = document.getElementById("lcod");
+            var p = document.getElementById("p");
+            var i = document.getElementById("i");
+            var cd = document.getElementById("cd");
+            var lc = document.getElementById("lc");
+            var bv = document.getElementById("bv");
+            var scd = document.getElementById("scd");
+            var r = document.getElementById("r");
+            job.style.display = "none";
+            ps.style.display = "block";
+            fmi.style.display = "none";
+            lcod.style.display = "none";
+            p.style.display = "none";
+            i.style.display = "none";
+            cd.style.display = "none";
+            lc.style.display = "none";
+            bv.style.display = "none";
+            scd.style.display = "none";
+            r.style.display = "none";
+        }
+        if (i == 'fmi') {
+            var job = document.getElementById("job");
+            var ps = document.getElementById("ps");
+            var fmi = document.getElementById("fmi");
+            var lcod = document.getElementById("lcod");
+            var p = document.getElementById("p");
+            var i = document.getElementById("i");
+            var cd = document.getElementById("cd");
+            var lc = document.getElementById("lc");
+            var bv = document.getElementById("bv");
+            var scd = document.getElementById("scd");
+            var r = document.getElementById("r");
+            job.style.display = "none";
+            ps.style.display = "none";
+            fmi.style.display = "block";
+            lcod.style.display = "none";
+            p.style.display = "none";
+            i.style.display = "none";
+            cd.style.display = "none";
+            lc.style.display = "none";
+            bv.style.display = "none";
+            scd.style.display = "none";
+            r.style.display = "none";
+        }
+        if (i == 'lcod') {
+            var job = document.getElementById("job");
+            var ps = document.getElementById("ps");
+            var fmi = document.getElementById("fmi");
+            var lcod = document.getElementById("lcod");
+            var p = document.getElementById("p");
+            var i = document.getElementById("i");
+            var cd = document.getElementById("cd");
+            var lc = document.getElementById("lc");
+            var bv = document.getElementById("bv");
+            var scd = document.getElementById("scd");
+            var r = document.getElementById("r");
+            job.style.display = "none";
+            ps.style.display = "none";
+            fmi.style.display = "none";
+            lcod.style.display = "block";
+            p.style.display = "none";
+            i.style.display = "none";
+            cd.style.display = "none";
+            lc.style.display = "none";
+            bv.style.display = "none";
+            scd.style.display = "none";
+            r.style.display = "none";
+        }
+        if (i == 'p') {
+            var job = document.getElementById("job");
+            var ps = document.getElementById("ps");
+            var fmi = document.getElementById("fmi");
+            var lcod = document.getElementById("lcod");
+            var p = document.getElementById("p");
+            var i = document.getElementById("i");
+            var cd = document.getElementById("cd");
+            var lc = document.getElementById("lc");
+            var bv = document.getElementById("bv");
+            var scd = document.getElementById("scd");
+            var r = document.getElementById("r");
+            job.style.display = "none";
+            ps.style.display = "none";
+            fmi.style.display = "none";
+            lcod.style.display = "none";
+            p.style.display = "block";
+            i.style.display = "none";
+            cd.style.display = "none";
+            lc.style.display = "none";
+            bv.style.display = "none";
+            scd.style.display = "none";
+            r.style.display = "none";
+        }
+        if (i == 'i') {
+            var job = document.getElementById("job");
+            var ps = document.getElementById("ps");
+            var fmi = document.getElementById("fmi");
+            var lcod = document.getElementById("lcod");
+            var p = document.getElementById("p");
+            var i = document.getElementById("i");
+            var cd = document.getElementById("cd");
+            var lc = document.getElementById("lc");
+            var bv = document.getElementById("bv");
+            var scd = document.getElementById("scd");
+            var r = document.getElementById("r");
+            job.style.display = "none";
+            ps.style.display = "none";
+            fmi.style.display = "none";
+            lcod.style.display = "none";
+            p.style.display = "none";
+            i.style.display = "block";
+            cd.style.display = "none";
+            lc.style.display = "none";
+            bv.style.display = "none";
+            scd.style.display = "none";
+            r.style.display = "none";
+        }
+        if (i == 'cd') {
+            var job = document.getElementById("job");
+            var ps = document.getElementById("ps");
+            var fmi = document.getElementById("fmi");
+            var lcod = document.getElementById("lcod");
+            var p = document.getElementById("p");
+            var i = document.getElementById("i");
+            var cd = document.getElementById("cd");
+            var lc = document.getElementById("lc");
+            var bv = document.getElementById("bv");
+            var scd = document.getElementById("scd");
+            var r = document.getElementById("r");
+            job.style.display = "none";
+            ps.style.display = "none";
+            fmi.style.display = "none";
+            lcod.style.display = "none";
+            p.style.display = "none";
+            i.style.display = "none";
+            cd.style.display = "block";
+            lc.style.display = "none";
+            bv.style.display = "none";
+            scd.style.display = "none";
+            r.style.display = "none";
+        }
+        if (i == 'lc') {
+            var job = document.getElementById("job");
+            var ps = document.getElementById("ps");
+            var fmi = document.getElementById("fmi");
+            var lcod = document.getElementById("lcod");
+            var p = document.getElementById("p");
+            var i = document.getElementById("i");
+            var cd = document.getElementById("cd");
+            var lc = document.getElementById("lc");
+            var bv = document.getElementById("bv");
+            var scd = document.getElementById("scd");
+            var r = document.getElementById("r");
+            job.style.display = "none";
+            ps.style.display = "none";
+            fmi.style.display = "none";
+            lcod.style.display = "none";
+            p.style.display = "none";
+            i.style.display = "none";
+            cd.style.display = "none";
+            lc.style.display = "block";
+            bv.style.display = "none";
+            scd.style.display = "none";
+            r.style.display = "none";
+        }
+        if (i == 'bv') {
+            var job = document.getElementById("job");
+            var ps = document.getElementById("ps");
+            var fmi = document.getElementById("fmi");
+            var lcod = document.getElementById("lcod");
+            var p = document.getElementById("p");
+            var i = document.getElementById("i");
+            var cd = document.getElementById("cd");
+            var lc = document.getElementById("lc");
+            var bv = document.getElementById("bv");
+            var scd = document.getElementById("scd");
+            var r = document.getElementById("r");
+            job.style.display = "none";
+            ps.style.display = "none";
+            fmi.style.display = "none";
+            lcod.style.display = "none";
+            p.style.display = "none";
+            i.style.display = "none";
+            cd.style.display = "none";
+            lc.style.display = "none";
+            bv.style.display = "block";
+            scd.style.display = "none";
+            r.style.display = "none";
+        }
+        if (i == 'scd') {
+            var job = document.getElementById("job");
+            var ps = document.getElementById("ps");
+            var fmi = document.getElementById("fmi");
+            var lcod = document.getElementById("lcod");
+            var p = document.getElementById("p");
+            var i = document.getElementById("i");
+            var cd = document.getElementById("cd");
+            var lc = document.getElementById("lc");
+            var bv = document.getElementById("bv");
+            var scd = document.getElementById("scd");
+            var r = document.getElementById("r");
+            job.style.display = "none";
+            ps.style.display = "none";
+            fmi.style.display = "none";
+            lcod.style.display = "none";
+            p.style.display = "none";
+            i.style.display = "none";
+            cd.style.display = "none";
+            lc.style.display = "none";
+            bv.style.display = "none";
+            scd.style.display = "block";
+            r.style.display = "none";
+        }
+        if (i == 'rb') {
+            var job = document.getElementById("job");
+            var ps = document.getElementById("ps");
+            var fmi = document.getElementById("fmi");
+            var lcod = document.getElementById("lcod");
+            var p = document.getElementById("p");
+            var i = document.getElementById("i");
+            var cd = document.getElementById("cd");
+            var lc = document.getElementById("lc");
+            var bv = document.getElementById("bv");
+            var scd = document.getElementById("scd");
+            var rb = document.getElementById("rb");
+            job.style.display = "none";
+            ps.style.display = "none";
+            fmi.style.display = "none";
+            lcod.style.display = "none";
+            p.style.display = "none";
+            i.style.display = "none";
+            cd.style.display = "none";
+            lc.style.display = "none";
+            bv.style.display = "none";
+            scd.style.display = "none";
+            rb.style.display = "block";
+        }
+    }
 </script>

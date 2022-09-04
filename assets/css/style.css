@@ -11,7 +11,9 @@
 
 
 /* nav bar css */
-
+.job-hidden{
+    display: none;
+}
 .logo-nav {
     text-align: center;
     margin-left: 10%;
@@ -382,7 +384,6 @@ nav {
     width: 44%;
     height: 600px;
     float: left;
-    background-image: url(http://localhost/Think-Champ/assets/images/home/features.jpg);
     background-size: 100% 400px;
     background-repeat: no-repeat;
     background-position: bottom center;
@@ -393,6 +394,13 @@ nav {
     height: 600px;
     float: left;
     padding: 20px;
+}
+
+.skill-text-center{
+    font-family: 'Poppins',sans-serif;
+    font-size: 22px;
+    color:rgb(0, 0, 0);
+    text-align: center;
 }
 
 .first-heading {
