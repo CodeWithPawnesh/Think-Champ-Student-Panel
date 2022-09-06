@@ -1,4 +1,4 @@
-<section class="about-us-first-section">
+<section class="about-us-first-section" style=" background-image: url(assets/images/home/first-section-bg.jpg);">
     <h1 class="first-heading">THIS PRIVACY POLICY APPLIES TO THE THINK CHAMP</h1>
 </section>
 

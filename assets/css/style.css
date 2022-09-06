@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Convergence&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Nunito+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
 
 /* *{
     box-sizing: border-box;
@@ -60,12 +61,9 @@ header {
     background-color: white;
     padding-left: 5%;
     padding-right: 5%;
-    padding-top: 10px;
-    padding-bottom: 40px;
-    border-bottom: 1px rgb(175, 175, 175) solid;
-    /* position: fixed;
+    position: fixed;
     z-index: 100;
-    margin-bottom:250px; */
+    margin-bottom:250px;
 }
 
 .header-logo {
@@ -136,6 +134,7 @@ nav {
     background-repeat: no-repeat;
     background-size: cover;
     float: left;
+    padding-top:100px;
     margin-bottom: 100px;
 }
 
@@ -251,7 +250,7 @@ nav {
 }
 
 .first_heading {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Jost', sans-serif;
     font-weight: bolder;
     font-size: 45px;
     color: #000000;
@@ -261,7 +260,7 @@ nav {
 }
 
 .th-ch {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Jost', sans-serif;
     font-weight: 800;
     font-size: 70px;
     color: #2E3192;
@@ -273,7 +272,7 @@ nav {
     font-family: 'Poppins', sans-serif;
     color: #484848;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .grab-btn {
@@ -1495,9 +1494,8 @@ input {
     width: 100%;
     height: auto;
     margin: 0 auto;
-    padding-top: 90px;
+    padding-top: 190px;
     padding-bottom: 70px;
-    background-image: url(http://localhost/Think-Champ/assets/images/home/first-section-bg.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -1886,7 +1884,6 @@ input {
     padding-right: 5%;
     float: left;
     margin-bottom: 50px;
-    background-image: url(http://localhost/Think-Champ/assets/images/courses/section-2bg.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -1902,6 +1899,7 @@ input {
     font-family: 'Poppins', sans-serif;
     font-size: 35px;
     margin-bottom: 20px;
+    color: white;
 }
 
 .course-heading-text {
@@ -1936,6 +1934,13 @@ input {
     margin-top: 20px;
 }
 
+.enroll-btn2:hover{
+    border:2px solid #2500F9;
+    background-color: #ffffff;
+    color:#2500F9;
+    font-weight: 600;
+}
+
 .demo-btn {
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
@@ -1947,10 +1952,23 @@ input {
     border-radius: 20px;
 }
 
+.demo-btn:hover{
+    border:2px solid #2500F9;
+    background-color: #ffffff;
+    color:#2500F9;
+    font-weight: 600;
+}
+
 .course-first-section-right-col {
     width: 50%;
     padding: 50px;
     float: left;
+}
+
+.course-first-section-right-col img{
+    width:600px;
+    height: 400px;
+    border-radius: 25px;
 }
 
 .course-second-section {
@@ -2088,6 +2106,378 @@ input {
     float: left;
 }
 
+.course-third-section{
+    width:100%;
+    height:auto;
+    margin:0 auto;
+    padding:40px 10% 50px 10%;
+    float: left;
+}
+
+.course-form-container{
+    width:100%;
+    padding:50px;
+    border-radius: 50px;
+    background-color: rgba(180, 180, 180, 0.171);
+    box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+}
+
+.course-form-container h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 35px;
+    color:#1a00ac;
+    text-align: center;
+}
+
+.course-form h4{
+    font-family: 'Poppins',sans-serif;
+    font-size:18px;
+    color:#1a00ac;
+}
+
+.course-form-left-col{
+    width:50%;
+    height: auto;
+    float:left;
+    padding:20px;
+}
+
+.course-form-right-col{
+    width:50%;
+    height: auto;
+    float:left;
+    padding:20px;
+}
+
+.course-form-input{
+    width:100%;
+    padding:25px;
+    background-color: inherit;
+    border:2px black solid;
+    border-radius: 25px;
+    font-family: 'Poppins',sans-serif;
+    font-size:16px;
+    color:black;
+}
+
+.course-form select{
+    width:100%;
+    padding:10px;
+    background-color: inherit;
+    border:1px black solid;
+    border-radius: 25px;
+    font-family: 'Poppins',sans-serif;
+    font-size:16px;
+}
+
+.time{
+    width:20%;
+    margin-right:10px;
+}
+
+.course-submit-btn {
+    width: 160px;
+    height: 50px;
+    background-color: #2E3192;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    border: none;
+    border-radius: 25px;
+  margin-left:480px;
+  margin-top:20px;
+}
 /* End of Course Page  */
 
 
+/* start of Course-details-page  */
+
+.course-details-second-section{
+    width:100%;
+    height:auto;
+    padding:50px 20px 50px 20px;
+    float:left;
+}
+
+.course-details-second-section-left-col{
+    width:70%;
+    height: auto;
+    float: left;
+}
+
+.python-course-help{
+    padding:40px;
+    box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+    border-color: white;
+    margin-bottom: 50px;
+    border-radius: 50px;
+}
+
+.python-course-help img{
+    width:900px;
+    height:600px;
+    text-align: center;
+}
+
+.python-course-help h4{
+    font-family: 'Jost', sans-serif;
+    font-size:35px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.python-course-help h5{
+    font-family: 'Poppins', sans-serif;
+    font-size:25px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.python-course-help h6{
+    font-family: 'Poppins', sans-serif;
+    font-size:22px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.python-course-help p{
+    font-family: 'Poppins', sans-serif;
+    font-size:16px;
+    font-weight: 500;
+    color:rgb(116, 116, 116);
+}
+
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+    border-color: white;
+  }
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    width:25%;
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: rgb(61, 104, 179);
+    color:white;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: rgb(61, 104, 179);
+    color:white;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 10px 12px 10px 12px;
+    border-top: none;
+  }
+
+.tablinks{
+    font-family: 'Poppins',sans-serif;
+    font-size: 18px;
+    background-color: rgb(88, 151, 203);
+}
+
+  .overview-tab{
+    width:100%;
+    height: auto;
+    float: left;
+    padding: 20px;
+    box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+    border-color: white;
+    border-radius: 15px;
+    margin-bottom: 10px;
+  }
+
+.overview-tab-left-col{
+    width:40%;
+    height:auto;
+    float: left;
+}
+
+.overview-tab-left-col img{
+    width:380px;
+    height:300px;
+}
+
+.overview-tab-right-col{
+    padding:20px;
+    width:60%;
+    height:auto;
+    float: left;
+}
+
+.overview-tab-right-col h4{
+    font-family: 'Poppins',sans-serif;
+    font-size: 22px;
+    color:#2E3192;
+}
+
+.overview-tab-right-col h6{
+    font-family: 'Poppins',sans-serif;
+    font-size: 18px;
+    color:rgb(0, 0, 0);
+}
+
+.overview-tab-right-col h5{
+    font-family: 'Poppins',sans-serif;
+    font-size: 18px;
+    color:rgb(0, 0, 0);
+    font-weight: 700;
+    margin-top: 50px;
+}
+
+.overview-tab-right-col p{
+    font-family: 'Poppins',sans-serif;
+    font-size: 14px;
+    color:rgb(98, 98, 98);
+}
+
+.overview-list li{
+    font-family: 'Poppins', sans-serif;
+    font-size:16px;
+    list-style: none;
+    margin-left: -20px;
+}
+
+.instructor-list {
+    list-style: none;
+   margin-left: -40px;
+}
+
+.instructor-list li{
+    font-family: 'Poppins', sans-serif;
+    font-size:14px;
+    display: inline;
+    margin-left:10px;
+}
+
+.social-icon-instructor{
+    width:18px;
+    height:18px;
+}
+
+.social-logo-instructor {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    border:2px solid rgb(137, 137, 137);
+    border-radius: 12px;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-top: 5px;
+    float: left;
+    margin-right: 10px;
+}
+
+.social-logo-instructor:hover {
+    background-color: #cec9ea;
+}
+
+.course-details-second-section-right-col{
+    width:30%;
+    height: auto;
+    float: left;
+    padding: 10px;
+}
+
+.course-detail-card{
+    width:80%;
+    height: auto;
+    margin:0 auto;
+    border:1px solid rgb(255, 255, 255);
+    padding-top: 20px;
+    box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+    border-radius: 20px;
+}
+
+.course-detail-card img{
+    border:1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+}
+
+.course-detail-card h2{
+    font-family: 'Jost',sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top:10px;
+    text-align: center;
+}
+
+.buy-now-btn{
+    margin: 0 auto;
+    display: inline-block;
+    width:80%;
+    padding:10px 45px 10px 45px;
+    border:2px solid blue; 
+    color:blue;
+    background-color: white;
+    text-decoration: none;
+    font-family: 'Jost',sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+border-radius: 10px;
+text-align: center;
+margin-left: 40px;
+}
+
+.buy-now-btn:hover{
+    background-color: #2500F9;
+    color:white;
+}
+
+.cart{
+    display: inline-block;
+    padding:10px 35px 10px 35px;
+    border:2px solid blue; 
+    color:white;
+    background-color: #2500F9;
+    text-decoration: none;
+    font-family: 'Jost',sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 10px;
+    margin-top:10px;
+    text-align: center;
+    margin-left: 40px;
+}
+
+.course-detail-card h4{
+    font-family: 'Jost',sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    margin-top:20px;
+    text-align: center;
+}
+
+.course-detail-card-list{
+    list-style: none;
+}
+
+.course-detail-card-list li{
+    font-family: 'Poppins',sans-serif;
+    font-size: 16px;
+    color:black;
+    padding:10px;
+    margin-left:-25px;
+}
+/* End of Course-details-page  */

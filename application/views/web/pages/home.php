@@ -11,8 +11,8 @@
         </h1>
 
         <br>
-        <h3 class="first_heading_text">Be The part of a tech group that you deserve.<br>
-            Think Champ is the growing platform for full stack, php etc Skills.
+        <h3 class="first_heading_text">BE THE PART OF A TECH GROUP THAT YOU DESERVE.<br>
+            THINK CHAMP IS THE GROWING PLATFORM FOR FULL STACK, PHP ETC SKILLS.
         </h3>
         <a href="#" class="grab-btn">Grab A Course</a>
 

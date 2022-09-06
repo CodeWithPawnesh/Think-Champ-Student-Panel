@@ -1,4 +1,4 @@
-<section class="about-us-first-section">
+<section class="about-us-first-section" style=" background-image: url(assets/images/home/first-section-bg.jpg);">
     <h1 class="first-heading">ABOUT US</h1>
 </section>
 <section class="abt-first-section">
