@@ -214,6 +214,7 @@
             </div>
         </div>
     </div>
+    <a href="<?= base_url('About-Us') ?>" class="know-more-btn">KNOW MORE</a>
 </section>
 
 <!-- End Of Third Section  -->
@@ -360,10 +361,8 @@
     </div>
     <div class="swiper-button-next slider-nxt"></div>
     <div class="swiper-button-prev slider-prev"></div>
-    <div class="swiper-pagination slider-pagination"></div>
-
-
-
+    <div class="swiper-pagination slider-pagination"></div><br><br><br><br><br>
+   
 </section>
 
 
