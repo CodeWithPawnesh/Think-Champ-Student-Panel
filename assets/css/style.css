@@ -305,6 +305,7 @@ nav {
     color: #2500F9;
     border: 2px solid #2500F9;
     transition-duration: 0.5s;
+    text-decoration: none;
 }
 
 
@@ -2111,6 +2112,7 @@ input {
     margin:0 auto;
     padding:40px 10% 50px 10%;
     float: left;
+    background-size: cover;
 }
 
 .course-form-container{
@@ -2186,6 +2188,14 @@ input {
   margin-left:480px;
   margin-top:20px;
 }
+
+.course-submit-btn:hover{
+    background-color: white;
+    color:#2E3192;
+    border:2px solid #2E3192;
+    transition-duration: 0.5s;
+}
+
 /* End of Course Page  */
 
 

@@ -18,7 +18,7 @@ No prior programming knowledge is required. </p>
 
 <section class="course-second-section">
     <div class="card course-card" style="width: 20rem;">
-    
+
         <div class="wrapper">
             <div class="parent" onclick="">
                 <div class="child bg-one" style="background-image:url(assets/images/courses/react-js.jpg);">
@@ -145,7 +145,7 @@ No prior programming knowledge is required. </p>
 
 </section>
 
-<section class="course-third-section" style="background-image:url(assets/images/courses/section-2bg.jpg);">
+<section class="course-third-section" style="">
     <div class="course-form-container">
         <h1>Enroll Now</h1>
     <form action="" class="course-form">
