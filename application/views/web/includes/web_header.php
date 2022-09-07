@@ -32,11 +32,11 @@
     <nav>
       <ul class="menu">
         <li class="nav-item"><a href="<?= base_url('Home') ?>" class="menu-links active-menu">HOME</a></li>
-        <li class="nav-item"><a href="<?= base_url('About-Us') ?>" class="menu-links ">ABOUT US</a></li>
-        <li class="nav-item"><a href="<?= base_url('Courses') ?>" class="menu-links">COURSES</a></li>
-        <li class="nav-item"><a href="<?= base_url('Contact') ?>" class="menu-links">CONTACT</a></li>
+        <li class="nav-item"><a href="#about" class="menu-links ">ABOUT US</a></li>
+        <li class="nav-item"><a href="#course" class="menu-links">COURSES</a></li>
+        <li class="nav-item"><a href="#contact" class="menu-links">CONTACT</a></li>
         <li class="nav-item"><a href="<?= base_url('Workshop') ?>" class="menu-links">WORKSHOP</a></li>
-        <li class="nav-item"><a href="<?= base_url('FAQ') ?>" class="menu-links">FAQ</a></li>
+        <li class="nav-item"><a href="#faq" class="menu-links">FAQ</a></li>
       </ul>
     </nav>
     <button class="login-btn"><a href="<?= base_url('Login') ?>">LOGIN</a></button>
