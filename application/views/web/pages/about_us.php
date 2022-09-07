@@ -16,6 +16,7 @@
 <!-- Start of Abt Sixth Section  -->
 
 <section class="abt-sixth-section">
+<h2>HOW IT WORKS?</h2>
     <div class="abt-sixth-section-col">
         <div class="small-circle">
             <p>01</p>

@@ -28,10 +28,12 @@ html {
 .menu-links {
     color: black;
     font-size: 18px;
+    text-decoration: none;
 }
 
 .menu-links:hover {
     color: black;
+    text-decoration: none;
 }
 
 .login-btn {
@@ -47,8 +49,13 @@ html {
     margin-left: 15px;
 }
 
+.login-btn a{
+    color:white;
+}
+
 .login-btn a:hover {
     color: #2500F9;
+    text-decoration: none;
 }
 
 .login-btn:hover {
@@ -573,16 +580,6 @@ nav {
     color:white;
 }
 
-.view-more{
-    text-align: center;
-    padding:10px 15px 10px 15px;
-    font-family: 'Poppins',sans-serif;
-    font-size: 16px;
-    text-decoration: none;
-    background-color: #2500F9;
-    color:white;
-    margin:0 auto;
-}
 
 .know-more-btn:hover{
     background-color: white;
@@ -591,12 +588,6 @@ nav {
     transition-duration: 0.5s;
 }
 
-.view-more:hover{
-    background-color: white;
-    color: #2500F9;
-    border:2px solid #2500F9;
-    transition-duration: 0.5s;
-}
 
 /* End of third-section */
 
@@ -820,9 +811,10 @@ nav {
     padding-right: 5%;
     margin: 0 auto;
     padding-top: 70px;
-    padding-bottom: 70px;
+    padding-bottom: 170px;
     position: relative;
 }
+
 
 .card-course {
     width: 100%;
@@ -897,34 +889,45 @@ nav {
     float: left;
 }
 
-.enroll-btn {
-    margin-top: 10px;
-    background-color: #2e3192d4;
-    color: white;
-    padding: 14px 45px;
-    font-family: 'Poppins', sans-serif;
-    border-radius: 5px;
-    font-weight: 600;
-    border: none;
-}
-
-.enroll-btn,
-a {
+.enroll-btn{
+    text-align: center;
+    padding:10px 15px 10px 15px;
+    font-family: 'Poppins',sans-serif;
+    font-size: 16px;
     text-decoration: none;
-    color: white;
+    background-color: #2500F9;
+    color:white;
+    margin-left: 20px;
 }
 
-.enroll-btn,
-a:hover {
+.enroll-btn:hover{
+    background-color: white;
+    color: #2500F9;
+    border:2px solid #2500F9;
+    transition-duration: 0.5s;
     text-decoration: none;
-    color: white;
 }
 
-.enroll-btn:hover,
-.enroll-btn:active {
-    background-color: #2E3192;
-    color: white;
+.view-more-btn{
+    padding:10px 15px 10px 15px;
+    font-family: 'Poppins',sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    background-color: #2500F9;
+    color:white;
+    position: absolute;
+    top:780px;
+    left:650px;
 }
+
+.view-more-btn:hover{
+    background-color: white;
+    color: #2500F9;
+    border:2px solid #2500F9;
+    transition-duration: 0.5s;
+    text-decoration: none;
+}
+
 
 .slider-services{
     max-width: 90%;
@@ -1793,7 +1796,17 @@ input {
     float: left;
     padding:50px;
     margin-bottom: 70px;
-    padding-left:170px;
+    padding-left: 11%;
+    padding-right: 11%;
+}
+
+.abt-sixth-section h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color:#1a00ac;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 .abt-sixth-section-col{

@@ -265,9 +265,9 @@
                             <div class="course-left-col">
                                 <p class="course-fee">Course Fee : </p><br><br>
                                 <h2 class="course-price">₹ 9999/-</h2>
-                            </div>
+                            </div><br>
                             <div class="course-right-col">
-                                <button class="enroll-btn"><a href="#">Enroll Now</a></button>
+                            <a href="#" class="enroll-btn">Enroll Now</a>
                             </div>
                         </div>
                     </div>
@@ -293,9 +293,9 @@
                         <div class="course-left-col">
                             <p class="course-fee">Course Fee : </p><br><br>
                             <h2 class="course-price">₹ 9999/-</h2>
-                        </div>
+                        </div><br>
                         <div class="course-right-col">
-                            <button class="enroll-btn"><a href="#">Enroll Now</a></button>
+                        <a href="#" class="enroll-btn">Enroll Now</a>
                         </div>
                     </div>
                 </div>
@@ -321,9 +321,9 @@
                             <div class="course-left-col">
                                 <p class="course-fee">Course Fee : </p><br><br>
                                 <h2 class="course-price">₹ 9999/-</h2>
-                            </div>
+                            </div><br>
                             <div class="course-right-col">
-                                <button class="enroll-btn"><a href="#">Enroll Now</a></button>
+                            <a href="#" class="enroll-btn">Enroll Now</a>
                             </div>
                         </div>
                     </div>
@@ -349,9 +349,9 @@
                         <div class="course-left-col">
                             <p class="course-fee">Course Fee : </p><br><br>
                             <h2 class="course-price">₹ 9999/-</h2>
-                        </div>
+                        </div><br>
                         <div class="course-right-col">
-                            <button class="enroll-btn"><a href="#">Enroll Now</a></button>
+                            <a href="#" class="enroll-btn">Enroll Now</a>
                         </div>
                     </div>
                 </div>
@@ -361,8 +361,9 @@
     </div>
     <div class="swiper-button-next slider-nxt"></div>
     <div class="swiper-button-prev slider-prev"></div>
-    <div class="swiper-pagination slider-pagination"></div><br><br><br><br><br>
-   
+    <a href="<?= base_url('Courses') ?>" class="view-more-btn">VIEW MORE COURSES</a>
+    <!-- <div class="swiper-pagination slider-pagination"></div> -->
+
 </section>
 
 
