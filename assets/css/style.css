@@ -563,6 +563,41 @@ nav {
     text-align: justify;
 }
 
+.know-more-btn{
+    text-align: center;
+    padding:10px 15px 10px 15px;
+    font-family: 'Poppins',sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    background-color: #2500F9;
+    color:white;
+}
+
+.view-more{
+    text-align: center;
+    padding:10px 15px 10px 15px;
+    font-family: 'Poppins',sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    background-color: #2500F9;
+    color:white;
+    margin:0 auto;
+}
+
+.know-more-btn:hover{
+    background-color: white;
+    color: #2500F9;
+    border:2px solid #2500F9;
+    transition-duration: 0.5s;
+}
+
+.view-more:hover{
+    background-color: white;
+    color: #2500F9;
+    border:2px solid #2500F9;
+    transition-duration: 0.5s;
+}
+
 /* End of third-section */
 
 /* Start of Student Placed  */
@@ -786,7 +821,6 @@ nav {
     margin: 0 auto;
     padding-top: 70px;
     padding-bottom: 70px;
-    margin-bottom: 50px;
     position: relative;
 }
 
@@ -1982,9 +2016,11 @@ input {
     padding-right: 5%;
     float: left;
     margin-bottom: 50px;
+    position: relative;
 }
 
 .course-card {
+    height: 450px;
     float: left;
     margin-left: 15px;
     padding: 20px;
