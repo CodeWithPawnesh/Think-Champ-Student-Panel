@@ -4,7 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Home extends CI_Controller {
 	public function index()
 	{
-		$this->load->web_temp('home');
+		$this->load->web_temp_2('home');
 	}
     public function AboutUs(){
         $this->load->web_temp('about_us');

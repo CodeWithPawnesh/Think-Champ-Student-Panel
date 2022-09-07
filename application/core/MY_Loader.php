@@ -12,5 +12,12 @@ class My_Loader extends CI_Loader {
         $content = $this->view('web/includes/web_footer'); // footer
         return $content;
     }
+    public function web_temp_2($template_name)
+    {   
+        $content = $this->view('web/includes/web_header_2'); // header
+        $content = $this->view('web/pages/'.$template_name); // view
+        $content = $this->view('web/includes/web_footer'); // footer
+        return $content;
+    }
 }
 ?>
