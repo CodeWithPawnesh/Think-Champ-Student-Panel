@@ -152,7 +152,7 @@
 
 <!-- Start Of THird Section  -->
 
-<section class="third-section">
+<section class="third-section" id="about">
     <h1 class="first-heading">About Us</h1>
     <p class="mission-txt text-center">The way to trounce future. Improve your skills, explore and upgrade... The main
         intention of our program to provide skilled learning for every student anywhere in the world.<br>
@@ -240,7 +240,7 @@
 
 
 <!-- Start Of Sixth Section  -->
-<section class="sixth-section">
+<section class="sixth-section" id="course">
     <h1 class="first-heading">COURSES</h1>
     <div class="swiper mySwiper container slider-services">
         <div class="swiper-wrapper content slider-content">
@@ -500,7 +500,7 @@
 <!-- Faq  -->
 <h1 class="first-heading">FREQUENTLY ASKED QUESTION</h1>
 
-<section class="faq-section">
+<section class="faq-section" id="faq">
 <!-- bootstrap 4 accordion  -->
 
 <div id="accordion">
@@ -807,7 +807,7 @@
 <!-- Contact Us  -->
 <h1 class="first-heading">CONTACT US</h1>
 
-<section class="cont-section">
+<section class="cont-section" id="contact">
         
         <div class="cont-col1">
             <center><img src="assets/images/home/13184991_5138237.jpg" alt="contact-img" width="600" height="500"></center>
