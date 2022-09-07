@@ -18,6 +18,7 @@ No prior programming knowledge is required. </p>
 
 <section class="course-second-section">
     <div class="card course-card" style="width: 20rem;">
+    
         <div class="wrapper">
             <div class="parent" onclick="">
                 <div class="child bg-one" style="background-image:url(assets/images/courses/react-js.jpg);">

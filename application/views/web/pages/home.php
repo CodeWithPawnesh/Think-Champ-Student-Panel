@@ -1,7 +1,7 @@
 <!-- Start of First-section  -->
 
 
-<section class="first_section">
+<section class="first_section" style=" background-image: url(assets/images/home/first-section-bg.jpg);">
     <div class="first_section_col1">
         <div class="circle-anim">
             <img src="assets/images/home/circle.png" alt="circle">
@@ -171,7 +171,7 @@
         <button id="passionbtn" onclick="about('3')" class="abt-us-btn">Passion</button>
 
         <div id="mission" class="mission-container mission">
-            <div class="mission-img-col">
+            <div class="mission-img-col" style="background-image: url(assets/images/home/mission.jpg);">
 
             </div>
             <div class="mission-text-container">
@@ -185,7 +185,7 @@
         </div>
 
         <div id="vision" class="mission-container vision">
-            <div class="vission-img-col">
+            <div class="vission-img-col" style=" background-image: url(assets/images/home/vision.jpg);">
 
             </div>
             <div class="mission-text-container">
@@ -201,7 +201,7 @@
         </div>
 
         <div id="passion" class="mission-container passion">
-            <div class="passion-img-col">
+            <div class="passion-img-col" style="background-image: url(assets/images/home/passion.jpg);">
 
             </div>
             <div class="mission-text-container">

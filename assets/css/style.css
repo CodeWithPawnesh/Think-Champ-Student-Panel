@@ -142,7 +142,6 @@ nav {
     padding-bottom: 200px;
     position: relative;
     background-color: #F0ECF6;
-    background-image: url(http://localhost/Think-Champ/assets/images/home/first-section-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     float: left;
@@ -519,7 +518,6 @@ nav {
     height: 300px;
     padding: 20px;
     float: left;
-    background-image: url(http://localhost/Think-Champ/assets/images/home/mission.jpg);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -530,7 +528,6 @@ nav {
     height: 300px;
     padding: 20px;
     float: left;
-    background-image: url(http://localhost/Think-Champ/assets/images/home/vision.jpg);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -541,7 +538,6 @@ nav {
     height: 300px;
     padding: 20px;
     float: left;
-    background-image: url(http://localhost/Think-Champ/assets/images/home/passion.jpg);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -979,57 +975,6 @@ nav {
 
 
 /* End of Sixth section */
-
-/* Start of seventh Section  */
-
-
-/* End of Seventh Section  */
-
-.seventh-section {
-    width: 100%;
-    height: auto;
-    float: left;
-    margin: 0 auto;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 70px;
-    padding-bottom: 70px;
-}
-
-.instructor-box {
-    width: 24%;
-    height: 500px;
-    border: 2px solid;
-    float: left;
-    margin-left: 10px;
-    background-image: url(http://localhost/Think-Champ/assets/images/home/inst-1.jpg);
-    background-position: center;
-    border-radius: 10px;
-}
-
-.instructor-box:hover {
-    box-shadow: 0 0 20px rgba(75, 75, 75, 0.468);
-}
-
-.instructor-content {
-    width: 100%;
-    height: 130px;
-    background-color: rgba(255, 255, 255, 0.177);
-    margin-top: 340px;
-    padding: 10px;
-}
-
-.inst-name {
-    font-family: 'Montserrat', sans-serif;
-    color: #cdcdcd;
-    font-size: 18px;
-}
-
-.inst-skill {
-    font-family: 'Noto Sans', sans-serif;
-    font-size: 14px;
-    color: #a4a4a4;
-}
 
 /* Start of Eighth section */
 
@@ -1877,7 +1822,6 @@ input {
     height: auto;
     padding-top:200px;
     padding-bottom: 200px;
-    background-image: url(http://localhost/Think-Champ/assets/images/about/bg3-about-us.jpg);
     background-position: center;
     float: left;
     background-size: stretch;

@@ -143,6 +143,8 @@ marketer, project manager, product manager, technical recruiter, or entrepreneur
     <li><b><i class="fa fa-clock-o" aria-hidden="true"></i> Duration:</b> 4h 55m</li>
     <li><b><i class="fa fa-level-up" aria-hidden="true"></i> Course Level:</b> Beginner</li>
     <li><b><i class="fa fa-globe" aria-hidden="true"></i> Language:</b> English</li>
+    <li><b><i class="fa fa-hourglass-end" aria-hidden="true"></i> Slots Left:</b> 45</li>
+    <li><b><i class="fa fa-clock-o" aria-hidden="true"></i> Batch Time:</b> 11:00 A.M - 01:00 P.M</li>
   </ul>
 </div>
 </div>

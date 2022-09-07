@@ -147,7 +147,7 @@
 
 <!-- start of Abt Seventh Section  -->
 
-<section class="abt-seventh-section">
+<section class="abt-seventh-section" style=" background-image: url(assets/images/about/bg3-about-us.jpg);">
     <p class="abt-company">/ LEARN TOGETHER /</p>
     <h4>If you want to know more info about training and career guidance</h4>
     <p class="abt-seventh-text">why are you waiting to set your career
