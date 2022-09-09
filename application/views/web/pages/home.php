@@ -32,12 +32,12 @@
 <!-- End of First-section  -->
 
 <section class="second-section">
-    <div class="layer-anim">
+    <!-- <div class="layer-anim">
         <img src="assets/images/home/curve-layer.png" alt="bg">
     </div>
     <div class="layer-anim-2">
         <img src="assets/images/home/curve-layer.png" alt="bg">
-    </div>
+    </div> -->
 
     <div class="second-section-col-1">
         <a href="javascript:;" onclick="skill('ps')">
