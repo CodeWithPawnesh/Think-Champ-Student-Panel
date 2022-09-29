@@ -524,7 +524,7 @@
     <div class="card-header" id="headingTwo">
       <h5 class="mb-0">
         <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          <h2 class="faq-question">Q2. Think champ, the online program how protective is it and how are the security levels.</h2>
+          <h2 class="faq-question">Q2. Think champ, the online program how protective is it and how are the<br> security levels.</h2>
         </button>
       </h5>
     </div>
@@ -576,8 +576,8 @@
     <div class="card-header" id="headingfive">
       <h5 class="mb-0">
         <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
-          <h2 class="faq-question">Q5. Think champ, the online program  what if we miss the sessions due to network problems or with some other issues.
-          </h2>
+          <h2 class="faq-question">Q5. Think champ, the online program  what if we miss the sessions due to <br>network problems or with some other issues.</h2>
+          
         </button>
       </h5>
     </div>
@@ -593,7 +593,7 @@
     <div class="card-header" id="headingsix">
       <h5 class="mb-0">
         <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapsesix" aria-expanded="false" aria-controls="collapsesix">
-          <h2 class="faq-question">Q6. Think champ, the online program is online education is more advantageous than direct conatact education.
+          <h2 class="faq-question">Q6. Think champ, the online program is online education is more<br> advantageous than direct conatact education.
           </h2>
         </button>
       </h5>

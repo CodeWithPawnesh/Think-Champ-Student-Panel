@@ -145,7 +145,7 @@ No prior programming knowledge is required. </p>
 
 </section>
 
-<section class="course-third-section" style="">
+<section class="course-third-section" >
     <div class="course-form-container">
         <h1>Enroll Now</h1>
     <form action="" class="course-form">

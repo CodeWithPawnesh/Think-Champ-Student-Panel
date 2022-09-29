@@ -3,7 +3,7 @@
 </section>
 <section class="abt-first-section">
     <div class="abt-left-col">
-        <img src="assets/images/about/about-us.png" alt="">
+        <img src="assets/images/about/about-us.png" alt="about-us-image">
     </div>
     <div class="abt-right-col">
         <p class="abt-company">/ ABOUT COMPANY /</p>
@@ -119,7 +119,7 @@
 <section class="abt-fifth-section">
     <div class="abt-fifth-section-left-col">
         <div class="abt-fifth-section-img">
-            <img src="assets/images/about/instructor.jpg" alt="" width="250" height="200">
+            <img src="assets/images/about/instructor.jpg" alt="">
         </div>
         <div class="abt-fifth-section-content">
             <h2>Become an Instructor</h2>
@@ -129,7 +129,7 @@
     </div>
     <div class="abt-fifth-section-right-col">
         <div class="abt-fifth-section-img">
-            <img src="assets/images/about/doing-business.jpg" alt="" width="250" height="200">
+            <img src="assets/images/about/doing-business.jpg" alt="">
 
         </div>
         <div class="abt-fifth-section-content">

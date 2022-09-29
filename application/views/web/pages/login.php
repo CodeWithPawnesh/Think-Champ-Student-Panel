@@ -5,7 +5,7 @@
 <section class="login-first-section">
 
         <div class="login-col1">
-            <img src="assets/images/home/login.jpg" alt="login-img" width="500" height="500">
+            <img src="assets/images/home/login.jpg" alt="login-img">
         </div>
         <div class="login-col2">
             <form action="" class="login-form-box">
