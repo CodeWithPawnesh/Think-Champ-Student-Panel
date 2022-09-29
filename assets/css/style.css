@@ -5,10 +5,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Nunito+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
 
-/* *{
+*{
     box-sizing: border-box;
     padding: 0;
-} */
+}
+
+a{
+    text-decoration: none;
+}
 
 .scrolled{
     box-shadow: 0 8px 8px -4px lightblue;
@@ -2506,7 +2510,7 @@ margin-left: 40px;
 
 /* Start media query for tablet view  */
 
-@media only screen and (min-width:768px) and (max-width:1023px){
+@media only screen and (min-width:426px) and (max-width:768px){
 
 .first-heading{
     font-size: 25px;
@@ -2876,3 +2880,33 @@ margin-left: 40px;
 }
 
 /* End media query for tablet view  */
+
+/* start of media query for mobile view  */
+
+@media only screen and (min-width:325px) and (max-width:425px){
+    .first_section {
+        width: 100%;
+        height: auto;
+        vertical-align: middle;
+        box-sizing: border-box;
+        margin: 0 auto;
+        padding-bottom: 50px;
+        position: relative;
+        background-color: #F0ECF6;
+        background-repeat: no-repeat;
+        background-size: cover;
+        float: left;
+        padding-top:50px;
+        margin-bottom: 50px;
+    }
+
+    .square-anim img{ 
+        display: none;
+    }
+
+    .circle-anim img{
+        display: none;
+    }
+}
+
+/* End of Media query for mobile view  */
