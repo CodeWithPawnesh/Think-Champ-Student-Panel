@@ -245,8 +245,8 @@
     <div class="swiper mySwiper container slider-services">
         <div class="swiper-wrapper content slider-content">
 
-            <div class="swiper-slide card">
-                <div class="col-lg-3.5">
+            <div class="swiper-slide card course-card">
+
                     <div class="card card-course">
                         <img class="card-img-top" src="assets/images/courses/pyhton.jpg" alt="Card image cap">
                         <div class="card-body">
@@ -271,10 +271,10 @@
                             </div>
                         </div>
                     </div>
-                </div>
+
             </div>
 
-            <div class="swiper-slide card">
+            <div class="swiper-slide card course-card">
                 <div class="card card-course">
                     <img class="card-img-top" src="assets/images/courses/front-end.jpg" alt="Card image cap">
                     <div class="card-body">
@@ -301,7 +301,7 @@
                 </div>
             </div>
 
-            <div class="swiper-slide card">
+            <div class="swiper-slide card course-card">
                 <div class="col-lg-3.5">
                     <div class="card card-course">
                         <img class="card-img-top" src="assets/images/courses/programing.jpg" alt="Card image cap">
@@ -330,7 +330,7 @@
                 </div>
             </div>
 
-            <div class="swiper-slide card">
+            <div class="swiper-slide card course-card">
                 <div class="card card-course">
                     <img class="card-img-top" src="assets/images/courses/front-end.jpg" alt="Card image cap">
                     <div class="card-body">
@@ -361,7 +361,7 @@
     </div>
     <div class="swiper-button-next slider-nxt"></div>
     <div class="swiper-button-prev slider-prev"></div>
-    <a href="<?= base_url('Courses') ?>" class="view-more-btn">VIEW MORE COURSES</a>
+    <!-- <a href="<?= base_url('Courses') ?>" class="view-more-btn">VIEW MORE COURSES</a> -->
     <!-- <div class="swiper-pagination slider-pagination"></div> -->
 
 </section>

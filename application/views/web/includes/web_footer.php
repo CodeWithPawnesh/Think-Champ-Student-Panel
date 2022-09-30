@@ -2,7 +2,7 @@
   <footer>
   <div class="footer-section">
     <div class="footer-col1">
-      <img src="assets/images/home/Tc_Logo.png"  class="logo-img" alt="logo" width="150" height="120">
+      <img src="assets/images/home/Tc_Logo.png"  class="logo-img" alt="logo">
       <p class="logo-text">Enhance your knowledge with THINK-CHAMP.</p>
       <div class="social-logo"> <img src="assets/images/home/facebook.png" alt="social" class="social-icons"> </div> 
       <div class="social-logo youtube"><img src="assets/images/home/twitter.png" alt="social" class="social-icons"> </div>
@@ -36,7 +36,7 @@
     </div>
   </div>
   <hr style="color:white;">
-  <p class="copyright">© 2022 THINK-CHAMP PRIVATE LIMITED</p>
+  <p class="copyright"> 2022 © THINK-CHAMP PRIVATE LIMITED</p>
 </footer>
 
   <!-- Optional JavaScript; choose one of the two! -->

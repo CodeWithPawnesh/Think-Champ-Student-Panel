@@ -17,7 +17,7 @@ No prior programming knowledge is required. </p>
 </section>
 
 <section class="course-second-section">
-    <div class="card course-card" style="width: 20rem;">
+    <div class="card course-card">
 
         <div class="wrapper">
             <div class="parent" onclick="">
@@ -49,7 +49,7 @@ No prior programming knowledge is required. </p>
     </div>
     </a>
 
-    <div class="card course-card" style="width: 20rem;">
+    <div class="card course-card">
         <div class="wrapper">
             <div class="parent" onclick="">
                 <div class="child bg-one" style="background-image:url(assets/images/courses/programing.jpg);">
@@ -80,7 +80,7 @@ No prior programming knowledge is required. </p>
         </div>
     </div>
 
-    <div class="card course-card" style="width: 20rem;">
+    <div class="card course-card">
         <div class="wrapper">
             <div class="parent" onclick="">
                 <div class="child bg-one" style="background-image:url(assets/images/courses/pyhton.jpg);">
@@ -111,7 +111,7 @@ No prior programming knowledge is required. </p>
         </div>
     </div>
 
-    <div class="card course-card" style="width: 20rem;">
+    <div class="card course-card">
         <div class="wrapper">
             <div class="parent" onclick="">
                 <div class="child bg-one" style="background-image:url(assets/images/courses/front-end.jpg);">
