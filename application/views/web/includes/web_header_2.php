@@ -20,15 +20,15 @@
 <body>
 
 
-  <header>
+  <header class="header-1">
     <div class="header-logo">
       <img src="assets/images/home/Tc_logo2.png" alt="logo" width="160" height="80">
     </div>
-    <button class="wp-btn"><i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+    <button class="wp-btn display-none"><i class="fa fa-volume-control-phone" aria-hidden="true"></i>
     </button>
-    <p class="wp-text"><span class="wp-chat">Phone</span><br>
+    <p class="wp-text display-none"><span class="wp-chat display-none">Phone</span><br>
       +91 999999999 </p>
-    <nav>
+    <nav class="display-none nav-1">
       <ul class="menu">
         <li class="nav-item"><a href="<?= base_url('Home') ?>" class="menu-links active-menu">HOME</a></li>
         <li class="nav-item"><a href="#about" class="menu-links ">ABOUT US</a></li>
@@ -38,5 +38,27 @@
         <li class="nav-item"><a href="#faq" class="menu-links">FAQ</a></li>
       </ul>
     </nav>
-    <button class="login-btn"><a href="<?= base_url('Login') ?>">LOGIN</a></button>
+    <button class="login-btn display-none"><a href="<?= base_url('Login') ?>">LOGIN</a></button>
+    
   </header>
+  
+	<nav class="navbar navbar-expand-lg navbar-light bg-white nav-2">
+  <a class="navbar-brand" href="#">
+    <div class="header-logo">
+      <img src="assets/images/home/Tc_logo2.png" alt="logo" width="100" height="40">
+    </div></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+    <li class="nav-item"><a href="<?= base_url('Home') ?>" class="menu-links active-menu nav-item nav-link active">HOME <span class="sr-only">(current)</span></a></li>
+        <li class="nav-item"><a href="#about" class="menu-links nav-item nav-link ">ABOUT US</a></li>
+        <li class="nav-item"><a href="#course" class="menu-links nav-item nav-link">COURSES</a></li>
+        <li class="nav-item"><a href="#contact" class="menu-links nav-item nav-link">CONTACT</a></li>
+        <li class="nav-item"><a href="<?= base_url('Workshop') ?>" class="menu-links nav-item nav-link">WORKSHOP</a></li>
+        <li class="nav-item"><a href="#faq" class="menu-links nav-item nav-link">FAQ</a></li>
+        <li class="nav-item"><a href="<?= base_url('Login') ?>" class="menu-links nav-item login-btn-res">LOGIN</a></li>
+    </div>
+  </div>
+</nav>

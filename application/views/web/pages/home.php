@@ -38,7 +38,7 @@
     <div class="layer-anim-2">
         <img src="assets/images/home/curve-layer.png" alt="bg">
     </div> -->
-
+    <h1 class="first-heading display-only-mobile">HOW TO HELP YOU TO GET A JOB?</h1>
     <div class="second-section-col-1">
         <a href="javascript:;" onclick="skill('ps')">
         <div class="skill-box">
@@ -72,6 +72,7 @@
         </div>
         </a>
     </div>
+    <div class="display">
     <div id="job" class="second-section-col-2" style="background-image: url(assets/images/home/features.jpg);">
         <h1 class="first-heading">HOW TO HELP YOU TO GET A JOB?</h1>
     </div>
@@ -114,6 +115,7 @@
     <div id="r" class="second-section-col-2 job-hidden" style="background-image: url(assets/images/home/resume.png);">
         <h1 class="first-heading">RESUME BUILDING</h1>
         <p class="skill-text-center">WE HELPS YOU TO BUILD UP YOUR RESUME AND SUGGESTS A PATH TO ACHEIVE YOUR DREAM GOALS.</p>
+    </div>
     </div>
     <div class="second-section-col-3">
     <a href="javascript:;" onclick="skill('cd')">
@@ -245,9 +247,9 @@
     <div class="swiper mySwiper container slider-services">
         <div class="swiper-wrapper content slider-content">
 
-            <div class="swiper-slide card course-card">
+            <div class="swiper-slide card">
 
-                    <div class="card card-course">
+                    <div class="card card-course card-sm-12">
                         <img class="card-img-top" src="assets/images/courses/pyhton.jpg" alt="Card image cap">
                         <div class="card-body">
                             <div class="levels">BEGINNER</div>
@@ -274,8 +276,8 @@
 
             </div>
 
-            <div class="swiper-slide card course-card">
-                <div class="card card-course">
+            <div class="swiper-slide card">
+                <div class="card card-course card-sm-12">
                     <img class="card-img-top" src="assets/images/courses/front-end.jpg" alt="Card image cap">
                     <div class="card-body">
                         <div class="levels">INTERMEDIATE</div>
@@ -301,9 +303,9 @@
                 </div>
             </div>
 
-            <div class="swiper-slide card course-card">
+            <div class="swiper-slide card">
                 <div class="col-lg-3.5">
-                    <div class="card card-course">
+                    <div class="card card-course card-sm-12">
                         <img class="card-img-top" src="assets/images/courses/programing.jpg" alt="Card image cap">
                         <div class="card-body">
                             <div class="levels">ADVANCE</div>
@@ -330,8 +332,8 @@
                 </div>
             </div>
 
-            <div class="swiper-slide card course-card">
-                <div class="card card-course">
+            <div class="swiper-slide card">
+                <div class="card card-course card-sm-12">
                     <img class="card-img-top" src="assets/images/courses/front-end.jpg" alt="Card image cap">
                     <div class="card-body">
                         <div class="levels">INTERMEDIATE</div>
@@ -499,9 +501,9 @@
 <!-- End Of Fifth Section  -->
 
 <!-- Faq  -->
-<h1 class="first-heading">FREQUENTLY ASKED QUESTION</h1>
+<h1 class="first-heading display-none">FREQUENTLY ASKED QUESTION</h1>
 
-<section class="faq-section" id="faq">
+<section class="faq-section display-none" id="faq">
 <!-- bootstrap 4 accordion  -->
 
 <div id="accordion">

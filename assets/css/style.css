@@ -24,6 +24,13 @@ html {
 .job-hidden{
     display: none;
 }
+
+.nav-2{
+    width: 100%;
+    background-color: white;
+    display: none;
+}
+
 .logo-nav {
     text-align: center;
     margin-left: 10%;
@@ -71,7 +78,7 @@ html {
     transition-duration: 0.5s;
 }
 
-header {
+.header-1 {
     width: 100%;
     height: auto;
     background-color: white;
@@ -88,10 +95,10 @@ header {
     height: 80px;
     float: left;
     text-align: center;
-    border-right: 2px rgb(219, 219, 219) solid;
+    /* border-right: 2px rgb(219, 219, 219) solid; */
 }
 
-nav {
+.nav-1 {
     width: 60%;
     float: left;
     text-align: center;
@@ -982,6 +989,9 @@ nav {
   color: #FF676D;
 }
 
+.display-only-mobile{
+    display: none;
+}
 
 
 /* End of Sixth section */
@@ -2504,6 +2514,7 @@ margin-left: 40px;
     color:black;
     padding:10px;
 }
+
 /* End of Course-details-page  */
 
 
@@ -3310,6 +3321,20 @@ margin-left: 40px;
 
 /* End of footer  */
 
+/* Nav-bar */
+
+.header-1{
+    display: none;
+}
+
+.nav-2{
+    display: flex;
+}
+
+
+
+/* Nav bar  */
+
 }
 
 /* End media query for tablet view  */
@@ -3318,9 +3343,46 @@ margin-left: 40px;
 
 @media only screen and (max-width:426px){
 
-    header{
-        display: none;
-    }
+/* Nav bar  */
+
+.nav-2{
+    display: flex;
+}
+
+.header-left-col{
+    width:60%;
+    height: auto;
+    text-align: right;
+    padding-left:10px;
+    padding-top: 5px;
+}
+
+.header-1{
+    display: none;
+}
+
+.header-2{
+    width:100%;
+    height: auto;
+    padding:10px;
+    border:1px solid red;
+    display: flex;
+}
+    
+.header-logo {
+    width: 40%;
+    margin-top: 0px;
+    height: auto;
+    float: left;
+    text-align: center;
+    border:none;
+}
+
+/* Nav bar  */
+
+.display-none{
+    display: none;
+}
 
 /* Start of login page  */
 
@@ -4292,6 +4354,13 @@ padding:20px;
     font-size: 10px;
 }
 
+.second-section-col-2{
+    display: none;
+}
+
+.display{
+    display: none;
+}
 /* End of footer  */
 
 
@@ -4299,6 +4368,36 @@ padding:20px;
     display: none;
 }
 
+.nav-bar{
+    display: none;
+}
+
 }
 
 /* End of media query for mobile view  */
+
+
+/* nav bar responsive  */
+
+.login-btn-res{
+    background-color: #2500F9;
+    width:80px;
+    height: 30px;
+    display: inline-block;
+    text-align: center;
+    font-size: 14px;
+    padding-top: 5px;
+    color:white;
+    border-radius: 7px;
+}
+
+
+.login-btn-res:hover{
+    background-color: white;
+    border:2px solid #2500F9;
+    transition-duration: .5s;
+}
+
+.nav-link{
+    font-size: 15px;
+}
