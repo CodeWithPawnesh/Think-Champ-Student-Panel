@@ -55,12 +55,13 @@ $route['Contact'] = 'Home/Contact';
 $route['About-Us'] = 'Home/AboutUs';
 $route['Courses'] = 'Courses';
 $route['Course-Detail'] = 'Courses/CourseDetail';
-
-$route['Login'] = 'Home/Login';
 $route['Privacy-Policy'] = 'Home/PrivacyPolicy';
 $route['Terms-And-Service'] = 'Home/TermsAndService';
 // Student Panle
-
+$route['Login'] = 'Auth';
 $route['Dashboard'] = 'StudentPanel';
+$route['Profile']='StudentPanel/profile';
+$route['Leave']='StudentPanel/leave';
+$route['Class']='StudentPanel/class';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

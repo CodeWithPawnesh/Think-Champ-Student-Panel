@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class StudentPanel extends CI_Controller {
+class Quiz extends CI_Controller {
 	function __construct()
     {
 	parent::__construct();
@@ -16,18 +16,6 @@ class StudentPanel extends CI_Controller {
 	}
 	public function index()
 	{
-		$this->load->student_panel('dashboard');
-	}
-	public function profile()
-	{
-		$this->load->student_panel('profile');
-	}
-	public function leave()
-	{
-		$this->load->student_panel('leave');
-	}
-	public function class()
-	{
-		$this->load->student_panel('class');
+		$this->load->student_panel('quiz');
 	}
 }

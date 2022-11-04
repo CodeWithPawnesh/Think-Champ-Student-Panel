@@ -38,7 +38,11 @@
         <li class="nav-item"><a href="#faq" class="menu-links">FAQ</a></li>
       </ul>
     </nav>
-    <button class="login-btn display-none"><a href="<?= base_url('Login') ?>">LOGIN</a></button>
+    <?php if (!$this->session->userdata('login_status')) { ?>
+    <button class="login-btn"><a href="<?= base_url('Login') ?>">LOGIN</a></button>
+    <?php }else{ ?>
+      <button class="login-btn"><a href="<?= base_url('StudentPanel') ?>">DashBoard</a></button>
+      <?php } ?>
     
   </header>
   
@@ -58,7 +62,11 @@
         <li class="nav-item"><a href="#contact" class="menu-links nav-item nav-link">CONTACT</a></li>
         <li class="nav-item"><a href="<?= base_url('Workshop') ?>" class="menu-links nav-item nav-link">WORKSHOP</a></li>
         <li class="nav-item"><a href="#faq" class="menu-links nav-item nav-link">FAQ</a></li>
-        <li class="nav-item"><a href="<?= base_url('Login') ?>" class="menu-links nav-item login-btn-res">LOGIN</a></li>
+        <?php if (!$this->session->userdata('login_status')) { ?>
+    <button class="login-btn"><a href="<?= base_url('Login') ?>">LOGIN</a></button>
+    <?php }else{ ?>
+      <button class="login-btn"><a href="<?= base_url('StudentPanel') ?>">DashBoard</a></button>
+      <?php } ?>
     </div>
   </div>
 </nav>

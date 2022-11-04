@@ -32,12 +32,12 @@
 <!-- End of First-section  -->
 
 <section class="second-section">
-    <!-- <div class="layer-anim">
+    <div class="layer-anim">
         <img src="assets/images/home/curve-layer.png" alt="bg">
     </div>
     <div class="layer-anim-2">
         <img src="assets/images/home/curve-layer.png" alt="bg">
-    </div> -->
+    </div>
     <h1 class="first-heading display-only-mobile">HOW TO HELP YOU TO GET A JOB?</h1>
     <div class="second-section-col-1">
         <a href="javascript:;" onclick="skill('ps')">
@@ -246,14 +246,22 @@
     <h1 class="first-heading">COURSES</h1>
     <div class="swiper mySwiper container slider-services">
         <div class="swiper-wrapper content slider-content">
-
+            <?php foreach($course_data as $c_d){ ?>
             <div class="swiper-slide card">
 
                     <div class="card card-course card-sm-12">
                         <img class="card-img-top" src="assets/images/courses/pyhton.jpg" alt="Card image cap">
                         <div class="card-body">
-                            <div class="levels">BEGINNER</div>
-                            <h1 class="course">Python Programming</h1><br>
+                            <?php if($c_d['course_level']=='1'){ ?>
+                                <div class="levels">BEGINNER</div>
+                            <?php } ?>
+                            <?php if($c_d['course_level']=='2'){ ?>
+                                <div class="levels">INTERMEDIATE</div>
+                            <?php } ?>
+                            <?php if($c_d['course_level']=='3'){ ?>
+                                <div class="levels">ADVANCE</div>
+                            <?php } ?>
+                            <h1 class="course"><?= $c_d['course_name']; ?></h1><br>
                             <hr style="width:80% ;margin:0;text-align:center;margin:0 auto;">
                             <center>
                                 <div class="star-rating">
@@ -266,17 +274,18 @@
                             </center>
                             <div class="course-left-col">
                                 <p class="course-fee">Course Fee : </p><br><br>
-                                <h2 class="course-price">₹ 9999/-</h2>
+                                <h2 class="course-price">₹ <?= $c_d['price'] ?>/-</h2>
                             </div><br>
                             <div class="course-right-col">
-                            <a href="#" class="enroll-btn">Enroll Now</a>
+                            <a href="<?= base_url('Course-Detail').'?id='. base64_encode($c_d['course_id']) ?>" class="enroll-btn">Enroll Now</a>
                             </div>
                         </div>
                     </div>
 
             </div>
+            <?php } ?>
 
-            <div class="swiper-slide card">
+            <!-- <div class="swiper-slide card">
                 <div class="card card-course card-sm-12">
                     <img class="card-img-top" src="assets/images/courses/front-end.jpg" alt="Card image cap">
                     <div class="card-body">
@@ -357,7 +366,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
         </div>
     </div>

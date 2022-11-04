@@ -8,12 +8,12 @@
             <img src="assets/images/home/login.jpg" alt="login-img">
         </div>
         <div class="login-col2">
-            <form action="" class="login-form-box">
-                <h2 class="input-text">Username</h2>
-                <input type="text"  placeholder="Enter Your Username" class="login-form" /><br><br>
+            <form action="auth/student" method="post" class="login-form-box">
+                <h2 class="input-text">Email</h2>
+                <input type="text" name="email"  placeholder="Enter Your Username" class="login-form" required/><br><br>
                 <h2 class="input-text">Password</h2>
-                <input type="password"  placeholder="Enter Your Password" class="login-form" /><br><br>
-                <button type="submit"  value="Submit" class="submit-btn">Login</button>
+                <input type="password" name="password"  placeholder="Enter Your Password" class="login-form" required /><br><br>
+                <button type="submit" name="submit"  value="Submit" class="submit-btn">Login</button>
 
             </form>
         </div>

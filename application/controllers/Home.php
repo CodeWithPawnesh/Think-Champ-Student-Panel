@@ -2,9 +2,15 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Home extends CI_Controller {
+    function __construct()
+	{
+		parent::__construct();
+		$this->load->model('Student_model','SM');
+    }
 	public function index()
 	{
-		$this->load->web_temp_2('home');
+        $data['course_data'] = $this->SM->get_course();
+		$this->load->web_temp_2('home',$data);
 	}
     public function AboutUs(){
         $this->load->web_temp('about_us');
@@ -14,9 +20,6 @@ class Home extends CI_Controller {
     }
     public function Faq(){
         $this->load->web_temp('faq');
-    }
-    public function Login(){
-        $this->load->web_temp('login');
     }
     public function PrivacyPolicy(){
         $this->load->web_temp('privacy_policy');
