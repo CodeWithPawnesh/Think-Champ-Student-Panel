@@ -1,3 +1,4 @@
+<?php $user_info = $this->session->userdata('user_data'); ?>
 <!DOCTYPE html>
 <html lang="zxx">
 
@@ -41,6 +42,7 @@
     <link rel="stylesheet" href="assets/dashboard/css/metisMenu.css">
 
     <link rel="stylesheet" href="assets/dashboard/css/style1.css" />
+    <link rel="stylesheet" href="assets/dashboard/css/style.css" />
     <link rel="stylesheet" href="assets/dashboard/css/colors/default.css" id="colorSkinCSS">
 </head>
 
@@ -49,15 +51,15 @@
 
     <nav class="sidebar">
         <div class="logo d-flex justify-content-between">
-            <a class="large_logo" href="index.html"><img src="assets/images/home/logo.png" style="height:50px;" alt=""></a>
-            <a class="small_logo" href="index.html"><img src="assets/images/home/logo.png" style="height:50px;" alt=""></a>
+            <a class="large_logo" href="<?= base_url('') ?>"><img src="assets/images/home/logo.png" style="height:50px;" alt=""></a>
+            <a class="small_logo" href="<?= base_url('') ?>"><img src="assets/images/home/logo.png" style="height:50px;" alt=""></a>
             <div class="sidebar_close_icon d-lg-none">
                 <i class="ti-close"></i>
             </div>
         </div>
         <ul id="sidebar_menu">
             <li>
-                <a href="<?= base_url('') ?>" aria-expanded="false">
+                <a href="<?= base_url('Dashboard') ?>" aria-expanded="false">
                     <div class="nav_icon_small">
                     <i class="fas fa-home"></i>
                     </div>
@@ -67,7 +69,7 @@
                 </a>
             </li>
             <li>
-                <a href="<?= base_url('') ?>" aria-expanded="false">
+                <a href="<?= base_url('Profile') ?>" aria-expanded="false">
                     <div class="nav_icon_small">
                     <i class="fas fa-user"></i>
                     </div>
@@ -183,7 +185,7 @@
                                 <img src="assets/dashboard/img/client_img.png" alt="#">
                                 <div class="profile_info_iner">
                                     <div class="profile_author_name">
-                                        <h5>Pawnesh Kumar</h5>
+                                        <h5><?= $user_info['student_name'] ?></h5>
                                     </div>
                                     <div class="profile_info_details">
                                         <a href="#">My Profile </a>

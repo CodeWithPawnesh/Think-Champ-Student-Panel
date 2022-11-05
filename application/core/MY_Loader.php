@@ -19,10 +19,10 @@ class My_Loader extends CI_Loader {
         $content = $this->view('web/includes/web_footer'); // footer
         return $content;
     }
-    public function student_panel($template_name)
+    public function student_panel($template_name,$data)
     {   
         $content = $this->view('web/student_panel/includes/student_header'); // header
-        $content = $this->view('web/student_panel/'.$template_name); // view
+        $content = $this->view('web/student_panel/'.$template_name,$data); // view
         $content = $this->view('web/student_panel/includes/student_footer'); // footer
         return $content;
     }
