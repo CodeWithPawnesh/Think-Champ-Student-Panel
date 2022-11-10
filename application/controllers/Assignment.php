@@ -16,6 +16,7 @@ class Assignment extends CI_Controller {
 	}
 	public function index()
 	{
-		$this->load->student_panel('assignment');
+		$data['page']="page";
+		$this->load->student_panel('assignment',$data);
 	}
 }

@@ -21,15 +21,70 @@
                         <div class="white_card mb_30 card_height_100">
                             <div class="white_card_header">
                                 <div class="box_header m-0">
-                                    <div class="main-title">
-                                        <h3 class="m-0">Heading</h3>
+                                    <div class="main-title ">
+                                        <h3 class="m-0 "><?= $course_data['course_title'] ?></h3>
                                     </div>
                                     <div class="float-lg-right float-none common_tab_btn2 justify-content-end">
                                     </div>
                                 </div>
                             </div>
-                            <div class="white_card_body">
-                                Class data Box
+                            <div class="white_card_body ">
+                                <!-- Theory Class Data -->
+                                <h5 class="text-center">Theory Live Class <?= $course_data['course_name'] ?></h5>
+                                <div class="table-responsive">
+                                    <table class="table align-middle">
+                                        <thead>
+                                            <tr>
+                                                <th>Class</th>
+                                                <th>Class Timing</th>
+                                                <th>Batch</th>
+                                                <th>Trainer</th>
+                                                <th>Trainer PH.No</th>
+                                                <th>Class Room</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                            <td><?= $t_live_class_data['class_name']; ?></td>
+                                            <td><?=  date('h:i A',$t_live_class_data['class_ts']); ?></td>
+                                            <td><?= $t_live_class_data['batch_name']; ?></td>
+                                            <td><?= $t_live_class_data['emp_name']; ?></td>
+                                            <td><?= $t_live_class_data['phone']; ?></td>
+                                            <td><a href="<?= $t_live_class_data['live_link']; ?>" target="_blank" class="btn btn-sm btn-success">Join Room</a></td>
+                                            </tr>
+                                            
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- Programming Class Data -->
+                                <h5 class="text-center">Programming Live Class <?= $course_data['course_name'] ?></h5>
+                                <div class="table-responsive">
+                                    <table class="table align-middle">
+                                        <thead>
+                                            <tr>
+                                                <th>Class</th>
+                                                <th>Class Timing</th>
+                                                <th>Batch</th>
+                                                <th>Group</th>
+                                                <th>Instructor</th>
+                                                <th>Instructor PH.No</th>
+                                                <th>Class Room</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                            <td><?= $p_live_class_data['class_name']; ?></td>
+                                            <td><?=  date('h:i A',$p_live_class_data['class_ts']); ?></td>
+                                            <td><?= $p_live_class_data['batch_name']; ?></td>
+                                            <td><?= $p_live_class_data['group_name']; ?></td>
+                                            <td><?= $p_live_class_data['emp_name']; ?></td>
+                                            <td><?= $p_live_class_data['phone']; ?></td>
+                                            <td><a href="<?= $p_live_class_data['live_link']; ?>" target="_blank" class="btn btn-sm btn-success">Join Room</a></td>
+                                            </tr>
+                                            
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>

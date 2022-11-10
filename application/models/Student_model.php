@@ -65,5 +65,53 @@ class Student_model extends CI_Model
             return false;
         }
     }
+    public function get_coure_data($course_id){
+        $this->db->select("course_name, course_title");
+        $this->db->where("course_id",$course_id);
+        $query = $this->db->get("tc_course");
+        if($query->num_rows()==1){
+            return $query->result_array();
+        }else{
+            return false;
+        }
+    }
+    public function get_live_class_data($student_id){
+        $sql = "SELECT c.class_name,c.class_ts, b.batch_name, b.batch_number, e.emp_name, e.phone , e.live_link FROM tc_classes AS c, tc_batch AS b,
+        tc_employee AS e, tc_student AS s WHERE c.batch_id = b.batch_id AND s.batch_id = b.batch_id AND e.emp_id = c.teacher_id AND 
+         s.student_id = $student_id AND c.group_id ='0' AND c.status = '1'  ";
+          $query = $this->db->query($sql);
+          if ($query->num_rows() > 0) {
+              return $query->result_array();
+          }else{
+              return false;
+          }
+    }
+    public function get_p_live_class_data($student_id){
+        $sql = "SELECT c.class_name, c.class_ts, b.batch_name, b.batch_number, e.emp_name, e.phone , e.live_link,g.group_name FROM tc_classes AS c, tc_batch AS b,
+        tc_employee AS e, tc_student AS s, tc_batch_group AS g WHERE c.batch_id = b.batch_id AND s.batch_id = b.batch_id AND e.emp_id = c.teacher_id AND 
+         s.student_id = $student_id AND c.group_id = g.group_id AND c.status = '1'  ";
+          $query = $this->db->query($sql);
+          if ($query->num_rows() > 0) {
+              return $query->result_array();
+          }else{
+              return false;
+          }
+    }
+    public function get_student_leave($user_id){
+        $this->db->where("user_id",$user_id);
+        $query = $this->db->get("tc_leave");
+        if($query->num_rows()>0){
+            return $query->result_array();
+        }else{
+            return false;
+        }
+    }
+    public function add_leave($data){
+        $query = $this->db->insert("tc_leave", $data);
+        if($query)
+        {
+            redirect("Leave");
+        }
+    }
 }
 ?>

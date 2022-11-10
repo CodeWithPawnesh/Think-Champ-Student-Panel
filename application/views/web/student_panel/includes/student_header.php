@@ -89,7 +89,7 @@
                 </a>
             </li>
             <li>
-                <a href="<?= base_url('') ?>" aria-expanded="false">
+                <a href="<?= base_url('Leave') ?>" aria-expanded="false">
                     <div class="nav_icon_small">
                     <i class="fas fa-file"></i>
                     </div>
@@ -99,7 +99,7 @@
                 </a>
             </li>
             <li>
-                <a href="<?= base_url('') ?>" aria-expanded="false">
+                <a href="<?= base_url('Assignment') ?>" aria-expanded="false">
                     <div class="nav_icon_small">
                     <i class="fas fa-duotone fa-briefcase"></i>
                     </div>
@@ -109,7 +109,7 @@
                 </a>
             </li>
             <li>
-                <a href="<?= base_url('') ?>" aria-expanded="false">
+                <a href="<?= base_url('Quiz') ?>" aria-expanded="false">
                     <div class="nav_icon_small">
                     <i class="fas fa-solid fa-circle-question"></i>
                     </div>
@@ -119,7 +119,7 @@
                 </a>
             </li>
             <li>
-                <a href="<?= base_url('') ?>" aria-expanded="false">
+                <a href="<?= base_url('Certificate') ?>" aria-expanded="false">
                     <div class="nav_icon_small">
                     <i class="fas fa-certificate"></i>
                     </div>

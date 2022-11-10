@@ -16,7 +16,15 @@ class StudentPanel extends CI_Controller {
 	}
 	public function index()
 	{
-		$data['page'] = "page";
+		$user_info = $this->session->userdata('user_data');
+		$student_id = $user_info['student_id'];
+		$course_id = $user_info['course_id'];
+		$data['course_data'] = $this->SPM->get_coure_data($course_id);
+		$data['course_data'] = $data['course_data'][0];
+		$data['t_live_class_data'] = $this->SPM->get_live_class_data($student_id);
+		$data['t_live_class_data'] = $data['t_live_class_data'][0];
+		$data['p_live_class_data'] = $this->SPM->get_p_live_class_data($student_id);
+		$data['p_live_class_data'] = $data['p_live_class_data'][0];
 		$this->load->student_panel('dashboard',$data);
 	}
 	public function profile()
@@ -69,7 +77,40 @@ class StudentPanel extends CI_Controller {
 	}
 	public function leave()
 	{
-		$this->load->student_panel('leave');
+		$user_info = $this->session->userdata('user_data');
+		$student_id = $user_info['student_id'];
+		$user_id = $user_info['user_id'];
+		$data['leave_data'] = $this->SPM->get_student_leave($user_id);
+		$this->load->student_panel('leave',$data);
+	}
+	public function add_leave(){
+		$data['page']="page";
+		$user_info = $this->session->userdata('user_data');
+        $user_id = $user_info['user_id'];
+        $data['page']="leave";
+        if(isset($_POST['submit'])){
+            $start_date = $_POST['start_date'];
+            $start_date = strtotime($start_date);
+            $reason = $_POST['reason'];
+            if(isset($_POST['end_date'])){
+                $end_date = $_POST['end_date'];
+                $end_date = strtotime($_POST['end_date']);
+            }
+            else{
+                $end_date="";
+            }
+            $data = array(
+                "leave_start_date"=>$start_date,
+                "leave_end_date"=>$end_date,
+                "reason"=>$reason,
+                "status"=>'0',
+                "user_id"=>$user_id,
+                "user"=>'2'
+            );
+			$this->SPM->add_leave($data);
+		}
+
+		$this->load->student_panel('add_leave',$data);
 	}
 	public function class()
 	{

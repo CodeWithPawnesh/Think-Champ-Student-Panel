@@ -60,6 +60,7 @@ class Auth extends CI_Controller
     }
     public function logout()
     {
+        $this->session->unset_userdata('sess_id');
         $this->session->unset_userdata('user_data');
         $this->session->unset_userdata('login_status');
         redirect('auth');
