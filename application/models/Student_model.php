@@ -113,5 +113,44 @@ class Student_model extends CI_Model
             redirect("Leave");
         }
     }
+    public function get_batch_assignment($batch_id){
+        $date = date('y-m-d');
+        $date_ts = strtotime($date);
+        $sql = "SELECT a.*, e.emp_name FROM tc_assignment AS a, tc_employee AS e
+        WHERE a.batch_id = $batch_id AND a.created_by = e.emp_id  AND a.group_id ='0' AND a.start_date <= $date_ts AND a.end_date >= $date_ts ";
+        $query = $this->db->query($sql);
+        if ($query->num_rows() > 0) {
+            return $query->result_array();
+        }else{
+            return false;
+        }
+    }
+    public function get_group_assignment($batch_id,$group_id){
+        $date = date('y-m-d');
+        $date_ts = strtotime($date);
+        $sql = "SELECT a.*,e.emp_name FROM tc_assignment AS a, tc_employee AS e
+        WHERE a.batch_id = $batch_id AND a.created_by = e.emp_id AND a.group_id =$group_id AND a.start_date <= $date_ts AND a.end_date >= $date_ts ";
+        $query = $this->db->query($sql);
+        if ($query->num_rows() > 0) {
+            return $query->result_array();
+        }else{
+            return false;
+        }
+    }
+    public function get_submited_assignment($student_id){
+        $this->db->where("student_id",$student_id);
+        $query = $this->db->get("tc_as_submit");
+        if($query->num_rows()>0){
+            return $query->result_array();
+        }else{
+            return false;
+        }
+    }
+    public function submit_assignmet($data){
+        $query = $this->db->insert("tc_as_submit",$data);
+        if($query){
+            redirect("Assignment");
+        }
+    }
 }
 ?>
