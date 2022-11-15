@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 //include rozerpay 
-require APPPATH.'views/rozerpay/razorpay-php/Razorpay.php';
+require APPPATH.'views/rozerpay/razorpay_php/Razorpay.php';
 use Razorpay\Api\Api;
 class Subscription extends CI_Controller {
     function __construct()
