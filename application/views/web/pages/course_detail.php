@@ -170,8 +170,10 @@ if(!empty($error_mess)){
     </div>
     <?php } } ?>
         <h1>Enroll Now In <?= $course_detail['course_name'] ?></h1>
+        <h1>Price: ₹  <?= $course_detail['price']; ?></h1>
         <form action="<?= base_url("Subscription") ?>" method="post" class="course-form">
             <div class="course-form-left-col">
+                <input type="hidden" name="price" value="<?= $course_detail['price'] ?>">
                 <h4>Full Name</h4>
                 <input name="name" type="text" placeholder="Enter Your Full Name" class="course-form-input"
                     required /><br><br>

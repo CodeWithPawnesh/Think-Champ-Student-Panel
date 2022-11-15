@@ -20,8 +20,12 @@ class Assignment extends CI_Controller {
 		$user_id = $user_info['user_id'];
 		$student_id = $user_info['student_id'];
 		$batch_id = $user_info['batch_id'];
+		if($user_info['group_id']!=0){
 		$group_id = $user_info['group_id'];
-		$batch_assignment = $this->SPM->get_batch_assignment($batch_id);
+		}else{
+			$group_id = "null";
+		}
+		$batch_assignment = $this->SPM->get_batch_assignment($batch_id);	
 		$group_assignment = $this->SPM->get_group_assignment($batch_id,$group_id);
 		$data['submited_assignment'] = $this->SPM->get_submited_assignment($student_id);
 		if(!empty($batch_assignment) && !empty($group_assignment)){

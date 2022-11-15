@@ -152,5 +152,27 @@ class Student_model extends CI_Model
             redirect("Assignment");
         }
     }
+    public function get_batch_quiz($batch_id){
+        $where = array(
+            "quiz_batch_id"=>$batch_id,
+            "quiz_group_id"=>0
+        );
+        $this->db->where($where);
+        $query = $this->db->get("tc_quiz");
+        if ($query->num_rows() > 0) {
+            return $query->result_array();
+        }else{
+            return false;
+        }
+    }
+    public function get_group_quiz($group_id){
+        $this->db->where("quiz_group_id",$group_id);
+        $query = $this->db->get("tc_quiz");
+        if ($query->num_rows() > 0) {
+            return $query->result_array();
+        }else{
+            return false;
+        }
+    }
 }
 ?>
