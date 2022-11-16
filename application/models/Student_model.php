@@ -174,5 +174,15 @@ class Student_model extends CI_Model
             return false;
         }
     }
+    public function get_classes($student_id){
+        $sql = "SELECT ch.*, c.class_name, e.emp_name FROM tc_live_classes as ch, tc_classes as c, tc_employee as e WHERE
+        ch.student_ids LIKE '%$student_id%' AND ch.class_id = c.class_id AND e.emp_id = ch.teacher_id AND ch.status = 1 ";
+         $query = $this->db->query($sql);
+         if ($query->num_rows() > 0) {
+             return $query->result_array();
+         }else{
+             return false;
+         }
+    }
 }
 ?>

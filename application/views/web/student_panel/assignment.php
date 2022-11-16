@@ -46,15 +46,15 @@
                             </h3>
                         </div>
                         <div class="float-lg-right float-none common_tab_btn2 justify-content-end m-0 ">
-                            <h4 class="m-0 ">Marks : <?= $a_d['marks'] ?> /
-                                <?php if($status == 2){ echo $ob_marks; }else{ echo "NA";} ?></h4>
+                            <h4 class="m-0 ">Marks :
+                                <?php if($status == 2){ echo $ob_marks; }else{ echo "NA";} ?> / <?= $a_d['marks'] ?></h4>
                         </div>
                     </div>
                 </div>
                 <div class="white_card_body text-center ">
                     <?= $a_d['assignment'] ?>
                     <br>
-                    <p class="fw-bold text-body">NOTE: MAKE A ZIP FILE OF YOUR PROJECT AND THEN SUBMIT HERE  </p>
+                    <p class="fw-bold text-body">NOTE: MAKE A ZIP FILE OR PDF OF YOUR PROJECT AND THEN SUBMIT HERE  </p>
                     <br><br>
                     <div class="text-center">
                         <?php if($s == 1){ ?>

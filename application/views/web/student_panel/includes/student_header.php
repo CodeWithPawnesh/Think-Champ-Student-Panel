@@ -79,6 +79,16 @@
                 </a>
             </li>
             <li>
+                <a href="<?= base_url('Live-Class') ?>" aria-expanded="false">
+                    <div class="nav_icon_small">
+                    <i class="fas fa-laptop"></i>
+                    </div>
+                    <div class="nav_title">
+                        <span>Class</span>
+                    </div>
+                </a>
+            </li>
+            <li>
                 <a href="<?= base_url('') ?>" aria-expanded="false">
                     <div class="nav_icon_small">
                     <i class="fas fa-book"></i>

@@ -114,6 +114,10 @@ class StudentPanel extends CI_Controller {
 	}
 	public function class()
 	{
-		$this->load->student_panel('class');
+		$user_info = $this->session->userdata('user_data');
+		$student_id = $user_info['student_id'];
+		$data['page'] = "class";
+		$data['class_data'] = $this->SPM->get_classes($student_id);
+		$this->load->student_panel('class',$data);
 	}
 }
