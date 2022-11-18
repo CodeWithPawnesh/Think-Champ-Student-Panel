@@ -28,6 +28,7 @@ class Assignment extends CI_Controller {
 		$batch_assignment = $this->SPM->get_batch_assignment($batch_id);	
 		$group_assignment = $this->SPM->get_group_assignment($batch_id,$group_id);
 		$data['submited_assignment'] = $this->SPM->get_submited_assignment($student_id);
+		$assignment_data ="";
 		if(!empty($batch_assignment) && !empty($group_assignment)){
 			$assignment_data = array_merge($batch_assignment,$group_assignment);
 		}
@@ -37,6 +38,7 @@ class Assignment extends CI_Controller {
 		if(empty($group_assignment)){
 			$assignment_data = $batch_assignment;
 		}
+		if(!empty($assignment_data)){
 		function date_compare($element1, $element2) {
 			$datetime1 = $element1['start_date'];
 			$datetime2 = $element2['start_date'];
@@ -44,7 +46,9 @@ class Assignment extends CI_Controller {
 			   } 
 	  
 			// Sort the array 
+
 		   usort($assignment_data, 'date_compare');
+			}
 		   $data['assignment_data'] = $assignment_data;
 		$this->load->student_panel('assignment',$data);
 	}

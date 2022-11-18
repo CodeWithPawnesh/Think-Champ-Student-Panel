@@ -18,7 +18,7 @@
         </div>
     </div>
     <div class="row ">
-        <?php $status=3;$ob_marks = "NA"; $s=1; foreach($assignment_data as $a_d){ 
+        <?php $status=3;$ob_marks = "NA"; $s=1;if(!empty($assignment_data)){ foreach($assignment_data as $a_d){ 
              if(!empty($submited_assignment)){
                  foreach($submited_assignment as $s_a){
                     if($s_a['assignment_id']== $a_d['assignment_id']){
@@ -79,7 +79,7 @@
                 </div>
             </div>
         </div>
-        <?php } ?>
+        <?php } } ?>
     </div>
 </div>
 <!-- Modal -->
