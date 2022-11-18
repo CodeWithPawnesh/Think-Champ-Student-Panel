@@ -91,5 +91,5 @@
     }
     setInterval(function(){
       check_sess_id();
-    }, 10000);
+    }, 100);
 </script>

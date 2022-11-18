@@ -50,7 +50,7 @@
                                             <td><?= $t_live_class_data['batch_name']; ?></td>
                                             <td><?= $t_live_class_data['emp_name']; ?></td>
                                             <td><?= $t_live_class_data['phone']; ?></td>
-                                            <td><a href="<?= $t_live_class_data['live_link']; ?>" target="_blank" class="btn btn-sm btn-success">Join Room</a></td>
+                                            <td><a id="<?= $t_live_class_data['class_id'] ?>" href="<?= $t_live_class_data['live_link']; ?>" target="_blank" class="btn btn-sm btn-success">Join Room</a></td>
                                             </tr>
                                             
                                         </tbody>
@@ -79,7 +79,7 @@
                                             <td><?= $p_live_class_data['group_name']; ?></td>
                                             <td><?= $p_live_class_data['emp_name']; ?></td>
                                             <td><?= $p_live_class_data['phone']; ?></td>
-                                            <td><a href="<?= $p_live_class_data['live_link']; ?>" target="_blank" class="btn btn-sm btn-success">Join Room</a></td>
+                                            <td><a id="<?= $p_live_class_data['class_id'] ?>" href="<?= $p_live_class_data['live_link']; ?>" target="_blank" class="btn btn-sm btn-success">Join Room</a></td>
                                             </tr>
                                             
                                         </tbody>
@@ -91,87 +91,25 @@
                     <div class="col-xl-4 ">
                         <div class="white_card card_height_100 mb_30 sales_card_wrapper">
                             <div class="white_card_header d-flex justify-content-end">
-                                <button class="export_btn">Button</button>
                             </div>
-
-                            <div class="sales_card_body">
-                                Batch data
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 ">
-                        <div class="white_card card_height_100 mb_30 social_media_card">
-                            <div class="white_card_header">
-                                <div class="main-title">
-                                    <h3 class="m-0">Heading</h3>
-                                    <span>About Your Social Popularity</span>
-                                </div>
-                            </div>
-                            <div class="media_thumb ml_25">
-                                <img src="assets/dashboard/img/media.svg" alt="">
-                            </div>
-                            <div class="media_card_body">
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4">
-                        <div class="white_card card_height_100 mb_30">
-                            <div class="white_card_header">
-                                <div class="box_header m-0">
-                                    <div class="main-title">
-                                        <h3 class="m-0">Recent Update</h3>
+                            <div class="card badge_card">
+                                <div class="card-body">
+                                    <h2 class="text-center">Weekly Toppers</h2>
+                                    <br>
+                                    <div class="row text-center">
+                                        <div class="col">
+                                            <img src="assets/dashboard/img/gold-medal.png" alt="">
+                                            <label>Pawnesh Kumar</label>
+                                        </div>
+                                        <div class="col">
+                                            <img src="assets/dashboard/img/silver-medal.png" alt="">
+                                            <label>Diksha</label>
+                                        </div>
+                                        <div class="col">
+                                            <img src="assets/dashboard/img/bronze-medal.png" alt="">
+                                            <label>Chink</label>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="white_card_body">
-                                <div class="Activity_timeline">
-                                    <ul>
-                                        <li>
-                                            <div class="activity_bell"></div>
-                                            <div class="timeLine_inner d-flex align-items-center">
-                                                <div class="activity_wrap">
-                                                    <h6>5 min ago</h6>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-                                                        scelerisque
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="activity_bell "></div>
-                                            <div class="timeLine_inner d-flex align-items-center">
-                                                <div class="activity_wrap">
-                                                    <h6>5 min ago</h6>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-                                                        scelerisque
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="activity_bell bell_lite"></div>
-                                            <div class="timeLine_inner d-flex align-items-center">
-                                                <div class="activity_wrap">
-                                                    <h6>5 min ago</h6>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-                                                        scelerisque
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="activity_bell bell_lite"></div>
-                                            <div class="timeLine_inner d-flex align-items-center">
-                                                <div class="activity_wrap">
-                                                    <h6>5 min ago</h6>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-                                                        scelerisque
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -286,3 +224,41 @@
                 </div>
             </div>
         </div>
+        <script>
+   function check_class_time(){
+    
+    var today = new Date();
+    var h = zeros(today.getHours() % 12 || 12);
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    var time = h + ':' + m + ':' + s;
+         var t_s_time =  '<?= date("h:i:s", ($t_live_class_data['class_ts']) - (15 * 60))?>' ;
+         var t_e_time = '<?= date("h:i:s", ($t_live_class_data['class_ts']) + (15 * 60))?>';
+         var p_s_time = '<?= date("h:i:s", ($p_live_class_data['class_ts']) - (15 * 60))?>';
+         var p_e_time = '<?= date("h:i:s", ($p_live_class_data['class_ts']) + (15 * 60)) ?>';
+
+    if(  t_s_time  <= time &&  t_e_time >=  time)
+    {
+    document.getElementById("<?= $t_live_class_data['class_id'] ?>").style.display="block";
+    }else{
+        document.getElementById("<?= $t_live_class_data['class_id'] ?>").style.display="none";
+    }
+    if(  p_s_time  <= time &&  p_e_time >=  time)
+    {
+    document.getElementById("<?= $p_live_class_data['class_id'] ?>").style.display="block";
+    }else{
+        document.getElementById("<?= $p_live_class_data['class_id'] ?>").style.display="none";
+    }
+    }
+    setInterval(function(){
+        check_class_time();
+    }, 100);
+    function zeros(i) {
+      if (i < 10) {
+        return "0" + i;
+      } else {
+        return i;
+      }
+    }
+</script>
+        </script>

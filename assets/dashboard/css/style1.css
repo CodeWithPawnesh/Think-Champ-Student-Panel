@@ -8248,11 +8248,17 @@ canvas#highlights {
 .sales_card_wrapper {
     background-color: #f65365;
     position: relative;
-    background-image: url(../img/plane_thumb.svg);
+    background-image: url(../img/6831412_27526.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-size: 100% 58%;
+    background-size: 100% 60%;
     background-position: top left
+}
+.badge_card{
+    position: relative;
+    top:45%;
+    border: 1px;
+    border-radius: 25px;
 }
 
 .sales_card_wrapper .sales_card_body {

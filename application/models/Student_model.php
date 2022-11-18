@@ -76,7 +76,7 @@ class Student_model extends CI_Model
         }
     }
     public function get_live_class_data($student_id){
-        $sql = "SELECT c.class_name,c.class_ts, b.batch_name, b.batch_number, e.emp_name, e.phone , e.live_link FROM tc_classes AS c, tc_batch AS b,
+        $sql = "SELECT c.class_id, c.class_name,c.class_ts, b.batch_name, b.batch_number, e.emp_name, e.phone , e.live_link FROM tc_classes AS c, tc_batch AS b,
         tc_employee AS e, tc_student AS s WHERE c.batch_id = b.batch_id AND s.batch_id = b.batch_id AND e.emp_id = c.teacher_id AND 
          s.student_id = $student_id AND c.group_id ='0' AND c.status = '1'  ";
           $query = $this->db->query($sql);
@@ -87,7 +87,7 @@ class Student_model extends CI_Model
           }
     }
     public function get_p_live_class_data($student_id){
-        $sql = "SELECT c.class_name, c.class_ts, b.batch_name, b.batch_number, e.emp_name, e.phone , e.live_link,g.group_name FROM tc_classes AS c, tc_batch AS b,
+        $sql = "SELECT c.class_id, c.class_name, c.class_ts, b.batch_name, b.batch_number, e.emp_name, e.phone , e.live_link,g.group_name FROM tc_classes AS c, tc_batch AS b,
         tc_employee AS e, tc_student AS s, tc_batch_group AS g WHERE c.batch_id = b.batch_id AND s.batch_id = b.batch_id AND e.emp_id = c.teacher_id AND 
          s.student_id = $student_id AND c.group_id = g.group_id AND c.status = '1'  ";
           $query = $this->db->query($sql);
