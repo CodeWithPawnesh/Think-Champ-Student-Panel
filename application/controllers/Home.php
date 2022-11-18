@@ -13,18 +13,23 @@ class Home extends CI_Controller {
 		$this->load->web_temp_2('home',$data);
 	}
     public function AboutUs(){
-        $this->load->web_temp('about_us');
+        $data['page']="";
+        $this->load->web_temp('about_us',$data);
     }
     public function Contact(){
-        $this->load->web_temp('contact');
+        $data['page']="";
+        $this->load->web_temp('contact',$data);
     }
     public function Faq(){
-        $this->load->web_temp('faq');
+        $data['page']="";
+        $this->load->web_temp('faq',$data);
     }
     public function PrivacyPolicy(){
-        $this->load->web_temp('privacy_policy');
+        $data['page']="";
+        $this->load->web_temp('privacy_policy',$data);
     }
     public function TermsAndService(){
-        $this->load->web_temp('terms_and_service');
+        $data['page']="";
+        $this->load->web_temp('terms_and_service',$data);
     }
 }

@@ -250,7 +250,7 @@
             <div class="swiper-slide card">
 
                     <div class="card card-course card-sm-12">
-                        <img class="card-img-top" src="assets/images/courses/pyhton.jpg" alt="Card image cap">
+                        <img class="card-img-top" src="http://localhost/Employee-Portal/assets/images/course/<?= $c_d['sec_1_img'] ?>" alt="Card image cap">
                         <div class="card-body">
                             <?php if($c_d['course_level']=='1'){ ?>
                                 <div class="levels">BEGINNER</div>

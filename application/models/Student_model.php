@@ -2,12 +2,13 @@
 class Student_model extends CI_Model
 {
  public function get_course(){
-    $query = $this->db->get("tc_course");
-            if($query->num_rows()>0){
-                return $query->result_array();
-            }else{
-                return false;
-            }
+    $my_sql = "SELECT c.*, e.emp_name FROM tc_course as c, tc_employee as e WHERE c.course_id = e.course_id AND e.role = 1 ";
+    $query = $this->db->query($my_sql);
+    if ($query->num_rows() > 0) {
+        return $query->result_array();
+    }else{
+        return false;
+    }
  }
  public function get_course_detail($id){
     $this->db->where("course_id",$id);
@@ -183,6 +184,13 @@ class Student_model extends CI_Model
          }else{
              return false;
          }
+    }
+    public function get_course_name($course_id){
+        $this->db->where("course_id",$course_id);
+        $query = $this->db->get("tc_course");
+        if($query->num_rows()>0){
+            return $query->result_array();
+        }
     }
 }
 ?>

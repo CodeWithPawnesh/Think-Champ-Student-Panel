@@ -8,7 +8,9 @@ class Subscription extends CI_Controller {
 	{
 		parent::__construct();
 		$this->load->model('Student_model','SM');
+		$this->load->model('Mail_model','MAM');
         $this->load->model('Subscription_model','SBM');
+		$this->load->library('email');
     }
 	public function index()
 	{
@@ -98,6 +100,7 @@ class Subscription extends CI_Controller {
 		}
 	}
 	public function payment_status(){
+		$this->load->library('email');
 		// $key_id = "rzp_live_49RY8lWxxDaBbc"; //Live
 		// $secret = "HVoVj9kAhE6rmBt2Uu4obm6c";//Live
 		$key_id = "rzp_test_GUx0qaLfzdvD5u"; //test
@@ -136,6 +139,9 @@ class Subscription extends CI_Controller {
 	);
        if ($generated_signature == $roz_signature) {
 		$this->SBM->sub_student($student_data,$login_data,$order_data);
+		$course_name = $this->SBM->get_course_name($student_data['course_id']);
+		$this->MAM->send_mail_student_enrolment($student_data,$login_data,$course_name);
+		redirect("Subscription/payment_success");
            }else{
 			echo "Payment Failed";
 		   }

@@ -9,7 +9,8 @@ class Courses extends CI_Controller {
     }
 	public function index()
 	{
-		$this->load->web_temp('courses');
+		$data['course_data'] = $this->SM->get_course();
+		$this->load->web_temp('courses',$data);
 	}
 	public function CourseDetail(){
 		if(isset($_GET['id'])){
