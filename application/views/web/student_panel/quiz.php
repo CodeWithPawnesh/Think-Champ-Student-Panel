@@ -31,7 +31,8 @@
                     </div>
                 </div>
                 <div class="white_card_body ">
-                    <?php if(!empty($quiz_data)){ ?>
+                    <h2 class="text-danger">No Quiz Available</h2>
+                    <!-- <?php if(!empty($quiz_data)){ ?>
                     <div class="table-responsive">
                         <table class="table align-middle">
                             <thead>
@@ -58,7 +59,7 @@
                             </tbody>
                         </table>
                     </div>
-                    <?php } ?>
+                    <?php } ?> -->
                 </div>
             </div>
         </div>

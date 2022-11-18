@@ -160,7 +160,7 @@
                                 
                                 <li>
                                     <a class="bell_notification_clicker" href="#"> <img src="assets/dashboard/img/icon/bell.svg" alt="">
-                                        <span>2</span>
+                                       
                                     </a>
 
                                     <div class="Menu_NOtification_Wrap">
@@ -171,13 +171,10 @@
 
                                             <div class="single_notify d-flex align-items-center">
                                                 <div class="notify_thumb">
-                                                    <a href="#"><img src="assets/dashboard/img/staf/2.png" alt=""></a>
+                                                  
                                                 </div>
                                                 <div class="notify_content">
-                                                    <a href="#">
-                                                        <h5>Course </h5>
-                                                    </a>
-                                                    <p>Lorem ipsum dolor sit amet</p>
+                                                   
                                                 </div>
                                             </div>
                                         </div>
