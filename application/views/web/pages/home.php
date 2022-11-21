@@ -1,1162 +1,943 @@
-<!-- Start of First-section  -->
+    <!-- Main content Start -->
+    <div class="main-content">
+        <!-- Banner Section Start -->
+        <div id="rs-banner" class="rs-banner style6">
+            <div class="container">
+                <div class="banner-content text-center">
+                    <h1 class="banner-title white-color">Ehance your knowledge</h1>
 
-
-<section class="first_section" style=" background-image: url(assets/images/home/first-section-bg.jpg);">
-    <div class="first_section_col1">
-        <div class="circle-anim">
-            <img src="assets/images/home/circle.png" alt="circle">
-        </div>
-        <h1 class="first_heading">Become Tech Savvy With <br>
-            <span class="th-ch">Think Champ.</span>
-        </h1>
-
-        <br>
-        <h3 class="first_heading_text">BE THE PART OF A TECH GROUP THAT YOU DESERVE.<br>
-            THINK CHAMP IS THE GROWING PLATFORM FOR FULL STACK, PHP ETC SKILLS.
-        </h3>
-        <a href="#" class="grab-btn">Grab A Course</a>
-
-
-    </div>
-    </div>
-    <div class="first_section_col2">
-        <div class="square-anim">
-            <img src="assets/images/home/square.png" alt="square">
-        </div>
-        <img src="assets/images/home/bg.png" alt="bg" class="bg-img">
-
-    </div>
-
-</section>
-
-<!-- End of First-section  -->
-
-<section class="second-section">
-    <div class="layer-anim">
-        <img src="assets/images/home/curve-layer.png" alt="bg">
-    </div>
-    <div class="layer-anim-2">
-        <img src="assets/images/home/curve-layer.png" alt="bg">
-    </div>
-    <h1 class="first-heading display-only-mobile">HOW TO HELP YOU TO GET A JOB?</h1>
-    <div class="second-section-col-1">
-        <a href="javascript:;" onclick="skill('ps')">
-        <div class="skill-box">
-            <img src="assets/images/home/problem.png" alt="" class="skill-img">
-            <h3 class="skill-text">Problem Solving</h3>
-
-        </div>
-        </a>
-        <a href="javascript:;" onclick="skill('fmi')">
-        <div class="skill-box">
-            <img src="assets/images/home/mock.png" alt="" class="skill-img">
-            <h3 class="skill-text">Free Mock Interviews</h3>
-        </div>
-        </a>
-        <a href="javascript:;" onclick="skill('lcod')">
-        <div class="skill-box">
-            <img src="assets/images/home/live-coding.png" alt="" class="skill-img">
-            <h3 class="skill-text">Live Coding</h3>
-        </div>
-        </a>
-        <a href="javascript:;" onclick="skill('p')">
-        <div class="skill-box">
-            <img src="assets/images/home/projects.png" alt="" class="skill-img">
-            <h3 class="skill-text">Projects</h3>
-        </div>
-        </a>
-        <a href="javascript:;" onclick="skill('i')">
-        <div class="skill-box">
-            <img src="assets/images/home/Internship-2.png" alt="" class="skill-img">
-            <h3 class="skill-text">Internship</h3>
-        </div>
-        </a>
-    </div>
-    <div class="display">
-    <div id="job" class="second-section-col-2" style="background-image: url(assets/images/home/features.jpg);">
-        <h1 class="first-heading">HOW TO HELP YOU TO GET A JOB?</h1>
-    </div>
-    <div id="ps" class="second-section-col-2 job-hidden" style="background-image: url(assets/images/home/problem.png);">
-        <h1 class="first-heading">PROBLEM SOLVING</h1>
-        <p class="skill-text-center">THE PROBLEM IS NOT TO FIND THE ANSWER, IT'S TO FACE THE ANSWER.</p>
-    </div>
-    <div id="fmi" class="second-section-col-2 job-hidden" style="background-image: url(assets/images/home/mock.png);">
-        <h1 class="first-heading">FREE MOCK INTERVIEW</h1>
-        <p class="skill-text-center">A MOCK INTERVIEW IS NOT A TEST OF YOUR KNOWLEDGE, BUT YOUR ABILITY TO USE IT AT THE RIGHT TIME.</p>
-    </div>
-    <div id="lcod" class="second-section-col-2 job-hidden" style="background-image: url(assets/images/home/live-coding.png);">
-        <h1 class="first-heading">LIVE CODING</h1>
-        <p class="skill-text-center">LIVE CODING ISN'T, ABOUT WHAT YOU KNOW; ITS ABOUT WHAT YOU FIGURE OUT.</p>
-    </div>
-    <div id="p" class="second-section-col-2 job-hidden" style="background-image: url(assets/images/home/projects.png);">
-        <h1 class="first-heading">PROJECTS</h1>
-        <p class="skill-text-center">A PROJECT IS COMPLETE WHEN IT STARTS WORKING FOR YOU, RATHER THAN YOU WORKING FOR IT.</p>
-    </div>
-    <div id="i" class="second-section-col-2 job-hidden" style="background-image: url(assets/images/home/Internship-2.png);">
-        <h1 class="first-heading">INTERNSHIP</h1>
-        <p class="skill-text-center">JUST LIKE FOOTPRINTS IN THE SAND, EACH STEP SIGNIFIES THE JOURNEY TAKEN.</p>
-    </div>
-    <div id="cd" class="second-section-col-2 job-hidden" style="background-image: url(assets/images/home/Company-drives.png);">
-        <h1 class="first-heading">COMPANY DRIVES</h1>
-        <p class="skill-text-center">DON'T SIT AND WAIT FOR OPPOURTUNITIES TO COME, GET UP AND MAKE THEM.</p>
-    </div>
-    <div id="lc" class="second-section-col-2 job-hidden" style="background-image: url(assets/images/home/live-classes.png);">
-        <h1 class="first-heading">LIVE CLASSES</h1>
-        <p class="skill-text-center">IT FEELS CLASSES ATTENDING PHYSICALLY</p>
-    </div>
-    <div id="bv" class="second-section-col-2 job-hidden" style="background-image: url(assets/images/home/backup.png);">
-        <h1 class="first-heading">BACKUP VIDEOS</h1>
-        <p class="skill-text-center">OUR BACKUP RECODING VIDEOS HELPS YOU TO RECOVER FROM MISSED LIVE SESSIONS</p>
-    </div>
-    <div id="scd" class="second-section-col-2 job-hidden" style="background-image: url(assets/images/home/Questions-amico.png);">
-        <h1 class="first-heading">SPOT CLARIFICATION DOUBT</h1>
-        <p class="skill-text-center">WE SOLVE ALL YOUR DOUBTS ON THE SPOT, SO THAT YOU'LL NEVER FACE DIFFICULTIES.</p>
-    </div>
-    <div id="r" class="second-section-col-2 job-hidden" style="background-image: url(assets/images/home/resume.png);">
-        <h1 class="first-heading">RESUME BUILDING</h1>
-        <p class="skill-text-center">WE HELPS YOU TO BUILD UP YOUR RESUME AND SUGGESTS A PATH TO ACHEIVE YOUR DREAM GOALS.</p>
-    </div>
-    </div>
-    <div class="second-section-col-3">
-    <a href="javascript:;" onclick="skill('cd')">
-        <div class="skill-box">
-            <img src="assets/images/home/Company-drives.png" alt="" class="skill-img">
-            <h3 class="skill-text">Company Drives</h3>
-        </div>
-    </a>
-    <a href="javascript:;" onclick="skill('lc')">
-        <div class="skill-box">
-            <img src="assets/images/home/live-classes.png" alt="" class="skill-img">
-            <h3 class="skill-text">Live Classes</h3>
-        </div>
-    </a>
-    <a href="javascript:;" onclick="skill('bv')">
-        <div class="skill-box">
-            <img src="assets/images/home/backup.png" alt="" class="skill-img">
-            <h3 class="skill-text">Backup Videos</h3>
-        </div>
-    </a>
-    <a href="javascript:;" onclick="skill('scd')">
-        <div class="skill-box">
-            <img src="assets/images/home/Questions-amico.png" alt="" class="skill-img">
-            <h3 class="skill-text">Spot Clarification Doubt</h3>
-        </div>
-    </a>
-    <a href="javascript:;" onclick="skill('r')">
-        <div class="skill-box">
-            <img src="assets/images/home/resume.png" alt="" class="skill-img">
-            <h3 class="skill-text">Resume Building</h3>
-        </div>
-    </a>
-    </div>
-
-</section>
-
-<!-- Start Of THird Section  -->
-
-<section class="third-section" id="about">
-    <h1 class="first-heading">About Us</h1>
-    <p class="mission-txt text-center">The way to trounce future. Improve your skills, explore and upgrade... The main
-        intention of our program to provide skilled learning for every student anywhere in the world.<br>
-        we feel that online-based learning is an easy way for better outcomes. THINK-CHAMP training sessions make you
-        feel
-        confident in online learning.<br>
-        You will never face any negative experience while enjoying your classes virtually by sitting in your comfort
-        zone.<br>
-        This will help you to learn better and quicker than the traditional ways of learning.</p>
-
-    <div class="about-tab">
-
-
-        <button id="missionbtn" onclick="about('1')" class="abt-us-btn active_class">Mission</button>
-        <button id="visionbtn" onclick="about('2')" class="abt-us-btn">Vision</button>
-        <button id="passionbtn" onclick="about('3')" class="abt-us-btn">Passion</button>
-
-        <div id="mission" class="mission-container mission">
-            <div class="mission-img-col" style="background-image: url(assets/images/home/mission.jpg);">
-
-            </div>
-            <div class="mission-text-container">
-                <h2 class="mission-heading">Mission</h2><br><br>
-                <p class="mission-txt">Our mission at THINK CHAMP is to share practical knowledge with a lot of
-                    real-world
-                    examples with ingenuity, creativity, and innovation. we are dedicated to challenging a high level of
-                    dynamic
-                    metamorphosis by dedication to an ethical approach from the bottom up.</p>
+                    <div class="desc white-color mb-50"> Learn At your Own Pace Develope Your Career</div>
+                    <div class="banner-btn">
+                        <a class="readon2 banner-style" href="#">Be a coder</a>
+                    </div>
+                </div>
+                <div class="shape-img left">
+                    <img class="animate slideInLeft wow" data-wow-duration="1.5s"
+                        src="assets2/assets/images/bg/home6/icon/1.png" alt="images">
+                </div>
+                <div class="shape-img center">
+                    <div class="inner">
+                        <img class="animate slideInUp wow" data-wow-duration="1.5s"
+                            src="assets2/assets/images/bg/home6/icon/2.png" alt="images">
+                        <div class="spiner one">
+                            <img class="spine-r" src="assets2/assets/images/banner/home6/spine-sm.png" alt="images">
+                            <img class="spine" src="assets2/assets/images/banner/home6/spine.png" alt="images">
+                        </div>
+                        <div class="spiner two">
+                            <img class="spine-r" src="assets2/assets/images/banner/home6/spine-sm.png" alt="images">
+                            <img class="spine" src="assets2/assets/images/banner/home6/spine.png" alt="images">
+                        </div>
+                        <div class="spiner three">
+                            <img class="spine-r" src="assets2/assets/images/banner/home6/spine-sm.png" alt="images">
+                            <img class="spine" src="assets2/assets/images/banner/home6/spine.png" alt="images">
+                        </div>
+                    </div>
+                </div>
+                <div class="shape-img right">
+                    <img class="animate slideInRight wow" data-wow-duration="1.5s"
+                        src="assets2/assets/images/bg/home6/icon/3.png" alt="images">
+                </div>
             </div>
         </div>
+        <!-- Banner Section End -->
 
-        <div id="vision" class="mission-container vision">
-            <div class="vission-img-col" style=" background-image: url(assets/images/home/vision.jpg);">
-
-            </div>
-            <div class="mission-text-container">
-                <h2 class="mission-heading">Vision</h2><br><br>
-                <p class="mission-txt">Our vission is to prepare and motivate our students for a rapidly changing world
-                    by
-                    instilling in them critical thinking skills, a global perspective, thinking practically, and a
-                    respect for
-                    core values of honesty, loyalty, perseverance, and compassion. Students will have success for today
-                    and be
-                    prepared for tomorrow.</p>
-            </div>
-        </div>
-
-        <div id="passion" class="mission-container passion">
-            <div class="passion-img-col" style="background-image: url(assets/images/home/passion.jpg);">
-
-            </div>
-            <div class="mission-text-container">
-                <h2 class="mission-heading">Passion</h2><br><br>
-                <p class="mission-txt">students become more powerful when they gave a good platform to learn what they
-                    think. we
-                    put our passion to train the students in a very practical and smart way for gaining knowledge in all
-                    aspects.
-                    we believe that our passion will deserve the success of the company with great heights.</p>
-            </div>
-        </div>
-    </div>
-    <a href="<?= base_url('About-Us') ?>" class="know-more-btn">KNOW MORE</a>
-</section>
-
-<!-- End Of Third Section  -->
-
-<!-- Start of Students Placed Section  -->
-
-<section class="student-placed">
-    <div class="student-left-col">
-        <h2 class="our-student-heading">Our Students Placed :</h2>
-    </div>
-    <div class="student-right-col">
-        <marquee>
-            <img src="assets/images/home/stan.png" alt="stan" width="150" height="60">
-            <img src="assets/images/home/IIT-Bombay.png" alt="stan" width="120" height="100">
-            <img src="assets/images/home/Amazon logo.png" alt="stan" width="120" height="60">
-            <img src="assets/images/home/iitd.png" alt="stan" width="220" height="80">
-            <img src="assets/images/home/Microsoft-Logo-PNG.png" alt="stan" width="180" height="60">
-        </marquee>
-    </div>
-</section>
-
-<!-- End of Students Placed Section  -->
-
-
-<!-- Start Of Sixth Section  -->
-<section class="sixth-section" id="course">
-    <h1 class="first-heading">COURSES</h1>
-    <div class="swiper mySwiper container slider-services">
-        <div class="swiper-wrapper content slider-content">
-            <?php foreach($course_data as $c_d){ ?>
-            <div class="swiper-slide card">
-
-                    <div class="card card-course card-sm-12">
-                        <img class="card-img-top" src="http://localhost/Employee-Portal/assets/images/course/<?= $c_d['sec_1_img'] ?>" alt="Card image cap">
-                        <div class="card-body">
-                            <?php if($c_d['course_level']=='1'){ ?>
-                                <div class="levels">BEGINNER</div>
-                            <?php } ?>
-                            <?php if($c_d['course_level']=='2'){ ?>
-                                <div class="levels">INTERMEDIATE</div>
-                            <?php } ?>
-                            <?php if($c_d['course_level']=='3'){ ?>
-                                <div class="levels">ADVANCE</div>
-                            <?php } ?>
-                            <h1 class="course"><?= $c_d['course_name']; ?></h1><br>
-                            <hr style="width:80% ;margin:0;text-align:center;margin:0 auto;">
-                            <center>
-                                <div class="star-rating">
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                </div>
-                            </center>
-                            <div class="course-left-col">
-                                <p class="course-fee">Course Fee : </p><br><br>
-                                <h2 class="course-price">₹ <?= $c_d['price'] ?>/-</h2>
-                            </div><br>
-                            <div class="course-right-col">
-                            <a href="<?= base_url('Course-Detail').'?id='. base64_encode($c_d['course_id']) ?>" class="enroll-btn">Enroll Now</a>
+        <div id="rs-about" class="rs-about style6 pt-90 pb-100 md-pt-60 md-pb-70">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4">
+                        <div class="sec-title mb-26">
+                            <div class="sub-title">About Our Traning</div>
+                            <h2 class="title extra-bold">Develope Your Skills Shine Your Life</h2>
+                            <div class="btn-part">
+                                <a class="readon2 uppercase" href="<?= base_url("About-Us") ?>">Read More</a>
                             </div>
                         </div>
                     </div>
-
+                    <div class="col-lg-4 pr-10 md-mb-40">
+                        <div class="desc">
+                            The way to trounce future. Improve your skills, explore and upgrade... The main intention of
+                            our program to provide skilled learning for every student.
+                            we feel that our practical- based learning is an easy way for better outcomes. </div>
+                    </div>
+                    <div class="col-lg-4 pr-10 md-mb-10">
+                        <div class="desc">
+                            THINK-CHAMP training sessions make you feel confident.
+                            we will guide you in all aspects of industry to get your dream job. </div>
+                    </div>
+                </div>
+                <div class="shape-animate">
+                    <div class="transparent left">
+                        <img src="assets2/assets/images/about/home6/line/1.png" alt="images">
+                    </div>
+                    <div class="transparent right">
+                        <img src="assets2/assets/images/about/home6/line/2.png" alt="images">
+                    </div>
+                </div>
             </div>
-            <?php } ?>
+        </div>
 
-            <!-- <div class="swiper-slide card">
-                <div class="card card-course card-sm-12">
-                    <img class="card-img-top" src="assets/images/courses/front-end.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <div class="levels">INTERMEDIATE</div>
-                        <h1 class="course">Desigining and Development</h1><br>
-                        <hr style="width:80% ;margin:0;text-align:center;margin:0 auto;">
-                        <center>
-                            <div class="star-rating">
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star"></span>
-                                <span class="fa fa-star"></span>
-                            </div>
-                        </center>
-                        <div class="course-left-col">
-                            <p class="course-fee">Course Fee : </p><br><br>
-                            <h2 class="course-price">₹ 9999/-</h2>
-                        </div><br>
-                        <div class="course-right-col">
-                        <a href="#" class="enroll-btn">Enroll Now</a>
+        <div class="rs-counter style2-about pb-100 md-pb-70">
+            <div class="container">
+                <div class="row couter-area">
+                    <div class="col-lg-3 col-md-6 md-mb-30">
+                        <div class="counter-item text-center">
+                            <h2 class="rs-count">3000</h2>
+                            <h4 class="title mb-0">students</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 md-mb-30">
+                        <div class="counter-item text-center">
+                            <h2 class="rs-count plus">30</h2>
+                            <h4 class="title mb-0">placed companies</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 sm-mb-30">
+                        <div class="counter-item text-center">
+                            <h2 class="rs-count plus">1500</h2>
+                            <h4 class="title mb-0">internships offer</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="counter-item text-center">
+                            <h2 class="rs-count percent">100</h2>
+                            <h4 class="title mb-0">Satisfaction Rate</h4>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <div class="swiper-slide card">
-                <div class="col-lg-3.5">
-                    <div class="card card-course card-sm-12">
-                        <img class="card-img-top" src="assets/images/courses/programing.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <div class="levels">ADVANCE</div>
-                            <h1 class="course">Programming and Development</h1><br>
-                            <hr style="width:80% ;margin:0;text-align:center;margin:0 auto;">
-                            <center>
-                                <div class="star-rating">
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
+
+
+        <!-- Partner Start -->
+        <div class="sec-title text-center mb-70 md-mb-45">
+
+            <h2 class="title title-color"> Students Placed companies</h2>
+
+            <div class="rs-partner pt-100 pb-100 md-pt-70 md-pb-70">
+                <div class="container">
+                    <div class="rs-carousel owl-carousel" data-loop="true" data-items="4" data-margin="30"
+                        data-autoplay="true" data-hoverpause="true" data-autoplay-timeout="5000" data-smart-speed="800"
+                        data-dots="false" data-nav="true" data-nav-speed="false" data-center-mode="false"
+                        data-mobile-device="1" data-mobile-device-nav="false" data-mobile-device-dots="false"
+                        data-ipad-device="3" data-ipad-device-nav="false" data-ipad-device-dots="false"
+                        data-ipad-device2="2" data-ipad-device-nav2="false" data-ipad-device-dots2="false"
+                        data-md-device="4" data-md-device-nav="true" data-md-device-dots="false">
+                        <div class="partner-item">
+                            <a href="#"><img src="assets2/assets/images/partner/1.png" alt=""></a>
+                        </div>
+                        <div class="partner-item">
+                            <a href="#"><img src="assets2/assets/images/partner/2.png" alt=""></a>
+                        </div>
+                        <div class="partner-item">
+                            <a href="#"><img src="assets2/assets/images/partner/3.png" alt=""></a>
+                        </div>
+                        <div class="partner-item">
+                            <a href="#"><img src="assets2/assets/images/partner/4.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Partner End -->
+            <!-- About Section Start -->
+            <div class="rs-about style1 pt-100 pb-100 md-pt-70 md-pb-70">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 padding-0 md-pl-15 md-pr-15 md-mb-30">
+                            <div class="img-part">
+                                <img class="" src="assets2/assets/images/about/history.png" alt="About Image">
+                            </div>
+                            <ul class="nav nav-tabs histort-part" id="myTab" role="tablist">
+                                <li class="nav-item tab-btns single-history" role="presentation">
+                                    <a class="nav-link tab-btn active" href="#" id="about-history-tab"
+                                        data-bs-toggle="tab" data-bs-target="#about-history" role="tab"
+                                        aria-controls="about-history" aria-selected="true"><span class="icon-part"><i
+                                                class="flaticon-banknote"></i></span>MISSION</a>
+                                </li>
+                                <li class="nav-item tab-btns single-history" role="presentation">
+                                    <a class="nav-link tab-btn" href="#" id="about-mission-tab" data-bs-toggle="tab"
+                                        data-bs-target="#about-mission" role="tab" aria-controls="about-mission"
+                                        aria-selected="false"><span class="icon-part"><i
+                                                class="flaticon-flower"></i></span> Vission</a>
+                                </li>
+                                <li class="nav-item tab-btns single-history last-item" role="presentation">
+                                    <a class="nav-link tab-btn" href="#" id="about-admin-tab" data-bs-toggle="tab"
+                                        data-bs-target="#about-admin" role="tab" aria-controls="about-admin"
+                                        aria-selected="false"><span class="icon-part"><i
+                                                class="flaticon-analysis"></i></span>PASSION</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-5 offset-lg-1">
+                            <div class="tab-content tabs-content" id="myTabContent">
+                                <div class="tab-pane tab fade show active" id="about-history" role="tabpanel"
+                                    aria-labelledby="about-history-tab">
+                                    <div class="sec-title mb-25">
+                                        <h2 class="title">MISSION</h2>
+                                        <div class="desc">Our mission at THINK CHAMP is to share practical knowledge
+                                            with a lot of real-world examples with ingenuity, creativity, and
+                                            innovation. we are dedicated to challenging a high level of dynamic
+                                            metamorphosis by dedication to an ethical approach from the bottom up.</div>
+                                    </div>
+                                    <div class="tab-img">
+                                        <img class="" src="assets2/assets/images/about/tab1.jpg" alt="Tab Image">
+                                    </div>
                                 </div>
-                            </center>
-                            <div class="course-left-col">
-                                <p class="course-fee">Course Fee : </p><br><br>
-                                <h2 class="course-price">₹ 9999/-</h2>
-                            </div><br>
-                            <div class="course-right-col">
-                            <a href="#" class="enroll-btn">Enroll Now</a>
+                                <div class="tab-pane fade" id="about-mission" role="tabpanel"
+                                    aria-labelledby="about-mission-tab">
+                                    <div class="sec-title mb-25">
+                                        <h2 class="title">VISSION</h2>
+                                        <div class="desc">Our vission is to prepare and motivate our students for a
+                                            rapidly changing world by instilling in them critical thinking skills, a
+                                            global perspective, thinking practically, and a respect for core values of
+                                            honesty, loyalty, perseverance, and compassion. Students will have success
+                                            for today and be prepared for tomorrow.</div>
+                                    </div>
+                                    <div class="tab-img">
+                                        <img class="" src="assets2/assets/images/about/tab2.jpg" alt="Tab Image">
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="about-admin" role="tabpanel"
+                                    aria-labelledby="about-admin-tab">
+                                    <div class="sec-title mb-25">
+                                        <h2 class="title">PASSION</h2>
+                                        <div class="desc">students become more powerful when they gave a good platform
+                                            to learn what they think. we put our passion to train the students in a very
+                                            practical and smart way for gaining knowledge in all aspects. we believe
+                                            that our passion will deserve the success of the company with great heights.
+                                        </div>
+                                    </div>
+                                    <div class="tab-img">
+                                        <img class="" src="assets2/assets/images/about/tab3.jpg" alt="Tab Image">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Intro Info Tabs-->
+                    <div class="intro-info-tabs">
+
+                    </div>
+                </div>
+            </div>
+            <!-- About Section End -->
+            <!-- Services Section Start -->
+            <div class="rs-services style6 pb-100 md-pb-70">
+                <div class="container">
+                    <div class="sec-title text-center mb-35">
+                        <div class="sub-title">Our Provide Services</div>
+                        <h2 class="title title-color mb-21">We Provide Best Services</h2>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 md-mb-30">
+                            <div class="services-wrap bg1">
+                                <div class="services-item ">
+                                    <div class="services-icon">
+                                        <img src="assets2/assets/images/services/home6/icon/1.png" alt="images">
+                                    </div>
+                                    <div class="services-desc">
+                                        <h3 class="title"><a href="#">Professional courses</a></h3>
+                                        <p>
+                                            We provide all the courses professionally to enhance your knowledge
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 pt-40 col-md-6 md-pt-0 md-mb-30">
+                            <div class="services-wrap bg2">
+                                <div class="services-item ">
+                                    <div class="services-icon">
+                                        <img src="assets2/assets/images/services/home6/icon/2.png" alt="images">
+                                    </div>
+                                    <div class="services-desc">
+                                        <h3 class="title"><a href="#">Expert Trainers</a></h3>
+                                        <p>
+                                            Our trainers are highly experts and train you in a practical way
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 sm-mb-30">
+                            <div class="services-wrap bg3">
+                                <div class="services-item ">
+                                    <div class="services-icon">
+                                        <img src="assets2/assets/images/services/home6/icon/3.png" alt="images">
+                                    </div>
+                                    <div class="services-desc">
+                                        <h3 class="title"><a href="#">Internships</a></h3>
+                                        <p>
+                                            We offer free internship opportunities for every course and only for
+                                            students who enrolled in a course
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 pt-40 col-md-6 md-pt-0">
+                            <div class="services-wrap bg4">
+                                <div class="services-item">
+                                    <div class="services-icon">
+                                        <img src="assets2/assets/images/services/home6/icon/4.png" alt="images">
+                                    </div>
+                                    <div class="services-desc">
+                                        <h3 class="title"><a href="#">certification</a></h3>
+                                        <p>
+                                            After completing of course student will get a Certification from THINK CHAMP
+                                            with an ISO number.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div class="swiper-slide card">
-                <div class="card card-course card-sm-12">
-                    <img class="card-img-top" src="assets/images/courses/front-end.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <div class="levels">INTERMEDIATE</div>
-                        <h1 class="course">Desigining and Development</h1><br>
-                        <hr style="width:80% ;margin:0;text-align:center;margin:0 auto;">
-                        <center>
-                            <div class="star-rating">
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star"></span>
-                                <span class="fa fa-star"></span>
-                            </div>
-                        </center>
-                        <div class="course-left-col">
-                            <p class="course-fee">Course Fee : </p><br><br>
-                            <h2 class="course-price">₹ 9999/-</h2>
-                        </div><br>
-                        <div class="course-right-col">
-                            <a href="#" class="enroll-btn">Enroll Now</a>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-
-        </div>
-    </div>
-    <div class="swiper-button-next slider-nxt"></div>
-    <div class="swiper-button-prev slider-prev"></div>
-    <!-- <a href="<?= base_url('Courses') ?>" class="view-more-btn">VIEW MORE COURSES</a> -->
-    <!-- <div class="swiper-pagination slider-pagination"></div> -->
-
-</section>
+            <!-- Services Section End -->
 
 
-<section class="forth-section">
-    <h1 class="first-heading">SERVICES</h1>
-
-    <div class="services-box">
-        <img src="assets/images/home/professional-course.png" alt="" class="service-img">
-        <h2 class="service-box-heading">PROFESSIONAL COURSES</h2>
-        <hr class="service-box-heading-underline">
-        <p class="service-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ipsa ea sint sit. Dignissimos delectus ea itaque adipisci, aut aspernatur?</p>
-    </div>
-
-    <div class="services-box">
-        <img src="assets/images/home/coach.png" alt="" class="service-img">
-        <h2 class="service-box-heading">EXPERT TRAINERS</h2>
-        <hr class="service-box-heading-underline">
-        <p class="service-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ipsa ea sint sit. Dignissimos delectus ea itaque adipisci, aut aspernatur?</p>
-    </div>
-
-    <div class="services-box">
-        <img src="assets/images/home/recruitment.png" alt="" class="service-img">
-        <h2 class="service-box-heading">PLACEMENT ASSISTENCE</h2>
-        <hr class="service-box-heading-underline">
-        <p class="service-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ipsa ea sint sit. Dignissimos delectus ea itaque adipisci, aut aspernatur?</p>
-    </div>
-
-    <div class="services-box">
-        <img src="assets/images/home/certificate.png" alt="" class="service-img">
-        <h2 class="service-box-heading">CERTIFICATION</h2>
-        <hr class="service-box-heading-underline">
-        <p class="service-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ipsa ea sint sit. Dignissimos delectus ea itaque adipisci, aut aspernatur?</p>
-    </div>
-
-    <div class="services-box">
-        <img src="assets/images/home/internship.png" alt="" class="service-img">
-        <h2 class="service-box-heading">INTERNSHIP OPPORTUNITIES</h2>
-        <hr class="service-box-heading-underline">
-        <p class="service-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ipsa ea sint sit. Dignissimos delectus ea itaque adipisci, aut aspernatur?</p>
-    </div>
-
-    <div class="services-box">
-        <img src="assets/images/home/clipboard.png" alt="" class="service-img">
-        <h2 class="service-box-heading">FINAL YEAR PROJECTS</h2>
-        <hr class="service-box-heading-underline">
-        <p class="service-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ipsa ea sint sit. Dignissimos delectus ea itaque adipisci, aut aspernatur?</p>
-    </div>
-
-    <div class="services-box">
-        <img src="assets/images/home/student.png" alt="" class="service-img">
-        <h2 class="service-box-heading">COLLEGE TRAINING</h2>
-        <hr class="service-box-heading-underline">
-        <p class="service-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ipsa ea sint sit. Dignissimos delectus ea itaque adipisci, aut aspernatur?</p>
-    </div>
-
-    <div class="services-box">
-        <img src="assets/images/home/direction.png" alt="" class="service-img">
-        <h2 class="service-box-heading">CAREER GUIDANCE</h2>
-        <hr class="service-box-heading-underline">
-        <p class="service-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ipsa ea sint sit. Dignissimos delectus ea itaque adipisci, aut aspernatur?</p>
-    </div>
-    </div>
-
-
-    </div>
-    </div>
-</section>
-
-
-<!-- Start of our students comes from -->
-
-<section class="student-placed">
-    <div class="student-left-col">
-        <h2 class="our-student-heading">Students Comes From:</h2>
-    </div>
-    <div class="student-right-col">
-        <marquee>
-            <img src="assets/images/home/stan.png" alt="stan" width="150" height="60">
-            <img src="assets/images/home/IIT-Bombay.png" alt="stan" width="120" height="100">
-            <img src="assets/images/home/Amazon logo.png" alt="stan" width="120" height="60">
-            <img src="assets/images/home/iitd.png" alt="stan" width="220" height="80">
-            <img src="assets/images/home/Microsoft-Logo-PNG.png" alt="stan" width="180" height="60">
-        </marquee>
-    </div>
-</section>
-
-<!-- End of our students Comes from -->
-
-<!-- Start of Fifth Section  -->
-
-<section class="fifth-section">
-    <div class="fifth-sec-left-col">
-        <h2 class="why-choose-heading">Why Choose Us?</h2><br>
-        <p class="why-choose-text">There are movements for education reforms, such as for improving quality and
-            efficiency of education towards applicable relevance in the students' lives and efficient problem solving in
-            modern or future society at large or for evidence-based education methodologies.</p>
-    </div>
-    <div class="fifth-sec-right-col">
-        <div class="why-choose-box box-1">
-            <div class="why-choose-count">01</div>
-            <h3 class="why-choose-box-heading">Weekly Analysis Of Performance</h3>
-        </div>
-
-        <div class="why-choose-box box-2">
-            <div class="why-choose-count">02</div>
-            <h3 class="why-choose-box-heading">Zero Charge For Placement</h3>
-        </div>
-
-        <div class="why-choose-box box-3">
-            <div class="why-choose-count">03</div>
-            <h3 class="why-choose-box-heading">Friendly Enviroment</h3>
-        </div>
-
-        <div class="why-choose-box   ">
-            <div class="why-choose-count">06</div>
-            <h3 class="why-choose-box-heading">Flexible Timing Assistence</h3>
-        </div>
-
-        <div class="why-choose-box box-5">
-            <div class="why-choose-count">04</div>
-            <h3 class="why-choose-box-heading">Low Fees</h3>
-        </div>
-
-        <div class="why-choose-box box-6">
-            <div class="why-choose-count">05</div>
-            <h3 class="why-choose-box-heading">Practical Training</h3>
-        </div>
-
-
-    </div>
-</section>
-
-<!-- End Of Fifth Section  -->
-
-<!-- Faq  -->
-<h1 class="first-heading display-none">FREQUENTLY ASKED QUESTION</h1>
-
-<section class="faq-section display-none" id="faq">
-<!-- bootstrap 4 accordion  -->
-
-<div id="accordion">
-  <div class="card">
-    <div class="card-header" id="headingOne">
-      <h5 class="mb-0">
-        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          <h2 class="faq-question">Q1. Think champ, the online program how is it beneficial to learners.</h2>
-        </button>
-      </h5>
-    </div>
-
-    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-      <div class="card-body">
-        <p class="faq-answer"><strong>Ans1.</strong> The learners can learn any technology/course  in online with accurate realtime examples and interactive teaching, provided with sufficient material.</p>
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-header" id="headingTwo">
-      <h5 class="mb-0">
-        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          <h2 class="faq-question">Q2. Think champ, the online program how protective is it and how are the<br> security levels.</h2>
-        </button>
-      </h5>
-    </div>
-    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-      <div class="card-body">
-        <p class="faq-answer"><strong> Ans2.</strong> Think champ provides the 100% security to the students.No information related to students is tampered,missued or monitored. The details of the students are kept confidential.</p>
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-header" id="headingThree">
-      <h5 class="mb-0">
-        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          <h2 class="faq-question">Q3. Think champ, the online program what are the courses provided?
-          </h2>
-        </button>
-      </h5>
-    </div>
-    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-      <div class="card-body">
-        <p class="faq-answer"><strong>Ans3.</strong> 1.full stack<br>
-          2.game development<br>
-          3.c<br>
-          4.java<br>
-          5.python<br>
-          6.machine learning, photoshop</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="card">
-    <div class="card-header" id="headingfour">
-      <h5 class="mb-0">
-        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
-          <h2 class="faq-question">Q4. Think champ, the online program how effective the teaching is done.
-          </h2>
-        </button>
-      </h5>
-    </div>
-    <div id="collapsefour" class="collapse" aria-labelledby="headingfour" data-parent="#accordion">
-      <div class="card-body">
-        <p class="faq-answer"><strong>Ans4.</strong>The teaching/training in think champ will be more effective  and interactive. We have the best trainers who are  experienced and capable of giving their best to the students. 
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div class="card">
-    <div class="card-header" id="headingfive">
-      <h5 class="mb-0">
-        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
-          <h2 class="faq-question">Q5. Think champ, the online program  what if we miss the sessions due to <br>network problems or with some other issues.</h2>
-          
-        </button>
-      </h5>
-    </div>
-    <div id="collapsefive" class="collapse" aria-labelledby="headingfive" data-parent="#accordion">
-      <div class="card-body">
-        <p class="faq-answer"><strong>Ans5.</strong>Think champ provides the recorded video sessions , for every concept we will provide a backup video, So obviously no fear of missing classes.
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div class="card">
-    <div class="card-header" id="headingsix">
-      <h5 class="mb-0">
-        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapsesix" aria-expanded="false" aria-controls="collapsesix">
-          <h2 class="faq-question">Q6. Think champ, the online program is online education is more<br> advantageous than direct conatact education.
-          </h2>
-        </button>
-      </h5>
-    </div>
-    <div id="collapsesix" class="collapse" aria-labelledby="headingsix" data-parent="#accordion">
-      <div class="card-body">
-        <p class="faq-answer"><strong>Ans6.</strong>Both are advantageous only with interactive and effective trainers. We provide the best teaching ,Our teaching brings the feel of attending the classes physically.
-        </p>
-      </div>
-    </div>
-  </div>
-
-</div>
-
-<!-- bootstrap 4 accordion  -->
-
-
-</section>
-
-
-<!-- FAQ -->
-
-<!-- Start of Eight Section  -->
-
-<section class="eighth-section">
-    <!-- <h1 class="first-heading">SEE WHY STUDENTS LOVES US</h1> -->
-
-    <!-- carosuel reviews  -->
-
-    <div class="container-lg">
-        <div class="row">
-            <div class="col-sm-12">
-                <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                    <h2 class="std-review">SEE WHY STUDENTS LOVES US</h2>
-                    <!-- Carousel indicators -->
-                    <ol class="carousel-indicators">
-                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#myCarousel" data-slide-to="1"></li>
-                        <li data-target="#myCarousel" data-slide-to="2"></li>
-                    </ol>
-                    <!-- Wrapper for carousel items -->
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <div class="testimonial">
-                                        <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante.</p>
-                                    </div>
-                                    <div class="media">
-                                        <img src="assets/images/home/test-img.jpg" class="mr-3" alt="">
-                                        <div class="media-body">
-                                            <div class="overview">
-                                                <div class="name"><b>Paula Wilson</b></div>
-                                                <div class="details">Media Analyst / SkyNet</div>
-                                                <div class="star-rating">
-                                                    <ul class="list-inline">
-                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                                                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="testimonial">
-                                        <p class="testimonial-text">Vestibulum quis quam ut magna consequat faucibu. Eget mi suscipit tincidunt. Utmtc tempus dictum. Pellentesque virra. Quis quam ut magna consequat faucibus quam.</p>
-                                    </div>
-                                    <div class="media">
-                                        <img src="assets/images/home/test-img.jpg" class="mr-3" alt="">
-                                        <div class="media-body">
-                                            <div class="overview">
-                                                <div class="name"><b>Antonio Moreno</b></div>
-                                                <div class="details">Web Developer / SoftBee</div>
-                                                <div class="star-rating">
-                                                    <ul class="list-inline">
-                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                                                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <div class="testimonial">
-                                        <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante.</p>
-                                    </div>
-                                    <div class="media">
-                                        <img src="assets/images/home/test-img.jpg" class="mr-3" alt="">
-                                        <div class="media-body">
-                                            <div class="overview">
-                                                <div class="name"><b>Michael Holz</b></div>
-                                                <div class="details">Web Developer / DevCorp</div>
-                                                <div class="star-rating">
-                                                    <ul class="list-inline">
-                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                                                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="testimonial">
-                                        <p class="testimonial-text">Vestibulum quis quam ut magna consequat faucibu. Eget mi suscipit tincidunt. Utmtc tempus dictum. Pellentesque virra. Quis quam ut magna consequat faucibus quam.</p>
-                                    </div>
-                                    <div class="media">
-                                        <img src="assets/images/home/test-img.jpg" class="mr-3" alt="">
-                                        <div class="media-body">
-                                            <div class="overview">
-                                                <div class="name"><b>Mary Saveley</b></div>
-                                                <div class="details">Graphic Designer / MarsMedia</div>
-                                                <div class="star-rating">
-                                                    <ul class="list-inline">
-                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                                                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <div class="testimonial">
-                                        <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante.</p>
-                                    </div>
-                                    <div class="media">
-                                        <img src="assets/images/home/test-img.jpg" class="mr-3" alt="">
-                                        <div class="media-body">
-                                            <div class="overview">
-                                                <div class="name"><b>Martin Sommer</b></div>
-                                                <div class="details">SEO Analyst / RealSearch</div>
-                                                <div class="star-rating">
-                                                    <ul class="list-inline">
-                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                                                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="testimonial">
-                                        <p class="testimonial-text">Vestibulum quis quam ut magna consequat faucibu. Eget mi suscipit tincidunt. Utmtc tempus dictum. Pellentesque virra. Quis quam ut magna consequat faucibus quam.</p>
-                                    </div>
-                                    <div class="media">
-                                        <div class="media-left d-flex mr-3">
-                                            <img src="assets/images/home/test-img.jpg" class="mr-3" alt="">
-                                        </div>
-                                        <div class="media-body">
-                                            <div class="overview">
-                                                <div class="name"><b>John Williams</b></div>
-                                                <div class="details">Web Designer / UniqueDesign</div>
-                                                <div class="star-rating">
-                                                    <ul class="list-inline">
-                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
-                                                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+            <!-- Popular Courses Section Start -->
+            <div id="rs-popular-courses" class="rs-popular-courses style3 course-shape-bg pb-200 md-pb-170 sm-pb-100">
+                <div class="container">
+                    <div class="row y-middle mb-50">
+                        <div class="col-lg-6">
+                            <div class="sec-title">
+                                <div class="sub-title primary">Top Courses</div>
+                                <h2 class="title mb-0">Popular Courses</h2>
                             </div>
                         </div>
                     </div>
-                    <!-- Carousel controls -->
-                    <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
-                        <i class="fa fa-chevron-left"></i>
-                    </a>
-                    <a class="carousel-control-next" href="#myCarousel" data-slide="next">
-                        <i class="fa fa-chevron-right"></i>
-                    </a>
+                    <div class="rs-carousel owl-carousel" data-loop="true" data-items="3" data-margin="30"
+                        data-autoplay="true" data-hoverpause="true" data-autoplay-timeout="5000" data-smart-speed="800"
+                        data-dots="false" data-nav="true" data-nav-speed="false" data-center-mode="false"
+                        data-mobile-device="1" data-mobile-device-nav="false" data-mobile-device-dots="false"
+                        data-ipad-device="2" data-ipad-device-nav="false" data-ipad-device-dots="false"
+                        data-ipad-device2="2" data-ipad-device-nav2="false" data-ipad-device-dots2="false"
+                        data-md-device="3" data-md-device-nav="false" data-md-device-dots="false">
+                        <?php foreach($course_data as $c_d){ ?>
+                        <div class="courses-item">
+                            <div class="img-part">
+                                <img src="http://localhost/Employee-Portal/assets/images/course/<?= $c_d['sec_1_img'] ?>" alt="">
+                            </div>
+                            <div class="content-part">
+                                <span><a class="categories" href="Course-Detail?id=<?=base64_encode($c_d['course_id']) ?>"><?= $c_d['course_name'] ?></a></span>
+                                <ul class="meta-part">
+                                    <li class="user"><i class="fa fa-user"></i> 245</li>
+                                    <li><span class="price">₹ <?= $c_d['price'] ?></span></li>
+                                </ul>
+                                <h3 class="title"><a href="Course-Detail?id=<?=base64_encode($c_d['course_id']) ?>"><?= $c_d['course_title'] ?></a></h3>
+                                <div class="bottom-part">
+                                    <div class="info-meta">
+                                        <ul>
+                                            <li class="ratings">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                (05)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="btn-part">
+                                        <a href="Course-Detail?id=<?=base64_encode($c_d['course_id']) ?>">Enroll Now<i class="flaticon-right-arrow"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <?php } ?>
+                    </div>
+                    <div class="view-all-btn text-center pt-50 mb-60 md-pt-30 md-mb-30">Start Learning With Our Online
+                        Courses. <a class="title-color" href="<?= base_url("Courses") ?>">View All Courses <i
+                                class="flaticon-right-arrow ml-5 body-color"></i></a></div>
                 </div>
             </div>
+            <!-- Popular Courses Section End -->
+
+            <!-- Choose Section Start -->
+            <div class="why-choose-us style3">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 js-tilt md-mb-40">
+                            <div class="img-part">
+                                <img src="assets2/assets/images/choose/home12/1.png" alt="">
+
+                            </div>
+                        </div>
+                        <div class="col-lg-6 pl-60 md-pl-15">
+                            <div class="sec-title3 mb-30">
+                                <h2 class=" title new-title margin-0 pb-15">Why Learn Here</h2>
+                                <div class="new-desc">There are movements for education reforms, such as for improving
+                                    quality and efficiency of education towards applicable relevance in the students'
+                                    lives and efficient problem solving in modern or future society at large or for
+                                    evidence-based education methodologies.</div>
+                            </div>
+                            <div class="services-part mb-20">
+                                <div class="services-icon">
+                                    <img src="assets2/assets/images/choose/home12/icon/1.png" alt="">
+                                </div>
+                                <div class="services-text">
+                                    <h2 class="title"> Lower Learning Cost</h2>
+
+                                </div>
+                            </div>
+                            <div class="services-part mb-20">
+                                <div class="services-icon">
+                                    <img src="assets2/assets/images/choose/home12/icon/2.png" alt="">
+                                </div>
+                                <div class="services-text">
+                                    <h2 class="title"> Learn With Experts</h2>
+
+                                </div>
+                            </div>
+                            <div class="services-part">
+                                <div class="services-icon">
+                                    <img src="assets2/assets/images/choose/home12/icon/3.png" alt="">
+                                </div>
+                                <div class="services-text">
+                                    <h2 class="title">Practical Training</h2>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Choose Section End -->
+
+            <!-- Faq Section Start -->
+            <div id="rs-faq" class="rs-faq-part style1 pt-100 pb-100 md-pt-70 md-pb-70">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 padding-0">
+                            <div class="main-part">
+                                <div class="title mb-40 md-mb-15">
+                                    <h2 class="text-part">Frequently Asked Questions</h2>
+                                </div>
+                                <div class="faq-content">
+                                    <div class="accordion" id="accordionExample">
+                                        <div class="accordion-item card">
+                                            <div class="accordion-header card-header" id="headingOne">
+                                                <button class="accordion-button card-link" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                                    aria-expanded="true" aria-controls="collapseOne">The online program
+                                                    how is it beneficial to leaners?</button>
+                                            </div>
+                                            <div id="collapseOne" class="accordion-collapse collapse show"
+                                                aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body card-body">The learners can learn any
+                                                    technology/course in online with accurate realtime examples and
+                                                    interactive teaching, provided with sufficient material.</div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item card">
+                                            <div class="accordion-header card-header" id="headingTwo">
+                                                <button class="card-link accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                    aria-expanded="false" aria-controls="collapseTwo">How are security
+                                                    levels?</button>
+                                            </div>
+                                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                                aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body card-body">Think champ provides the 100%
+                                                    security to the students.No information related to students is
+                                                    tampered,missued or monitored. The details of the students are kept
+                                                    confidential</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="accordion-item card">
+                                            <div class="accordion-header card-header" id="headingThree">
+                                                <button class="card-link accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                    aria-expanded="false" aria-controls="collapseThree">How effective
+                                                    the teaching is?</button>
+                                            </div>
+                                            <div id="collapseThree" class="accordion-collapse collapse"
+                                                aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body card-body">The teaching/training in think
+                                                    champ will be more effective and interactive. We have the best
+                                                    trainers who are experienced and capable of giving their best to the
+                                                    students.</div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item card">
+                                            <div class="accordion-header card-header" id="headingFour">
+                                                <button class="card-link accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                                    aria-expanded="false" aria-controls="collapseFour">what if we miss
+                                                    the sessions?</button>
+                                            </div>
+                                            <div id="collapseFour" class="accordion-collapse collapse"
+                                                aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body card-body">Think champ provides the recorded
+                                                    video sessions , for every concept we will provide a backup video,
+                                                    So obviously no fear of missing classes.</div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 padding-0">
+                            <div class="img-part media-icon">
+                                <a class="popup-videos" href="https://www.youtube.com/watch?v=atMUy_bPoQI">
+                                    <i class="fa fa-play"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- faq Section end -->
+            <!-- Testimonial Section Start -->
+            <div class="rs-testimonial style3">
+                <div class="container">
+                    <div class="sec-title mb-60 text-center md-mb-30">
+                        <div class="sub-title primary">Student Reviews</div>
+                        <h2 class="title mb-0">What Our Students Says</h2>
+                    </div>
+                    <div class="rs-carousel owl-carousel" data-loop="true" data-items="2" data-margin="30"
+                        data-autoplay="true" data-hoverpause="true" data-autoplay-timeout="5000" data-smart-speed="800"
+                        data-dots="true" data-nav="false" data-nav-speed="false" data-center-mode="false"
+                        data-mobile-device="1" data-mobile-device-nav="false" data-mobile-device-dots="false"
+                        data-ipad-device="2" data-ipad-device-nav="false" data-ipad-device-dots="false"
+                        data-ipad-device2="1" data-ipad-device-nav2="false" data-ipad-device-dots2="false"
+                        data-md-device="2" data-md-device-nav="false" data-md-device-dots="true">
+                        <div class="testi-item">
+                            <div class="row y-middle no-gutter">
+                                <div class="col-md-4">
+                                    <div class="user-info">
+                                        <img src="assets/images/testimonial/style3/1.png" alt="">
+                                        <h4 class="name">Saiko Najran</h4>
+                                        <span class="designation">Student</span>
+                                        <ul class="ratings">
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="desc">The charms of pleasure of the moment so blinded by desire that
+                                        they cannot foresee the pain and trouble that are bound ensue and equal blame
+                                        belongs to those who fail in their duty.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testi-item">
+                            <div class="row y-middle no-gutter">
+                                <div class="col-md-4">
+                                    <div class="user-info">
+                                        <img src="assets2/assets/images/testimonial/style3/2.png" alt="">
+                                        <h4 class="name">Saiko Najran</h4>
+                                        <span class="designation">Student</span>
+                                        <ul class="ratings">
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="desc">The charms of pleasure of the moment so blinded by desire that
+                                        they cannot foresee the pain and trouble that are bound ensue and equal blame
+                                        belongs to those who fail in their duty.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testi-item">
+                            <div class="row y-middle no-gutter">
+                                <div class="col-md-4">
+                                    <div class="user-info">
+                                        <img src="assets2/assets/images/testimonial/style3/3.png" alt="">
+                                        <h4 class="name">Saiko Najran</h4>
+                                        <span class="designation">Student</span>
+                                        <ul class="ratings">
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="desc">The charms of pleasure of the moment so blinded by desire that
+                                        they cannot foresee the pain and trouble that are bound ensue and equal blame
+                                        belongs to those who fail in their duty.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testi-item">
+                            <div class="row y-middle no-gutter">
+                                <div class="col-md-4">
+                                    <div class="user-info">
+                                        <img src="assets2/assets/images/testimonial/style3/4.png" alt="">
+                                        <h4 class="name">Saiko Najran</h4>
+                                        <span class="designation">Student</span>
+                                        <ul class="ratings">
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="desc">The charms of pleasure of the moment so blinded by desire that
+                                        they cannot foresee the pain and trouble that are bound ensue and equal blame
+                                        belongs to those who fail in their duty.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testi-item">
+                            <div class="row y-middle no-gutter">
+                                <div class="col-md-4">
+                                    <div class="user-info">
+                                        <img src="assets2/assets/images/testimonial/style3/5.png" alt="">
+                                        <h4 class="name">Saiko Najran</h4>
+                                        <span class="designation">Student</span>
+                                        <ul class="ratings">
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="desc">The charms of pleasure of the moment so blinded by desire that
+                                        they cannot foresee the pain and trouble that are bound ensue and equal blame
+                                        belongs to those who fail in their duty.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testi-item">
+                            <div class="row y-middle no-gutter">
+                                <div class="col-md-4">
+                                    <div class="user-info">
+                                        <img src="assets2/assets/images/testimonial/style3/6.png" alt="">
+                                        <h4 class="name">Saiko Najran</h4>
+                                        <span class="designation">Student</span>
+                                        <ul class="ratings">
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="desc">The charms of pleasure of the moment so blinded by desire that
+                                        they cannot foresee the pain and trouble that are bound ensue and equal blame
+                                        belongs to those who fail in their duty.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testi-item">
+                            <div class="row y-middle no-gutter">
+                                <div class="col-md-4">
+                                    <div class="user-info">
+                                        <img src="assets2/assets/images/testimonial/style3/7.png" alt="">
+                                        <h4 class="name">Saiko Najran</h4>
+                                        <span class="designation">Student</span>
+                                        <ul class="ratings">
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="desc">The charms of pleasure of the moment so blinded by desire that
+                                        they cannot foresee the pain and trouble that are bound ensue and equal blame
+                                        belongs to those who fail in their duty.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testi-item">
+                            <div class="row y-middle no-gutter">
+                                <div class="col-md-4">
+                                    <div class="user-info">
+                                        <img src="assets2/assets/images/testimonial/style3/8.png" alt="">
+                                        <h4 class="name">Saiko Najran</h4>
+                                        <span class="designation">Student</span>
+                                        <ul class="ratings">
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="desc">The charms of pleasure of the moment so blinded by desire that
+                                        they cannot foresee the pain and trouble that are bound ensue and equal blame
+                                        belongs to those who fail in their duty.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testi-item">
+                            <div class="row y-middle no-gutter">
+                                <div class="col-md-4">
+                                    <div class="user-info">
+                                        <img src="assets2/assets/images/testimonial/style3/9.png" alt="">
+                                        <h4 class="name">Saiko Najran</h4>
+                                        <span class="designation">Student</span>
+                                        <ul class="ratings">
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="desc">The charms of pleasure of the moment so blinded by desire that
+                                        they cannot foresee the pain and trouble that are bound ensue and equal blame
+                                        belongs to those who fail in their duty.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testi-item">
+                            <div class="row y-middle no-gutter">
+                                <div class="col-md-4">
+                                    <div class="user-info">
+                                        <img src="assets2/assets/images/testimonial/style3/10.png" alt="">
+                                        <h4 class="name">Saiko Najran</h4>
+                                        <span class="designation">Student</span>
+                                        <ul class="ratings">
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="desc">The charms of pleasure of the moment so blinded by desire that
+                                        they cannot foresee the pain and trouble that are bound ensue and equal blame
+                                        belongs to those who fail in their duty.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Testimonial Section End -->
+
+            <!-- Blog Section Start -->
+            <div id="rs-blog" class="rs-blog style2 modify2 pb-100 pt-100 md-pt-70 md-pb-70">
+                <div class="container relative">
+                    <div class="right-top-shape">
+                        <img src="assets2/assets/images/shape/radius-circle-shape.png" alt="">
+                    </div>
+                    <div class="sec-title mb-60 text-center md-mb-40">
+                        <div class="sub-title">News & Blog </div>
+                        <h2 class="title mb-0">Latest News & Blog post</h2>
+                    </div>
+                    <div class="rs-carousel owl-carousel" data-loop="true" data-items="3" data-margin="30"
+                        data-autoplay="true" data-hoverpause="true" data-autoplay-timeout="5000" data-smart-speed="800"
+                        data-dots="false" data-nav="false" data-nav-speed="false" data-center-mode="false"
+                        data-mobile-device="1" data-mobile-device-nav="false" data-mobile-device-dots="false"
+                        data-ipad-device="2" data-ipad-device-nav="false" data-ipad-device-dots="false"
+                        data-ipad-device2="1" data-ipad-device-nav2="false" data-ipad-device-dots2="false"
+                        data-md-device="3" data-md-device-nav="false" data-md-device-dots="false">
+                        <div class="blog-item">
+                            <div class="image-part">
+                                <img src="assets2/assets/images/blog/style2/4.jpg" alt="">
+                            </div>
+                            <div class="blog-content new-style2">
+                                <ul class="blog-meta">
+                                    <li><i class="fa fa-user-o"></i> Admin</li>
+                                    <li><i class="fa fa-calendar"></i>June 15, 2019</li>
+                                </ul>
+                                <h3 class="title"><a href="blog-single.html">Education is The Process of Facilitating
+                                        Learning</a></h3>
+                                <div class="desc">the acquisition of knowledge, skills, values befs, and habits.
+                                    Educational methods include teach ing, training, storytelling</div>
+                                <ul class="blog-bottom">
+                                    <li class="cmnt-part"><a href="#">(12) Comments</a></li>
+                                    <li class="btn-part"><a class="readon-arrow" href="#">Read More</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="blog-item">
+                            <div class="image-part">
+                                <img src="assets2/assets/images/blog/style2/5.jpg" alt="">
+                            </div>
+                            <div class="blog-content new-style2">
+                                <ul class="blog-meta">
+                                    <li><i class="fa fa-user-o"></i> Admin</li>
+                                    <li><i class="fa fa-calendar"></i>June 15, 2019</li>
+                                </ul>
+                                <h3 class="title"><a href="blog-single.html">Education is The Process of Facilitating
+                                        Learning</a></h3>
+                                <div class="desc">the acquisition of knowledge, skills, values befs, and habits.
+                                    Educational methods include teach ing, training, storytelling</div>
+                                <ul class="blog-bottom">
+                                    <li class="cmnt-part"><a href="#">(12) Comments</a></li>
+                                    <li class="btn-part"><a class="readon-arrow" href="#">Read More</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="blog-item">
+                            <div class="image-part">
+                                <img src="assets2/assets/images/blog/style2/6.jpg" alt="">
+                            </div>
+                            <div class="blog-content new-style2">
+                                <ul class="blog-meta">
+                                    <li><i class="fa fa-user-o"></i> Admin</li>
+                                    <li><i class="fa fa-calendar"></i>June 15, 2019</li>
+                                </ul>
+                                <h3 class="title"><a href="blog-single.html">Education is The Process of Facilitating
+                                        Learning</a></h3>
+                                <div class="desc">the acquisition of knowledge, skills, values befs, and habits.
+                                    Educational methods include teach ing, training, storytelling</div>
+                                <ul class="blog-bottom">
+                                    <li class="cmnt-part"><a href="#">(12) Comments</a></li>
+                                    <li class="btn-part"><a class="readon-arrow" href="#">Read More</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Blog Section End -->
+            <!-- Contact Section Start -->
+            <div id="rs-contact" class="contact-page-section pt-100 pb-100 md-pt-70 md-pb-70">
+                <div class="container">
+                    <div class="row rs-contact-box mb-90 md-mb-50">
+                        <div class="col-lg-4 col-md-12-4 lg-pl-0 sm-mb-30 md-mb-30">
+                            <div class="address-item">
+                                <div class="icon-part">
+                                    <img src="assets2/assets/images/contact/icon/1.png" alt="">
+                                </div>
+                                <div class="address-text">
+                                    <span class="label">Branches</span>
+                                    <span class="des">Gudur </span>
+                                    <span class="des">Tirupati </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 lg-pl-0 sm-mb-30 md-mb-30">
+                            <div class="address-item">
+                                <div class="icon-part">
+                                    <img src="assets2/assets/images/contact/icon/2.png" alt="">
+                                </div>
+                                <div class="address-text">
+                                    <span class="label">Email Address</span>
+                                    <span class="des"><a href="thinkchamp24@gmail.com">thinkchamp24@gmail.com</a></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 lg-pl-0 sm-mb-30">
+                            <div class="address-item">
+                                <div class="icon-part">
+                                    <img src="assets2/assets/images/contact/icon/3.png" alt="">
+                                </div>
+                                <div class="address-text">
+                                    <span class="label">Phone Number</span>
+                                    <span class="des"><a href="8179641998">8179641998</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 md-mb-30">
+                            <!-- Map Section Start -->
+                            <div class="contact-map3">
+                                <iframe src="https://goo.gl/maps/X9TnyrLuyzxNoh9bA"></iframe>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 pl-60 md-pl-15">
+                            <div class="contact-comment-box">
+                                <div class="inner-part">
+                                    <h2 class="title mb-mb-15">Get In Touch</h2>
+                                    <p>Have some suggestions or just want to say hi? Our support team are ready to help
+                                        you 24/7.</p>
+                                </div>
+                                <div id="form-messages"></div>
+                                <form id="contact-form" method="post" action="mailer.php">
+                                    <fieldset>
+                                        <div class="row">
+                                            <div class="col-lg-6 mb-35 col-md-6 col-sm-6">
+                                                <input class="from-control" type="text" id="name" name="name"
+                                                    placeholder="Name" required="">
+                                            </div>
+                                            <div class="col-lg-6 mb-35 col-md-6 col-sm-6">
+                                                <input class="from-control" type="text" id="email" name="email"
+                                                    placeholder="Email" required="">
+                                            </div>
+                                            <div class="col-lg-6 mb-35 col-md-6 col-sm-6">
+                                                <input class="from-control" type="text" id="phone" name="phone"
+                                                    placeholder="Phone" required="">
+                                            </div>
+                                            <div class="col-lg-6 mb-35 col-md-6 col-sm-6">
+                                                <input class="from-control" type="text" id="subject" name="subject"
+                                                    placeholder="Subject" required="">
+                                            </div>
+
+                                            <div class="col-lg-12 mb-50">
+                                                <textarea class="from-control" id="message" name="message"
+                                                    placeholder=" Message" required=""></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="form-group mb-0">
+                                            <input class="btn-send" type="submit" value="Submit Now">
+                                        </div>
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Contact Section End -->
+
+            <!-- Main content End -->
+
+
+            <!-- Newsletter section start -->
+            <div class="rs-newsletter style1 mb--124 sm-mb-0 sm-pb-70">
+                <div class="container">
+                    <div class="newsletter-wrap">
+                        <div class="row y-middle">
+                            <div class="col-md-6 sm-mb-30">
+                                <div class="sec-title">
+                                    <div class="sub-title white-color">Newsletter</div>
+                                    <h2 class="title mb-0 white-color">Subscribe Us to join <br> Our Community </h2>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <form class="newsletter-form">
+                                    <input type="email" name="email" placeholder="Enter Your Email" required="">
+                                    <button type="submit">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Newsletter section end -->
         </div>
+        <!-- Section bg Wrap 2 End -->
     </div>
-
-    <!-- carosuel reviews  -->
-
-</section>
-
-<!-- Contact Us  -->
-<h1 class="first-heading">CONTACT US</h1>
-
-<section class="cont-section" id="contact">
-        
-        <div class="cont-col1">
-            <center><img src="assets/images/home/13184991_5138237.jpg" alt="contact-img" width="600" height="500"></center>
-        </div>
-
-        <div class="cont-col2">
-            <form action="" class="contact-form">
-                <h2 class="input-text">Name</h2>
-                <input type="text"  placeholder="Enter Your Name" class="cont-form" /><br><br>
-                <h2 class="input-text">E-mail</h2>
-                <input type="email"  placeholder="Enter Your E-mail Address" class="cont-form" /><br><br>
-                <h2 class="input-text">Subject</h2>
-                <input type="text"  placeholder="Enter Your Subject" class="cont-form" /><br><br>
-                <h2 class="input-text">Message</h2>
-                <textarea name="Enter your Message" placeholder="Enter your Message" class="cont-form textarea" ></textarea><br><br>
-                <button type="submit"  value="Submit" class="submit-btn">Submit</button>
-            </form>
-        </div>
-
-    </section>
-
-<!-- Contact Us -->
-
-
-<script>
-    function about(i) {
-        if (i == '1') {
-            var vision = document.getElementById("vision");
-            var mission = document.getElementById("mission");
-            var passion = document.getElementById("passion");
-
-            var missionbtn = document.getElementById("missionbtn");
-            var visionbtn = document.getElementById("visionbtn");
-            var passionbtn = document.getElementById("passionbtn");
-
-            passionbtn.classList.remove("active_class");
-            visionbtn.classList.remove("active_class");
-            missionbtn.classList.add("active_class");
-
-            vision.style.display = "none";
-            mission.style.display = "block";
-            passion.style.display = "none";
-        }
-        if (i == '2') {
-            var vision = document.getElementById("vision");
-            var mission = document.getElementById("mission");
-            var passion = document.getElementById("passion");
-
-            var missionbtn = document.getElementById("missionbtn");
-            var visionbtn = document.getElementById("visionbtn");
-            var passionbtn = document.getElementById("passionbtn");
-
-            passionbtn.classList.remove("active_class");
-            visionbtn.classList.add("active_class");
-            missionbtn.classList.remove("active_class");
-
-            vision.style.display = "block";
-            mission.style.display = "none";
-            passion.style.display = "none";
-        }
-        if (i == '3') {
-            var vision = document.getElementById("vision");
-            var mission = document.getElementById("mission");
-            var passion = document.getElementById("passion");
-
-            var missionbtn = document.getElementById("missionbtn");
-            var visionbtn = document.getElementById("visionbtn");
-            var passionbtn = document.getElementById("passionbtn");
-
-            passionbtn.classList.add("active_class");
-            visionbtn.classList.remove("active_class");
-            missionbtn.classList.remove("active_class");
-
-            vision.style.display = "none";
-            mission.style.display = "none";
-            passion.style.display = "block";
-        }
-    }
-</script>
-
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script>
-    var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        slidesPerGroup: 1,
-        loop: true,
-        loopFillGroupWithBlank: true,
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-    });
-    function skill(i) {
-        if (i == 'ps') {
-            var job = document.getElementById("job");
-            var ps = document.getElementById("ps");
-            var fmi = document.getElementById("fmi");
-            var lcod = document.getElementById("lcod");
-            var p = document.getElementById("p");
-            var i = document.getElementById("i");
-            var cd = document.getElementById("cd");
-            var lc = document.getElementById("lc");
-            var bv = document.getElementById("bv");
-            var scd = document.getElementById("scd");
-            var r = document.getElementById("r");
-            job.style.display = "none";
-            ps.style.display = "block";
-            fmi.style.display = "none";
-            lcod.style.display = "none";
-            p.style.display = "none";
-            i.style.display = "none";
-            cd.style.display = "none";
-            lc.style.display = "none";
-            bv.style.display = "none";
-            scd.style.display = "none";
-            r.style.display = "none";
-        }
-        if (i == 'fmi') {
-            var job = document.getElementById("job");
-            var ps = document.getElementById("ps");
-            var fmi = document.getElementById("fmi");
-            var lcod = document.getElementById("lcod");
-            var p = document.getElementById("p");
-            var i = document.getElementById("i");
-            var cd = document.getElementById("cd");
-            var lc = document.getElementById("lc");
-            var bv = document.getElementById("bv");
-            var scd = document.getElementById("scd");
-            var r = document.getElementById("r");
-            job.style.display = "none";
-            ps.style.display = "none";
-            fmi.style.display = "block";
-            lcod.style.display = "none";
-            p.style.display = "none";
-            i.style.display = "none";
-            cd.style.display = "none";
-            lc.style.display = "none";
-            bv.style.display = "none";
-            scd.style.display = "none";
-            r.style.display = "none";
-        }
-        if (i == 'lcod') {
-            var job = document.getElementById("job");
-            var ps = document.getElementById("ps");
-            var fmi = document.getElementById("fmi");
-            var lcod = document.getElementById("lcod");
-            var p = document.getElementById("p");
-            var i = document.getElementById("i");
-            var cd = document.getElementById("cd");
-            var lc = document.getElementById("lc");
-            var bv = document.getElementById("bv");
-            var scd = document.getElementById("scd");
-            var r = document.getElementById("r");
-            job.style.display = "none";
-            ps.style.display = "none";
-            fmi.style.display = "none";
-            lcod.style.display = "block";
-            p.style.display = "none";
-            i.style.display = "none";
-            cd.style.display = "none";
-            lc.style.display = "none";
-            bv.style.display = "none";
-            scd.style.display = "none";
-            r.style.display = "none";
-        }
-        if (i == 'p') {
-            var job = document.getElementById("job");
-            var ps = document.getElementById("ps");
-            var fmi = document.getElementById("fmi");
-            var lcod = document.getElementById("lcod");
-            var p = document.getElementById("p");
-            var i = document.getElementById("i");
-            var cd = document.getElementById("cd");
-            var lc = document.getElementById("lc");
-            var bv = document.getElementById("bv");
-            var scd = document.getElementById("scd");
-            var r = document.getElementById("r");
-            job.style.display = "none";
-            ps.style.display = "none";
-            fmi.style.display = "none";
-            lcod.style.display = "none";
-            p.style.display = "block";
-            i.style.display = "none";
-            cd.style.display = "none";
-            lc.style.display = "none";
-            bv.style.display = "none";
-            scd.style.display = "none";
-            r.style.display = "none";
-        }
-        if (i == 'i') {
-            var job = document.getElementById("job");
-            var ps = document.getElementById("ps");
-            var fmi = document.getElementById("fmi");
-            var lcod = document.getElementById("lcod");
-            var p = document.getElementById("p");
-            var i = document.getElementById("i");
-            var cd = document.getElementById("cd");
-            var lc = document.getElementById("lc");
-            var bv = document.getElementById("bv");
-            var scd = document.getElementById("scd");
-            var r = document.getElementById("r");
-            job.style.display = "none";
-            ps.style.display = "none";
-            fmi.style.display = "none";
-            lcod.style.display = "none";
-            p.style.display = "none";
-            i.style.display = "block";
-            cd.style.display = "none";
-            lc.style.display = "none";
-            bv.style.display = "none";
-            scd.style.display = "none";
-            r.style.display = "none";
-        }
-        if (i == 'cd') {
-            var job = document.getElementById("job");
-            var ps = document.getElementById("ps");
-            var fmi = document.getElementById("fmi");
-            var lcod = document.getElementById("lcod");
-            var p = document.getElementById("p");
-            var i = document.getElementById("i");
-            var cd = document.getElementById("cd");
-            var lc = document.getElementById("lc");
-            var bv = document.getElementById("bv");
-            var scd = document.getElementById("scd");
-            var r = document.getElementById("r");
-            job.style.display = "none";
-            ps.style.display = "none";
-            fmi.style.display = "none";
-            lcod.style.display = "none";
-            p.style.display = "none";
-            i.style.display = "none";
-            cd.style.display = "block";
-            lc.style.display = "none";
-            bv.style.display = "none";
-            scd.style.display = "none";
-            r.style.display = "none";
-        }
-        if (i == 'lc') {
-            var job = document.getElementById("job");
-            var ps = document.getElementById("ps");
-            var fmi = document.getElementById("fmi");
-            var lcod = document.getElementById("lcod");
-            var p = document.getElementById("p");
-            var i = document.getElementById("i");
-            var cd = document.getElementById("cd");
-            var lc = document.getElementById("lc");
-            var bv = document.getElementById("bv");
-            var scd = document.getElementById("scd");
-            var r = document.getElementById("r");
-            job.style.display = "none";
-            ps.style.display = "none";
-            fmi.style.display = "none";
-            lcod.style.display = "none";
-            p.style.display = "none";
-            i.style.display = "none";
-            cd.style.display = "none";
-            lc.style.display = "block";
-            bv.style.display = "none";
-            scd.style.display = "none";
-            r.style.display = "none";
-        }
-        if (i == 'bv') {
-            var job = document.getElementById("job");
-            var ps = document.getElementById("ps");
-            var fmi = document.getElementById("fmi");
-            var lcod = document.getElementById("lcod");
-            var p = document.getElementById("p");
-            var i = document.getElementById("i");
-            var cd = document.getElementById("cd");
-            var lc = document.getElementById("lc");
-            var bv = document.getElementById("bv");
-            var scd = document.getElementById("scd");
-            var r = document.getElementById("r");
-            job.style.display = "none";
-            ps.style.display = "none";
-            fmi.style.display = "none";
-            lcod.style.display = "none";
-            p.style.display = "none";
-            i.style.display = "none";
-            cd.style.display = "none";
-            lc.style.display = "none";
-            bv.style.display = "block";
-            scd.style.display = "none";
-            r.style.display = "none";
-        }
-        if (i == 'scd') {
-            var job = document.getElementById("job");
-            var ps = document.getElementById("ps");
-            var fmi = document.getElementById("fmi");
-            var lcod = document.getElementById("lcod");
-            var p = document.getElementById("p");
-            var i = document.getElementById("i");
-            var cd = document.getElementById("cd");
-            var lc = document.getElementById("lc");
-            var bv = document.getElementById("bv");
-            var scd = document.getElementById("scd");
-            var r = document.getElementById("r");
-            job.style.display = "none";
-            ps.style.display = "none";
-            fmi.style.display = "none";
-            lcod.style.display = "none";
-            p.style.display = "none";
-            i.style.display = "none";
-            cd.style.display = "none";
-            lc.style.display = "none";
-            bv.style.display = "none";
-            scd.style.display = "block";
-            r.style.display = "none";
-        }
-        if (i == 'r') {
-            var job = document.getElementById("job");
-            var ps = document.getElementById("ps");
-            var fmi = document.getElementById("fmi");
-            var lcod = document.getElementById("lcod");
-            var p = document.getElementById("p");
-            var i = document.getElementById("i");
-            var cd = document.getElementById("cd");
-            var lc = document.getElementById("lc");
-            var bv = document.getElementById("bv");
-            var scd = document.getElementById("scd");
-            var r = document.getElementById("r");
-            job.style.display = "none";
-            ps.style.display = "none";
-            fmi.style.display = "none";
-            lcod.style.display = "none";
-            p.style.display = "none";
-            i.style.display = "none";
-            cd.style.display = "none";
-            lc.style.display = "none";
-            bv.style.display = "none";
-            scd.style.display = "none";
-            r.style.display = "block";
-        }
-    }
-</script>
+    <!-- Main content End -->

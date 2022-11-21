@@ -1,62 +1,159 @@
+   <!-- Footer Start -->
+   <footer id="rs-footer" class="rs-footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-12 col-sm-12 footer-widget md-mb-50">
+                        <h4 class="widget-title">Explore</h4>
+                        <ul class="site-map">
 
-  <footer>
-  <div class="footer-section">
-    <div class="footer-col1">
-      <img src="assets/images/home/Tc_Logo.png"  class="logo-img" alt="logo">
-      <p class="logo-text">Enhance your knowledge with THINK-CHAMP.</p>
-      <div class="social-logo"> <img src="assets/images/home/facebook.png" alt="social" class="social-icons"> </div> 
-      <div class="social-logo youtube"><img src="assets/images/home/twitter.png" alt="social" class="social-icons"> </div>
-      <div class="social-logo youtube"><img src="assets/images/home/instagram.png" alt="social" class="social-icons"> </div>
-      <div class="social-logo youtube"><img src="assets/images/home/youtube.png" alt="social" class="social-icons"> </div>
-  
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Courses</a></li>
+                            <li><a href="#">Become A Trainer</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-12 col-sm-12 footer-widget md-mb-50">
+                        <h4 class="widget-title">Categories</h4>
+                        <ul class="site-map">
+                            <li><a href="#">All Courses</a></li>
+                            <li><a href="#">Web Development</a></li>
+                            <li><a href="#">Programming languages</a></li>
+                            <li><a href="#">Projects</a></li>
+                            <li><a href="#">Web Design</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-12 col-sm-12 footer-widget md-mb-50">
+                        <h4 class="widget-title">Resources</h4>
+                        <ul class="site-map">
+                            <li><a href="#">Become A Teacher</a></li>
+                            <li><a href="#">Instructor/Student Profile</a></li>
+                            <li><a href="#">Courses</a></li>
+
+                            <li><a href="#">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-12 col-sm-12 footer-widget">
+                        <h4 class="widget-title">BRANCHES</h4>
+                        <ul class="address-widget">
+                            <li>
+                                <i class="flaticon-location"></i>
+                                <div class="desc">Gudur</div>
+                            </li>
+                            <li>
+                                <i class="flaticon-location"></i>
+                                <div class="desc">Annamaya circle,Tirupati</div>
+                            </li>
+                            <li>
+                                <i class="flaticon-call"></i>
+                                <div class="desc">
+                                    <a href="tel:8179641998">8179641998</a> ,
+                                    <a href="tel:9666710979">966671099</a>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="flaticon-email"></i>
+                                <div class="desc">
+                                    <a href="mailto:infoname@gmail.com">thinkchamp24@gmail.com</a> ,
+                                    <a href="#">www.think-champ.com</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row y-middle">
+                    <div class="col-lg-4 md-mb-20">
+                        <div class="footer-logo md-text-center">
+                            <a href="index.html"><img src="images/logo.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 md-mb-20">
+                        <div class="copyright text-center md-text-start">
+                            <p>&copy; 2022 All Rights Reserved. </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 text-end md-text-start">
+                        <ul class="footer-social">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- start scrollUp  -->
+    <div id="scrollUp">
+        <i class="fa fa-angle-up"></i>
     </div>
-    <div class="footer-col2">
-      <h2 class="footer-company">Company</h2><br>
-      <ul class="footer-list">
-        <li class="footer-links"><a href="<?= base_url('Privacy-Policy') ?>" class="footer-link">Privacy Policy</a></li>
-        <li class="footer-links"><a href="<?= base_url('Terms-And-Service') ?>" class="footer-link">Terms & Conditions</a></li>
-        <li class="footer-links"><a href="<?= base_url('Contact') ?>" class="footer-link">Reviews</a></li>
-        <li class="footer-links"><a href="<?= base_url('Contact') ?>" class="footer-link">Contact Us</a></li>
-      </ul>
+    <!-- End scrollUp  -->
 
+    <!-- Search Modal Start -->
+    <div class="modal fade search-modal" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel"
+        aria-hidden="true">
+        <button type="button" class="close" data-bs-dismiss="modal">
+            <span class="flaticon-cross"></span>
+        </button>
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="search-block clearfix">
+                    <form>
+                        <div class="form-group">
+                            <input class="form-control" placeholder="Search Here..." type="text">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="footer-col3">
-      <h2 class="footer-company">Headquaters</h2><br>
-      <p class="headqauter-text">Nellore(Dist),Andhra Pradesh</p>
-      <p class="headqauter-text">thinkchamp24@gmail.com<br>
-        +91 8179641998</p>
-    </div>
-    <div class="footer-col4">
-      <h2 class="footer-company">Newsletter Subscription</h2><br>
-      <p class="headqauter-text">Subscribe</p>
-      <form action="" class="newsletter">
-        <input type="email" placeholder="Enter your E-mail Address" />
-        <button class="subs-btn">SUBSCRIBE</button>
-      </form>
-    </div>
-  </div>
-  <hr style="color:white;">
-  <p class="copyright"> 2022 © THINK-CHAMP PRIVATE LIMITED</p>
-</footer>
+    <!-- Search Modal End -->
 
-  <!-- Optional JavaScript; choose one of the two! -->
-
-  <!-- Option 1: Bootstrap Bundle with Popper -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-  <!-- Option 2: Separate Popper and Bootstrap JS -->
-  <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
-    -->
+    <!-- modernizr js -->
+    <script src="assets2/assets/js/modernizr-2.8.3.min.js"></script>
+    <!-- jquery latest version -->
+    <script src="assets2/assets/js/jquery.min.js"></script>
+    <!-- Bootstrap v5.0.2 js -->
+    <script src="assets2/assets/js/bootstrap.min.js"></script>
+    <!-- Menu js -->
+    <script src="assets2/assets/js/rsmenu-main.js"></script>
+    <!-- op nav js -->
+    <script src="assets2/assets/js/jquery.nav.js"></script>
+    <!-- owl.carousel js -->
+    <script src="assets2/assets/js/owl.carousel.min.js"></script>
+    <!-- Slick js -->
+    <script src="assets2/assets/js/slick.min.js"></script>
+    <!-- isotope.pkgd.min js -->
+    <script src="assets2/assets/js/isotope.pkgd.min.js"></script>
+    <!-- imagesloaded.pkgd.min js -->
+    <script src="assets2/assets/js/imagesloaded.pkgd.min.js"></script>
+    <!-- wow js -->
+    <script src="assets2/assets/js/wow.min.js"></script>
+    <!-- Skill bar js -->
+    <script src="assets2/assets/js/skill.bars.jquery.js"></script>
+    <script src="assets2/assets/js/jquery.counterup.min.js"></script>
+    <!-- counter top js -->
+    <script src="assets2/assets/js/waypoints.min.js"></script>
+    <!-- video js -->
+    <script src="assets2/assets/js/jquery.mb.YTPlayer.min.js"></script>
+    <!-- magnific popup js -->
+    <script src="assets2/assets/js/jquery.magnific-popup.min.js"></script>
+    <!-- tilt js -->
+    <script src="assets2/assets/js/tilt.jquery.min.js"></script>
+    <!-- plugins js -->
+    <script src="assets2/assets/js/plugins.js"></script>
+    <!-- contact form js -->
+    <script src="assets2/assets/js/contact.form.js"></script>
+    <!-- main js -->
+    <script src="assets2/assets/js/main.js"></script>
 </body>
 
 </html>
-<script>
-  $(window).scroll(function() {
-    $('header').toggleClass('scrolled', $(this).scrollTop() > 1);
-});
-  </script>
- 

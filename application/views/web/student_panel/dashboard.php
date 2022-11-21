@@ -126,7 +126,7 @@
                             </div>
                             <div class="white_card_body QA_section">
                                 <div class="todo_wrapper">
-                                    <!-- <div class="single_todo d-flex justify-content-between align-items-center">
+                                    <div class="single_todo d-flex justify-content-between align-items-center">
                                         <div class="lodo_left d-flex align-items-center">
                                             <div class="bar_line mr_10"></div>
                                             <div class="todo_box">
@@ -207,8 +207,8 @@
                                             </div>
                                         </div>
                                         <div class="lodo_right"> <a href="#" class="badge_complete">Complete</a> </div>
-                                    </div> -->
-                                    <h2>No Task Given</h2>
+                                    </div>
+                                   
                                 </div>
                             </div>
                         </div>

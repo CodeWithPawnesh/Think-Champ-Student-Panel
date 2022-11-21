@@ -1,72 +1,236 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="zxx">
 
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <title>Think Champ Student Panel</title>
+    <!-- meta tag -->
+    <meta charset="utf-8">
+    <title>Educavo - Education HTML Template</title>
+    <meta name="description" content="">
+    <!-- responsive tag -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- favicon -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets2/assets/images/fav.png">
+    <!-- Bootstrap v5.0.2 css -->
+    <link rel="stylesheet" type="text/css" href="assets2/assets/css/bootstrap.min.css">
+    <!-- font-awesome css -->
+    <link rel="stylesheet" type="text/css" href="assets2/assets/css/font-awesome.min.css">
+    <!-- animate css -->
+    <link rel="stylesheet" type="text/css" href="assets2/assets/css/animate.css">
+    <!-- owl.carousel css -->
+    <link rel="stylesheet" type="text/css" href="assets2/assets/css/owl.carousel.css">
+    <!-- slick css -->
+    <link rel="stylesheet" type="text/css" href="assets2/assets/css/slick.css">
+    <!-- off canvas css -->
+    <link rel="stylesheet" type="text/css" href="assets2/assets/css/off-canvas.css">
+    <!-- linea-font css -->
+    <link rel="stylesheet" type="text/css" href="assets2/assets/fonts/linea-fonts.css">
+    <!-- flaticon css  -->
+    <link rel="stylesheet" type="text/css" href="assets2/assets/fonts/flaticon.css">
+    <!-- magnific popup css -->
+    <link rel="stylesheet" type="text/css" href="assets2/assets/css/magnific-popup.css">
+    <!-- Main Menu css -->
+    <link rel="stylesheet" href="assets2/assets/css/rsmenu-main.css">
+    <!-- spacing css -->
+    <link rel="stylesheet" type="text/css" href="assets2/assets/css/rs-spacing.css">
+    <!-- style css -->
+    <link rel="stylesheet" type="text/css" href="assets2/style.css">
+    <!-- This stylesheet dynamically changed from style.less -->
+    <!-- responsive css -->
+    <link rel="stylesheet" type="text/css" href="assets2/assets/css/responsive.css">
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
 </head>
 
-<body>
+<body class="home-style6">
 
+    <!--Preloader area start here-->
+    <div id="loader" class="loader">
+        <div class="loader-container">
+            <div class='loader-icon'>
+                <img src="assets2/images/logo.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!--Preloader area End here-->
 
-  <header class="header-1">
-    <div class="header-logo">
-      <img src="assets/images/home/Tc_logo2.png" alt="logo" width="160" height="80">
+    <!--Full width header Start-->
+    <div class="full-width-header header-style1 modify1 header-home6">
+        <!--Header Start-->
+        <header id="rs-header" class="rs-header">
+            <!-- Topbar Area Start -->
+            <div class="topbar-area d-none">
+                <div class="container">
+                    <div class="row y-middle">
+                        <div class="col-md-6">
+                            <ul class="topbar-contact">
+                                <li>
+                                    <i class="flaticon-email"></i>
+                                    <a href="mailto:support@rstheme.com">support@rstheme.com</a>
+                                </li>
+                                <li>
+                                    <i class="flaticon-call"></i>
+                                    <a href="tel:+0885898745">(+088) 589-8745</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 text-end">
+                            <ul class="topbar-right">
+                                <li class="login-register">
+                                    <i class="fa fa-sign-in"></i>
+                                    <a href="login.html">Login</a>/<a href="register.html">Register</a>
+                                </li>
+                                <li class="btn-part">
+                                    <a class="apply-btn" href="#">Apply Now</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Topbar Area End -->
+
+            <!-- Menu Start -->
+            <div class="menu-area menu-sticky">
+                <div class="container">
+                    <div class="row y-middle">
+                        <div class="col-lg-3">
+                            <div class="logo-cat-wrap">
+                                <div class="logo-part pr-90">
+                                    <a href="index.html">
+                                        <img src="assets2/images/logo.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-9 text-center">
+                            <div class="rs-menu-area">
+                                <div class="main-menu pr-90 md-pr-15">
+                                    <div class="mobile-menu">
+                                        <a class="rs-menu-toggle">
+                                            <i class="fa fa-bars"></i>
+                                        </a>
+                                    </div>
+                                    <nav class="rs-menu">
+                                        <ul class="nav-menu">
+                                            <li class="rs-mega-menu mega-rs menu-item-has-children current-menu-item">
+                                                <a href="<?= base_url('') ?>">Home</a>
+
+                                            </li>
+                                            <li class="menu-item-has-children">
+                                                <a href="<?= base_url('About-Us') ?>">About</a>
+
+                                            </li>
+
+                                            <li class="menu-item-has-children">
+                                                <a href="<?= base_url("Courses") ?>">Courses</a>
+
+                                            </li>
+
+                                            <li class="menu-item-has-children">
+                                                <a href="<?= base_url("FAQ") ?>">faqs</a>
+
+                                            </li>
+
+                                            <li class="menu-item-has-children">
+                                                <a href="<?= base_url("Blog") ?>">Blog</a>
+
+                                            </li>
+
+                                            <li class="menu-item-has-children">
+                                                <a href="<?= base_url("Contact") ?>">Contact</a>
+
+                                            </li>
+                                            <li class="menu-item-has-children">
+                                                <a href="<?= base_url("auth") ?>">LOGIN</a>
+
+                                            </li>
+
+                                        </ul> <!-- //.nav-menu -->
+                                    </nav>
+                                </div> <!-- //.main-menu -->
+                                <div class="expand-btn-inner">
+                                    <ul>
+                                        <li>
+                                            <a class="hidden-xs rs-search" data-bs-toggle="modal"
+                                                data-bs-target="#searchModal" href="#">
+                                                <i class="flaticon-search"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <a id="nav-expander" class="nav-expander style6">
+                                        <span class="dot1"></span>
+                                        <span class="dot2"></span>
+                                        <span class="dot3"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Menu End -->
+
+            <!-- Canvas Menu start -->
+            <nav class="right_menu_togle hidden-md">
+                <div class="close-btn">
+                    <div id="nav-close">
+                        <div class="line">
+                            <span class="line1"></span><span class="line2"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="canvas-logo">
+                    <a href="index.html"><img src="assets/images/logo-dark.png" alt="logo"></a>
+                </div>
+                <div class="offcanvas-text">
+                    <p>We denounce with righteous indige nationality and dislike men who are so beguiled and demo by the
+                        charms of pleasure of the moment data com so blinded by desire.</p>
+                </div>
+                <div class="offcanvas-gallery">
+                    <div class="gallery-img">
+                        <a class="image-popup" href="assets/images/gallery/1.jpg"><img src="assets/images/gallery/1.jpg"
+                                alt=""></a>
+                    </div>
+                    <div class="gallery-img">
+                        <a class="image-popup" href="assets/images/gallery/2.jpg"><img src="assets/images/gallery/2.jpg"
+                                alt=""></a>
+                    </div>
+                    <div class="gallery-img">
+                        <a class="image-popup" href="assets/images/gallery/3.jpg"><img src="assets/images/gallery/3.jpg"
+                                alt=""></a>
+                    </div>
+                    <div class="gallery-img">
+                        <a class="image-popup" href="assets/images/gallery/4.jpg"><img src="assets/images/gallery/4.jpg"
+                                alt=""></a>
+                    </div>
+                    <div class="gallery-img">
+                        <a class="image-popup" href="assets/images/gallery/5.jpg"><img src="assets/images/gallery/5.jpg"
+                                alt=""></a>
+                    </div>
+                    <div class="gallery-img">
+                        <a class="image-popup" href="assets/images/gallery/6.jpg"><img src="assets/images/gallery/6.jpg"
+                                alt=""></a>
+                    </div>
+                </div>
+                <div class="map-img">
+                    <img src="assets/images/map.jpg" alt="">
+                </div>
+                <div class="canvas-contact">
+                    <ul class="social">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- Canvas Menu end -->
+        </header>
+        <!--Header End-->
     </div>
-    <button class="wp-btn display-none"><i class="fa fa-volume-control-phone" aria-hidden="true"></i>
-    </button>
-    <p class="wp-text display-none"><span class="wp-chat display-none">Phone</span><br>
-      +91 999999999 </p>
-    <nav class="display-none nav-1">
-      <ul class="menu">
-        <li class="nav-item"><a href="<?= base_url('Home') ?>" class="menu-links active-menu">HOME</a></li>
-        <li class="nav-item"><a href="About-Us" class="menu-links ">ABOUT US</a></li>
-        <li class="nav-item"><a href="Courses" class="menu-links">COURSES</a></li>
-        <li class="nav-item"><a href="Contact" class="menu-links">CONTACT</a></li>
-        <li class="nav-item"><a href="<?= base_url('Workshop') ?>" class="menu-links">WORKSHOP</a></li>
-        <li class="nav-item"><a href="FAQ" class="menu-links">FAQ</a></li>
-      </ul>
-    </nav>
-    <?php if (!$this->session->userdata('login_status')) { ?>
-    <button class="login-btn"><a href="<?= base_url('Login') ?>">LOGIN</a></button>
-    <?php }else{ ?>
-      <button class="login-btn"><a href="<?= base_url('StudentPanel') ?>">DashBoard</a></button>
-      <?php } ?>
-    
-  </header>
-  
-	<nav class="navbar navbar-expand-lg navbar-light bg-white nav-2">
-  <a class="navbar-brand" href="#">
-    <div class="header-logo">
-      <img src="assets/images/home/Tc_logo2.png" alt="logo" width="100" height="40">
-    </div></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav">
-    <li class="nav-item"><a href="<?= base_url('Home') ?>" class="menu-links active-menu nav-item nav-link active">HOME <span class="sr-only">(current)</span></a></li>
-        <li class="nav-item"><a href="#about" class="menu-links nav-item nav-link ">ABOUT US</a></li>
-        <li class="nav-item"><a href="#course" class="menu-links nav-item nav-link">COURSES</a></li>
-        <li class="nav-item"><a href="#contact" class="menu-links nav-item nav-link">CONTACT</a></li>
-        <li class="nav-item"><a href="<?= base_url('Workshop') ?>" class="menu-links nav-item nav-link">WORKSHOP</a></li>
-        <li class="nav-item"><a href="#faq" class="menu-links nav-item nav-link">FAQ</a></li>
-        <?php if (!$this->session->userdata('login_status')) { ?>
-    <button class="login-btn"><a href="<?= base_url('Login') ?>">LOGIN</a></button>
-    <?php }else{ ?>
-      <button class="login-btn"><a href="<?= base_url('StudentPanel') ?>">DashBoard</a></button>
-      <?php } ?>
-    </div>
-  </div>
-</nav>
+    <!--Full width header End-->
