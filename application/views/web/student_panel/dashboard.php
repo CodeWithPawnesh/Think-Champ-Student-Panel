@@ -11,7 +11,6 @@
                                 </ol>
                             </div>
                             <div class="page_title_right">
-                                Right
                             </div>
                         </div>
                     </div>
@@ -35,22 +34,22 @@
                                     <table class="table align-middle">
                                         <thead>
                                             <tr>
-                                                <th>Class</th>
-                                                <th>Class Timing</th>
-                                                <th>Batch</th>
-                                                <th>Trainer</th>
-                                                <th>Trainer PH.No</th>
-                                                <th>Class Room</th>
+                                                <th class="text-center">Class</th>
+                                                <th class="text-center">Class Timing</th>
+                                                <th class="text-center">Batch</th>
+                                                <th class="text-center">Trainer</th>
+                                                <th class="text-center">Trainer PH.No</th>
+                                                <th class="text-center">Class Room</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                            <td><?= $t_live_class_data['class_name']; ?></td>
-                                            <td><?=  date('h:i A',$t_live_class_data['class_ts']); ?></td>
-                                            <td><?= $t_live_class_data['batch_name']; ?></td>
-                                            <td><?= $t_live_class_data['emp_name']; ?></td>
-                                            <td><?= $t_live_class_data['phone']; ?></td>
-                                            <td><a id="<?= $t_live_class_data['class_id'] ?>" href="<?= $t_live_class_data['live_link']; ?>" target="_blank" class="btn btn-sm btn-success">Join Room</a></td>
+                                            <td class="text-center"><?= $t_live_class_data['class_name']; ?></td>
+                                            <td class="text-center"><?=  date('h:i A',$t_live_class_data['class_ts']); ?></td>
+                                            <td class="text-center"><?= $t_live_class_data['batch_name']; ?></td>
+                                            <td class="text-center"><?= $t_live_class_data['emp_name']; ?></td>
+                                            <td class="text-center"><?= $t_live_class_data['phone']; ?></td>
+                                            <td class="text-center"><a id="<?= $t_live_class_data['class_id'] ?>" href="<?= $t_live_class_data['live_link']; ?>" target="_blank" class="btn btn-sm btn-success">Join Room</a></td>
                                             </tr>
                                             
                                         </tbody>
@@ -62,24 +61,24 @@
                                     <table class="table align-middle">
                                         <thead>
                                             <tr>
-                                                <th>Class</th>
-                                                <th>Class Timing</th>
-                                                <th>Batch</th>
-                                                <th>Group</th>
-                                                <th>Instructor</th>
-                                                <th>Instructor PH.No</th>
-                                                <th>Class Room</th>
+                                                <th class="text-center">Class</th>
+                                                <th class="text-center">Class Timing</th>
+                                                <th class="text-center">Batch</th>
+                                                <th class="text-center">Group</th>
+                                                <th class="text-center">Instructor</th>
+                                                <th class="text-center">Instructor PH.No</th>
+                                                <th class="text-center">Class Room</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                            <td><?= $p_live_class_data['class_name']; ?></td>
-                                            <td><?=  date('h:i A',$p_live_class_data['class_ts']); ?></td>
-                                            <td><?= $p_live_class_data['batch_name']; ?></td>
-                                            <td><?= $p_live_class_data['group_name']; ?></td>
-                                            <td><?= $p_live_class_data['emp_name']; ?></td>
-                                            <td><?= $p_live_class_data['phone']; ?></td>
-                                            <td><a id="<?= $p_live_class_data['class_id'] ?>" href="<?= $p_live_class_data['live_link']; ?>" target="_blank" class="btn btn-sm btn-success">Join Room</a></td>
+                                            <td class="text-center"><?= $p_live_class_data['class_name']; ?></td>
+                                            <td class="text-center"><?=  date('h:i A',$p_live_class_data['class_ts']); ?></td>
+                                            <td class="text-center"><?= $p_live_class_data['batch_name']; ?></td>
+                                            <td class="text-center"><?= $p_live_class_data['group_name']; ?></td>
+                                            <td class="text-center"><?= $p_live_class_data['emp_name']; ?></td>
+                                            <td class="text-center"><?= $p_live_class_data['phone']; ?></td>
+                                            <td class="text-center"><a id="<?= $p_live_class_data['class_id'] ?>" href="<?= $p_live_class_data['live_link']; ?>" target="_blank" class="btn btn-sm btn-success">Join Room</a></td>
                                             </tr>
                                             
                                         </tbody>

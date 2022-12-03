@@ -26,16 +26,13 @@ class Auth_model extends CI_Model
     }
     function read_user_information($email)
     {
-        $this->db->select('*');
-        $this->db->from('tc_student');
-        $this->db->where('email', $email);
-        $this->db->limit(1);
-        $query = $this->db->get();
-
-        if ($query->num_rows() == 1) {
-            return $query->result();
-        } else {
-            return FALSE;
+        $sql = "SELECT s.*, e.* FROM tc_student AS s, tc_enrollment AS e WHERE s.email = '".$email."' AND s.student_id = e.student_id";
+        $my_sql = "$sql";
+        $query = $this->db->query($my_sql);
+        if ($query->num_rows() > 0) {
+            return $query->result_array();
+        }else{
+            return false;
         }
     }
     public function update_session_id($user_session_id,$user_id){

@@ -23,6 +23,7 @@ class Quiz extends CI_Controller {
 		$group_id = $user_info['group_id'];
 		$batch_quiz = $this->SPM->get_batch_quiz($batch_id);
 		$group_quiz = $this->SPM->get_group_quiz($group_id);
+		$quiz_data = "";
 		if(!empty($batch_quiz) && !empty($group_quiz)){
 		$quiz_data = array_merge($batch_quiz,$group_quiz);
 		}
@@ -32,6 +33,7 @@ class Quiz extends CI_Controller {
 		if(!empty($batch_quiz) && empty($group_quiz)){
 			$quiz_data = $batch_quiz;
 		}
+		if(!empty($quiz_data)){
 		function date_compare($element1, $element2) {
 			$datetime1 = $element1['quiz_start_date'];
 			$datetime2 = $element2['quiz_start_date'];
@@ -40,6 +42,8 @@ class Quiz extends CI_Controller {
 	  
 			// Sort the array 
 		   usort($quiz_data, 'date_compare');
+			}
+
 		   $data['quiz_data'] = $quiz_data;
 		$this->load->student_panel('quiz',$data);
 	}

@@ -168,7 +168,7 @@ if(!empty($error_mess)){
             <span aria-hidden="true">&times;</span>
         </button>
     </div>
-    <?php } } ?>
+    <?php } } if(!empty($batch_detail)) { ?>
         <h1>Enroll Now In <?= $course_detail['course_name'] ?></h1>
         <h1>Price: ₹  <?= $course_detail['price']; ?></h1>
         <form action="<?= base_url("Subscription") ?>" method="post" class="course-form">
@@ -224,7 +224,7 @@ if(!empty($error_mess)){
             </div>
             <button type="submit" name="submit" class="course-submit-btn">Submit</button>
         </form>
-
+        <?php } ?>
     </div>
 </section>
 

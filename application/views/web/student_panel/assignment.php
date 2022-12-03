@@ -79,7 +79,7 @@
                 </div>
             </div>
         </div>
-        <?php } } ?>
+        <?php } }else{ echo "<h2 class='text-center text-warning'>No Assignment Found</h2>"; } ?>
     </div>
 </div>
 <!-- Modal -->

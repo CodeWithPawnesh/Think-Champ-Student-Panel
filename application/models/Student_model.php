@@ -2,7 +2,7 @@
 class Student_model extends CI_Model
 {
  public function get_course(){
-    $my_sql = "SELECT c.*, e.emp_name FROM tc_course as c, tc_employee as e WHERE c.course_id = e.course_id AND e.role = 1 ";
+    $my_sql = "SELECT c.*, e.emp_name FROM tc_course as c LEFT JOIN tc_employee as e ON c.course_id = e.course_id AND e.emp_id =1 ";
     $query = $this->db->query($my_sql);
     if ($query->num_rows() > 0) {
         return $query->result_array();
@@ -20,7 +20,10 @@ class Student_model extends CI_Model
             }
  }
  public function get_batch_data($id){
-    $my_sql = "SELECT b.*,c.class_ts,e.emp_name FROM tc_batch AS b, tc_classes AS c, tc_employee AS e WHERE c.batch_id = b.batch_id AND c.type ='1' AND c.group_id = '0' AND b.course_id = $id AND e.emp_id = b.emp_id";
+    $curr_date = date('y-m-d');
+    $curr_ts = strtotime($curr_date);
+    $my_sql = "SELECT b.*,c.class_ts,e.emp_name FROM tc_batch AS b, tc_classes AS c, tc_employee AS e WHERE c.batch_id = b.batch_id AND
+     c.type ='1' AND c.group_id = '0' AND b.course_id = $id AND e.emp_id = b.emp_id AND b.batch_end_date >= $curr_ts ";
     $query = $this->db->query($my_sql);
     if ($query->num_rows() > 0) {
         return $query->result_array();
@@ -39,8 +42,8 @@ class Student_model extends CI_Model
  }
  public function get_student_data($student_id){
  $my_sql = "SELECT s.*, c.course_name, b.batch_name,e.emp_name FROM tc_student as s, tc_batch as b,
- tc_course as c, tc_employee as e WHERE s.student_id = $student_id AND s.batch_id = b.batch_id AND b.emp_id = e.emp_id AND 
- s.course_id = c.course_id ";
+ tc_course as c, tc_employee as e, tc_enrollment as er WHERE s.student_id = $student_id AND er.batch_id = b.batch_id AND b.emp_id = e.emp_id AND 
+ er.course_id = c.course_id ";
         $query = $this->db->query($my_sql);
         if ($query->num_rows() > 0) {
             return $query->result_array();
@@ -78,7 +81,7 @@ class Student_model extends CI_Model
     }
     public function get_live_class_data($student_id){
         $sql = "SELECT c.class_id, c.class_name,c.class_ts, b.batch_name, b.batch_number, e.emp_name, e.phone , e.live_link FROM tc_classes AS c, tc_batch AS b,
-        tc_employee AS e, tc_student AS s WHERE c.batch_id = b.batch_id AND s.batch_id = b.batch_id AND e.emp_id = c.teacher_id AND 
+        tc_employee AS e, tc_student AS s, tc_enrollment as er WHERE c.batch_id = b.batch_id AND er.batch_id = b.batch_id AND e.emp_id = c.teacher_id AND 
          s.student_id = $student_id AND c.group_id ='0' AND c.status = '1'  ";
           $query = $this->db->query($sql);
           if ($query->num_rows() > 0) {
@@ -89,7 +92,7 @@ class Student_model extends CI_Model
     }
     public function get_p_live_class_data($student_id){
         $sql = "SELECT c.class_id, c.class_name, c.class_ts, b.batch_name, b.batch_number, e.emp_name, e.phone , e.live_link,g.group_name FROM tc_classes AS c, tc_batch AS b,
-        tc_employee AS e, tc_student AS s, tc_batch_group AS g WHERE c.batch_id = b.batch_id AND s.batch_id = b.batch_id AND e.emp_id = c.teacher_id AND 
+        tc_employee AS e, tc_student AS s, tc_batch_group AS g, tc_enrollment as er WHERE c.batch_id = b.batch_id AND er.batch_id = b.batch_id AND e.emp_id = c.teacher_id AND 
          s.student_id = $student_id AND c.group_id = g.group_id AND c.status = '1'  ";
           $query = $this->db->query($sql);
           if ($query->num_rows() > 0) {

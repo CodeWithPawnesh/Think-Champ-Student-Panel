@@ -4,41 +4,41 @@
 <head>
     <!-- meta tag -->
     <meta charset="utf-8">
-    <title>Educavo - Education HTML Template</title>
+    <title>Think Champ</title>
     <meta name="description" content="">
     <!-- responsive tag -->
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- favicon -->
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <link rel="shortcut icon" type="image/x-icon" href="assets2/assets/images/fav.png">
+    <link rel="shortcut icon" type="image/x-icon" href="<?= base_url("assets2/assets/images/fav.png") ?>">
     <!-- Bootstrap v5.0.2 css -->
-    <link rel="stylesheet" type="text/css" href="assets2/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="<?= base_url("assets2/assets/css/bootstrap.min.css") ?>">
     <!-- font-awesome css -->
-    <link rel="stylesheet" type="text/css" href="assets2/assets/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="<?= base_url("assets2/assets/css/font-awesome.min.css") ?>">
     <!-- animate css -->
-    <link rel="stylesheet" type="text/css" href="assets2/assets/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="<?= base_url("assets2/assets/css/animate.css") ?>">
     <!-- owl.carousel css -->
-    <link rel="stylesheet" type="text/css" href="assets2/assets/css/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="<?= base_url("assets2/assets/css/owl.carousel.css") ?>">
     <!-- slick css -->
-    <link rel="stylesheet" type="text/css" href="assets2/assets/css/slick.css">
+    <link rel="stylesheet" type="text/css" href="<?= base_url("assets2/assets/css/slick.css") ?>">
     <!-- off canvas css -->
-    <link rel="stylesheet" type="text/css" href="assets2/assets/css/off-canvas.css">
+    <link rel="stylesheet" type="text/css" href="<?= base_url("assets2/assets/css/off-canvas.css") ?>">
     <!-- linea-font css -->
-    <link rel="stylesheet" type="text/css" href="assets2/assets/fonts/linea-fonts.css">
+    <link rel="stylesheet" type="text/css" href="<?= base_url("assets2/assets/fonts/linea-fonts.css") ?>">
     <!-- flaticon css  -->
-    <link rel="stylesheet" type="text/css" href="assets2/assets/fonts/flaticon.css">
+    <link rel="stylesheet" type="text/css" href="<?= base_url("assets2/assets/fonts/flaticon.css") ?>">
     <!-- magnific popup css -->
-    <link rel="stylesheet" type="text/css" href="assets2/assets/css/magnific-popup.css">
+    <link rel="stylesheet" type="text/css" href="<?= base_url("assets2/assets/css/magnific-popup.css") ?>">
     <!-- Main Menu css -->
-    <link rel="stylesheet" href="assets2/assets/css/rsmenu-main.css">
+    <link rel="stylesheet" href="<?= base_url("assets2/assets/css/rsmenu-main.css") ?>">
     <!-- spacing css -->
-    <link rel="stylesheet" type="text/css" href="assets2/assets/css/rs-spacing.css">
+    <link rel="stylesheet" type="text/css" href="<?= base_url("assets2/assets/css/rs-spacing.css") ?>">
     <!-- style css -->
-    <link rel="stylesheet" type="text/css" href="assets2/style.css">
+    <link rel="stylesheet" type="text/css" href="<?= base_url("assets2/style.css") ?>">
     <!-- This stylesheet dynamically changed from style.less -->
     <!-- responsive css -->
-    <link rel="stylesheet" type="text/css" href="assets2/assets/css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="<?= base_url("assets2/assets/css/responsive.css") ?>">
     <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
             <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
