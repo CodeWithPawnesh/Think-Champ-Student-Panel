@@ -11,6 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- favicon -->
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="stylesheet" type="text/css" href="<?= base_url("assets/css/style.css") ?>">
     <link rel="shortcut icon" type="image/x-icon" href="<?= base_url("assets2/assets/images/fav.png") ?>">
     <!-- Bootstrap v5.0.2 css -->
     <link rel="stylesheet" type="text/css" href="<?= base_url("assets2/assets/css/bootstrap.min.css") ?>">
