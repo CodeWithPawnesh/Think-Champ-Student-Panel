@@ -8,7 +8,7 @@
 
                     <div class="desc white-color mb-50"> Learn At your Own Pace Develope Your Career</div>
                     <div class="banner-btn">
-                        <a class="readon2 banner-style" href="#">Be a coder</a>
+                        <a class="readon2 banner-style" href="Courses">Be a coder</a>
                     </div>
                 </div>
                 <div class="shape-img left">
@@ -760,64 +760,26 @@
                         data-ipad-device="2" data-ipad-device-nav="false" data-ipad-device-dots="false"
                         data-ipad-device2="1" data-ipad-device-nav2="false" data-ipad-device-dots2="false"
                         data-md-device="3" data-md-device-nav="false" data-md-device-dots="false">
+                        <?php foreach($blog_list as $b_l){ ?>
                         <div class="blog-item">
                             <div class="image-part">
-                                <img src="assets2/assets/images/blog/style2/4.jpg" alt="">
+                                <img src="http://localhost/Employee-Portal/assets/images/blog/<?=$b_l['image']?>" alt="">
                             </div>
                             <div class="blog-content new-style2">
                                 <ul class="blog-meta">
                                     <li><i class="fa fa-user-o"></i> Admin</li>
-                                    <li><i class="fa fa-calendar"></i>June 15, 2019</li>
+                                    <li><i class="fa fa-calendar"></i><?=date('F j, Y',strtotime($b_l['blog_created_at']))?></li>
                                 </ul>
-                                <h3 class="title"><a href="blog-single.html">Education is The Process of Facilitating
-                                        Learning</a></h3>
-                                <div class="desc">the acquisition of knowledge, skills, values befs, and habits.
-                                    Educational methods include teach ing, training, storytelling</div>
+                                <h3 class="title"><a href="blog-single.html"><?=$b_l['blog_title']?></a></h3>
+                                <div class="desc"><?php $blog_s_desc = explode(".",$b_l['blog_description']); echo $blog_s_desc[0] ?></div>
                                 <ul class="blog-bottom">
-                                    <li class="cmnt-part"><a href="#">(12) Comments</a></li>
-                                    <li class="btn-part"><a class="readon-arrow" href="#">Read More</a></li>
+                                    <li class="btn-part"><a class="readon-arrow" href="Blog">Read More</a></li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="blog-item">
-                            <div class="image-part">
-                                <img src="assets2/assets/images/blog/style2/5.jpg" alt="">
-                            </div>
-                            <div class="blog-content new-style2">
-                                <ul class="blog-meta">
-                                    <li><i class="fa fa-user-o"></i> Admin</li>
-                                    <li><i class="fa fa-calendar"></i>June 15, 2019</li>
-                                </ul>
-                                <h3 class="title"><a href="blog-single.html">Education is The Process of Facilitating
-                                        Learning</a></h3>
-                                <div class="desc">the acquisition of knowledge, skills, values befs, and habits.
-                                    Educational methods include teach ing, training, storytelling</div>
-                                <ul class="blog-bottom">
-                                    <li class="cmnt-part"><a href="#">(12) Comments</a></li>
-                                    <li class="btn-part"><a class="readon-arrow" href="#">Read More</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="blog-item">
-                            <div class="image-part">
-                                <img src="assets2/assets/images/blog/style2/6.jpg" alt="">
-                            </div>
-                            <div class="blog-content new-style2">
-                                <ul class="blog-meta">
-                                    <li><i class="fa fa-user-o"></i> Admin</li>
-                                    <li><i class="fa fa-calendar"></i>June 15, 2019</li>
-                                </ul>
-                                <h3 class="title"><a href="blog-single.html">Education is The Process of Facilitating
-                                        Learning</a></h3>
-                                <div class="desc">the acquisition of knowledge, skills, values befs, and habits.
-                                    Educational methods include teach ing, training, storytelling</div>
-                                <ul class="blog-bottom">
-                                    <li class="cmnt-part"><a href="#">(12) Comments</a></li>
-                                    <li class="btn-part"><a class="readon-arrow" href="#">Read More</a></li>
-                                </ul>
-                            </div>
-                        </div>
+                        <?php } ?>
                     </div>
+
                 </div>
             </div>
             <!-- Blog Section End -->

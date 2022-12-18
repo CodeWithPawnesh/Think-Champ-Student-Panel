@@ -9,6 +9,7 @@ class Home extends CI_Controller {
     }
 	public function index()
 	{
+        $data['blog_list'] = $this->SM->get_all_blogs();
         $data['course_data'] = $this->SM->get_course();
 		$this->load->web_temp_2('home',$data);
 	}

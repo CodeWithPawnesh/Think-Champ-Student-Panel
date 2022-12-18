@@ -10,7 +10,6 @@ class Subscription extends CI_Controller {
 		$this->load->model('Student_model','SM');
 		$this->load->model('Mail_model','MAM');
         $this->load->model('Subscription_model','SBM');
-		$this->load->library('email');
     }
 	public function index()
 	{
@@ -68,13 +67,16 @@ class Subscription extends CI_Controller {
                     "email"=>$email,
                     "phone"=>$number,
                     "collage"=>$student_ab,
-                    "course_id"=>$course_id,
-                    "batch_id"=>$batch_id,
                     "created_at"=>$created_ts,
                     "status"=>'1'
                 );
+				$course_data = array(
+					"course_id"=>$course_id,
+                    "batch_id"=>$batch_id,
+				);
 				$this->session->set_userdata('raz_stu_data', $student_data);
 				$this->session->set_userdata('raz_log_data', $user_data);
+				$this->session->set_userdata('raz_crs_data', $course_data);
 				//create order
 		$key_id = "rzp_test_GUx0qaLfzdvD5u"; //test
 		$secret = "ZmujxFz5T9sDjLufIkorzoe8";//test
@@ -100,7 +102,6 @@ class Subscription extends CI_Controller {
 		}
 	}
 	public function payment_status(){
-		$this->load->library('email');
 		// $key_id = "rzp_live_49RY8lWxxDaBbc"; //Live
 		// $secret = "HVoVj9kAhE6rmBt2Uu4obm6c";//Live
 		$key_id = "rzp_test_GUx0qaLfzdvD5u"; //test
@@ -109,6 +110,7 @@ class Subscription extends CI_Controller {
 		$student_data = $this->session->userdata('raz_stu_data');
 		//Student login data
 		$login_data = $this->session->userdata('raz_log_data');
+		$course_data = $this->session->userdata('raz_crs_data');
 		//order details 
 		$roz_payment_id = $_POST['razorpay_payment_id'];
 		$roz_order_id = $_POST['razorpay_order_id'];
@@ -121,8 +123,8 @@ class Subscription extends CI_Controller {
 		$status = $payment->captured;
 		$capture_tc = $payment->created_at;
 		$order_date = date('y-m-d');
-		$course_id = $student_data['course_id'];
-		$batch_id = $student_data['batch_id'];
+		$course_id = $course_data['course_id'];
+		$batch_id = $course_data['batch_id'];
 		//Signature Verification
 		$roz_data = $roz_order_id. "|" . $roz_payment_id;
 		$generated_signature = hash_hmac("sha256",$roz_data,$secret);
@@ -138,12 +140,12 @@ class Subscription extends CI_Controller {
 			"status"=>$status
 	);
        if ($generated_signature == $roz_signature) {
-		$this->SBM->sub_student($student_data,$login_data,$order_data);
+		$this->SBM->sub_student($student_data,$login_data,$order_data,$course_data);
 		$course_name = $this->SBM->get_course_name($student_data['course_id']);
 		$this->MAM->send_mail_student_enrolment($student_data,$login_data,$course_name);
 		redirect("Subscription/payment_success");
            }else{
-			echo "Payment Failed";
+			echo "Payment Failed"; 
 		   }
 	}
 	public function payment_success(){

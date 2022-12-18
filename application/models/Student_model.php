@@ -195,5 +195,56 @@ class Student_model extends CI_Model
             return $query->result_array();
         }
     }
+    public function get_all_blogs(){
+        $this->db->where("status","1");
+        $query = $this->db->get("tc_blog");
+        if($query->num_rows()>0){
+            return $query->result_array();
+        }
+	}
+    public function get_blog_detail($blog_id){
+        $this->db->where("blog_id",$blog_id);
+        $query = $this->db->get("tc_blog");
+        if($query->num_rows()==1){
+            return $query->result_array();
+        }
+    }
+    public function get_all_workshop(){
+        $this->db->where("workshop_status","1");
+        $query = $this->db->get("tc_workshop");
+        if($query->num_rows()>0){
+            return $query->result_array();
+        }
+	}
+    public function get_workshop_detail($workshop_id){
+        $this->db->where("workshop_id",$workshop_id);
+        $query = $this->db->get("tc_workshop");
+        if($query->num_rows()==1){
+            return $query->result_array();
+        }
+    }
+    public function get_all_news(){
+        $this->db->where("status","1");
+        $query = $this->db->get("tc_news");
+        if($query->num_rows()>0){
+            return $query->result_array();
+        }
+	}
+    public function get_news_detail($news_id){
+        $this->db->where("news_id",$news_id);
+        $query = $this->db->get("tc_news");
+        if($query->num_rows()==1){
+            return $query->result_array();
+        }
+    }
+    public function enroll_in_workshop($data){
+        $query = $this->db->insert("tc_workshop_enroll", $data);
+        if($query)
+        {
+            return true;
+        }else{
+            return false;
+        }
+}
 }
 ?>

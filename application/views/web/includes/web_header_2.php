@@ -137,7 +137,7 @@
                                             </li>
 
                                             <li class="menu-item-has-children">
-                                                <a href="rs-blog">Blog</a>
+                                                <a href="#rs-blog">Blog</a>
 
                                             </li>
 
