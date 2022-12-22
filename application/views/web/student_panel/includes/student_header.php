@@ -3,7 +3,11 @@
 <html lang="zxx">
 
 <head>
-
+<style>
+    .hd-color{
+        color:rgb(141, 86, 252);
+    }
+</style>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title>Dashboard</title>
@@ -125,6 +129,26 @@
                     </div>
                     <div class="nav_title">
                         <span>Quiz</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="<?= base_url('Job') ?>" aria-expanded="false">
+                    <div class="nav_icon_small">
+                    <i class="fas fa-solid fa-handshake"></i>
+                    </div>
+                    <div class="nav_title">
+                        <span>Job Updates</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="<?= base_url('Internship') ?>" aria-expanded="false">
+                    <div class="nav_icon_small">
+                    <i class="fas fa-duotone fa-hands-asl-interpreting"></i>
+                    </div>
+                    <div class="nav_title">
+                        <span>Internship</span>
                     </div>
                 </a>
             </li>

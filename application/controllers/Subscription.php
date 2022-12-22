@@ -60,7 +60,8 @@ class Subscription extends CI_Controller {
                     "password"=>$pass,
                     "password_o"=>$pass_o,
                     "access_level"=>'3',
-                    "created_ts"=>$created_ts
+                    "created_ts"=>$created_ts,
+					"status"=>1
                 );
                 $student_data = array(
                     "student_name"=>$name,

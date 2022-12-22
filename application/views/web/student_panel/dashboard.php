@@ -29,6 +29,7 @@
                             </div>
                             <div class="white_card_body ">
                                 <!-- Theory Class Data -->
+                                <?php if(!empty($t_live_class_data)){ ?>
                                 <h5 class="text-center">Theory Live Class <?= $course_data['course_name'] ?></h5>
                                 <div class="table-responsive">
                                     <table class="table align-middle">
@@ -56,6 +57,7 @@
                                     </table>
                                 </div>
                                 <!-- Programming Class Data -->
+                                <?php } if(!empty($p_live_class_data)){ ?>
                                 <h5 class="text-center">Programming Live Class <?= $course_data['course_name'] ?></h5>
                                 <div class="table-responsive">
                                     <table class="table align-middle">
@@ -84,6 +86,7 @@
                                         </tbody>
                                     </table>
                                 </div>
+                                <?php } ?>
                             </div>
                         </div>
                     </div>
