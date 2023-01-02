@@ -64,5 +64,6 @@ $route['Profile']='StudentPanel/profile';
 $route['Leave']='StudentPanel/leave';
 $route['Add-Leave']='StudentPanel/add_leave';
 $route['Live-Class']='StudentPanel/class';
+$route['Quiz-Start']='Quiz/quiz_start';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

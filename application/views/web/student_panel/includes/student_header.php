@@ -4,7 +4,7 @@
 
 <head>
 <style>
-    .hd-color{
+    .hd-heading{
         color:rgb(141, 86, 252);
     }
 </style>
@@ -92,7 +92,7 @@
                     </div>
                 </a>
             </li>
-            <li>
+            <!-- <li>
                 <a href="<?= base_url('') ?>" aria-expanded="false">
                     <div class="nav_icon_small">
                     <i class="fas fa-book"></i>
@@ -101,7 +101,7 @@
                         <span>Notes</span>
                     </div>
                 </a>
-            </li>
+            </li> -->
             <li>
                 <a href="<?= base_url('Leave') ?>" aria-expanded="false">
                     <div class="nav_icon_small">
@@ -213,14 +213,13 @@
                                 
                             </div>
                             <div class="profile_info">
-                                <img src="assets/dashboard/img/client_img.png" alt="#">
+                                <img src="assets/images/user_profile/<?php  echo "avatar.jpg";  ?>" alt="#">
                                 <div class="profile_info_iner">
                                     <div class="profile_author_name">
                                         <h5><?= $user_info['student_name'] ?></h5>
                                     </div>
                                     <div class="profile_info_details">
-                                        <a href="#">My Profile </a>
-                                        <a href="#">Settings</a>
+                                        <a href="<?= base_url("Profile") ?>">My Profile </a>
                                         <a href="<?= base_url("Auth/logout") ?>">Log Out </a>
                                     </div>
                                 </div>

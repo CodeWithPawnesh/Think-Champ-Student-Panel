@@ -15,7 +15,8 @@
         <i class="ti-angle-up"></i>
     </a>
 </div>
-
+</body>
+</html>
 <script src="assets/dashboard/js/jquery1-3.4.1.min.js"></script>
 
 <script src="assets/dashboard/js/popper1.min.js"></script>
@@ -74,9 +75,6 @@
 
 <script src="assets/dashboard/js/dashboard_init.js"></script>
 <script src="assets/dashboard/js/custom.js"></script>
-</body>
-
-</html>
 <script>
     function check_sess_id(){
       var session_id = "<?= $this->session->userdata('sess_id') ?>";

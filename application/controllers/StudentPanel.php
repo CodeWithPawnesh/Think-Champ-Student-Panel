@@ -18,13 +18,16 @@ class StudentPanel extends CI_Controller {
 	{
 		$user_info = $this->session->userdata('user_data');
 		$student_id = $user_info['student_id'];
-		$course_id = $user_info['course_id'];
-		$data['course_data'] = $this->SPM->get_coure_data($course_id);
-		$data['course_data'] = $data['course_data'][0];
+		if(isset($_GET['id']) && isset($_GET['cl_l'])){
+            $class_id=$_GET['id'];
+            $class_link = $_GET['cl_l'];
+            $this->CM->insert_class_history($class_id,$class_link,$student_id);
+        }
+		//Get All Course Classes And Details
+		// $data['course_data'] = $this->SPM->get_coure_data($course_id);
+		// $data['course_data'] = $data['course_data'][0];
 		$data['t_live_class_data'] = $this->SPM->get_live_class_data($student_id);
-		$data['t_live_class_data'] = $data['t_live_class_data'][0];
 		$data['p_live_class_data'] = $this->SPM->get_p_live_class_data($student_id);
-		$data['p_live_class_data'] = $data['p_live_class_data'][0];
 		$this->load->student_panel('dashboard',$data);
 	}
 	public function profile()
@@ -38,12 +41,12 @@ class StudentPanel extends CI_Controller {
 			$address = $_POST['address'];
 			$collage = $_POST['collage'];
 			$c_year = $_POST['c_year'];
+			$profile_picture ="";
 			if($_FILES['profile_picture']['size']>0)
 			{
 				$config['upload_path'] = './assets/images/user_profile/';
 				$config['allowed_types'] = 'gif|jpg|png|jpeg';
 				$config['encrypt_name'] = true;
-				$config['max_size'] = 5000;
 				$this->load->library('upload',$config);
 				if($this->upload->do_upload('profile_picture'))
 				{

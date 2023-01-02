@@ -31,8 +31,7 @@
                     </div>
                 </div>
                 <div class="white_card_body ">
-                    <h2 class="text-danger">No Quiz Available</h2>
-                    <!-- <?php if(!empty($quiz_data)){ ?>
+                    <?php if(!empty($quiz_data)){ ?>
                     <div class="table-responsive">
                         <table class="table align-middle">
                             <thead>
@@ -52,14 +51,24 @@
                                     <td class="text-center"><?= $q_d['quiz_title']; ?></td>
                                     <td class="text-center"><?= date('d M, Y',$q_d['quiz_start_date']) ?></td>
                                     <td class="text-center"><?= date('d M, Y',$q_d['quiz_end_date']) ?></td>
-                                    <td class="text-center"><?= $q_d['quiz_duration']; ?></td>
-                                    <td class="text-center"><a href="" class="btn btn-sm btn-success">Start</a></td>
+                                    <td class="text-center"><?= $q_d['quiz_duration']; ?> min</td>
+                                    <?php if(!empty($sub_quiz)){
+                                        foreach($sub_quiz as $s_q){
+                                            if($s_q['quiz_id'] == $q_d['quiz_id']){
+                                         ?>
+                              <td class="text-center"><a href="<?= base_url("Quiz/analytics?quiz_id=".base64_encode($q_d['quiz_id'])) ?>" class="btn btn-sm btn-success">Result</a></td>
+                                         <?php }else{ ?>
+                                    <td class="text-center"><a href="<?= base_url("Quiz-Start?id=".base64_encode($q_d['quiz_id'])) ?>" class="btn btn-sm btn-success">Start</a></td>
+                                    <?php } ?>
+                                    <?php } } else{ ?>
+                                        <td class="text-center"><a href="<?= base_url("Quiz-Start?id=".base64_encode($q_d['quiz_id'])) ?>" class="btn btn-sm btn-success">Start</a></td>
+                                    <?php }  ?>
                                 </tr>
                                 <?php } ?>
                             </tbody>
                         </table>
                     </div>
-                    <?php } ?> -->
+                    <?php } ?>
                 </div>
             </div>
         </div>

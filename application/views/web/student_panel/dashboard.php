@@ -21,7 +21,7 @@
                             <div class="white_card_header">
                                 <div class="box_header m-0">
                                     <div class="main-title ">
-                                        <h3 class="m-0 "><?= $course_data['course_title'] ?></h3>
+                                        <h3 class="m-0 ">Live Classes</h3>
                                     </div>
                                     <div class="float-lg-right float-none common_tab_btn2 justify-content-end">
                                     </div>
@@ -30,7 +30,7 @@
                             <div class="white_card_body ">
                                 <!-- Theory Class Data -->
                                 <?php if(!empty($t_live_class_data)){ ?>
-                                <h5 class="text-center">Theory Live Class <?= $course_data['course_name'] ?></h5>
+                                <h4 class="text-center hd-heading">Theory Live Class</h4>
                                 <div class="table-responsive">
                                     <table class="table align-middle">
                                         <thead>
@@ -44,21 +44,25 @@
                                             </tr>
                                         </thead>
                                         <tbody>
+                                            <?php foreach($t_live_class_data as $t_d){?>
                                             <tr>
-                                            <td class="text-center"><?= $t_live_class_data['class_name']; ?></td>
-                                            <td class="text-center"><?=  date('h:i A',$t_live_class_data['class_ts']); ?></td>
-                                            <td class="text-center"><?= $t_live_class_data['batch_name']; ?></td>
-                                            <td class="text-center"><?= $t_live_class_data['emp_name']; ?></td>
-                                            <td class="text-center"><?= $t_live_class_data['phone']; ?></td>
-                                            <td class="text-center"><a id="<?= $t_live_class_data['class_id'] ?>" href="<?= $t_live_class_data['live_link']; ?>" target="_blank" class="btn btn-sm btn-success">Join Room</a></td>
+                                            <td class="text-center"><?= $t_d['class_name']; ?></td>
+                                            <td class="text-center"><?=  date('h:i A',$t_d['class_ts']); ?></td>
+                                            <td class="text-center"><?= $t_d['batch_name']; ?></td>
+                                            <td class="text-center"><?= $t_d['emp_name']; ?></td>
+                                            <td class="text-center"><?= $t_d['phone']; ?></td>
+                                            <td class="text-center">
+                                                <a id="<?= $t_d['class_id'] ?>" href="Dashboard?id<?= $t_d['class_id'] ?>&cl_l=<?= $t_d['live_link']; ?>" target="_blank" class="btn btn-sm btn-success">Join Room</a>
+                                            </td>
                                             </tr>
+                                            <?php } ?>
                                             
                                         </tbody>
                                     </table>
                                 </div>
                                 <!-- Programming Class Data -->
                                 <?php } if(!empty($p_live_class_data)){ ?>
-                                <h5 class="text-center">Programming Live Class <?= $course_data['course_name'] ?></h5>
+                                <h4 class="text-center hd-heading">Programming Live Class </h4>
                                 <div class="table-responsive">
                                     <table class="table align-middle">
                                         <thead>
@@ -73,16 +77,17 @@
                                             </tr>
                                         </thead>
                                         <tbody>
+                                            <?php foreach($p_live_class_data as $p_d){ ?>
                                             <tr>
-                                            <td class="text-center"><?= $p_live_class_data['class_name']; ?></td>
-                                            <td class="text-center"><?=  date('h:i A',$p_live_class_data['class_ts']); ?></td>
-                                            <td class="text-center"><?= $p_live_class_data['batch_name']; ?></td>
-                                            <td class="text-center"><?= $p_live_class_data['group_name']; ?></td>
-                                            <td class="text-center"><?= $p_live_class_data['emp_name']; ?></td>
-                                            <td class="text-center"><?= $p_live_class_data['phone']; ?></td>
-                                            <td class="text-center"><a id="<?= $p_live_class_data['class_id'] ?>" href="<?= $p_live_class_data['live_link']; ?>" target="_blank" class="btn btn-sm btn-success">Join Room</a></td>
+                                            <td class="text-center"><?= $p_d['class_name']; ?></td>
+                                            <td class="text-center"><?=  date('h:i A',$p_d['class_ts']); ?></td>
+                                            <td class="text-center"><?= $p_d['batch_name']; ?></td>
+                                            <td class="text-center"><?= $p_d['group_name']; ?></td>
+                                            <td class="text-center"><?= $p_d['emp_name']; ?></td>
+                                            <td class="text-center"><?= $p_d['phone']; ?></td>
+                                            <td class="text-center"><a id="<?= $p_d['class_id'] ?>" href="<?= $p_d['live_link']; ?>" target="_blank" class="btn btn-sm btn-success">Join Room</a></td>
                                             </tr>
-                                            
+                                            <?php } ?>
                                         </tbody>
                                     </table>
                                 </div>
@@ -91,7 +96,7 @@
                         </div>
                     </div>
                     <div class="col-xl-4 ">
-                        <div class="white_card card_height_100 mb_30 sales_card_wrapper">
+                        <div class="white_card mb_30 sales_card_wrapper height">
                             <div class="white_card_header d-flex justify-content-end">
                             </div>
                             <div class="card badge_card">
@@ -116,7 +121,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4">
+                    <!-- <div class="col-xl-4">
                         <div class="white_card card_height_100 mb_30 ">
                             <div class="white_card_header">
                                 <div class="box_header m-0">
@@ -214,7 +219,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="col-xl-4">
                         <div class="white_card card_height_100 mb_30">
                             <div class="date_picker_wrapper">
@@ -235,23 +240,34 @@
     var m = today.getMinutes();
     var s = today.getSeconds();
     var time = h + ':' + m + ':' + s;
-         var t_s_time =  '<?= date("h:i:s", ($t_live_class_data['class_ts']) - (15 * 60))?>' ;
-         var t_e_time = '<?= date("h:i:s", ($t_live_class_data['class_ts']) + (15 * 60))?>';
-         var p_s_time = '<?= date("h:i:s", ($p_live_class_data['class_ts']) - (15 * 60))?>';
-         var p_e_time = '<?= date("h:i:s", ($p_live_class_data['class_ts']) + (15 * 60)) ?>';
+         <?php foreach($t_live_class_data as $t_d){ ?>
+         var t_s_time =  '<?= date("h:i:s", ($t_d['class_ts']) - (15 * 60))?>' ;
+         var t_e_time = '<?= date("h:i:s", ($t_d['class_ts']) + (15 * 60))?>';
+    if(  t_s_time  <= time &&  t_e_time >=  time)
+    {
+    document.getElementById("<?= $t_d['class_id'] ?>").style.display="block";
+    }else{
+        document.getElementById("<?= $t_d['class_id'] ?>").style.display="none";
+    }
+    <?php } ?>
+    <?php foreach($p_live_class_data as $p_d){ ?>
+         var p_s_time = '<?= date("h:i:s", ($p_d['class_ts']) - (15 * 60))?>';
+         var p_e_time = '<?= date("h:i:s", ($p_d['class_ts']) + (15 * 60)) ?>';
 
     if(  t_s_time  <= time &&  t_e_time >=  time)
     {
-    document.getElementById("<?= $t_live_class_data['class_id'] ?>").style.display="block";
+    document.getElementById("<?= $p_d['class_id'] ?>").style.display="block";
     }else{
-        document.getElementById("<?= $t_live_class_data['class_id'] ?>").style.display="none";
+        document.getElementById("<?= $p_d['class_id'] ?>").style.display="none";
     }
-    if(  p_s_time  <= time &&  p_e_time >=  time)
+        if(  p_s_time  <= time &&  p_e_time >=  time)
     {
-    document.getElementById("<?= $p_live_class_data['class_id'] ?>").style.display="block";
+    document.getElementById("<?= $p_d['class_id'] ?>").style.display="block";
     }else{
-        document.getElementById("<?= $p_live_class_data['class_id'] ?>").style.display="none";
+        document.getElementById("<?= $p_d['class_id'] ?>").style.display="none";
     }
+    <?php } ?>
+
     }
     setInterval(function(){
         check_class_time();
@@ -264,4 +280,3 @@
       }
     }
 </script>
-        </script>

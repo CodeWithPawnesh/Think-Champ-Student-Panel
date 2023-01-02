@@ -11,7 +11,7 @@
                         </ol>
                     </div>
                     <div class="page_title_right">
-                        Right
+
                     </div>
                 </div>
             </div>

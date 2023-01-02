@@ -11,7 +11,6 @@
                         </ol>
                     </div>
                     <div class="page_title_right">
-                        Right
                     </div>
                 </div>
             </div>
@@ -37,9 +36,9 @@
                                     <div class="card">
                                         <div class="card-body">
                                             <div class="d-flex flex-column align-items-center text-center">
-                                                <a href="assets/images/user_profile/<?= $profile['profile'] ?>"
+                                                <a href="assets/images/user_profile/<?php if(!empty($profile['profile'])){ echo $profile['profile'];  }else{ echo "avatar.jpg"; }  ?>"
                                                     target="_blank"><img
-                                                        src="assets/images/user_profile/<?= $profile['profile'] ?>"
+                                                        src="assets/images/user_profile/<?php if(!empty($profile['profile'])){ echo $profile['profile'];  }else{ echo "avatar.jpg"; }  ?>"
                                                         alt="Admin" class="rounded-circle p-1 bg-primary" width="210"
                                                         height="210"></a>
                                                 <div class="mt-3">

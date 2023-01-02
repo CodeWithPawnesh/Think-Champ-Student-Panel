@@ -12,7 +12,6 @@
                         </ol>
                     </div>
                     <div class="page_title_right">
-                        Right
                     </div>
                 </div>
             </div>
@@ -37,7 +36,7 @@
                 </div>
                 <div class="white_card_body text-center ">
                     <div class="title">
-                        <h3 class="hd-color"><?= $j_d['job_title'] ?></h3>
+                        <h3 class="hd-heading"><?= $j_d['job_title'] ?></h3>
                     </div>
                     <div class="row">
                         <div class="col-sm-1">
