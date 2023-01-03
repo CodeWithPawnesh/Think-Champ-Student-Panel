@@ -320,12 +320,12 @@
                         <?php foreach($course_data as $c_d){ ?>
                         <div class="courses-item">
                             <div class="img-part">
-                                <img src="http://localhost/Employee-Portal/assets/images/course/<?= $c_d['sec_1_img'] ?>" alt="">
+                                <img src="http://localhost/Employee-Portal/assets/images/course/<?= $c_d['sec_1_img'] ?>" style="height:200px;" alt="">
                             </div>
                             <div class="content-part">
                                 <span><a class="categories" href="Course-Detail?id=<?=base64_encode($c_d['course_id']) ?>"><?= $c_d['course_name'] ?></a></span>
                                 <ul class="meta-part">
-                                    <li class="user"><i class="fa fa-user"></i> 245</li>
+                                    <li class="user"><i class="fa fa-user"></i> <?= $c_d['cc'] ?></li>
                                     <li><span class="price">₹ <?= $c_d['price'] ?></span></li>
                                 </ul>
                                 <h3 class="title"><a href="Course-Detail?id=<?=base64_encode($c_d['course_id']) ?>"><?= $c_d['course_title'] ?></a></h3>
@@ -333,6 +333,8 @@
                                     <div class="info-meta">
                                         <ul>
                                             <li class="ratings">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
                                                 <i class="fa fa-star"></i>
                                                 <i class="fa fa-star"></i>
                                                 <i class="fa fa-star"></i>

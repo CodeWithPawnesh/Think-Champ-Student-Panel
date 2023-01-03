@@ -2,7 +2,8 @@
 class Student_model extends CI_Model
 {
  public function get_course(){
-    $my_sql = "SELECT c.*, e.emp_name FROM tc_course as c LEFT JOIN tc_employee as e ON c.course_id = e.course_id AND e.emp_id =1 ";
+    $my_sql = "SELECT COUNT(er.course_id) as cc, c.*, e.emp_name FROM tc_course as c LEFT JOIN tc_employee as e ON c.course_id = e.course_id 
+    AND e.emp_id =1 LEFT JOIN tc_enrollment as er ON er.course_id = c.course_id ";
     $query = $this->db->query($my_sql);
     if ($query->num_rows() > 0) {
         return $query->result_array();
