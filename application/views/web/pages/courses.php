@@ -1,4 +1,4 @@
-<section class="about-us-first-section" style=" background-image: url(assets/images/home/first-section-bg.jpg);">
+<section class="about-us-first-section" style=" background-color:#59E8FF;">
     <h1 class="first-heading">OUR COURSES</h1>
 </section>
 
