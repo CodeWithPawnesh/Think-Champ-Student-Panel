@@ -46,17 +46,19 @@
                                         <tbody>
                                             <?php foreach($t_live_class_data as $t_d){?>
                                             <tr>
-                                            <td class="text-center"><?= $t_d['class_name']; ?></td>
-                                            <td class="text-center"><?=  date('h:i A',$t_d['class_ts']); ?></td>
-                                            <td class="text-center"><?= $t_d['batch_name']; ?></td>
-                                            <td class="text-center"><?= $t_d['emp_name']; ?></td>
-                                            <td class="text-center"><?= $t_d['phone']; ?></td>
-                                            <td class="text-center">
-                                                <a id="<?= $t_d['class_id'] ?>" href="Dashboard?id<?= $t_d['class_id'] ?>&cl_l=<?= $t_d['live_link']; ?>" target="_blank" class="btn btn-sm btn-success">Join Room</a>
-                                            </td>
+                                                <td class="text-center"><?= $t_d['class_name']; ?></td>
+                                                <td class="text-center"><?=  date('h:i A',$t_d['class_ts']); ?></td>
+                                                <td class="text-center"><?= $t_d['batch_name']; ?></td>
+                                                <td class="text-center"><?= $t_d['emp_name']; ?></td>
+                                                <td class="text-center"><?= $t_d['phone']; ?></td>
+                                                <td class="text-center">
+                                                    <a id="<?= $t_d['class_id'] ?>" style="display:none"
+                                                        href="Dashboard?id=<?= $t_d['class_id'] ?>&cl_l=<?= $t_d['live_link']; ?>"
+                                                        target="_blank" class="btn btn-sm btn-success">Join Room</a>
+                                                </td>
                                             </tr>
                                             <?php } ?>
-                                            
+
                                         </tbody>
                                     </table>
                                 </div>
@@ -79,13 +81,16 @@
                                         <tbody>
                                             <?php foreach($p_live_class_data as $p_d){ ?>
                                             <tr>
-                                            <td class="text-center"><?= $p_d['class_name']; ?></td>
-                                            <td class="text-center"><?=  date('h:i A',$p_d['class_ts']); ?></td>
-                                            <td class="text-center"><?= $p_d['batch_name']; ?></td>
-                                            <td class="text-center"><?= $p_d['group_name']; ?></td>
-                                            <td class="text-center"><?= $p_d['emp_name']; ?></td>
-                                            <td class="text-center"><?= $p_d['phone']; ?></td>
-                                            <td class="text-center"><a id="<?= $p_d['class_id'] ?>" href="<?= $p_d['live_link']; ?>" target="_blank" class="btn btn-sm btn-success">Join Room</a></td>
+                                                <td class="text-center"><?= $p_d['class_name']; ?></td>
+                                                <td class="text-center"><?=  date('h:i A',$p_d['class_ts']); ?></td>
+                                                <td class="text-center"><?= $p_d['batch_name']; ?></td>
+                                                <td class="text-center"><?= $p_d['group_name']; ?></td>
+                                                <td class="text-center"><?= $p_d['emp_name']; ?></td>
+                                                <td class="text-center"><?= $p_d['phone']; ?></td>
+                                                <td class="text-center"><a id="<?= $p_d['class_id'] ?>"
+                                                        style="display:none" href="<?= $p_d['live_link']; ?>"
+                                                        target="_blank" class="btn btn-sm btn-success">Join Room</a>
+                                                </td>
                                             </tr>
                                             <?php } ?>
                                         </tbody>
@@ -232,51 +237,72 @@
                 </div>
             </div>
         </div>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script>
-   function check_class_time(){
-    
+function check_class_time() {
+
     var today = new Date();
     var h = zeros(today.getHours() % 12 || 12);
     var m = today.getMinutes();
     var s = today.getSeconds();
-    var time = h + ':' + m + ':' + s;
-         <?php foreach($t_live_class_data as $t_d){ ?>
-         var t_s_time =  '<?= date("h:i:s", ($t_d['class_ts']) - (15 * 60))?>' ;
-         var t_e_time = '<?= date("h:i:s", ($t_d['class_ts']) + (15 * 60))?>';
-    if(  t_s_time  <= time &&  t_e_time >=  time)
-    {
-    document.getElementById("<?= $t_d['class_id'] ?>").style.display="block";
-    }else{
-        document.getElementById("<?= $t_d['class_id'] ?>").style.display="none";
+    if (m < 10) {
+        m = "0" + m;
     }
+    if (s < 10) {
+        s = "0" + s;
+    }
+    var time = h + ':' + m + ':' + s;
+    <?php foreach($t_live_class_data as $t_d){ ?>
+    var t_s_time = '<?= date("h:i:s", ($t_d['class_ts']) - (15 * 60))?>';
+    var t_e_time = '<?= date("h:i:s", ($t_d['class_ts']) + (20 * 60))?>';
+    var t_class_id = <?= $t_d['class_id'] ?>;
+    $.ajax({
+        url: "<?= base_url("StudentPanel/today_classes") ?>",
+        type: "POST",
+        data: {
+            class_id: t_class_id
+        },
+        cache: false,
+        success: function(dataResult) {
+            if (dataResult == t_class_id && t_e_time >= time) {
+                document.getElementById("<?= $t_d['class_id'] ?>").style.display = "block";
+            } else {
+                document.getElementById("<?= $t_d['class_id'] ?>").style.display = "none";
+            }
+        }
+    });
     <?php } ?>
     <?php foreach($p_live_class_data as $p_d){ ?>
-         var p_s_time = '<?= date("h:i:s", ($p_d['class_ts']) - (15 * 60))?>';
-         var p_e_time = '<?= date("h:i:s", ($p_d['class_ts']) + (15 * 60)) ?>';
-
-    if(  t_s_time  <= time &&  t_e_time >=  time)
-    {
-    document.getElementById("<?= $p_d['class_id'] ?>").style.display="block";
-    }else{
-        document.getElementById("<?= $p_d['class_id'] ?>").style.display="none";
-    }
-        if(  p_s_time  <= time &&  p_e_time >=  time)
-    {
-    document.getElementById("<?= $p_d['class_id'] ?>").style.display="block";
-    }else{
-        document.getElementById("<?= $p_d['class_id'] ?>").style.display="none";
-    }
+    var p_s_time = '<?= date("h:i:s", ($p_d['class_ts']) - (15 * 60))?>';
+    var p_e_time = '<?= date("h:i:s", ($p_d['class_ts']) + (20 * 60)) ?>';
+    var class_id = <?= $p_d['class_id'] ?>;
+    $.ajax({
+        url: "<?= base_url("StudentPanel/today_classes") ?>",
+        type: "POST",
+        data: {
+            class_id: class_id
+        },
+        cache: false,
+        success: function(dataResult) {
+            if (dataResult == class_id && p_e_time >= time) {
+                document.getElementById("<?= $p_d['class_id'] ?>").style.display = "block";
+            } else {
+                document.getElementById("<?= $p_d['class_id'] ?>").style.display = "none";
+            }
+        }
+    });
     <?php } ?>
 
-    }
-    setInterval(function(){
-        check_class_time();
-    }, 100);
-    function zeros(i) {
-      if (i < 10) {
+}
+setInterval(function() {
+    check_class_time();
+}, 100);
+
+function zeros(i) {
+    if (i < 10) {
         return "0" + i;
-      } else {
+    } else {
         return i;
-      }
     }
-</script>
+}
+        </script>

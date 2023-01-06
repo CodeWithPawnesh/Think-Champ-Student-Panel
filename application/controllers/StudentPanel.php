@@ -18,10 +18,37 @@ class StudentPanel extends CI_Controller {
 	{
 		$user_info = $this->session->userdata('user_data');
 		$student_id = $user_info['student_id'];
+		$tdDate = date("y-m-d");
 		if(isset($_GET['id']) && isset($_GET['cl_l'])){
             $class_id=$_GET['id'];
             $class_link = $_GET['cl_l'];
-            $this->CM->insert_class_history($class_id,$class_link,$student_id);
+			$class_data = $this->SPM->get_student_attened($class_id);
+			$studentIds = $class_data[0]['student_ids'];
+			$redirect = $class_link;
+			if(!empty($studentIds)){
+				$studentIdsArr = explode(",",$studentIds);
+				if(!in_array($student_id,$studentIdsArr)){
+				$newStudentIds = $studentIds.",".$student_id;
+				$data = array("student_ids"=>$newStudentIds);
+				$where = array(
+					"class_id"=>$class_id,
+					"class_date"=>$tdDate
+				);
+				$this->SPM->insert_class_history($data,$where,$redirect);
+				}else{
+					redirect($redirect);
+				}
+			}else{
+				$newStudentIds = $student_id;
+				$data = array("student_ids"=>$newStudentIds);
+				$where = array(
+					"class_id"=>$class_id,
+					"class_date"=>$tdDate
+				);
+				$this->SPM->insert_class_history($data,$where,$redirect);
+			}
+			
+            
         }
 		//Get All Course Classes And Details
 		// $data['course_data'] = $this->SPM->get_coure_data($course_id);
@@ -122,5 +149,18 @@ class StudentPanel extends CI_Controller {
 		$data['page'] = "class";
 		$data['class_data'] = $this->SPM->get_classes($student_id);
 		$this->load->student_panel('class',$data);
+	}
+	public function today_classes(){
+		$user_info = $this->session->userdata('user_data');
+		$student_id = $user_info['student_id'];
+		if($_POST['class_id']){
+			$class_id = $_POST['class_id'];
+		$class_data = $this->SPM->today_class($class_id);
+		if(!empty($class_data)){
+		echo $class_data[0]['class_id'];
+		}else{
+			echo "0";
+		}
+		}
 	}
 }

@@ -51,7 +51,7 @@
                                 <td class="text-center"><?= $c_d['class_date']; ?></td>
                                 <td class="text-center"><?= $c_d['class_started_at']; ?></td>
                                 <td class="text-center"><?= $c_d['emp_name']; ?></td>
-                                <td class="text-center"><?= $c_d['student_n']; ?></td>
+                                <td class="text-center"><?php $std_n= explode(",",$c_d['student_ids']); echo sizeof($std_n); ?></td>
                               </tr>
                               <?php } } ?>
                             </tbody>

@@ -82,8 +82,8 @@ class Student_model extends CI_Model
     }
     public function get_live_class_data($student_id){
         $sql = "SELECT c.class_id, c.class_name,c.class_ts, b.batch_name, b.batch_number, e.emp_name, e.phone , e.live_link FROM
-         tc_classes AS c, tc_batch AS b, tc_employee AS e, tc_student AS s, tc_enrollment as er WHERE er.student_id = $student_id AND 
-         er.batch_id = b.batch_id AND b.emp_id = e.emp_id AND c.batch_id = er.batch_id AND c.group_id = 0 AND c.status=1 AND c.teacher_id = e.emp_id ";
+         tc_classes AS c, tc_batch AS b, tc_employee AS e, tc_student AS s, tc_enrollment as er WHERE er.student_id = $student_id 
+         AND c.batch_id = b.batch_id AND  c.teacher_id = e.emp_id AND  c.type= 1 AND c.group_id = 0 AND  er.batch_id = b.batch_id AND s.student_id = $student_id ";
           $query = $this->db->query($sql);
           if ($query->num_rows() > 0) {
               return $query->result_array();
@@ -95,7 +95,17 @@ class Student_model extends CI_Model
         $sql = "SELECT DISTINCT c.class_id, c.class_name, c.class_ts, b.batch_name, b.batch_number, e.emp_name, e.phone , e.live_link,g.group_name 
         FROM tc_classes AS c, tc_batch AS b, tc_employee AS e, tc_student AS s, tc_batch_group AS g, tc_enrollment as er WHERE
         er.student_id = $student_id AND er.group_id= g.group_id AND er.batch_id = b.batch_id AND g.emp_id = e.emp_id AND c.status= 1 AND
-        c.teacher_id = e.emp_id AND c.batch_id = b.batch_id AND c.group_id = g.group_id";
+        c.teacher_id = e.emp_id AND c.batch_id = b.batch_id AND c.group_id = g.group_id AND s.student_id = $student_id";
+          $query = $this->db->query($sql);
+          if ($query->num_rows() > 0) {
+              return $query->result_array();
+          }else{
+              return false;
+          }
+    }
+    public function today_class($class_id){
+        $date = date('y-m-d');
+        $sql = "SELECT class_id FROM tc_live_classes WHERE class_date = '$date' AND class_id = $class_id";
           $query = $this->db->query($sql);
           if ($query->num_rows() > 0) {
               return $query->result_array();
@@ -276,5 +286,23 @@ class Student_model extends CI_Model
             return $query->result_array();
         }
 	}
+    public function get_student_attened($class_id){
+        $date = date('y-m-d');
+        $sql = "SELECT class_id, student_ids FROM tc_live_classes WHERE class_date = '$date' AND class_id = $class_id";
+          $query = $this->db->query($sql);
+          if ($query->num_rows() > 0) {
+              return $query->result_array();
+          }else{
+              return false;
+          }
+    }
+    public function insert_class_history($data,$where,$redirect){
+        $this->db->where($where);
+        $query = $this->db->update("tc_live_classes", $data);
+        if($query && $redirect!=NULL){
+            redirect($redirect);
+        }
+    }
+
 }
 ?>

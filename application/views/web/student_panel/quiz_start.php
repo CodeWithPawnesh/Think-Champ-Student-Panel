@@ -332,8 +332,4 @@ function checkmin(minute) {
     }
     return minute
 }
-window.addEventListener('beforeunload',()=>{
-            event.preventDefault();
-            event.returnValue = "";
-        })
 </script>

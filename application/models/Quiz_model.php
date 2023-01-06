@@ -38,7 +38,7 @@ function submitQuiz($data,$where){
 }
 function quiz_result($quiz_id,$student_id){
     $sql = "SELECT qz.quiz_title, s.student_name, qs.question_answers, qs.marks_obtained FROM tc_quiz AS qz, 
-            tc_quiz_submition AS qs, tc_student AS s WHERE qz.quiz_id = $quiz_id AND s.student_id = $student_id AND qz.quiz_id = qs.quiz_id";
+            tc_quiz_submition AS qs, tc_student AS s WHERE qz.quiz_id = $quiz_id AND s.student_id = $student_id AND s.student_id = qs.student_id AND qz.quiz_id = qs.quiz_id";
     $query = $this->db->query($sql);
     if ($query->num_rows() > 0) {
         return $query->result_array();
