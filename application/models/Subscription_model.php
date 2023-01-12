@@ -13,7 +13,7 @@ $course_data['student_id'] = $insert_id;
 $this->db->insert('tc_order',$order_data);
 $this->db->insert('tc_enrollment',$course_data);
 if($this->db->trans_complete()){
-    redirect("Subscription/payment_success");
+    return true;
 }
 }
 }

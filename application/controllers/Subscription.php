@@ -25,6 +25,7 @@ class Subscription extends CI_Controller {
 			$email = $_POST['email'];
 			$number = $_POST['number'];
 			$pass = $_POST['pass'];
+
 			if(isset($_POST['batch_id'])){
 			$batch_id = $_POST['batch_id'];
 			}else{
@@ -32,12 +33,9 @@ class Subscription extends CI_Controller {
 			}
 			$student_ty = $_POST['student_ty'];
 			$student_ab = $_POST['student_ab'];
-			if(isset($_POST['gender'])){
 			$gender = $_POST['gender'];
-			}else{
-				$gender="";
-			}
 			$c_pass = $_POST['c_pass'];
+			$pay_type = $_POST['pay_type'];
 			$row = $this->SM->get_student_row($email);
 			if($row>0){
 			$data["error_mess"][] = "E-mail Is Already Registered!";
@@ -69,12 +67,14 @@ class Subscription extends CI_Controller {
                     "phone"=>$number,
                     "collage"=>$student_ab,
                     "created_at"=>$created_ts,
-                    "status"=>'1'
+                    "status"=>'1',
+					"gender"=>$gender
                 );
 				$course_data = array(
 					"course_id"=>$course_id,
                     "batch_id"=>$batch_id,
 				);
+				$this->session->set_userdata('raz_pay_type', $pay_type);
 				$this->session->set_userdata('raz_stu_data', $student_data);
 				$this->session->set_userdata('raz_log_data', $user_data);
 				$this->session->set_userdata('raz_crs_data', $course_data);
@@ -98,7 +98,7 @@ class Subscription extends CI_Controller {
 				$this->load->view('web/pages/razorpay_checkout.php',$data);
 			}
 		    if($flag==0){
-                $this->load->web_temp('course_detail',$data);
+                $this->load->web_temp('course_enrollment_form',$data);
             }
 		}
 	}
@@ -112,6 +112,8 @@ class Subscription extends CI_Controller {
 		//Student login data
 		$login_data = $this->session->userdata('raz_log_data');
 		$course_data = $this->session->userdata('raz_crs_data');
+		//pay type
+		$pay_type = $this->session->userdata('raz_pay_type');
 		//order details 
 		$roz_payment_id = $_POST['razorpay_payment_id'];
 		$roz_order_id = $_POST['razorpay_order_id'];
@@ -138,13 +140,17 @@ class Subscription extends CI_Controller {
 			"method"=>$method,
 			"order_date"=>$order_date,
 			"order_tc"=>$capture_tc,
-			"status"=>$status
+			"status"=>$status,
+			"pay_type"=>$pay_type,
+			"mode"=>1
 	);
        if ($generated_signature == $roz_signature) {
-		$this->SBM->sub_student($student_data,$login_data,$order_data,$course_data);
-		$course_name = $this->SBM->get_course_name($student_data['course_id']);
+		$result = $this->SBM->sub_student($student_data,$login_data,$order_data,$course_data);
+		if($result == true){
+		$course_name = $this->SM->get_course_name($student_data['course_id']);
 		$this->MAM->send_mail_student_enrolment($student_data,$login_data,$course_name);
 		redirect("Subscription/payment_success");
+		}
            }else{
 			echo "Payment Failed"; 
 		   }

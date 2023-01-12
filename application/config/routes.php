@@ -55,6 +55,7 @@ $route['Contact'] = 'Home/Contact';
 $route['About-Us'] = 'Home/AboutUs';
 $route['Courses'] = 'Courses';
 $route['Course-Detail'] = 'Courses/CourseDetail';
+$route['Course-Enrollment'] = 'Courses/courseEnrollment';
 $route['Privacy-Policy'] = 'Home/PrivacyPolicy';
 $route['Terms-And-Service'] = 'Home/TermsAndService';
 // Student Panle

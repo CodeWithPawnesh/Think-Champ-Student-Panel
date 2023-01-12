@@ -20,7 +20,7 @@
         <div class="python-course-help">
             <img src="assets/images/course-detail/pythonhelpbg.jpg" alt="">
             <h4><?= $course_detail['sec_2_heading'] ?></h4>
-            <hr style="border-top:4px solid blue;width:80%;">
+            <hr style="border-top:4px solid blue;width:100%;">
             <h5><?= $course_detail['sec_2_sub_heading'] ?></h5>
             <?php $sec_2_desc_data = json_decode($course_detail['sec_2_desc']);
         for($i=0;$i<sizeof($sec_2_desc_data->heading);$i++){
@@ -139,92 +139,53 @@
     <div class="course-details-second-section-right-col">
         <div class="course-detail-card">
             <center><img src="assets/images/courses/react-js.jpg" alt=""></center>
-            <h2>Rs.9999/-</h2>
-            <a href="#" class="buy-now-btn">BUY NOW</a><br>
+            <h2>Rs.<?= $course_detail['price'] ?>/-</h2>
+            <?php if($remmaning_slot > 0 ){ ?>
+            <a href="<?= base_url("Course-Enrollment?id=".base64_encode($course_detail['course_id'])) ?>"
+                class="buy-now-btn">BUY NOW</a><br>
+            <?php } ?>
             <h4>Course Information</h4>
             <hr style="border-top:2px solid #ccc;width:80%;margin:0 auto;">
             <ul class="course-detail-card-list">
                 <li><b><i class="fa fa-user" aria-hidden="true"></i> Instructor:</b> Pawnesh Panchal</li>
-                <li><b><i class="fa fa-file-o" aria-hidden="true"></i> Lessons:</b> 4</li>
-                <li><b><i class="fa fa-clock-o" aria-hidden="true"></i> Duration:</b> 4h 55m</li>
-                <li><b><i class="fa fa-level-up" aria-hidden="true"></i> Course Level:</b> Beginner</li>
-                <li><b><i class="fa fa-globe" aria-hidden="true"></i> Language:</b> English</li>
-                <li><b><i class="fa fa-hourglass-end" aria-hidden="true"></i> Slots Left:</b> 45</li>
-                <li><b><i class="fa fa-clock-o" aria-hidden="true"></i> Batch Time:</b> 11:00 A.M - 01:00 P.M</li>
+                <li><b><i class="fa fa-file-o" aria-hidden="true"></i> Lessons:</b>
+                    <?= $course_detail['no_of_lessons'] ?></li>
+                <li><b><i class="fa fa-level-up" aria-hidden="true"></i> Course Level:</b>
+                    <?php if($course_detail['course_level']==1){ ?>Beginner<?php } ?>
+                    <?php if($course_detail['course_level']==2){ ?>Intermediate <?php } ?>
+                    <?php if($course_detail['course_level']==3){ ?>Advance <?php } ?>
+                </li>
+                <li><b><i class="fa fa-globe" aria-hidden="true"></i> Language:</b> <?= $course_detail['language'] ?>
+                </li>
+                <li><b><i class="fa fa-hourglass-end" aria-hidden="true"></i> Slots Left:</b>
+                    <?php if($remmaning_slot > 0 ){ echo $remmaning_slot; }else{ echo "<span class='text-danger'>No Slots Left</span>"; } ?>
+                </li>
+                <li><b><i class="fa fa-clock-o" aria-hidden="true"></i> Batch Detail:</b>
+                    <table class="table table-bordered">
+                        <tr>
+                            <th>
+                                Batch Name
+                            </th>
+                            <th>
+                                Batch Time
+                            </th>
+                        </tr>
+                        <tbody>
+                            <?php foreach($batch_detail as $b_d){ ?>
+                            <tr>
+                                <td>
+                                    <?= $b_d['batch_name'] ?>
+                                </td>
+                                <td>
+                                    <?= date("h:i A",$b_d['class_ts']) ?>
+                                </td>
+                            </tr>
+                            <?php } ?>
+                        </tbody>
+                    </table>
+                </li>
             </ul>
         </div>
-    </div>
-</section>
-
-<section class="course-third-section" style="background-image:url(assets/images/courses/section-2bg.jpg);">
-    <div class="course-form-container">
-    <?php 
-if(!empty($error_mess)){
-  foreach($error_mess as $e_m){
-  ?>
-    <div class="alert alert-danger alert-dismissible fade show" role="alert">
-        <strong><center><?= $e_m; ?></center></strong>
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-        </button>
-    </div>
-    <?php } } if(!empty($batch_detail)) { ?>
-        <h1>Enroll Now In <?= $course_detail['course_name'] ?></h1>
-        <h1>Price: ₹  <?= $course_detail['price']; ?></h1>
-        <form action="<?= base_url("Subscription") ?>" method="post" class="course-form">
-            <div class="course-form-left-col">
-                <input type="hidden" name="price" value="<?= $course_detail['price'] ?>">
-                <h4>Full Name</h4>
-                <input name="name" type="text" placeholder="Enter Your Full Name" class="course-form-input"
-                    required /><br><br>
-                <h4>Phone Number</h4>
-                <input name="number" type="number" placeholder="Enter Your Phone Number" class="course-form-input"
-                    required /><br><br>
-                <h4>Who You Are?</h4>
-                <select name="student_ty" id="student" required>
-                    <option value="forth-slot">Select Any One Option</option>
-                    <option value="forth-slot">Student</option>
-                    <option value="first-slot">Professional</option>
-                    <option value="second-slot">Others</option>
-                </select>
-                <br><br><br>
-                <h4>Enter Your Password</h4>
-                <input name="pass" type="password" placeholder="Enter Your Password" class="course-form-input"
-                    required /><br><br>
-
-            </div>
-            <div class="course-form-right-col">
-                <h4>E-mail</h4>
-                <input name="email" type="email" placeholder="Enter Your E-mail Address" class="course-form-input"
-                    required /><br><br>
-
-                <h4>Gender</h4>
-                <select name="gender" id="student" required>
-                    <option value="forth-slot">Male</option>
-                    <option value="first-slot">Female</option>
-                    <option value="second-slot">Other</option>
-                </select><br><br><br><br>
-                <input type="text" name="student_ab" placeholder="Enter Your College/Company Name and Designation"
-                    class="course-form-input" required /><br><br>
-                <h4>Confirm Password</h4>
-                <input name="c_pass" type="password" placeholder="Confirm Your Password" class="course-form-input"
-                    required /><br><br>
-                <input type="hidden" name="course_id" value="<?= $course_detail['course_id'] ?>">
-            </div>
-            <div class="batch-div">
-                <h4 class="text-center display-1">Choose Any One Batch</h4>
-                <div class="radio-toolbar text-center">
-                    <?php foreach($batch_detail as $b_d){ ?>
-                    <input type="radio" id="<?= $b_d['batch_id'] ?>" onclick="check(<?= $b_d['batch_id'] ?>)"
-                        name="batch_id" value="<?= $b_d['batch_id'] ?>">
-                    <label for="<?= $b_d['batch_id'] ?>"><?= $b_d['batch_name'] ?> Class Timing
-                        <?= date('h:i A',$b_d['class_ts']) ?> </label>
-                    <?php } ?>
-                </div>
-            </div>
-            <button type="submit" name="submit" class="course-submit-btn">Submit</button>
-        </form>
-        <?php } ?>
     </div>
 </section>
 

@@ -32,6 +32,17 @@ class Student_model extends CI_Model
         return false;
     }
  }
+ public function enroll_count($id){
+    $curr_date = date('y-m-d');
+    $curr_ts = strtotime($curr_date);
+    $my_sql = "SELECT COUNT(e.en_id) AS cc FROM tc_enrollment AS e, tc_batch AS b WHERE e.course_id = $id AND e.batch_id = b.batch_id AND b.batch_end_date >= $curr_ts ";
+   $query = $this->db->query($my_sql);
+   if ($query->num_rows() > 0) {
+       return $query->result_array();
+   }else{
+       return false;
+   }
+ }
  public function get_student_row($email){
     $this->db->where("email",$email);
     $query = $this->db->get("tc_student");
