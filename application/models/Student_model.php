@@ -1,6 +1,20 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed');
 class Student_model extends CI_Model
 {
+ public function insert_lead($data){
+    $query = $this->db->insert("tc_leads", $data);
+    if($query)
+        {
+       return true;
+        }
+    }
+    public function insert_community($data){
+        $query = $this->db->insert("tc_community", $data);
+        if($query)
+        {
+           return true;
+        }
+    }
  public function get_course(){
     $my_sql = "SELECT COUNT(er.course_id) as cc, c.*, e.emp_name FROM tc_course as c LEFT JOIN tc_employee as e ON c.course_id = e.course_id 
     AND e.emp_id =1 LEFT JOIN tc_enrollment as er ON er.course_id = c.course_id ";
@@ -201,9 +215,21 @@ class Student_model extends CI_Model
             return false;
         }
     }
-    public function get_classes($student_id){
-        $sql = "SELECT ch.*, c.class_name, e.emp_name FROM tc_live_classes as ch, tc_classes as c, tc_employee as e WHERE
-        ch.student_ids LIKE '%$student_id%' AND ch.class_id = c.class_id AND e.emp_id = ch.teacher_id AND ch.status = 1 ";
+    public function get_classes($student_id,$course_id){
+        $sql = "SELECT ch.*, c.class_name, em.emp_name,c.batch_id FROM tc_live_classes as ch, tc_classes as c, tc_employee as em, tc_enrollment as e
+         WHERE e.student_id = $student_id AND e.course_id = $course_id AND c.batch_id = e.batch_id AND c.teacher_id = em.emp_id AND
+          ch.class_id = c.class_id AND c.group_id = 0 ";
+         $query = $this->db->query($sql);
+         if ($query->num_rows() > 0) {
+             return $query->result_array();
+         }else{
+             return false;
+         }
+    }
+    public function get_p_classes($student_id,$course_id){
+        $sql = "SELECT ch.*, c.class_name, em.emp_name,c.batch_id,c.group_id FROM tc_live_classes as ch, tc_classes as c, tc_employee as em, tc_enrollment as e
+         WHERE e.student_id = $student_id AND e.course_id = $course_id AND c.batch_id = e.batch_id AND c.teacher_id = em.emp_id AND
+          ch.class_id = c.class_id AND c.group_id = e.group_id ";
          $query = $this->db->query($sql);
          if ($query->num_rows() > 0) {
              return $query->result_array();
@@ -314,6 +340,71 @@ class Student_model extends CI_Model
             redirect($redirect);
         }
     }
-
+    public function get_std_course_data($student_id){
+        $sql = "SELECT c.course_id,c.course_name, c.course_title,c.sec_1_img FROM tc_course AS c, tc_enrollment AS e WHERE e.student_id = $student_id AND 
+                 c.course_id = e.course_id";
+        $query = $this->db->query($sql);
+        if ($query->num_rows() > 0) {
+            return $query->result_array();
+        }else{
+            return false;
+        }
+    }
+    public function get_liveClass_history($where){
+        $this->db->where($where);
+        $query = $this->db->get("tc_class_video");
+        if ($query->num_rows() > 0) {
+            return $query->result_array();
+        }else{
+            return false;
+        }
+    }
+    public function insert_video_request($data){
+        $query = $this->db->insert("tc_class_video", $data);
+        if($query)
+        {
+            return true;
+        }else{
+            return false;
+        }
+    }
+    public function update_video_request($data,$where){
+        $this->db->where("class_video_id",$where);
+        $query = $this->db->update("tc_class_video", $data);
+        if($query){
+            return true;
+        }else{
+            return false;
+        }
+    }
+    public function get_requested_live_class_id($student_id){
+        $sql = "SELECT v.live_id, v.requested_by,v.status FROM tc_class_video AS v, tc_enrollment AS en WHERE en.student_id = $student_id AND v.batch_id = en.batch_id ";
+        $query = $this->db->query($sql);
+        if ($query->num_rows() > 0) {
+            return $query->result_array();
+        }else{
+            return false;
+        }
+    }
+    public function get_b_class_video($student_id){
+        $sql = "SELECT v.*,l.class_no FROM tc_class_video AS v, tc_enrollment AS e, tc_live_classes AS l WHERE e.student_id = $student_id AND 
+                e.batch_id = v.batch_id AND v.group_id = 0 AND v.live_id = l.live_id";
+                $query = $this->db->query($sql);
+                if ($query->num_rows() > 0) {
+                    return $query->result_array();
+                }else{
+                    return false;
+                }
+    }
+    public function get_g_class_video($student_id){
+        $sql = "SELECT v.*,l.class_no FROM tc_class_video AS v, tc_enrollment AS e, tc_live_classes AS l WHERE e.student_id = $student_id AND 
+                e.batch_id = v.batch_id AND v.group_id = e.group_id AND v.live_id = l.live_id";
+                $query = $this->db->query($sql);
+                if ($query->num_rows() > 0) {
+                    return $query->result_array();
+                }else{
+                    return false;
+                }
+    }
 }
 ?>

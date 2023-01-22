@@ -36,6 +36,32 @@ class Mail_model extends CI_Model
         $this->email->print_debugger();
        }
     }
+    function send_mail_contact($email,$name){
+        $this->email->from('pawnesh1999@gmail.com', 'Think Champ Pvt.Ltd');
+        $this->email->to($email);
+        $this->email->bcc('thinkchamp.pvt.ltd@gmail.com');
+        $this->email->subject('Contact');
+        $message = $this->template_contact($name); 
+        $this->email->message($message);
+       if( $this->email->send()){
+        echo "sent";
+       }else{
+        $this->email->print_debugger();
+       }
+    }
+    function send_mail_community($email){
+        $this->email->from('pawnesh1999@gmail.com', 'Think Champ Pvt.Ltd');
+        $this->email->to($email);
+        $this->email->bcc('thinkchamp.pvt.ltd@gmail.com');
+        $this->email->subject('Think Champ Community');
+        $message = $this->template_community(); 
+        $this->email->message($message);
+       if( $this->email->send()){
+        echo "sent";
+       }else{
+        $this->email->print_debugger();
+       }
+    }
     function template_student_enrollment($student_data,$login_data,$course_name){
         ob_start();
     ?>
@@ -64,4 +90,24 @@ class Mail_model extends CI_Model
     <?php
         return ob_get_clean();
     }
+    function template_contact($name){
+        ob_start();
+        ?>
+            <!DOCTYPE html><html><head> <style>*{font-family: Arial, Helvetica, sans-serif;}html,body{margin: 0;padding: 0;}body{background: #f0f0f0;}</style></head><body> <table cellpadding="0" cellspacing="0" border="0" align="center" style="background: #f0f0f0; width: 100%;"> <tbody> <tr> <td> <table style="border-collapse:collapse;margin:auto;max-width:635px;min-width:320px;width:100%"> <tbody> <tr> <td valign="top"> <table cellpadding="0" cellspacing="0" border="0" style="height:40px"></table> </td></tr><tr> <td valign="top" style="padding:0 20px"> <div style="border-top:5px solid #8b4cdc; width:100%; display:block; box-shadow: 0px 0px 5px #ccc; background:#fff; padding:25px;"> 
+            <p>Dear <strong><?=$name?></strong>,</p><p>Think Champ.</p><p>Thank you for Contacting Us We Will Reach Back To You Soon:</p>
+
+            <p>Regards,<br>Think Champ Team</p><img src="http://localhost/Think-Champ/assets/images/home/Tc_logo2.png" ></a></p></div></td></tr></tbody></table></td></tr></tbody></table></body></html>
+        <?php
+            return ob_get_clean();
+        }
+        function template_community(){
+            ob_start();
+            ?>
+                <!DOCTYPE html><html><head> <style>*{font-family: Arial, Helvetica, sans-serif;}html,body{margin: 0;padding: 0;}body{background: #f0f0f0;}</style></head><body> <table cellpadding="0" cellspacing="0" border="0" align="center" style="background: #f0f0f0; width: 100%;"> <tbody> <tr> <td> <table style="border-collapse:collapse;margin:auto;max-width:635px;min-width:320px;width:100%"> <tbody> <tr> <td valign="top"> <table cellpadding="0" cellspacing="0" border="0" style="height:40px"></table> </td></tr><tr> <td valign="top" style="padding:0 20px"> <div style="border-top:5px solid #8b4cdc; width:100%; display:block; box-shadow: 0px 0px 5px #ccc; background:#fff; padding:25px;"> 
+                <p>Think Champ.</p><p>Thank you for Join Our Community We Will Reach Back To You Soon:</p>
+    
+                <p>Regards,<br>Think Champ Team</p><img src="http://localhost/Think-Champ/assets/images/home/Tc_logo2.png" ></a></p></div></td></tr></tbody></table></td></tr></tbody></table></body></html>
+            <?php
+                return ob_get_clean();
+            }
 }

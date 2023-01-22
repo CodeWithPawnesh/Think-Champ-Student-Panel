@@ -485,7 +485,7 @@
                         </div>
                         <div class="col-lg-6 padding-0">
                             <div class="img-part media-icon">
-                                <a class="popup-videos" href="https://www.youtube.com/watch?v=atMUy_bPoQI">
+                                <a class="popup-videos" href="https://www.youtube.com/embed/atMUy_bPoQI">
                                     <i class="fa fa-play"></i>
                                 </a>
                             </div>
@@ -839,33 +839,33 @@
                                         you 24/7.</p>
                                 </div>
                                 <div id="form-messages"></div>
-                                <form id="contact-form" method="post" action="mailer.php">
+                                <form  method="post" action="<?= base_url("Home") ?>">
                                     <fieldset>
                                         <div class="row">
                                             <div class="col-lg-6 mb-35 col-md-6 col-sm-6">
                                                 <input class="from-control" type="text" id="name" name="name"
-                                                    placeholder="Name" required="">
+                                                    placeholder="Name" required>
                                             </div>
                                             <div class="col-lg-6 mb-35 col-md-6 col-sm-6">
                                                 <input class="from-control" type="text" id="email" name="email"
-                                                    placeholder="Email" required="">
+                                                    placeholder="Email" required>
                                             </div>
                                             <div class="col-lg-6 mb-35 col-md-6 col-sm-6">
                                                 <input class="from-control" type="text" id="phone" name="phone"
-                                                    placeholder="Phone" required="">
+                                                    placeholder="Phone" required>
                                             </div>
                                             <div class="col-lg-6 mb-35 col-md-6 col-sm-6">
                                                 <input class="from-control" type="text" id="subject" name="subject"
-                                                    placeholder="Subject" required="">
+                                                    placeholder="Subject" required>
                                             </div>
 
                                             <div class="col-lg-12 mb-50">
                                                 <textarea class="from-control" id="message" name="message"
-                                                    placeholder=" Message" required=""></textarea>
+                                                    placeholder=" Message" required></textarea>
                                             </div>
                                         </div>
                                         <div class="form-group mb-0">
-                                            <input class="btn-send" type="submit" value="Submit Now">
+                                            <button type="submit" name="submit" class="btn-send">Submit Now</button>
                                         </div>
                                     </fieldset>
                                 </form>
@@ -891,9 +891,9 @@
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <form class="newsletter-form">
-                                    <input type="email" name="email" placeholder="Enter Your Email" required="">
-                                    <button type="submit">Submit</button>
+                                <form class="newsletter-form" method="post" action="<?= base_url("Home") ?>">
+                                    <input type="email" name="email" placeholder="Enter Your Email" required>
+                                    <button type="submit" name="subscribe">Submit</button>
                                 </form>
                             </div>
                         </div>

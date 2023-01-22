@@ -83,25 +83,25 @@
                 </a>
             </li>
             <li>
-                <a href="<?= base_url('Live-Class') ?>" aria-expanded="false">
+                <a href="<?= base_url('My-Course') ?>" aria-expanded="false">
                     <div class="nav_icon_small">
                     <i class="fas fa-laptop"></i>
                     </div>
                     <div class="nav_title">
-                        <span>Class</span>
+                        <span>My Course</span>
                     </div>
                 </a>
             </li>
-            <!-- <li>
-                <a href="<?= base_url('') ?>" aria-expanded="false">
+            <li>
+                <a href="<?= base_url('Class-Video') ?>" aria-expanded="false">
                     <div class="nav_icon_small">
-                    <i class="fas fa-book"></i>
+                    <i class="fas fa-video"></i>
                     </div>
                     <div class="nav_title">
-                        <span>Notes</span>
+                        <span>Class Videos</span>
                     </div>
                 </a>
-            </li> -->
+            </li>
             <li>
                 <a href="<?= base_url('Leave') ?>" aria-expanded="false">
                     <div class="nav_icon_small">

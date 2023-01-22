@@ -142,12 +142,26 @@ class StudentPanel extends CI_Controller {
 
 		$this->load->student_panel('add_leave',$data);
 	}
+	public function my_course(){
+		$user_info = $this->session->userdata('user_data');
+		$student_id = $user_info['student_id'];
+		$data['course_data'] = $this->SPM->get_std_course_data($student_id);
+		$this->load->student_panel('my_course',$data);
+	}
 	public function class()
 	{
 		$user_info = $this->session->userdata('user_data');
 		$student_id = $user_info['student_id'];
 		$data['page'] = "class";
-		$data['class_data'] = $this->SPM->get_classes($student_id);
+		$data['requested_live_class_id'] = $this->SPM->get_requested_live_class_id($student_id);
+		if(isset($_GET['id']) && $_GET['mode']=="Theory"){
+			$course_id =base64_decode($_GET['id']);
+		$data['class_data'] = $this->SPM->get_classes($student_id,$course_id );
+		}
+		if(isset($_GET['id']) && $_GET['mode']=="Programming"){
+			$course_id =base64_decode($_GET['id']);
+		$data['class_data'] = $this->SPM->get_p_classes($student_id,$course_id);
+		}
 		$this->load->student_panel('class',$data);
 	}
 	public function today_classes(){
@@ -161,6 +175,76 @@ class StudentPanel extends CI_Controller {
 		}else{
 			echo "0";
 		}
+		}
+	}
+	public function class_video(){
+		$user_info = $this->session->userdata('user_data');
+		$student_id = $user_info['student_id'];
+		$data['page'] = "class";
+		$b_class_video = $this->SPM->get_b_class_video($student_id);
+		$g_class_video = $this->SPM->get_g_class_video($student_id);
+		$class_video ="";
+		if(!empty($b_class_video) && !empty($g_class_video)){
+			$class_video = array_merge($b_class_video,$g_class_video);
+		}
+		if(empty($b_class_video)){
+			$class_video = $g_class_video;
+		}
+		if(empty($g_class_video)){
+			$class_video = $b_class_video;
+		}
+		if(!empty($class_video)){
+		function date_compare($element1, $element2) {
+			$datetime1 = strtotime($element1['given_at']);
+			$datetime2 = strtotime($element2['given_at']);
+			   return $datetime1 - $datetime2;
+			   } 
+			// Sort the array 
+		   usort($class_video, 'date_compare');
+		}
+		$data['class_video']= $class_video;
+		$this->load->student_panel('class_video',$data);
+	}
+	public function request_video(){
+		$user_info = $this->session->userdata('user_data');
+		$student_id = $user_info['student_id'];
+		if(isset($_POST['submit'])){
+			$class_id = base64_decode($_POST['id']);
+			$mode = $_POST['mode'];
+			$live_id = $_POST['live_id'];
+			$batch_id = $_POST['batch_id'];
+			$type=1;
+			if(isset($_POST['group_id'])){
+				$group_id = $_POST['group_id'];
+				$type = 2;
+			}else{
+				$group_id="";
+			}
+			$where = array("live_id"=>$live_id);
+			$liveClassData = $this->SPM->get_liveClass_history($where);
+			if(!empty($liveClassData)){
+				$requestedByIds =  $liveClassData[0]['requested_by'];
+				$newRequestedByIds = $requestedByIds.",".$student_id;
+				$data = array("requested_by"=>$newRequestedByIds);
+				$where = $liveClassData[0]['class_video_id'];
+				$result = $this->SPM->update_video_request($data,$where);
+				if($result==true){
+					redirect("Live-Class?id=".base64_encode($class_id)."&mode=".$mode);
+				}
+			}else{
+				$data = array(
+					"live_id"=>$live_id,
+					"batch_id"=>$batch_id,
+					"group_id"=>$group_id,
+					"type"=>$type,
+					"requested_by"=>$student_id,
+					"status"=>0
+				);
+				$result = $this->SPM->insert_video_request($data);
+				if($result==true){
+					redirect("Live-Class?id=".base64_encode($class_id)."&mode=".$mode);
+				}
+			}
 		}
 	}
 }
