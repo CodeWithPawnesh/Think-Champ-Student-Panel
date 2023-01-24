@@ -68,5 +68,6 @@ $route['Live-Class']='StudentPanel/class';
 $route['My-Course']='StudentPanel/my_course';
 $route['Class-Video']='StudentPanel/class_video';
 $route['Quiz-Start']='Quiz/quiz_start';
+$route['Quiz-Analytics']='Quiz/analytics';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

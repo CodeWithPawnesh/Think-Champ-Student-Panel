@@ -122,6 +122,9 @@ class Quiz extends CI_Controller {
 			$quiz_id = base64_decode($quiz_id);
 		$data['quiz_result']= $this->QM->quiz_result($quiz_id,$student_id);
 		$data['quiz_result'] = $data['quiz_result'][0];
+		$QandAns = $data['quiz_result']['question_answers'];
+		$QandAns = json_decode($QandAns);
+		$data['question_answer'] = $QandAns;
 		$data['quiz_questions'] = $this->QM->get_quiz_qus($quiz_id);
 		$mSum = 0;
 		foreach($data['quiz_questions'] as $q){
@@ -129,6 +132,6 @@ class Quiz extends CI_Controller {
 		}
 		$data['msum'] = $mSum;
 		}
-		$this->load->view("web/student_panel/quiz_analytics",$data);
+		$this->load->student_panel("quiz_analytics",$data);
 	}
-}
+} 

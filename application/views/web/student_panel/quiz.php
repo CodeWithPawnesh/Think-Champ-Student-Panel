@@ -56,7 +56,7 @@
                                         foreach($sub_quiz as $s_q){
                                             if($s_q['quiz_id'] == $q_d['quiz_id']){
                                          ?>
-                              <td class="text-center"><a href="<?= base_url("Quiz/analytics?quiz_id=".base64_encode($q_d['quiz_id'])) ?>" class="btn btn-sm btn-success">Result</a></td>
+                              <td class="text-center"><a href="<?= base_url("Quiz-Analytics?quiz_id=".base64_encode($q_d['quiz_id'])) ?>" class="btn btn-sm btn-success">Result</a></td>
                                          <?php }else{ ?>
                                     <td class="text-center"><a href="<?= base_url("Quiz-Start?id=".base64_encode($q_d['quiz_id'])) ?>" class="btn btn-sm btn-success">Start</a></td>
                                     <?php } ?>
