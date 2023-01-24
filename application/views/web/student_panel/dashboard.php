@@ -53,7 +53,7 @@
                                                 <td class="text-center"><?= $t_d['phone']; ?></td>
                                                 <td class="text-center">
                                                     <a id="<?= $t_d['class_id'] ?>" style="display:none"
-                                                        href="Dashboard?id=<?= $t_d['class_id'] ?>&cl_l=<?= $t_d['live_link']; ?>"
+                                                        href="Dashboard?id=<?= $t_d['class_id'] ?>&cl_l=<?= $t_d['live_link']; ?>&type=1"
                                                         target="_blank" class="btn btn-sm btn-success">Join Room</a>
                                                 </td>
                                             </tr>
@@ -87,8 +87,9 @@
                                                 <td class="text-center"><?= $p_d['group_name']; ?></td>
                                                 <td class="text-center"><?= $p_d['emp_name']; ?></td>
                                                 <td class="text-center"><?= $p_d['phone']; ?></td>
-                                                <td class="text-center"><a id="<?= $p_d['class_id'] ?>"
-                                                        style="display:none" href="<?= $p_d['live_link']; ?>"
+                                                <td class="text-center">
+                                                <a id="<?= $p_d['class_id'] ?>" style="display:none"
+                                                        href="Dashboard?id=<?= $p_d['class_id'] ?>&cl_l=<?= $p_d['live_link']; ?>&type=2"
                                                         target="_blank" class="btn btn-sm btn-success">Join Room</a>
                                                 </td>
                                             </tr>

@@ -24,6 +24,7 @@ class StudentPanel extends CI_Controller {
             $class_link = $_GET['cl_l'];
 			$class_data = $this->SPM->get_student_attened($class_id);
 			$studentIds = $class_data[0]['student_ids'];
+			$live_id = $class_data[0]['live_id'];
 			$redirect = $class_link;
 			if(!empty($studentIds)){
 				$studentIdsArr = explode(",",$studentIds);
@@ -34,7 +35,16 @@ class StudentPanel extends CI_Controller {
 					"class_id"=>$class_id,
 					"class_date"=>$tdDate
 				);
-				$this->SPM->insert_class_history($data,$where,$redirect);
+				$pg_class_data ="";
+				if($_GET['type']==2){
+					$pg_class_data = array(
+						"student_id"=>$student_id,
+						"marks_obtained"=>0,
+						"status"=>0,
+						"live_class_id"=>$live_id
+					);
+				}
+				$this->SPM->insert_class_history($data,$where,$redirect,$pg_class_data);
 				}else{
 					redirect($redirect);
 				}
@@ -45,7 +55,16 @@ class StudentPanel extends CI_Controller {
 					"class_id"=>$class_id,
 					"class_date"=>$tdDate
 				);
-				$this->SPM->insert_class_history($data,$where,$redirect);
+				$pg_class_data ="";
+				if($_GET['type']==2){
+					$pg_class_data = array(
+						"student_id"=>$student_id,
+						"marks_obtained"=>0,
+						"status"=>0,
+						"live_class_id"=>$live_id
+					);
+				}
+				$this->SPM->insert_class_history($data,$where,$redirect,$pg_class_data);
 			}
 			
             

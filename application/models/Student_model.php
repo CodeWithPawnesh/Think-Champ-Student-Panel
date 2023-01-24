@@ -325,7 +325,7 @@ class Student_model extends CI_Model
 	}
     public function get_student_attened($class_id){
         $date = date('y-m-d');
-        $sql = "SELECT class_id, student_ids FROM tc_live_classes WHERE class_date = '$date' AND class_id = $class_id";
+        $sql = "SELECT class_id, student_ids, live_id FROM tc_live_classes WHERE class_date = '$date' AND class_id = $class_id";
           $query = $this->db->query($sql);
           if ($query->num_rows() > 0) {
               return $query->result_array();
@@ -333,10 +333,14 @@ class Student_model extends CI_Model
               return false;
           }
     }
-    public function insert_class_history($data,$where,$redirect){
+    public function insert_class_history($data,$where,$redirect,$pg_class_data){
+        $this->db->trans_start();
         $this->db->where($where);
-        $query = $this->db->update("tc_live_classes", $data);
-        if($query && $redirect!=NULL){
+        $this->db->update("tc_live_classes", $data);
+        if(!empty($pg_class_data)){
+            $this->db->insert('tc_programming_class_marks',$pg_class_data);
+        }
+        if($this->db->trans_complete()){
             redirect($redirect);
         }
     }

@@ -132,6 +132,7 @@ class Subscription extends CI_Controller {
 		$roz_data = $roz_order_id. "|" . $roz_payment_id;
 		$generated_signature = hash_hmac("sha256",$roz_data,$secret);
 		$order_data = array(
+			"main_order_id"=>$roz_order_id,
 			"pay_order_id"=>$roz_order_id,
 			"payment_id"=>$roz_payment_id,
 			"fee_paid"=>$amount,
@@ -142,10 +143,33 @@ class Subscription extends CI_Controller {
 			"order_tc"=>$capture_tc,
 			"status"=>$status,
 			"pay_type"=>$pay_type,
-			"mode"=>1
+			"mode"=>1,
+			"pay_no"=>1
 	);
+	$order_data_inst_2="0";
+	$order_data_inst_3="0";
+	if($pay_type==2){
+	      $order_data_inst_2 = array(
+		  "main_order_id"=>$roz_order_id,
+		  "course_id"=>$course_id,
+		  "batch_id"=>$batch_id,
+		  "pay_type"=>$pay_type,
+		  "mode"=>1,
+		  "pay_no"=>2
+          );
+	       }
+	if($pay_type==3){
+         $order_data_inst_3 = array(
+	     "main_order_id"=>$roz_order_id,
+	     "course_id"=>$course_id,
+	     "batch_id"=>$batch_id,
+	     "pay_type"=>$pay_type,
+	     "mode"=>1,
+	     "pay_no"=>3
+          );
+		}
        if ($generated_signature == $roz_signature) {
-		$result = $this->SBM->sub_student($student_data,$login_data,$order_data,$course_data);
+		$result = $this->SBM->sub_student($student_data,$login_data,$order_data,$course_data,$order_data_inst_2,$order_data_inst_3);
 		if($result == true){
 		$course_name = $this->SM->get_course_name($student_data['course_id']);
 		$this->MAM->send_mail_student_enrolment($student_data,$login_data,$course_name);
