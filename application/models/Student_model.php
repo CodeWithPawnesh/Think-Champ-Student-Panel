@@ -382,7 +382,7 @@ class Student_model extends CI_Model
         }
     }
     public function get_requested_live_class_id($student_id){
-        $sql = "SELECT v.live_id, v.requested_by,v.status FROM tc_class_video AS v, tc_enrollment AS en WHERE en.student_id = $student_id AND v.batch_id = en.batch_id ";
+        $sql = "SELECT v.live_id, v.requested_by,v.status,v.type FROM tc_class_video AS v, tc_enrollment AS en WHERE en.student_id = $student_id AND v.batch_id = en.batch_id ";
         $query = $this->db->query($sql);
         if ($query->num_rows() > 0) {
             return $query->result_array();

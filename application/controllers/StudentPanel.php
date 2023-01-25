@@ -244,7 +244,7 @@ class StudentPanel extends CI_Controller {
 			if(!empty($liveClassData)){
 				$requestedByIds =  $liveClassData[0]['requested_by'];
 				$newRequestedByIds = $requestedByIds.",".$student_id;
-				$data = array("requested_by"=>$newRequestedByIds);
+				$data = array("requested_by"=>$newRequestedByIds,"group_id"=>$group_id,"type"=>$type);
 				$where = $liveClassData[0]['class_video_id'];
 				$result = $this->SPM->update_video_request($data,$where);
 				if($result==true){

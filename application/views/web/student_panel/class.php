@@ -1,6 +1,12 @@
 <?php
 $user_info = $this->session->userdata('user_data');
 $student_id = $user_info['student_id'];
+if($_GET['mode']=="Programming"){
+    $check =2;
+}
+if($_GET['mode']=="Theory"){
+    $check =1;
+}
 ?>
 <div class="main_content_iner overly_inner ">
     <div class="container-fluid p-0 ">
@@ -114,8 +120,13 @@ $student_id = $user_info['student_id'];
                                         <input type="hidden" name="mode" value="<?= $_GET['mode'] ?>">
                                         <input type="hidden" name="live_id" value="<?= $c_d['live_id'] ?>">
                                         <input type="hidden" name="batch_id" value="<?= $c_d['batch_id'] ?>">
+                                        <?php if($_GET['mode']=="Programming"){ ?>
+                                        <input type="hidden" name="group_id" value="<?= $c_d['group_id'] ?>">
+                                        <?php } ?>
                                         <?php foreach($requested_live_class_id as $r_d){ 
-                                        if($r_d['live_id'] == $c_d['live_id']){
+                                            if($r_d['type']==$check){
+                                        if($r_d['live_id'] == $c_d['live_id'] ){
+
                                             $reStudent_id = explode(",",$r_d['requested_by']);
                                             if(in_array($student_id,$reStudent_id)){
                                             if($r_d['status']==0){
@@ -126,7 +137,8 @@ $student_id = $user_info['student_id'];
                                             <?php } ?>
                                     <?php } }else{ ?>
                                         <button type="submit" name="submit" class="btn btn-sm active-cl">Request Video</button>
-                                    <?php } } ?>
+                                    <?php  } } }
+                                    ?>
                                     </form>
                                 </td>
                               </tr>
