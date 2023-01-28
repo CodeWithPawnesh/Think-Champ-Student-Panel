@@ -266,4 +266,48 @@ class StudentPanel extends CI_Controller {
 			}
 		}
 	}
+	public function notification(){
+		$allNotifications = $this->SPM->get_notification_data();
+		$batchNotifications = $this->SPM->get_batch_notification_data();
+		$groupNotifications = $this->SPM->get_group_notification_data();
+		$notifications ="";
+		if(!empty($batchNotifications) && !empty($groupNotifications)){
+			$notifications = array_merge($batchNotifications,$groupNotifications);
+		}
+		if(empty($batchNotifications)){
+			$notifications = $groupNotifications;
+		}
+		if(empty($groupNotifications)){
+			$notifications = $batchNotifications;
+		}
+		if(!empty($allNotifications) && !empty($notifications)){
+			$notifications = array_merge($allNotifications,$notifications);
+		}
+		if(!empty($allNotifications) && empty($notifications)){
+			$notifications = $allNotifications;
+		}
+		if(!empty($notifications)){
+		function date_compare($element1, $element2) {
+			$datetime1 = strtotime($element1['created_at']);
+			$datetime2 = strtotime($element2['created_at']);
+			   return $datetime2 - $datetime1;
+			   } 
+			// Sort the array 
+		   usort($notifications, 'date_compare');
+		}
+		
+		foreach($notifications as $n){
+		     echo  "<div class='single_notify d-flex align-items-center'>";
+		     echo   "<div class='notify_content'>";	
+			 echo   "<span class='fw-bolder'>";
+			 echo    date("d M, y", strtotime($n['created_at']));
+			 echo    " ";
+			 echo    date("h:i A", strtotime($n['created_at']));
+			 echo    "</span><br>";
+			 echo   " <span class='fw-bolder'>".$n['notification_title']."</span><br><span>".$n['description']."</span>"; 
+		     echo   "</div>"
+	               ."</div>";
+		}
+		echo "<div class='count' id='count'>".sizeof($notifications)."</div>";
+	}
 }

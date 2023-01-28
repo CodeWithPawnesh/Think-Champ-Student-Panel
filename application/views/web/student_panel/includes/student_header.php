@@ -7,6 +7,9 @@
     .hd-heading{
         color:rgb(141, 86, 252);
     }
+    .count{
+        display:none;
+    }
 </style>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -186,26 +189,14 @@
                                     <a class="bell_notification_clicker" href="#"> <img src="assets/dashboard/img/icon/bell.svg" alt="">
                                        
                                     </a>
-
+                                    <span class="badge bg-danger" id="nCount" style="position:absolute;right:10px;bottom:10px"></span>
                                     <div class="Menu_NOtification_Wrap">
                                         <div class="notification_Header">
                                             <h4>Notifications</h4>
                                         </div>
-                                        <div class="Notification_body">
-
-                                            <div class="single_notify d-flex align-items-center">
-                                                <div class="notify_thumb">
-                                                  
-                                                </div>
-                                                <div class="notify_content">
-                                                   
-                                                </div>
-                                            </div>
+                                        <div class="Notification_body" id="not_data">
                                         </div>
                                         <div class="nofity_footer">
-                                            <div class="submit_button text-center pt_20">
-                                                <a href="#" class="btn_1">See More</a>
-                                            </div>
                                         </div>
                                     </div>
 

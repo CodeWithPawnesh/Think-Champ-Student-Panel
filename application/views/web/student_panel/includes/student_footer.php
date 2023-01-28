@@ -16,9 +16,31 @@
     </a>
 </div>
 </body>
+
 </html>
 <script src="assets/dashboard/js/jquery1-3.4.1.min.js"></script>
-
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+sendRequest();
+function sendRequest(){
+  $.ajax({    //create an ajax request to notifications
+        type: "GET",
+        url: "StudentPanel/notification",             
+        dataType: "html",   //expect html to be returned                
+        success: function(response){                    
+            $("#not_data").html(response);
+            var res = $('#count').text();
+            $("#nCount").html(res); 
+          },
+complete: function() {
+// Schedule the next request when the current one's complete
+setInterval(sendRequest, 5000); // The interval set to 5 seconds
+}
+});
+};
+});
+</script>
 <script src="assets/dashboard/js/popper1.min.js"></script>
 
 <script src="assets/dashboard/js/bootstrap1.min.js"></script>
@@ -76,18 +98,17 @@
 <script src="assets/dashboard/js/dashboard_init.js"></script>
 <script src="assets/dashboard/js/custom.js"></script>
 <script>
-    function check_sess_id(){
-      var session_id = "<?= $this->session->userdata('sess_id') ?>";
-      fetch('Auth/check_login').then(function(response){
+function check_sess_id() {
+    var session_id = "<?= $this->session->userdata('sess_id') ?>";
+    fetch('Auth/check_login').then(function(response) {
         return response.json();
-      }).then(function(responseData){
-        if(responseData.output == 'logout')
-        {
-          window.location.href= 'Auth/logout'
+    }).then(function(responseData) {
+        if (responseData.output == 'logout') {
+            window.location.href = 'Auth/logout'
         }
-      });
-    }
-    setInterval(function(){
-      check_sess_id();
-    }, 100);
+    });
+}
+setInterval(function() {
+    check_sess_id();
+}, 1000);
 </script>

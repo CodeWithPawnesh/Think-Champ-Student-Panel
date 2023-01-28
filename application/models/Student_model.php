@@ -410,5 +410,78 @@ class Student_model extends CI_Model
                     return false;
                 }
     }
+    public function get_notification_data(){
+        $sql = "SELECT * FROM tc_notification  WHERE type IN (0,2)";
+        $query = $this->db->query($sql);
+        if ($query->num_rows() > 0) {
+            return $query->result_array();
+        }else{
+            return false;
+        }
+    }
+    public function get_batch_notification_data(){
+        $user_info = $this->session->userdata('user_data');
+		$student_id = $user_info['student_id'];
+        $sql = "SELECT * FROM tc_notification AS n,tc_enrollment AS e  WHERE n.type=4 AND n.group_id = 0 AND e.batch_id = n.batch_id AND e.student_id = $student_id";
+        $query = $this->db->query($sql);
+        if ($query->num_rows() > 0) {
+            return $query->result_array();
+        }else{
+            return false;
+        }
+    }
+    public function get_group_notification_data(){
+        $user_info = $this->session->userdata('user_data');
+		$student_id = $user_info['student_id'];
+        $sql = "SELECT * FROM tc_notification AS n,tc_enrollment AS e  WHERE n.type=5 AND e.group_id = n.group_id AND e.student_id = $student_id  ";
+        $query = $this->db->query($sql);
+        if ($query->num_rows() > 0) {
+            return $query->result_array();
+        }else{
+            return false;
+        }
+    }
+    public function get_certificate(){
+        $user_info = $this->session->userdata('user_data');
+		$student_id = $user_info['student_id'];
+        $sql = "SELECT ce.certificate_id,ce.type,ce.status,c.course_name,b.batch_name FROM tc_certificate AS ce 
+                LEFT JOIN tc_batch AS b ON ce.batch_id = b.batch_id
+                LEFT JOIN tc_course AS c ON ce.course_id = c.course_id
+                WHERE ce.student_id = $student_id ";
+        $query = $this->db->query($sql);
+        if ($query->num_rows() > 0) {
+            return $query->result_array();
+        }else{
+            return false;
+        }
+    }
+    public function get_one_certificate($id){
+        $sql = "SELECT ct.*,s.student_name,ce.certificate_id,ce.certificate_number,ce.created_at,ce.type,ce.status,c.course_name,b.batch_name ,b.batch_start_date,b.batch_end_date
+               FROM tc_certificate AS ce 
+               LEFT JOIN tc_student AS s ON ce.student_id = s.student_id
+               LEFT JOIN tc_certificate_template AS ct ON ce.cer_temp_id =ct.cer_temp_id
+               LEFT JOIN tc_batch AS b ON ce.batch_id = b.batch_id
+               LEFT JOIN tc_course AS c ON ce.course_id = c.course_id
+               WHERE ce.certificate_id = $id ";
+       $query = $this->db->query($sql);
+         if ($query->num_rows() > 0) {
+         return $query->result_array();
+         }else{
+             return false;
+              }
+          }
+          public function verify_certificate($stdId,$batchId){
+            $sql ="SELECT ce.*,ct.*,s.student_name,b.batch_name,b.batch_start_date,b.batch_end_date,c.course_name FROM tc_certificate AS ce,
+             tc_certificate_template AS ct,tc_student AS s, tc_batch AS b, tc_course AS c
+             WHERE ce.batch_id = $batchId AND ce.student_id = $stdId AND ce.cer_temp_id = ct.cer_temp_id AND 
+             ce.batch_id = b.batch_id AND ce.course_id = c.course_id AND s.student_id = ce.student_id";
+                    $query = $this->db->query($sql);
+                    if ($query->num_rows() > 0) {
+                    return $query->result_array();
+                    }else{
+                        return false;
+                         }
+           
+          }
 }
 ?>
