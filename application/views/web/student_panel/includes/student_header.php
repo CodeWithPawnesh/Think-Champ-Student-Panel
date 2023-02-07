@@ -95,6 +95,18 @@
                     </div>
                 </a>
             </li>
+            <!-- Programming Challenge -->
+            <li>
+                <a href="<?= base_url('Challenges') ?>" aria-expanded="false">
+                    <div class="nav_icon_small">
+                    <i class="fas fa-solid fa-circle-question"></i>
+                    </div>
+                    <div class="nav_title">
+                        <span>Code Challenge</span>
+                    </div>
+                </a>
+            </li>
+            <!-- End Programming Challenge  -->
             <li>
                 <a href="<?= base_url('Class-Video') ?>" aria-expanded="false">
                     <div class="nav_icon_small">

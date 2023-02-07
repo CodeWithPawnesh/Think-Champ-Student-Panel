@@ -1,0 +1,113 @@
+*{margin: 0;}
+.header{
+    background: #57a958;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    padding: 4px;
+    font-family: sans-serif;
+}
+.control-panel{
+    background: #F3F7F7;
+     text-align: right;
+     padding: 4px;
+     font-family: sans-serif;
+}
+.languages{
+    background: white;
+    width: 250px;
+    height:30px ;
+    box-shadow: 0px 2px 5px gray inset;
+    border: 0px;
+}
+.editor-container{
+    padding-bottom: 10px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+#editor{
+    height: 500px;
+    padding-bottom: 20px;
+}
+.editor-bottom{
+    text-align: right;
+    padding: 10px;
+    font-family: sans-serif;
+    background: #F3F7F7;
+}
+.button-container{
+    text-align: right;
+    padding: 4px;
+}
+.ed-cont{
+    background: #F3F7F7;
+}
+.btn-st{
+    width: 250px;
+    position: relative;
+    right: 20px;
+    top: 20px;
+    background: #57a958;
+    color: white;
+    padding: 8px;
+    border: 0;
+}
+.btn-st:hover{
+    background: #82e583;
+}
+.correct-ans{
+    position: relative;
+    top: 30px;
+    border-radius: 15px;
+    height: 150px;
+    width: 99%;
+    background: #1BA94C;
+}
+.output{
+    position: relative;
+    padding: 20px;
+    top: 60px;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    width: 99%;
+    height: 150px;
+    margin-bottom: 150px;
+}
+.output-text{
+    background: #F3F7F7;
+    height: 80px;
+    font-style: bold;
+}
+.cont-ans{
+    padding: 20px;
+    color: white;
+}
+.wrong-ans{
+    position: relative;
+    top: 30px;
+    color: #D11534;
+    background-color: white;
+}
+.btn{
+    position: relative;
+    left: 500px;
+    bottom: 60px;
+    width: 300px;
+}
+.hide{
+    display: none;
+}
+pre{
+    background:#F3F7F7;
+}
+.ques-cont{
+    position: relative;
+    top: 30px;
+}
+.nav{
+    text-align: left;
+    border:1px solid gray;
+}
+.bg-cl{
+    background: #2e23ad;
+}

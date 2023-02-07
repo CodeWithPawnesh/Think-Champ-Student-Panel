@@ -18,6 +18,35 @@ body {
     position: relative;
     background: #fbf6f0
 }
+/*  */
+.cont_div{
+margin-bottom: 50px;
+}
+.blockquote-custom-icon{
+    position: relative;
+    left: 70%;
+    top: 40px;
+    text-align: center;
+    width:250px;
+    font-size: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.cus_bt{
+    width: 280px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: #05d34e;
+    font-size: 22px;
+    border: 1px solid #05d34e;
+}
+.btn:hover{
+    border: 1px solid #85dfa5;
+    color: #85dfa5;
+}
 
 @media(min-width:1200px) {
     .container {
