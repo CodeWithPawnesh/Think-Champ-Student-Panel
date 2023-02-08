@@ -10,7 +10,7 @@
                             <li class="breadcrumb-item active">Think-Champ</li>
                         </ol>
                     </div>
-                    <div class="page_title_right">
+                    <div class="page_title_right"> 
                     </div>
                 </div>
             </div>
@@ -98,3 +98,25 @@
         </div>
     </div>
 </div>
+<div class="footer_part">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="footer_iner text-center">
+                    <p><?= date('Y') ?> © Think-Champ</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<div id="back-top" style="display: none;">
+    <a title="Go to Top" href="#">
+        <i class="ti-angle-up"></i>
+    </a>
+</div>
+</body>
+
+</html>
+<script src="assets/dashboard/js/jquery1-3.4.1.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

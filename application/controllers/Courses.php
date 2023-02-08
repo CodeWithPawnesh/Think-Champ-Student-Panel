@@ -9,10 +9,16 @@ class Courses extends CI_Controller {
     }
 	public function index()
 	{
+		$hdata['title']="Learn Programming Skills Online with Think-Champ Live Classes";
+        $hdata['description']="Get structured courses for Software development, Compititive Coding, Front-End Skills, Back-End Skills, Website Development.";
+        $hdata['keywords']="Coding Challenges, Workshops, Development, Software, Back-End, Front-End";
 		$data['course_data'] = $this->SM->get_course();
-		$this->load->web_temp('courses',$data);
+		$this->load->web_temp('courses',$data,$hdata);
 	}
 	public function CourseDetail(){
+		$hdata['title']="Learn Programming Skills Online with Think-Champ Live Classes";
+        $hdata['description']="Get structured courses for Software development, Compititive Coding, Front-End Skills, Back-End Skills, Website Development.";
+        $hdata['keywords']="Coding Challenges, Workshops, Development, Software, Back-End, Front-End";
 		if(isset($_GET['id'])){
 			$id = $_GET['id'];
 			$id = base64_decode($id);
@@ -27,9 +33,12 @@ class Courses extends CI_Controller {
 			$data['remmaning_slot'] = $slots - $enroll_count[0]['cc'];
 		}
 		
-		$this->load->web_temp('course_detail',$data);
+		$this->load->web_temp('course_detail',$data,$hdata);
 	}
 	public function courseEnrollment(){
+		$hdata['title']="Learn Programming Skills Online with Think-Champ Live Classes";
+        $hdata['description']="Get structured courses for Software development, Compititive Coding, Front-End Skills, Back-End Skills, Website Development.";
+        $hdata['keywords']="Coding Challenges, Workshops, Development, Software, Back-End, Front-End";
 		$data['page']="page";
 		if(isset($_GET['id'])){
 			$id = $_GET['id'];
@@ -38,6 +47,6 @@ class Courses extends CI_Controller {
 			$data['course_detail'] = $data['course_detail'][0];
 			$data['batch_detail'] = $this->SM->get_batch_data($id);
 		}
-		$this->load->web_temp('course_enrollment_form',$data);
+		$this->load->web_temp('course_enrollment_form',$data,$hdata);
 	}
 }

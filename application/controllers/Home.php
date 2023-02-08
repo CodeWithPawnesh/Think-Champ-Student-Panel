@@ -10,6 +10,9 @@ class Home extends CI_Controller {
     }
 	public function index()
 	{
+        $hdata['title']="Learn Programming Skills Online with Think-Champ Live Classes";
+        $hdata['description']="Get structured courses for Software development, Compititive Coding, Front-End Skills, Back-End Skills, Website Development.";
+        $hdata['keywords']="Coding Challenges, Workshops, Development, Software, Back-End, Front-End";
         $data['blog_list'] = $this->SM->get_all_blogs();
         $data['course_data'] = $this->SM->get_course();
         if(isset($_POST['submit'])){
@@ -42,27 +45,42 @@ class Home extends CI_Controller {
 				redirect("Home/community_success");
             }
         }
-		$this->load->web_temp_2('home',$data);
+		$this->load->web_temp_2('home',$data,$hdata);
 	}
     public function AboutUs(){
+        $hdata['title']="Learn Programming Skills Online with Think-Champ Live Classes";
+        $hdata['description']="Get structured courses for Software development, Compititive Coding, Front-End Skills, Back-End Skills, Website Development.";
+        $hdata['keywords']="Coding Challenges, Workshops, Development, Software, Back-End, Front-End";
         $data['page']="";
-        $this->load->web_temp('about_us',$data);
+        $this->load->web_temp('about_us',$data,$hdata);
     }
     public function Contact(){
+        $hdata['title']="Learn Programming Skills Online with Think-Champ Live Classes";
+        $hdata['description']="Get structured courses for Software development, Compititive Coding, Front-End Skills, Back-End Skills, Website Development.";
+        $hdata['keywords']="Coding Challenges, Workshops, Development, Software, Back-End, Front-End";
         $data['page']="";
-        $this->load->web_temp('contact',$data);
+        $this->load->web_temp('contact',$data,$hdata);
     }
     public function Faq(){
+        $hdata['title']="Learn Programming Skills Online with Think-Champ Live Classes";
+        $hdata['description']="Get structured courses for Software development, Compititive Coding, Front-End Skills, Back-End Skills, Website Development.";
+        $hdata['keywords']="Coding Challenges, Workshops, Development, Software, Back-End, Front-End";
         $data['page']="";
-        $this->load->web_temp('faq',$data);
+        $this->load->web_temp('faq',$data,$hdata);
     }
     public function PrivacyPolicy(){
+        $hdata['title']="Learn Programming Skills Online with Think-Champ Live Classes";
+        $hdata['description']="Get structured courses for Software development, Compititive Coding, Front-End Skills, Back-End Skills, Website Development.";
+        $hdata['keywords']="Coding Challenges, Workshops, Development, Software, Back-End, Front-End";
         $data['page']="";
-        $this->load->web_temp('privacy_policy',$data);
+        $this->load->web_temp('privacy_policy',$data,$hdata);
     }
     public function TermsAndService(){
+        $hdata['title']="Learn Programming Skills Online with Think-Champ Live Classes";
+        $hdata['description']="Get structured courses for Software development, Compititive Coding, Front-End Skills, Back-End Skills, Website Development.";
+        $hdata['keywords']="Coding Challenges, Workshops, Development, Software, Back-End, Front-End";
         $data['page']="";
-        $this->load->web_temp('terms_and_service',$data);
+        $this->load->web_temp('terms_and_service',$data,$hdata);
     }
     public function touch_success(){
 		$this->load->view("web/touch_success");

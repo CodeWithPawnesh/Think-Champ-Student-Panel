@@ -12,6 +12,9 @@ class Workshop extends CI_Controller {
 	}
 	public function index()
 	{
+		$hdata['title']="Learn Programming Skills Online with Think-Champ Live Classes";
+        $hdata['description']="Get structured courses for Software development, Compititive Coding, Front-End Skills, Back-End Skills, Website Development.";
+        $hdata['keywords']="Coding Challenges, Workshops, Development, Software, Back-End, Front-End";
         $data['page'] = "";
 		if(isset($_POST['submit'])){
 			$name = $_POST['name'];
@@ -33,9 +36,12 @@ class Workshop extends CI_Controller {
 			}
 		}
 		$data['workshop_list'] = $this->SPM->get_all_workshop();
-		$this->load->web_temp('workshop',$data);
+		$this->load->web_temp('workshop',$data,$hdata);
 	}
 	public function article($url){
+		$hdata['title']="Learn Programming Skills Online with Think-Champ Live Classes";
+        $hdata['description']="Get structured courses for Software development, Compititive Coding, Front-End Skills, Back-End Skills, Website Development.";
+        $hdata['keywords']="Coding Challenges, Workshops, Development, Software, Back-End, Front-End";
 		$urlArray = explode("-",$url);
 		$arrSize = sizeof($urlArray);
 		$keyId = $arrSize-1;
@@ -43,7 +49,7 @@ class Workshop extends CI_Controller {
 		$data['workshop_list'] = $this->SPM->get_all_workshop();
 		$data['workshop_detail'] = $this->SPM->get_workshop_detail($workshop_id);
 		$data['workshop_detail'] = $data['workshop_detail'][0];
-		$this->load->web_temp('workshop_detail',$data);
+		$this->load->web_temp('workshop_detail',$data,$hdata);
 	}
 	public function enroll_success(){
 		$this->load->view("web/workshop_enroll_success");

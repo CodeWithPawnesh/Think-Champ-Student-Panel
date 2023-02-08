@@ -2,10 +2,23 @@
 <html lang="zxx">
 
 <head>
-    <!-- meta tag -->
-    <meta charset="utf-8">
-    <title>Think Champ</title>
-    <meta name="description" content="">
+    <title><?= $title; ?></title>
+    <meta name="description"
+        content="<?= $description; ?>">
+    <meta name="keywords"
+        content="<?= $keywords ?>">
+    <link rel="canonical" href="https://think-champ.com/" />
+    <meta property="og:url" content="https://think-champ.com/" />
+    <meta property="og:site_name" content="Think-Champ" />
+    <meta property=“og:title” content="<?= $title ?>" />
+    <meta property="og:description"
+        content="<?= $description; ?>" />
+    <meta property="og:url" content="https://think-champ.com/" />
+    <link rel="alternate" href="https://think-champ.com" hreflang="en-us">
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://think-champ.com/assets2/assets/images/bg/home6/icon/2.png" />
+        <!-- meta tag -->
+        <meta charset="utf-8">
     <!-- responsive tag -->
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
