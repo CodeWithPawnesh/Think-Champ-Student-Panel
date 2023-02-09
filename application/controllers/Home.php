@@ -13,6 +13,7 @@ class Home extends CI_Controller {
         $hdata['title']="Learn Programming Skills Online with Think-Champ Live Classes";
         $hdata['description']="Get structured courses for Software development, Compititive Coding, Front-End Skills, Back-End Skills, Website Development.";
         $hdata['keywords']="Coding Challenges, Workshops, Development, Software, Back-End, Front-End";
+        $data['placed_at'] = $this->SM->get_student_placed_at();
         $data['blog_list'] = $this->SM->get_all_blogs();
         $data['course_data'] = $this->SM->get_course();
         if(isset($_POST['submit'])){

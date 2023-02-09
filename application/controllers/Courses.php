@@ -22,6 +22,7 @@ class Courses extends CI_Controller {
 		if(isset($_GET['id'])){
 			$id = $_GET['id'];
 			$id = base64_decode($id);
+			$data['trainer_data'] = $this->SM->get_trainer_data($id);
 			$data['course_detail'] = $this->SM->get_course_detail($id);
 			$data['course_detail'] = $data['course_detail'][0];
 			$data['batch_detail'] = $this->SM->get_batch_data($id);

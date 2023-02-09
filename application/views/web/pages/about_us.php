@@ -1,4 +1,4 @@
-<section class="about-us-first-section" style=" background-color:#59E8FF;">
+<section class="about-us-first-section" style="background-image: linear-gradient(orange,brown);">
     <h1 class="first-heading">ABOUT US</h1>
 </section>
 <section class="abt-first-section">

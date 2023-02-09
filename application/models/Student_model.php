@@ -470,18 +470,35 @@ class Student_model extends CI_Model
              return false;
               }
           }
-          public function verify_certificate($stdId,$batchId){
-            $sql ="SELECT ce.*,ct.*,s.student_name,b.batch_name,b.batch_start_date,b.batch_end_date,c.course_name FROM tc_certificate AS ce,
+    public function verify_certificate($stdId,$batchId){
+        $sql ="SELECT ce.*,ct.*,s.student_name,b.batch_name,b.batch_start_date,b.batch_end_date,c.course_name FROM tc_certificate AS ce,
              tc_certificate_template AS ct,tc_student AS s, tc_batch AS b, tc_course AS c
              WHERE ce.batch_id = $batchId AND ce.student_id = $stdId AND ce.cer_temp_id = ct.cer_temp_id AND 
              ce.batch_id = b.batch_id AND ce.course_id = c.course_id AND s.student_id = ce.student_id";
-                    $query = $this->db->query($sql);
-                    if ($query->num_rows() > 0) {
-                    return $query->result_array();
-                    }else{
-                        return false;
-                         }
-           
+        $query = $this->db->query($sql);
+            if ($query->num_rows() > 0) {
+            return $query->result_array();
+            }else{
+                 return false;
+                 }
           }
+    public function get_student_placed_at(){
+        $this->db->order_by('id', 'DESC');
+        $query = $this->db->get("tc_student_placed");
+        if($query->num_rows()>0){
+            return $query->result_array();
+        }else{
+            return false;
+        }
+    }
+    public function get_trainer_data($id){
+        $sql = "SELECT * FROM tc_employee WHERE course_id LIKE '%$id%' AND role = 1 ";
+        $query = $this->db->query($sql);
+        if ($query->num_rows() > 0) {
+        return $query->result_array();
+        }else{
+             return false;
+             }
+    }
 }
 ?>

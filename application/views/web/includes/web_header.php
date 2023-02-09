@@ -112,11 +112,9 @@
                     <div class="row y-middle">
                         <div class="col-lg-3">
                             <div class="logo-cat-wrap">
-                                <div class="logo-part pr-90">
                                     <a href="index.html">
-                                        <img src="assets2/images/logo.png" alt="">
+                                        <img src="assets2/images/logo2.png" style="width:200px" alt="">
                                     </a>
-                                </div>
                             </div>
                         </div>
                         <div class="col-lg-9 text-center">
@@ -129,35 +127,96 @@
                                     </div>
                                     <nav class="rs-menu">
                                         <ul class="nav-menu">
-                                            <li class="rs-mega-menu mega-rs menu-item-has-children current-menu-item">
+                                            <li class="rs-mega-menu mega-rs menu-item-has-children ">
                                                 <a href="<?= base_url('') ?>">Home</a>
 
                                             </li>
-                                            <li class="menu-item-has-children">
+                                            <?php
+                                            $active="";
+                                            $current_page =  $_SERVER['REQUEST_URI'] ;
+                                            $current_page = explode("/",$current_page);
+                                                  foreach($current_page as $c_p)
+                                                      {
+                                                        if($c_p=="About-Us"){
+                                                        $active = "current-menu-item";
+                                                         }
+                                                      }
+                                            ?>
+                                            <li class="menu-item-has-children <?= $active; ?>">
                                                 <a href="<?= base_url('About-Us') ?>">About</a>
 
                                             </li>
-
-                                            <li class="menu-item-has-children">
+                                            <?php
+                                            $active="";
+                                            $current_page =  $_SERVER['REQUEST_URI'] ;
+                                            $current_page = explode("/",$current_page);
+                                                  foreach($current_page as $c_p)
+                                                      {
+                                                        if($c_p=="Courses"){
+                                                        $active = "current-menu-item";
+                                                         }
+                                                      }
+                                            ?>
+                                            <li class="menu-item-has-children <?= $active ?>">
                                                 <a href="<?= base_url("Courses") ?>">Courses</a>
 
                                             </li>
-
-                                            <li class="menu-item-has-children">
+                                            <?php
+                                            $active="";
+                                            $current_page =  $_SERVER['REQUEST_URI'] ;
+                                            $current_page = explode("/",$current_page);
+                                                  foreach($current_page as $c_p)
+                                                      {
+                                                        if($c_p=="FAQ"){
+                                                        $active = "current-menu-item";
+                                                         }
+                                                      }
+                                            ?>
+                                            <li class="menu-item-has-children <?= $active ?>">
                                                 <a href="<?= base_url("FAQ") ?>">faqs</a>
-
                                             </li>
-
-                                            <li class="menu-item-has-children">
+                                            <?php
+                                            $active="";
+                                            $current_page =  $_SERVER['REQUEST_URI'] ;
+                                            $current_page = explode("/",$current_page);
+                                                  foreach($current_page as $c_p)
+                                                      {
+                                                        if($c_p=="Blog"){
+                                                        $active = "current-menu-item";
+                                                         }
+                                                      }
+                                            ?>
+                                            <li class="menu-item-has-children <?= $active ?>">
                                                 <a href="<?= base_url("Blog") ?>">Blog</a>
 
                                             </li>
-
-                                            <li class="menu-item-has-children">
+                                            <?php
+                                            $active="";
+                                            $current_page =  $_SERVER['REQUEST_URI'] ;
+                                            $current_page = explode("/",$current_page);
+                                                  foreach($current_page as $c_p)
+                                                      {
+                                                        if($c_p=="Contact"){
+                                                        $active = "current-menu-item";
+                                                         }
+                                                      }
+                                            ?>
+                                            <li class="menu-item-has-children <?= $active ?>">
                                                 <a href="<?= base_url("Contact") ?>">Contact</a>
 
                                             </li>
-                                            <li class="menu-item-has-children">
+                                            <?php
+                                            $active="";
+                                            $current_page =  $_SERVER['REQUEST_URI'] ;
+                                            $current_page = explode("/",$current_page);
+                                                  foreach($current_page as $c_p)
+                                                      {
+                                                        if($c_p=="auth"){
+                                                        $active = "current-menu-item";
+                                                         }
+                                                      }
+                                            ?>
+                                            <li class="menu-item-has-children <?= $active ?>">
                                                 <a href="<?= base_url("auth") ?>">LOGIN</a>
 
                                             </li>

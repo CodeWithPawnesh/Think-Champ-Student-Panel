@@ -13,13 +13,16 @@ class Auth extends CI_Controller
     }
     public function index()
     {
-        $data['page']="page";
+        $hdata['title']="Learn Programming Skills Online with Think-Champ Live Classes";
+        $hdata['description']="Get structured courses for Software development, Compititive Coding, Front-End Skills, Back-End Skills, Website Development.";
+        $hdata['keywords']="Coding Challenges, Workshops, Development, Software, Back-End, Front-End";
         if(isset($_GET['error'])){
             if($_GET['error']=='1'){
                 $data['error']="E-mail OR Password Is Incorrect!";
             }
         }
-        $this->load->web_temp('login', $data);
+        $data = "";
+        $this->load->web_temp('login', $data,$hdata);
     }
     public function student(){
         $data['page']="login";

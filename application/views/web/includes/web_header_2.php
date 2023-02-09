@@ -114,11 +114,9 @@
                     <div class="row y-middle">
                         <div class="col-lg-3">
                             <div class="logo-cat-wrap">
-                                <div class="logo-part pr-90">
                                     <a href="index.html">
-                                        <img src="assets2/images/logo.png" alt="">
+                                        <img src="assets2/images/logo2.png" style="width:200px" alt="logo">
                                     </a>
-                                </div>
                             </div>
                         </div>
                         <div class="col-lg-9 text-center">

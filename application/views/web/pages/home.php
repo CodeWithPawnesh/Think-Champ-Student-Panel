@@ -123,18 +123,11 @@
                         data-ipad-device="3" data-ipad-device-nav="false" data-ipad-device-dots="false"
                         data-ipad-device2="2" data-ipad-device-nav2="false" data-ipad-device-dots2="false"
                         data-md-device="4" data-md-device-nav="true" data-md-device-dots="false">
+                        <?php foreach($placed_at as $pa){ ?>
                         <div class="partner-item">
-                            <a href="#"><img src="assets2/assets/images/partner/1.png" alt=""></a>
+                            <a href="#"><img src="http://localhost/Employee-Portal/assets/images/placed_at/<?= $pa['image'] ?>" alt=""></a>
                         </div>
-                        <div class="partner-item">
-                            <a href="#"><img src="assets2/assets/images/partner/2.png" alt=""></a>
-                        </div>
-                        <div class="partner-item">
-                            <a href="#"><img src="assets2/assets/images/partner/3.png" alt=""></a>
-                        </div>
-                        <div class="partner-item">
-                            <a href="#"><img src="assets2/assets/images/partner/4.png" alt=""></a>
-                        </div>
+                        <?php } ?>
                     </div>
                 </div>
             </div>

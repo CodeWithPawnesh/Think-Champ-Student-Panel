@@ -1,4 +1,4 @@
-<section class="about-us-first-section" style=" background-color:#59E8FF;">
+<section class="about-us-first-section" style="background-image: linear-gradient(orange,brown);">
     <h1 class="first-heading">Course Details</h1>
 </section>
 <section class="course-first-section"
@@ -32,8 +32,10 @@
         <div class="tab">
             <button id="first_link" class="tablinks" onclick="openCity(event, 'overview')">Overview</button>
             <button class="tablinks" onclick="openCity(event, 'keyoutcomes')">Key Outcome</button>
-            <button class="tablinks" onclick="openCity(event, 'instructor')">Instructor</button>
+            <button class="tablinks" onclick="openCity(event, 'instructor')">Trainer</button>
             <button class="tablinks" onclick="openCity(event, 'benefits')">Benefits</button>
+            <button class="tablinks" onclick="openCity(event, 'curriculum')">Curriculum</button>
+            <button class="tablinks" onclick="openCity(event, 'project')">Project</button>
         </div>
 
         <div id="overview" class="tabcontent">
@@ -81,39 +83,73 @@
         </div>
 
         <div id="instructor" class="tabcontent">
+        <?php foreach($trainer_data AS $td){ ?>
             <div class="overview-tab">
                 <div class="overview-tab-left-col">
-                    <img src="assets/images/course-detail/instructor.jpg" alt="">
+                    <?php if(!empty($td['profile'])){ ?>
+                    <img src="assets/images/course-detail/<?= $td['profile'] ?>" alt="">
+                    <?php }else{ ?>
+                    <img src="assets/images/user_profile/avatar.jpg" alt="">
+                  <?php  } ?>
                 </div>
+               
                 <div class="overview-tab-right-col">
-                    <h5>PAWNESH PANCHAL</h5>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, dolor perspiciatis eius
-                        adipisci in harum.</p>
+                    <h5><?= $td['emp_name'] ?></h5>
+                    <p><?= $td['about_you'] ?></p>
                     <ul class="instructor-list">
-                        <li><i class="fa fa-file-text-o" aria-hidden="true"></i> 4 Courses</li>
-                        <li><i class="fa fa-users" aria-hidden="true"></i> 2500 Students</li>
+                        <li><i class="fa fa-file-text-o" aria-hidden="true"></i> <?php $c_count = explode(",",$td['course_id']); echo count($c_count) ?> Courses</li>
+                        <li><i class="fa fa-users" aria-hidden="true"></i> <?= $td['student_teached'] ?> Students</li>
                     </ul>
-                    <a href="#">
+                    <a href="<?= $td['fb_link'] ?>" target = "_blank">
                         <div class="social-logo-instructor"> <img src="assets/images/home/facebook.png" alt="social"
                                 class="social-icon-instructor"> </div>
                     </a>
-                    <a href="#">
+                    <a href="<?= $td['twiter_link'] ?>"target = "_blank">
                         <div class="social-logo-instructor"><img src="assets/images/home/twitter.png" alt="social"
                                 class="social-icon-instructor"> </div>
                     </a>
-                    <a href="#">
+                    <a href="<?= $td['insta_link'] ?>"target = "_blank">
                         <div class="social-logo-instructor "><img src="assets/images/home/instagram.png" alt="social"
                                 class="social-icon-instructor"> </div>
                     </a>
-                    <a href="#">
+                    <a href="<?= $td['linkdin_link'] ?>" target = "_blank">
                         <div class="social-logo-instructor "><img src="assets/images/home/linkedin.png" alt="social"
                                 class="social-icon-instructor"> </div>
                     </a>
 
                 </div>
             </div>
+            <?php } ?>
         </div>
 
+        <div id="curriculum" class="tabcontent">
+            <div class="overview-tab">
+                <div class="overview-tab-left-col">
+                    <img src="http://localhost/Employee-Portal/assets/images/course/<?= stripcslashes($course_detail['cericullum_img']) ?>"
+                        alt="">
+                </div>
+                <div class="overview-tab-right-col">
+                    <h4><?= $course_detail['cericullum_heading'] ?></h4>
+                    <hr style="border-top:2px solid blue;">
+                    <?= $course_detail['cericullum_desc'] ?>
+                </div>
+            </div>
+        </div>
+        <!--  -->
+        <div id="project" class="tabcontent">
+            <div class="overview-tab">
+                <div class="overview-tab-left-col">
+                    <img src="http://localhost/Employee-Portal/assets/images/course/<?= stripcslashes($course_detail['project_img']) ?>"
+                        alt="">
+                </div>
+                <div class="overview-tab-right-col">
+                    <h4><?= $course_detail['project_heading'] ?></h4>
+                    <hr style="border-top:2px solid blue;">
+                    <?= $course_detail['project_desc'] ?>
+                </div>
+            </div>
+        </div>
+        <!--  -->
         <div id="benefits" class="tabcontent">
             <div class="overview-tab">
                 <div class="overview-tab-left-col">
