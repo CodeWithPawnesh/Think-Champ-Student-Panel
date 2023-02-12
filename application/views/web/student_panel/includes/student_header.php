@@ -76,6 +76,16 @@
                 </a>
             </li>
             <li>
+                <a href="<?= base_url('Order') ?>" aria-expanded="false">
+                    <div class="nav_icon_small">
+                    <i class="fas fa-cart-shopping"></i>
+                    </div>
+                    <div class="nav_title">
+                        <span>Order</span>
+                    </div>
+                </a>
+            </li>
+            <li>
                 <a href="<?= base_url('Profile') ?>" aria-expanded="false">
                     <div class="nav_icon_small">
                     <i class="fas fa-user"></i>

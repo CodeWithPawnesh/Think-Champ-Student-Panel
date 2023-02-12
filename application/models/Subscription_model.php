@@ -10,6 +10,7 @@ $this->db->insert('tc_student',$student_data);
 $insert_id = $this->db->insert_id();
 $order_data['student_id'] = $insert_id;
 $course_data['student_id'] = $insert_id;
+$this->db->insert('tc_order',$order_data);
 if($order_data_inst_2!=0){
     $order_data_inst_2['student_id'] = $order_data['student_id'];
     $this->db->insert('tc_order',$order_data_inst_2);
@@ -18,10 +19,16 @@ if($order_data_inst_3!=0){
     $order_data_inst_3['student_id'] = $order_data['student_id'];
     $this->db->insert('tc_order',$order_data_inst_3);
 }
-$this->db->insert('tc_order',$order_data);
 $this->db->insert('tc_enrollment',$course_data);
 if($this->db->trans_complete()){
     return true;
 }
+}
+public function sub_install($order_data,$order_id){
+    $this->db->where("order_id ",$order_id);
+        $query = $this->db->update("tc_order", $order_data);
+        if($query){
+            return true;
+        }
 }
 }

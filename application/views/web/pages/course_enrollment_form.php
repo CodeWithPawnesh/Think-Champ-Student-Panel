@@ -7,6 +7,7 @@
                 <?php }else{ ?>
                 <input type="hidden" name="course_id" value="<?=$course_detail['course_id'] ?>">
                 <?php } ?>
+                <input type="hidden" name="t_price" value="<?= $course_detail['price'] ?>">
                 <input type="hidden" id="price" name="price" value="<?= $course_detail['price'] ?>">
                 <h3 class="first-heading">Enroll Now</h3>
                 <?php 

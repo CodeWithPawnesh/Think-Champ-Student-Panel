@@ -500,5 +500,25 @@ class Student_model extends CI_Model
              return false;
              }
     }
+    public function get_orders($student_id){
+        $sql = "SELECT o.*,c.course_name FROM tc_order AS o, tc_course AS c WHERE o.student_id = $student_id AND c.course_id = o.course_id ORDER BY o.order_id DESC";
+        $query = $this->db->query($sql);
+        if ($query->num_rows() > 0) {
+        return $query->result_array();
+        }else
+        {
+        return false;
+        }
+    }
+    public function get_paid_order_detail($order_id){
+        $sql = "SELECT o.*,c.course_name FROM tc_order AS o, tc_course AS c WHERE order_id = $order_id AND c.course_id = o.course_id ";
+        $query = $this->db->query($sql);
+        if ($query->num_rows() > 0) {
+        return $query->result_array();
+        }else
+        {
+        return false;
+        }
+    }
 }
 ?>
