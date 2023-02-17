@@ -187,6 +187,19 @@ class Student_model extends CI_Model
             return false;
         }
     }
+    public function get_assignments($student_id){
+        $sql = "SELECT a.*,aas.status,aas.marks FROM tc_assignment AS a
+                LEFT JOIN tc_as_submit AS aas ON a.assignment_id = aas.assignment_id AND aas.student_id = $student_id
+                LEFT JOIN tc_enrollment AS e ON e.student_id = $student_id
+                WHERE e.batch_id = a.batch_id AND a.group_id = 0 OR a.group_id = e.group_id ORDER BY a.assignment_id DESC
+               ";
+                   $query = $this->db->query($sql);
+                   if ($query->num_rows() > 0) {
+                       return $query->result_array();
+                   }else{
+                       return false;
+                   }
+    }
     public function submit_assignmet($data){
         $query = $this->db->insert("tc_as_submit",$data);
         if($query){
@@ -194,9 +207,13 @@ class Student_model extends CI_Model
         }
     }
     public function get_batch_quiz($batch_id){
+        $date = date('y-m-d');
+        $date_ts = strtotime($date);
         $where = array(
             "quiz_batch_id"=>$batch_id,
-            "quiz_group_id"=>0
+            "quiz_group_id"=>0,
+            "quiz_end_date">=$date_ts,
+            "status"=>1
         );
         $this->db->where($where);
         $query = $this->db->get("tc_quiz");
@@ -207,7 +224,14 @@ class Student_model extends CI_Model
         }
     }
     public function get_group_quiz($group_id){
-        $this->db->where("quiz_group_id",$group_id);
+        $date = date('y-m-d');
+        $date_ts = strtotime($date);
+        $where = array(
+            "quiz_group_id"=>$group_id,
+            "quiz_end_date">=$date_ts,
+            "status"=>1
+        );
+        $this->db->where($where);
         $query = $this->db->get("tc_quiz");
         if ($query->num_rows() > 0) {
             return $query->result_array();

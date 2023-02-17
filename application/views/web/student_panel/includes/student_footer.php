@@ -10,11 +10,7 @@ function sendRequest(){
             $("#not_data").html(response);
             var res = $('#count').text();
             $("#nCount").html(res); 
-          },
-complete: function() {
-// Schedule the next request when the current one's complete
-setInterval(sendRequest, 5000); // The interval set to 5 seconds
-}
+          }
 });
 };
 });

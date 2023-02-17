@@ -17,15 +17,7 @@
         </div>
     </div>
     <div class="row ">
-        <?php $status=3;$ob_marks = "NA"; $s=1;if(!empty($assignment_data)){ foreach($assignment_data as $a_d){ 
-             if(!empty($submited_assignment)){
-                 foreach($submited_assignment as $s_a){
-                    if($s_a['assignment_id']== $a_d['assignment_id']){
-                        $status = $s_a['status'];
-                        $ob_marks = $s_a['marks'];
-                        $s=0;
-                    }
-                    } } 
+        <?php if(!empty($assignment_data)){ foreach($assignment_data as $a_d){ 
                     ?>
         <div class="col-xl-12">
             <div class="white_card mb_30 card_height_100">
@@ -33,20 +25,20 @@
                     <div class="box_header m-0">
                         <div class="main-title ">
                             <h3 class="m-0 ">
-                                <?php if($status == 1){ ?>
+                                <?php if($a_d['status'] == 1){ ?>
                                 <h3 class="m-0 text-warning">Status : Under Review</h3>
                                 <?php  } ?>
-                                <?php if($status == 2){ ?>
+                                <?php if($a_d['status'] == 2){ ?>
                                 <h3 class="m-0 text-success">Status : Checked</h3>
                                 <?php  } ?>
-                                <?php if($status == 3){ ?>
+                                <?php if(empty($a_d['status'])){ ?>
                                 <h3 class="m-0 text-danger">Status : Pending</h3>
                                 <?php  } ?>
                             </h3>
                         </div>
                         <div class="float-lg-right float-none common_tab_btn2 justify-content-end m-0 ">
                             <h4 class="m-0 ">Marks :
-                                <?php if($status == 2){ echo $ob_marks; }else{ echo "NA";} ?> / <?= $a_d['marks'] ?></h4>
+                                <?php if($a_d['status'] == 2){ echo $a_d['marks']; }else{ echo "NA";} ?> / <?= $a_d['marks'] ?></h4>
                         </div>
                     </div>
                 </div>
@@ -56,15 +48,14 @@
                     <p class="fw-bold text-body">NOTE: MAKE A ZIP FILE OR PDF OF YOUR PROJECT AND THEN SUBMIT HERE  </p>
                     <br><br>
                     <div class="text-center">
-                        <?php if($s == 1){ ?>
+                        <?php if(empty($a_d['status'])){ ?>
                         <!-- Button trigger modal -->
                         <a onclick="myFun(<?= $a_d['assignment_id'] ?>)" class="btn btn-success" data-bs-toggle="modal"
                             data-bs-target="#exampleModal">
                             Submit
                         </a>
                         <p class="text-warning">Submit Your Assignment</p>
-                        <?php } ?>
-                        <?php if($s == 0){ ?>
+                        <?php }else{ ?>
                         <h3 class="text-success">Assignment Submitted</h3>
                         <?php } ?>
                     </div>

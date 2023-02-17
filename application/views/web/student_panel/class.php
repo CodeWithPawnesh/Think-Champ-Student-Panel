@@ -107,13 +107,12 @@ if($_GET['mode']=="Theory"){
                                 <td class="text-center"><?= $c_d['emp_name']; ?></td>
                                 <td class="text-center"><?php $std_n= explode(",",$c_d['student_ids']); echo sizeof($std_n); ?></td>
                                 <?php $stdIdArr = explode(",",$c_d['student_ids']);
-                                foreach($stdIdArr as $sarr){
-                                    if($sarr == $student_id ){
+                                    if(in_array($student_id, $stdIdArr) ){
                                 ?>
                                 <td class="text-center text-success">Present</td>
-                                <?php break; }else{ ?>
+                                <?php }else{ ?>
                                 <td class="text-center text-danger">Absent</td>
-                                <?php break; } } ?>
+                                <?php  } ?>
                                 <td class="text-center">
                                     <form action="StudentPanel/request_video" method="post">
                                         <input type="hidden" name="id" value="<?= $_GET['id'] ?>">
@@ -123,7 +122,7 @@ if($_GET['mode']=="Theory"){
                                         <?php if($_GET['mode']=="Programming"){ ?>
                                         <input type="hidden" name="group_id" value="<?= $c_d['group_id'] ?>">
                                         <?php } ?>
-                                        <?php foreach($requested_live_class_id as $r_d){ 
+                                        <?php if(!empty($requested_live_class_id)){ foreach($requested_live_class_id as $r_d){ 
                                             if($r_d['type']==$check){
                                         if($r_d['live_id'] == $c_d['live_id'] ){
 
@@ -137,8 +136,10 @@ if($_GET['mode']=="Theory"){
                                             <?php } ?>
                                     <?php } }else{ ?>
                                         <button type="submit" name="submit" class="btn btn-sm active-cl">Request Video</button>
-                                    <?php  } } }
+                                    <?php  } } } }else{
                                     ?>
+                                     <button type="submit" name="submit" class="btn btn-sm active-cl">Request Video</button>
+                                    <?php } ?>
                                     </form>
                                 </td>
                               </tr>

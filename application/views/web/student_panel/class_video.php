@@ -9,6 +9,24 @@ if(strpos($class_link,"https://drive.google.com")==true){
 }
 
 ?>
+<style>
+    .ytp-chrome-top, .ytp-show-cards-title{
+        display:none;
+        z-index: -1;
+    }
+    .ytp-chrome-top-buttons{
+        display:none
+    }
+    .ytp-title-channel{
+        display:none;
+    }
+    .ytp-show-cards-title{
+        display:none
+    }
+    .ytp-impression-link-text{
+        display: none;
+    }
+</style>
 <div class="main_content_iner overly_inner main-cont ">
     <div class="container-fluid p-0 ">
         <div class="row">
@@ -30,7 +48,7 @@ if(strpos($class_link,"https://drive.google.com")==true){
     <div class="row cont">
         <div class="main-video">
             <div class="video">
-                <iframe height="300px" src="https://drive.google.com/file/d/1wgJMRJfd4Ol9kFlcuu2HU3_XZFFGkpf5/preview">
+                <iframe height="300px" src="https://www.youtube.com/embed/DI4_j-m6vJw">
                    
                 </iframe>
                 <h3 class="title">Class <?= $class_no ?></h3>
@@ -93,4 +111,5 @@ listVideo.forEach(iframe => {
         }
     };
 });
+document.getElementsByClass("ytp-impression-link-text").display="none";
 </script>

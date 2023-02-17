@@ -51,6 +51,9 @@
                                 <tr>
                                     <th class="text-center"><?= $o_d['main_order_id'] ?></th>
                                     <th class="text-center"><?= $o_d['course_name'] ?></th>
+                                    <?php if($o_d['mode']==0){ ?>
+                                    <th class="text-center">--</th>
+                                    <?php } ?>
                                     <?php if($o_d['mode']==1){ ?>
                                     <th class="text-center">Online</th>
                                     <?php } ?>

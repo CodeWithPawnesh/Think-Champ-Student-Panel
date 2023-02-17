@@ -19,37 +19,33 @@ class Assignment extends CI_Controller {
 		$user_info = $this->session->userdata('user_data');
 		$user_id = $user_info['user_id'];
 		$student_id = $user_info['student_id'];
-		$batch_id = $user_info['batch_id'];
-		if($user_info['group_id']!=0){
-		$group_id = $user_info['group_id'];
-		}else{
-			$group_id = "null";
-		}
-		$batch_assignment = $this->SPM->get_batch_assignment($batch_id);	
-		$group_assignment = $this->SPM->get_group_assignment($batch_id,$group_id);
-		$data['submited_assignment'] = $this->SPM->get_submited_assignment($student_id);
-		$assignment_data ="";
-		if(!empty($batch_assignment) && !empty($group_assignment)){
-			$assignment_data = array_merge($batch_assignment,$group_assignment);
-		}
-		if(empty($batch_assignment)){
-			$assignment_data = $group_assignment;
-		}
-		if(empty($group_assignment)){
-			$assignment_data = $batch_assignment;
-		}
-		if(!empty($assignment_data)){
-		function date_compare($element1, $element2) {
-			$datetime1 = $element1['start_date'];
-			$datetime2 = $element2['start_date'];
-			   return $datetime1 - $datetime2;
-			   } 
+		$assignments = $this->SPM->get_assignments($student_id);
+		$data['assignment_data'] = $assignments;
+		// $batch_assignment = $this->SPM->get_batch_assignment($batch_id);	
+		// $group_assignment = $this->SPM->get_group_assignment($batch_id,$group_id);
+		// $data['submited_assignment'] = $this->SPM->get_submited_assignment($student_id);
+		// $assignment_data ="";
+		// if(!empty($batch_assignment) && !empty($group_assignment)){
+		// 	$assignment_data = array_merge($batch_assignment,$group_assignment);
+		// }
+		// if(empty($batch_assignment)){
+		// 	$assignment_data = $group_assignment;
+		// }
+		// if(empty($group_assignment)){
+		// 	$assignment_data = $batch_assignment;
+		// }
+		// if(!empty($assignment_data)){
+		// function date_compare($element1, $element2) {
+		// 	$datetime1 = $element1['start_date'];
+		// 	$datetime2 = $element2['start_date'];
+		// 	   return $datetime2 - $datetime1;
+		// 	   } 
 	  
-			// Sort the array 
+		// 	// Sort the array 
 
-		   usort($assignment_data, 'date_compare');
-			}
-		   $data['assignment_data'] = $assignment_data;
+		//    usort($assignment_data, 'date_compare');
+		// 	}
+		//    $data['assignment_data'] = $assignment_data;
 		$this->load->student_panel('assignment',$data);
 	}
 	public function submit_assignment(){

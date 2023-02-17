@@ -68,7 +68,7 @@
                             </tbody>
                         </table>
                     </div>
-                    <?php } ?>
+                    <?php } else{echo "<h1 class='text-warning text-center'>No Quiz Found</h1>";} ?>
                 </div>
             </div>
         </div>

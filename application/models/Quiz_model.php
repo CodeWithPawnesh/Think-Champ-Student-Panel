@@ -33,7 +33,7 @@ function submitQuiz($data,$where){
         $this->db->where($where);
         $query = $this->db->update("tc_quiz_submition",$data);
         if($query){
-            redirect("Quiz/analytics?quiz_id=".base64_encode($quiz_id));
+            redirect("Quiz-Analytics?quiz_id=".base64_encode($quiz_id));
         }
 }
 function quiz_result($quiz_id,$student_id){

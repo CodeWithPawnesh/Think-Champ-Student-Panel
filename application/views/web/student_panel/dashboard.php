@@ -260,23 +260,9 @@
 </html>
 <script src="assets/dashboard/js/jquery1-3.4.1.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script>
+<script>
 function check_class_time() {
-
-    var today = new Date();
-    var h = zeros(today.getHours() % 12 || 12);
-    var m = today.getMinutes();
-    var s = today.getSeconds();
-    if (m < 10) {
-        m = "0" + m;
-    }
-    if (s < 10) {
-        s = "0" + s;
-    }
-    var time = h + ':' + m + ':' + s;
     <?php foreach($t_live_class_data as $t_d){ ?>
-    var t_s_time = '<?= date("h:i:s", ($t_d['class_ts']) - (15 * 60))?>';
-    var t_e_time = '<?= date("h:i:s", ($t_d['class_ts']) + (20 * 60))?>';
     var t_class_id = <?= $t_d['class_id'] ?>;
     $.ajax({
         url: "<?= base_url("StudentPanel/today_classes") ?>",
@@ -286,7 +272,7 @@ function check_class_time() {
         },
         cache: false,
         success: function(dataResult) {
-            if (dataResult == t_class_id && t_e_time >= time) {
+            if (dataResult == t_class_id) {
                 document.getElementById("<?= $t_d['class_id'] ?>").style.display = "block";
             } else {
                 document.getElementById("<?= $t_d['class_id'] ?>").style.display = "none";
@@ -295,8 +281,6 @@ function check_class_time() {
     });
     <?php } ?>
     <?php foreach($p_live_class_data as $p_d){ ?>
-    var p_s_time = '<?= date("h:i:s", ($p_d['class_ts']) - (15 * 60))?>';
-    var p_e_time = '<?= date("h:i:s", ($p_d['class_ts']) + (20 * 60)) ?>';
     var class_id = <?= $p_d['class_id'] ?>;
     $.ajax({
         url: "<?= base_url("StudentPanel/today_classes") ?>",
@@ -306,7 +290,7 @@ function check_class_time() {
         },
         cache: false,
         success: function(dataResult) {
-            if (dataResult == class_id && p_e_time >= time) {
+            if (dataResult !=0 ) {
                 document.getElementById("<?= $p_d['class_id'] ?>").style.display = "block";
             } else {
                 document.getElementById("<?= $p_d['class_id'] ?>").style.display = "none";
@@ -318,13 +302,6 @@ function check_class_time() {
 }
 setInterval(function() {
     check_class_time();
-}, 100);
+}, 1000);
 
-function zeros(i) {
-    if (i < 10) {
-        return "0" + i;
-    } else {
-        return i;
-    }
-}
         </script>
