@@ -26,7 +26,7 @@
                     <div class="col-lg-8 col-md-8 col-sm-12">
                         <div class="card shadow bg-white">
                             <div class="align-items-center">
-                                <img src="http://localhost/Employee-Portal/assets/images/blog/<?=$blog_detail['image']?>" class="w-100">
+                                <img src="https://erp-panel.think-champ.com/assets/images/blog/<?=$blog_detail['image']?>" class="w-100">
                             </div>
                             <div class="column-content p-4">
                                 <h3 class="" style="color:#8b4cdc"><?=$blog_detail['blog_name']?></h3>

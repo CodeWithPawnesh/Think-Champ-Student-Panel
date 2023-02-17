@@ -86,7 +86,7 @@
     const myCanvas = document.getElementById("my-canvas");
     var context = myCanvas.getContext("2d");
     const img = new Image()
-    img.src = "http://localhost/Employee-Portal/assets/images/certificate/<?= $certificate_data['certificate_image'] ?>";
+    img.src = "https://erp-panel.think-champ.com/assets/images/certificate/<?= $certificate_data['certificate_image'] ?>";
     img.onload = () => {
         context.drawImage(img, 0, 0);
         //context.font = "70px Libre Baskerville";
