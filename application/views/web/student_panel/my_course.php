@@ -21,7 +21,7 @@
         <?php foreach($course_data as $c_d){ ?>
         <div class="col-sm-4">
             <div class="card">
-                <img src="http://localhost/Employee-Portal/assets/images/course/<?= $c_d['sec_1_img'] ?>"
+                <img src="https://erp-panel.think-champ.com/assets/images/course/<?= $c_d['sec_1_img'] ?>"
                     class="card-img-top" style="height:200px">
                     <hr>
                 <div class="card-body text-center">

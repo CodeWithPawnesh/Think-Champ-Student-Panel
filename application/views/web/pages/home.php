@@ -125,7 +125,7 @@
                         data-md-device="4" data-md-device-nav="true" data-md-device-dots="false">
                         <?php foreach($placed_at as $pa){ ?>
                         <div class="partner-item">
-                            <a href="#"><img src="http://localhost/Employee-Portal/assets/images/placed_at/<?= $pa['image'] ?>" alt=""></a>
+                            <a href="#"><img src="https://erp-panel.think-champ.com/assets/images/placed_at/<?= $pa['image'] ?>" alt=""></a>
                         </div>
                         <?php } ?>
                     </div>
@@ -313,7 +313,7 @@
                         <?php foreach($course_data as $c_d){ ?>
                         <div class="courses-item">
                             <div class="img-part">
-                                <img src="http://localhost/Employee-Portal/assets/images/course/<?= $c_d['sec_1_img'] ?>" style="height:200px;" alt="">
+                                <img src="https://erp-panel.think-champ.com/assets/images/course/<?= $c_d['sec_1_img'] ?>" style="height:200px;" alt="">
                             </div>
                             <div class="content-part">
                                 <span><a class="categories" href="Course-Detail?id=<?=base64_encode($c_d['course_id']) ?>"><?= $c_d['course_name'] ?></a></span>
@@ -758,7 +758,7 @@
                         <?php foreach($blog_list as $b_l){ ?>
                         <div class="blog-item">
                             <div class="image-part">
-                                <img src="http://localhost/Employee-Portal/assets/images/blog/<?=$b_l['image']?>" alt="">
+                                <img src="https://erp-panel.think-champ.com/assets/images/blog/<?=$b_l['image']?>" alt="">
                             </div>
                             <div class="blog-content new-style2">
                                 <ul class="blog-meta">

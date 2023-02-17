@@ -42,7 +42,7 @@
                         <div class="col-sm-1">
                         </div>
                         <div class="col-sm-3">
-                        <img src="http://localhost/Employee-Portal/assets/images/job/<?=$j_d['image']?>"
+                        <img src="https://erp-panel.think-champ.com/assets/images/job/<?=$j_d['image']?>"
                             width="400px" height="400px" class="card aos-init aos-animate img-fluid" data-aos="zoom-in"
                             data-aos-delay="100">
                         </div>

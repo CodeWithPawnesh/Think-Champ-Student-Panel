@@ -62,7 +62,7 @@
             <div class="row align-items-center justify-content-center">
                 <div class="col-12 col-md-4 col-sm-12 icon-boxes mb-4">
                     <a href="<?=base_url('News/article/').$url?>">
-                    <img src="http://localhost/Employee-Portal/assets/images/news/<?=$news['image']?>" width="400px" height ="400px"
+                    <img src="https://erp-panel.think-champ.com/assets/images/news/<?=$news['image']?>" width="400px" height ="400px"
                         class="card aos-init aos-animate img-fluid" data-aos="zoom-in" data-aos-delay="100">
                         </a>
                 </div>
@@ -91,7 +91,7 @@
                 </div>
                 <div class="col-12 col-md-4 col-sm-12 icon-boxes mb-4">
                     <a href="<?=base_url('News/article/').$url?>">
-                    <img src="http://localhost/Employee-Portal/assets/images/news/<?=$news['image']?>" width="400px" height ="400px"
+                    <img src="https://erp-panel.think-champ.com/assets/images/news/<?=$news['image']?>" width="400px" height ="400px"
                         class="card aos-init aos-animate img-fluid" data-aos="zoom-in" data-aos-delay="100">
                         </a>
                 </div>

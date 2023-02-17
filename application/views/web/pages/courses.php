@@ -22,7 +22,7 @@ No prior programming knowledge is required. </p>
     <div class="card course-card">
         <div class="wrapper">
             <div class="parent" onclick="">
-                <div class="child bg-one" style="background-image:url(http://localhost/Employee-Portal/assets/images/course/<?= $c_d['sec_1_img'] ?>);">
+                <div class="child bg-one" style="background-image:url(https://erp-panel.think-champ.com/assets/images/course/<?= $c_d['sec_1_img'] ?>);">
                 </div>
             </div>
         </div>

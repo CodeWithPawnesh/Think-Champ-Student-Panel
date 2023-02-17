@@ -11,7 +11,7 @@
         <a href="#" class="demo-btn">Watch Demo</a>
     </div>
     <div class="course-first-section-right-col">
-        <img src="http://localhost/Employee-Portal/assets/images/course/<?= $course_detail['sec_1_img'] ?>" alt="">
+        <img src="https://erp-panel.think-champ.com/assets/images/course/<?= $course_detail['sec_1_img'] ?>" alt="">
     </div>
 </section>
 
@@ -41,7 +41,7 @@
         <div id="overview" class="tabcontent">
             <div class="overview-tab">
                 <div class="overview-tab-left-col">
-                    <img src="http://localhost/Employee-Portal/assets/images/course/<?= $course_detail['overview_img'] ?>"
+                    <img src="https://erp-panel.think-champ.com/assets/images/course/<?= $course_detail['overview_img'] ?>"
                         alt="">
                 </div>
                 <div class="overview-tab-right-col">
@@ -63,7 +63,7 @@
         <div id="keyoutcomes" class="tabcontent">
             <div class="overview-tab">
                 <div class="overview-tab-left-col">
-                    <img src="http://localhost/Employee-Portal/assets/images/course/<?= $course_detail['keyoutcome_img'] ?>"
+                    <img src="https://erp-panel.think-champ.com/assets/images/course/<?= $course_detail['keyoutcome_img'] ?>"
                         alt="">
                 </div>
                 <div class="overview-tab-right-col">
@@ -125,7 +125,7 @@
         <div id="curriculum" class="tabcontent">
             <div class="overview-tab">
                 <div class="overview-tab-left-col">
-                    <img src="http://localhost/Employee-Portal/assets/images/course/<?= stripcslashes($course_detail['cericullum_img']) ?>"
+                    <img src="https://erp-panel.think-champ.com/assets/images/course/<?= stripcslashes($course_detail['cericullum_img']) ?>"
                         alt="">
                 </div>
                 <div class="overview-tab-right-col">
@@ -139,7 +139,7 @@
         <div id="project" class="tabcontent">
             <div class="overview-tab">
                 <div class="overview-tab-left-col">
-                    <img src="http://localhost/Employee-Portal/assets/images/course/<?= stripcslashes($course_detail['project_img']) ?>"
+                    <img src="https://erp-panel.think-champ.com/assets/images/course/<?= stripcslashes($course_detail['project_img']) ?>"
                         alt="">
                 </div>
                 <div class="overview-tab-right-col">
@@ -153,7 +153,7 @@
         <div id="benefits" class="tabcontent">
             <div class="overview-tab">
                 <div class="overview-tab-left-col">
-                    <img src="http://localhost/Employee-Portal/assets/images/course/<?= $course_detail['benifits_img'] ?>"
+                    <img src="https://erp-panel.think-champ.com/assets/images/course/<?= $course_detail['benifits_img'] ?>"
                         alt="">
                 </div>
                 <div class="overview-tab-right-col">
