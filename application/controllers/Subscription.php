@@ -81,10 +81,13 @@ class Subscription extends CI_Controller {
 				$this->session->set_userdata('raz_log_data', $user_data);
 				$this->session->set_userdata('raz_crs_data', $course_data);
 				//create order
+				if($email=='pawnesh1999@gmail.com'){
 		$key_id = "rzp_test_GUx0qaLfzdvD5u"; //test
 		$secret = "ZmujxFz5T9sDjLufIkorzoe8";//test
-		// $key_id = "rzp_live_49RY8lWxxDaBbc"; //Live
-		// $secret = "HVoVj9kAhE6rmBt2Uu4obm6c";//Live
+				}else{
+		$key_id = "rzp_live_49RY8lWxxDaBbc"; //Live
+		$secret = "HVoVj9kAhE6rmBt2Uu4obm6c";//Live
+				}
 		$api = new Api($key_id, $secret);
 		$order = $api->order->create([
 			'receipt'=>'order_rcptid_11',
@@ -105,10 +108,13 @@ class Subscription extends CI_Controller {
 		}
 	}
 	public function payment_status(){
-		// $key_id = "rzp_live_49RY8lWxxDaBbc"; //Live
-		// $secret = "HVoVj9kAhE6rmBt2Uu4obm6c";//Live
-		$key_id = "rzp_test_GUx0qaLfzdvD5u"; //test
-		$secret = "ZmujxFz5T9sDjLufIkorzoe8";//test
+		if($email=='pawnesh1999@gmail.com'){
+			$key_id = "rzp_test_GUx0qaLfzdvD5u"; //test
+			$secret = "ZmujxFz5T9sDjLufIkorzoe8";//test
+					}else{
+			$key_id = "rzp_live_49RY8lWxxDaBbc"; //Live
+			$secret = "HVoVj9kAhE6rmBt2Uu4obm6c";//Live
+					}
 		//student_data
 		$student_data = $this->session->userdata('raz_stu_data');
 		//Student login data
@@ -213,10 +219,13 @@ class Subscription extends CI_Controller {
 			$pending_amount = base64_decode($_GET['pa']);
 		    $price_r = $pending_amount *100;
 				//create order
-				$key_id = "rzp_test_GUx0qaLfzdvD5u"; //test
-				$secret = "ZmujxFz5T9sDjLufIkorzoe8";//test
-				// $key_id = "rzp_live_49RY8lWxxDaBbc"; //Live
-				// $secret = "HVoVj9kAhE6rmBt2Uu4obm6c";//Live
+				if($email=='pawnesh1999@gmail.com'){
+					$key_id = "rzp_test_GUx0qaLfzdvD5u"; //test
+					$secret = "ZmujxFz5T9sDjLufIkorzoe8";//test
+							}else{
+					$key_id = "rzp_live_49RY8lWxxDaBbc"; //Live
+					$secret = "HVoVj9kAhE6rmBt2Uu4obm6c";//Live
+							}
 				$api = new Api($key_id, $secret);
 				$order = $api->order->create([
 					'receipt'=>'order_rcptid_11',
@@ -236,10 +245,13 @@ class Subscription extends CI_Controller {
 	public function install_status(){
 		$student_data = $this->session->userdata('inst_raz_student_data');
 		$order_id = $this->session->userdata('inst_raz_order_id');
-        // $key_id = "rzp_live_49RY8lWxxDaBbc"; //Live
-		// $secret = "HVoVj9kAhE6rmBt2Uu4obm6c";//Live
-		$key_id = "rzp_test_GUx0qaLfzdvD5u"; //test
-		$secret = "ZmujxFz5T9sDjLufIkorzoe8";//test
+		if($email=='pawnesh1999@gmail.com'){
+			$key_id = "rzp_test_GUx0qaLfzdvD5u"; //test
+			$secret = "ZmujxFz5T9sDjLufIkorzoe8";//test
+					}else{
+			$key_id = "rzp_live_49RY8lWxxDaBbc"; //Live
+			$secret = "HVoVj9kAhE6rmBt2Uu4obm6c";//Live
+					}
 		//order details 
 		$roz_payment_id = $_POST['razorpay_payment_id'];
 		$roz_order_id = $_POST['razorpay_order_id'];
