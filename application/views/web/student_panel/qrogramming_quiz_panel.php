@@ -26,15 +26,18 @@
             aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand text-white" href="<?= base_url("Challenges") ?>">Think Champ Programming Quiz Panel</a>
+        <a class="navbar-brand text-white" href="<?= base_url("Challenges") ?>"><img src="<?= base_url('') ?>assets2/images/logo2.png" style="height:50px;" alt=""></a>
 
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#">Panel</a>
+                    <a class="nav-link text-danger" href="#">Panel</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-white" href="<?= base_url("Programming/submissions?id=").$_GET['id'] ?>&pqc_m=<?=$_GET['pqc_m'] ?>&pq=<?= $_GET['pq'] ?>">Submission</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="<?= base_url("Programming/leaderboard?id=").$_GET['id'] ?>&pqc_m=<?=$_GET['pqc_m'] ?>&pq=<?= $_GET['pq'] ?>">Leaderboard</a>
                 </li>
             </ul>
         </div>

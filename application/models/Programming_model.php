@@ -83,4 +83,17 @@ class Programming_model extends CI_Model
         return false;
     }
    }
+   function get_leaderboard_data($pqc_m_id){
+    $sql = "SELECT DISTINCT cs.pqc_m, s.student_name, SUM(DISTINCT cs.marks_obtained) AS mo
+            FROM tc_challenge_submition AS cs,tc_student AS s
+            WHERE s.student_id = cs.student_id AND cs.pqc_m = $pqc_m_id 
+            GROUP BY s.student_id
+            ";
+                $query = $this->db->query($sql);
+                if ($query->num_rows() > 0) {
+                    return $query->result_array();
+                }else{
+                    return false;
+                }
+   }
 }

@@ -43,12 +43,12 @@
                                                         height="210"></a>
                                                 <div class="mt-3">
                                                     <h4><?= $profile['student_name'] ?></h4>
-                                                    <p class="text-secondary mb-1"><?= $profile['course_name'] ?></p>
+                                                    <!-- <p class="text-secondary mb-1"><?= $profile['course_name'] ?></p> -->
 
                                                 </div>
                                             </div>
                                             <hr class="my-4">
-                                            <ul class="list-group list-group-flush">
+                                            <!-- <ul class="list-group list-group-flush">
                                                 <li
                                                     class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
                                                     <h6 class="mb-0">Course</h6>
@@ -76,7 +76,7 @@
                                                     <span
                                                         class="text-secondary"><?php if(!empty($group_data)){ echo $group_data[0]['instructor']; } ?></span>
                                                 </li>
-                                            </ul>
+                                            </ul> -->
                                         </div>
                                     </div>
                                 </div>
@@ -165,7 +165,7 @@
                                             </form>
                                         </div>
                                     </div>
-                                    <div class="row">
+                                    <!-- <div class="row">
                                         <div class="col-sm-12">
                                             <div class="card">
                                                 <div class="card-body">
@@ -203,7 +203,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                         </div>

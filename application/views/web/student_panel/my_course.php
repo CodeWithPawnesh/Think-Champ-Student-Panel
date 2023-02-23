@@ -28,7 +28,8 @@
                     <h3 class="card-title hd-heading fw-bolder"><?= $c_d['course_name'] ?></h5>
                     <h5 class="card-title"><?= $c_d['course_title'] ?></h5>
                     <a href="<?= base_url("Live-Class?id=".base64_encode($c_d['course_id'])) ?>&mode=Theory"
-                        class="btn btn-sm btn-success">Class History</a>
+                        class="btn btn-sm btn-success">Class History</a><br><br>
+                        <a class="btn btn-sm btn-white text-info" href="<?= base_url('Leaderboard?bid=').base64_encode($c_d['batch_id']) ?>&gid=<?=base64_encode($c_d['group_id']) ?>"><i class="fas fa-trophy"></i> LeaderBoard</a>
                 </div>
             </div>
         </div>

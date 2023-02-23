@@ -122,7 +122,7 @@ class Programming extends CI_Controller {
             "corr_incc"=>$c_in,
             "marks_obtained"=>$marks,
             "result"=>"$result",
-            "submited_by"=>$student_id
+            "student_id"=>$student_id
         );
         $output = $this->PM->submit_challenge($data);
         if($output==true){
@@ -144,5 +144,15 @@ class Programming extends CI_Controller {
         $data['ch_id'] = $id;
         $data['submitssions'] = $this->PM->get_all_submited_challenges($pqc_m,$student_id);
         $this->load->view("web/student_panel/pq_submission",$data);
+    }
+    public function leaderboard(){
+        $ch_id = base64_decode($_GET['id']);
+        $pqc_m_id = base64_decode($_GET['pqc_m']);
+        $pq_id = base64_decode($_GET['pq']);
+        $data['page-title'] = "LeaderBoard";
+        $data['leaderboard_data'] = $this->PM->get_leaderboard_data($pqc_m_id);
+        print_r($data['leaderboard_data']);
+
+        $this->load->view("web/student_panel/pq_leaderboard",$data);
     }
 }

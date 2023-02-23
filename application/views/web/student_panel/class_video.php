@@ -11,20 +11,19 @@ if(strpos($class_link,"https://drive.google.com")==true){
 ?>
 <style>
     .ytp-chrome-top, .ytp-show-cards-title{
-        display:none;
-        z-index: -1;
+        display:none !important;
     }
     .ytp-chrome-top-buttons{
-        display:none
+        display:none!important;
     }
     .ytp-title-channel{
-        display:none;
+        display:none!important;
     }
     .ytp-show-cards-title{
-        display:none
+        display:none!important;
     }
     .ytp-impression-link-text{
-        display: none;
+        display: none!important;
     }
 </style>
 <div class="main_content_iner overly_inner main-cont ">
@@ -45,6 +44,7 @@ if(strpos($class_link,"https://drive.google.com")==true){
             </div>
         </div>
     </div>
+    <?php if(!empty($class_video)){  ?>
     <div class="row cont">
         <div class="main-video">
             <div class="video">
@@ -71,6 +71,7 @@ if(strpos($class_link,"https://drive.google.com")==true){
             <?php } ?>
         </div>
     </div>
+    <?php }else{ echo "<h1 class='text-center text-warning'>No Recording Classes</h1>"; } ?>
 </div>
 <div class="footer_part">
     <div class="container-fluid">
@@ -111,5 +112,6 @@ listVideo.forEach(iframe => {
         }
     };
 });
-document.getElementsByClass("ytp-impression-link-text").display="none";
+
+window.onload = document.getElementsByClassName("ytp-chrome-top").style.display='none';
 </script>

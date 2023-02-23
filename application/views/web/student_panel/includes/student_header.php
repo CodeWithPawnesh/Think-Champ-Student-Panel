@@ -10,6 +10,7 @@
     .count{
         display:none;
     }
+    
 </style>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -58,8 +59,8 @@
 
     <nav class="sidebar">
         <div class="logo d-flex justify-content-between">
-            <a class="large_logo" href="<?= base_url('') ?>"><img src="assets/images/home/Logo.png" style="height:50px;" alt=""></a>
-            <a class="small_logo" href="<?= base_url('') ?>"><img src="assets/images/home/Logo.png" style="height:50px;" alt=""></a>
+            <a class="large_logo" href="<?= base_url('') ?>"><img src="assets2/images/logo2.png" style="height:50px;" alt=""></a>
+            <a class="small_logo" href="<?= base_url('') ?>"><img src="assets2/images/logo2.png" style="height:50px;" alt=""></a>
             <div class="sidebar_close_icon d-lg-none">
                 <i class="ti-close"></i>
             </div>
@@ -226,7 +227,11 @@
                                 
                             </div>
                             <div class="profile_info">
+                                <?php if(!empty($user_info['profile'])){ ?>
+                                    <img src="assets/images/user_profile/<?php  echo $user_info['profile'];  ?>" alt="#">
+                                <?php }else{ ?>
                                 <img src="assets/images/user_profile/<?php  echo "avatar.jpg";  ?>" alt="#">
+                                <?php } ?>
                                 <div class="profile_info_iner">
                                     <div class="profile_author_name">
                                         <h5><?= $user_info['student_name'] ?></h5>

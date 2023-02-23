@@ -369,7 +369,7 @@ class Student_model extends CI_Model
         }
     }
     public function get_std_course_data($student_id){
-        $sql = "SELECT c.course_id,c.course_name, c.course_title,c.sec_1_img FROM tc_course AS c, tc_enrollment AS e WHERE e.student_id = $student_id AND 
+        $sql = "SELECT e.*,c.course_id,c.course_name, c.course_title,c.sec_1_img FROM tc_course AS c, tc_enrollment AS e WHERE e.student_id = $student_id AND 
                  c.course_id = e.course_id";
         $query = $this->db->query($sql);
         if ($query->num_rows() > 0) {
