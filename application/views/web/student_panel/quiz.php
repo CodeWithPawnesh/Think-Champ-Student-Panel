@@ -45,7 +45,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <?php $i=1; foreach($quiz_data as $q_d){ ?>
+                                <?php $currDate = date("y-m-d"); $i=1; foreach($quiz_data as $q_d){ ?>
                                 <tr>
                                     <td class="text-center"><?= $i++ ?></td>
                                     <td class="text-center"><?= $q_d['quiz_title']; ?></td>
@@ -57,12 +57,16 @@
                                             if($s_q['quiz_id'] == $q_d['quiz_id']){
                                          ?>
                               <td class="text-center"><a href="<?= base_url("Quiz-Analytics?quiz_id=".base64_encode($q_d['quiz_id'])) ?>" class="btn btn-sm btn-success">Result</a></td>
-                                         <?php }else{ ?>
+                                         <?php }else{
+                                            if(date('y-m-d',$q_d['quiz_end_date']) >= $currDate){
+                                            ?>
                                     <td class="text-center"><a href="<?= base_url("Quiz-Start?id=".base64_encode($q_d['quiz_id'])) ?>" class="btn btn-sm btn-success">Start</a></td>
-                                    <?php } ?>
-                                    <?php } } else{ ?>
+                                    <?php } } ?>
+                                    <?php } } else{
+                                        if(date('y-m-d',$q_d['quiz_end_date']) >= $currDate){
+                                        ?>
                                         <td class="text-center"><a href="<?= base_url("Quiz-Start?id=".base64_encode($q_d['quiz_id'])) ?>" class="btn btn-sm btn-success">Start</a></td>
-                                    <?php }  ?>
+                                    <?php } }  ?>
                                 </tr>
                                 <?php } ?>
                             </tbody>

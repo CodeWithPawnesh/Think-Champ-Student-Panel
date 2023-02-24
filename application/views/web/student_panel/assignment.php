@@ -17,7 +17,7 @@
         </div>
     </div>
     <div class="row ">
-        <?php if(!empty($assignment_data)){ foreach($assignment_data as $a_d){ 
+        <?php $currDate = date("y-m-d"); if(!empty($assignment_data)){ foreach($assignment_data as $a_d){ 
                     ?>
         <div class="col-xl-12">
             <div class="white_card mb_30 card_height_100">
@@ -48,7 +48,7 @@
                     <p class="fw-bold text-body">NOTE: MAKE A ZIP FILE OR PDF OF YOUR PROJECT AND THEN SUBMIT HERE  </p>
                     <br><br>
                     <div class="text-center">
-                        <?php if(empty($a_d['status'])){ ?>
+                        <?php if(empty($a_d['status']) && date('y-m-d',$a_d['end_date']) >= $currDate ){ ?>
                         <!-- Button trigger modal -->
                         <a onclick="myFun(<?= $a_d['assignment_id'] ?>)" class="btn btn-success" data-bs-toggle="modal"
                             data-bs-target="#exampleModal">
