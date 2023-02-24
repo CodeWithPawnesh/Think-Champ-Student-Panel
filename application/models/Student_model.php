@@ -106,9 +106,12 @@ class Student_model extends CI_Model
         }
     }
     public function get_live_class_data($student_id){
+        $curr_date = date("y-m-d");
+        $currTs = strtotime($curr_date);
         $sql = "SELECT c.class_id, c.class_name,c.class_ts, b.batch_name, b.batch_number, e.emp_name, e.phone , e.live_link FROM
          tc_classes AS c, tc_batch AS b, tc_employee AS e, tc_student AS s, tc_enrollment as er WHERE er.student_id = $student_id 
-         AND c.batch_id = b.batch_id AND  c.teacher_id = e.emp_id AND  c.type= 1 AND c.group_id = 0 AND  er.batch_id = b.batch_id AND s.student_id = $student_id ";
+         AND c.batch_id = b.batch_id AND  c.teacher_id = e.emp_id AND  c.type= 1 AND c.group_id = 0 AND  er.batch_id = b.batch_id AND s.student_id = $student_id
+         AND b.batch_end_date > $currTs AND b.status=1 ";
           $query = $this->db->query($sql);
           if ($query->num_rows() > 0) {
               return $query->result_array();
@@ -117,10 +120,12 @@ class Student_model extends CI_Model
           }
     }
     public function get_p_live_class_data($student_id){
+        $curr_date = date("y-m-d");
+        $currTs = strtotime($curr_date);
         $sql = "SELECT DISTINCT c.class_id, c.class_name, c.class_ts, b.batch_name, b.batch_number, e.emp_name, e.phone , e.live_link,g.group_name 
         FROM tc_classes AS c, tc_batch AS b, tc_employee AS e, tc_student AS s, tc_batch_group AS g, tc_enrollment as er WHERE
         er.student_id = $student_id AND er.group_id= g.group_id AND er.batch_id = b.batch_id AND g.emp_id = e.emp_id AND c.status= 1 AND
-        c.teacher_id = e.emp_id AND c.batch_id = b.batch_id AND c.group_id = g.group_id AND s.student_id = $student_id";
+        c.teacher_id = e.emp_id AND c.batch_id = b.batch_id AND c.group_id = g.group_id AND s.student_id = $student_id AND b.batch_end_date > $currTs AND b.status=1 ";
           $query = $this->db->query($sql);
           if ($query->num_rows() > 0) {
               return $query->result_array();

@@ -154,12 +154,6 @@
    <script src="<?= base_url("assets2/assets/js/contact.form.js") ?>"></script>
    <!-- main js -->
    <script src="<?= base_url("assets2/assets/js/main.js") ?>"></script>
-   <script src="assets/dashboard/js/jquery1-3.4.1.min.js"></script>
-   <script>
-$(document).ready(function() {
-    $("#exampleModal").modal('show');
-});
-   </script>
    </body>
 
    </html>
