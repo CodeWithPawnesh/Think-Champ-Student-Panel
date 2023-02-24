@@ -544,5 +544,16 @@ class Student_model extends CI_Model
         return false;
         }
     }
+    public function read_user_order_details($student_id){
+        $sql = "SELECT o.main_order_id,o.pay_type,o.pay_no,c.course_name,o.pending_amount,o.due_date FROM 
+                tc_order AS o, tc_course AS c WHERE o.student_id = $student_id AND c.course_id = o.course_id AND o.status=0";
+        $query = $this->db->query($sql);
+        if ($query->num_rows() > 0) {
+        return $query->result_array();
+        }else
+        {
+        return false;
+        }
+    }
 }
 ?>
