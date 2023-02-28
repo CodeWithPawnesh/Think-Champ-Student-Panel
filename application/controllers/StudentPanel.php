@@ -18,6 +18,7 @@ class StudentPanel extends CI_Controller {
 	{
 		$user_info = $this->session->userdata('user_data');
 		$student_id = $user_info['student_id'];
+		$gender = $user_info['gender'];
 		$tdDate = date("y-m-d");
 		$order_details = $this->SPM->read_user_order_details($student_id);
 		if($order_details !=false){
@@ -78,6 +79,27 @@ class StudentPanel extends CI_Controller {
 		// $data['course_data'] = $data['course_data'][0];
 		$data['t_live_class_data'] = $this->SPM->get_live_class_data($student_id);
 		$data['p_live_class_data'] = $this->SPM->get_p_live_class_data($student_id);
+		if($gender==1){
+			$gender_condition = "c.type=2";
+		}
+		if($gender==2){
+			$gender_condition = "c.type=3";
+		}
+		$t_doubt_class = $this->SPM->get_t_doubt_class($student_id,$gender_condition);
+		$p_doubt_class = $this->SPM->get_p_doubt_class($student_id,$gender_condition);
+		if(!empty($t_doubt_class) && !empty($p_doubt_class)){
+			$doubt_class = array_merge($t_doubt_class,$p_doubt_class);
+		}
+		if(empty($t_doubt_class) && !empty($p_doubt_class)){
+			$doubt_class = $p_doubt_class;
+		}
+		if(!empty($t_doubt_class) && empty($p_doubt_class)){
+			$doubt_class = $t_doubt_class;
+		}
+		if(empty($t_doubt_class) && empty($p_doubt_class)){
+			$doubt_class = array();
+		}
+		$data['doubt_classes'] = $doubt_class;
 		$this->load->student_panel('dashboard',$data);
 	}
 	public function profile()
@@ -175,6 +197,13 @@ class StudentPanel extends CI_Controller {
 	{
 		$user_info = $this->session->userdata('user_data');
 		$student_id = $user_info['student_id'];
+		$gender = $user_info['gender'];
+		if($gender==1){
+			$gender_condition = "c.type=2";
+		}
+		if($gender==2){
+			$gender_condition = "c.type=3";
+		}
 		$data['page'] = "class";
 		$data['requested_live_class_id'] = $this->SPM->get_requested_live_class_id($student_id);
 		if(isset($_GET['id']) && $_GET['mode']=="Theory"){
@@ -184,6 +213,23 @@ class StudentPanel extends CI_Controller {
 		if(isset($_GET['id']) && $_GET['mode']=="Programming"){
 			$course_id =base64_decode($_GET['id']);
 		$data['class_data'] = $this->SPM->get_p_classes($student_id,$course_id);
+		}
+		if(isset($_GET['id']) && $_GET['mode']=="Doubt"){
+			$course_id =base64_decode($_GET['id']);
+		    $td_class = $this->SPM->get_t_d_classes($student_id,$course_id,$gender_condition);
+			$pd_class = $this->SPM->get_p_d_classes($student_id,$course_id,$gender_condition);
+			if(empty($td_class)&& empty($pd_class)){
+				$data['class_data'] = array();
+			}
+			if(!empty($td_class)&& !empty($pd_class)){
+				$data['class_data'] = array_merge($td_class,$pd_class);
+			}
+			if(empty($td_class)&& !empty($pd_class)){
+				$data['class_data'] = $pd_class;
+			}
+			if(!empty($td_class)&& empty($pd_class)){
+				$data['class_data'] = $td_class;
+			}
 		}
 		$this->load->student_panel('class',$data);
 	}
@@ -195,8 +241,6 @@ class StudentPanel extends CI_Controller {
 		$class_data = $this->SPM->today_class($class_id);
 		if(!empty($class_data)){
 		echo $class_data[0]['class_id'];
-		}else{
-			echo "0";
 		}
 		}
 	}

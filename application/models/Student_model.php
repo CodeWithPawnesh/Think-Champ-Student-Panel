@@ -111,7 +111,7 @@ class Student_model extends CI_Model
         $sql = "SELECT c.class_id, c.class_name,c.class_ts, b.batch_name, b.batch_number, e.emp_name, e.phone , e.live_link FROM
          tc_classes AS c, tc_batch AS b, tc_employee AS e, tc_student AS s, tc_enrollment as er WHERE er.student_id = $student_id 
          AND c.batch_id = b.batch_id AND  c.teacher_id = e.emp_id AND  c.type= 1 AND c.group_id = 0 AND  er.batch_id = b.batch_id AND s.student_id = $student_id
-         AND b.batch_end_date > $currTs AND b.status=1 ";
+         AND b.batch_end_date > $currTs AND b.status=1 AND c.status=1 ";
           $query = $this->db->query($sql);
           if ($query->num_rows() > 0) {
               return $query->result_array();
@@ -125,7 +125,36 @@ class Student_model extends CI_Model
         $sql = "SELECT DISTINCT c.class_id, c.class_name, c.class_ts, b.batch_name, b.batch_number, e.emp_name, e.phone , e.live_link,g.group_name 
         FROM tc_classes AS c, tc_batch AS b, tc_employee AS e, tc_student AS s, tc_batch_group AS g, tc_enrollment as er WHERE
         er.student_id = $student_id AND er.group_id= g.group_id AND er.batch_id = b.batch_id AND g.emp_id = e.emp_id AND c.status= 1 AND
-        c.teacher_id = e.emp_id AND c.batch_id = b.batch_id AND c.group_id = g.group_id AND s.student_id = $student_id AND b.batch_end_date > $currTs AND b.status=1 ";
+        c.teacher_id = e.emp_id AND c.batch_id = b.batch_id AND c.group_id = g.group_id AND s.student_id = $student_id AND b.batch_end_date > $currTs AND b.status=1 AND c.status=1";
+          $query = $this->db->query($sql);
+          if ($query->num_rows() > 0) {
+              return $query->result_array();
+          }else{
+              return false;
+          }
+    }
+    public function get_t_doubt_class($student_id,$gender_condition){
+        $curr_date = date("y-m-d");
+        $currTs = strtotime($curr_date);
+        $sql = "SELECT c.class_id, c.class_name,c.class_ts,c.class_date, b.batch_name, b.batch_number, e.emp_name, e.phone , e.live_link FROM
+         tc_classes AS c, tc_batch AS b, tc_employee AS e, tc_student AS s, tc_enrollment as er WHERE er.student_id = $student_id 
+         AND c.batch_id = b.batch_id AND  c.teacher_id = e.emp_id AND  $gender_condition AND c.group_id = 0 AND  er.batch_id = b.batch_id AND 
+         s.student_id = $student_id AND c.status=1 AND b.batch_end_date > $currTs AND b.status=1 AND c.status=1 ";
+          $query = $this->db->query($sql);
+          if ($query->num_rows() > 0) {
+              return $query->result_array();
+          }else{
+              return false;
+          }
+    }
+    public function get_p_doubt_class($student_id,$gender_condition){
+        $curr_date = date("y-m-d");
+        $currTs = strtotime($curr_date);
+        $sql = "SELECT DISTINCT c.class_id, c.class_name,c.class_date, c.class_ts, b.batch_name, b.batch_number, e.emp_name, e.phone , e.live_link,g.group_name 
+        FROM tc_classes AS c, tc_batch AS b, tc_employee AS e, tc_student AS s, tc_batch_group AS g, tc_enrollment as er WHERE
+        er.student_id = $student_id AND er.group_id= g.group_id AND er.batch_id = b.batch_id AND g.emp_id = e.emp_id AND c.status= 1 AND
+        c.teacher_id = e.emp_id AND c.batch_id = b.batch_id AND c.group_id = g.group_id AND s.student_id = $student_id 
+        AND $gender_condition AND b.batch_end_date > $currTs AND b.status=1 AND c.status=1 ";
           $query = $this->db->query($sql);
           if ($query->num_rows() > 0) {
               return $query->result_array();
@@ -247,7 +276,7 @@ class Student_model extends CI_Model
     public function get_classes($student_id,$course_id){
         $sql = "SELECT ch.*, c.class_name, em.emp_name,c.batch_id FROM tc_live_classes as ch, tc_classes as c, tc_employee as em, tc_enrollment as e
          WHERE e.student_id = $student_id AND e.course_id = $course_id AND c.batch_id = e.batch_id AND c.teacher_id = em.emp_id AND
-          ch.class_id = c.class_id AND c.group_id = 0 ";
+          ch.class_id = c.class_id AND c.group_id = 0 AND c.type=1 ";
          $query = $this->db->query($sql);
          if ($query->num_rows() > 0) {
              return $query->result_array();
@@ -258,13 +287,35 @@ class Student_model extends CI_Model
     public function get_p_classes($student_id,$course_id){
         $sql = "SELECT ch.*, c.class_name, em.emp_name,c.batch_id,c.group_id FROM tc_live_classes as ch, tc_classes as c, tc_employee as em, tc_enrollment as e
          WHERE e.student_id = $student_id AND e.course_id = $course_id AND c.batch_id = e.batch_id AND c.teacher_id = em.emp_id AND
-          ch.class_id = c.class_id AND c.group_id = e.group_id ";
+          ch.class_id = c.class_id AND c.group_id = e.group_id AND c.type = 1 ";
          $query = $this->db->query($sql);
          if ($query->num_rows() > 0) {
              return $query->result_array();
          }else{
              return false;
          }
+    }
+    public function get_p_d_classes($student_id,$course_id,$gender_condition){
+        $sql = "SELECT ch.*, c.class_name, em.emp_name,c.batch_id,c.group_id FROM tc_live_classes as ch, tc_classes as c, tc_employee as em, tc_enrollment as e
+        WHERE e.student_id = $student_id AND e.course_id = $course_id AND c.batch_id = e.batch_id AND c.teacher_id = em.emp_id AND
+         ch.class_id = c.class_id AND $gender_condition AND c.group_id = e.group_id  ";
+        $query = $this->db->query($sql);
+        if ($query->num_rows() > 0) {
+            return $query->result_array();
+        }else{
+            return false;
+        }
+    }
+    public function get_t_d_classes($student_id,$course_id,$gender_condition){
+        $sql = "SELECT ch.*, c.class_name, em.emp_name,c.batch_id,c.group_id FROM tc_live_classes as ch, tc_classes as c, tc_employee as em, tc_enrollment as e
+        WHERE e.student_id = $student_id AND e.course_id = $course_id AND c.batch_id = e.batch_id AND c.teacher_id = em.emp_id AND
+         ch.class_id = c.class_id AND $gender_condition AND c.group_id = 0 ";
+        $query = $this->db->query($sql);
+        if ($query->num_rows() > 0) {
+            return $query->result_array();
+        }else{
+            return false;
+        }
     }
     public function get_course_name($course_id){
         $this->db->where("course_id",$course_id);

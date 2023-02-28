@@ -275,7 +275,7 @@
             $DueDate = date("y-m-d",$od['due_date']);
             if($currDate>$DueDate){
             ?>
-            <div class="modal fade"  data-bs-backdrop="static" id="orderModel" tabindex="-1" aria-labelledby="exampleModalLabel"
+            <div class="modal fade" data-bs-keyboard="false"  data-bs-backdrop="static" id="orderModel" tabindex="-1" aria-labelledby="exampleModalLabel"
                 aria-hidden="false">
                 <div class="modal-dialog">
                     <div class="modal-content">

@@ -97,6 +97,40 @@
                                         </tbody>
                                     </table>
                                 </div>
+                                <?php } if(!empty($doubt_classes)){ ?>
+                                    <h4 class="text-center hd-heading">Doubt Class </h4>
+                                <div class="table-responsive">
+                                    <table class="table align-middle">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-center">Class</th>
+                                                <th class="text-center">Class Date</th>
+                                                <th class="text-center">Class Timing</th>
+                                                <th class="text-center">Batch</th>
+                                                <th class="text-center">Teacher</th>
+                                                <th class="text-center">Teacher PH.No</th>
+                                                <th class="text-center">Class Room</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <?php foreach($doubt_classes as $d_d){ ?>
+                                            <tr>
+                                                <td class="text-center"><?= $d_d['class_name']; ?></td>
+                                                <td class="text-center"><?=  date('d M, Y',$d_d['class_date']); ?></td>
+                                                <td class="text-center"><?=  date('h:i A',$d_d['class_ts']); ?></td>
+                                                <td class="text-center"><?= $d_d['batch_name']; ?></td>
+                                                <td class="text-center"><?= $d_d['emp_name']; ?></td>
+                                                <td class="text-center"><?= $d_d['phone']; ?></td>
+                                                <td class="text-center">
+                                                <a id="<?= $d_d['class_id'] ?>" style="display:none"
+                                                        href="Dashboard?id=<?= $d_d['class_id'] ?>&cl_l=<?= $d_d['live_link']; ?>&type=0"
+                                                        target="_blank" class="btn btn-sm btn-success">Join Room</a>
+                                                </td>
+                                            </tr>
+                                            <?php } ?>
+                                        </tbody>
+                                    </table>
+                                </div>
                                 <?php } ?>
                             </div>
                         </div>
@@ -106,24 +140,6 @@
                             <div class="white_card_header d-flex justify-content-end">
                             </div>
                             <div class="card badge_card">
-                                <div class="card-body">
-                                    <h2 class="text-center">Weekly Toppers</h2>
-                                    <br>
-                                    <div class="row text-center">
-                                        <div class="col">
-                                            <img src="assets/dashboard/img/gold-medal.png" alt="">
-                                            <label>Pawnesh Kumar</label>
-                                        </div>
-                                        <div class="col">
-                                            <img src="assets/dashboard/img/silver-medal.png" alt="">
-                                            <label>Diksha</label>
-                                        </div>
-                                        <div class="col">
-                                            <img src="assets/dashboard/img/bronze-medal.png" alt="">
-                                            <label>Chink</label>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -272,7 +288,7 @@ function check_class_time() {
         },
         cache: false,
         success: function(dataResult) {
-            if (dataResult == t_class_id) {
+            if (dataResult != 0) {
                 document.getElementById("<?= $t_d['class_id'] ?>").style.display = "block";
             } else {
                 document.getElementById("<?= $t_d['class_id'] ?>").style.display = "none";
@@ -294,6 +310,24 @@ function check_class_time() {
                 document.getElementById("<?= $p_d['class_id'] ?>").style.display = "block";
             } else {
                 document.getElementById("<?= $p_d['class_id'] ?>").style.display = "none";
+            }
+        }
+    });
+    <?php } ?>
+    <?php foreach($doubt_classes as $d_d){ ?>
+    var class_id = <?= $d_d['class_id'] ?>;
+    $.ajax({
+        url: "<?= base_url("StudentPanel/today_classes") ?>",
+        type: "POST",
+        data: {
+            class_id: class_id
+        },
+        cache: false,
+        success: function(dataResult) {
+            if (dataResult !=0 ) {
+                document.getElementById("<?= $d_d['class_id'] ?>").style.display = "block";
+            } else {
+                document.getElementById("<?= $d_d['class_id'] ?>").style.display = "none";
             }
         }
     });
