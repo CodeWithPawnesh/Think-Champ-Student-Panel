@@ -10,9 +10,9 @@ class Mail_model extends CI_Model
     
     function send_mail_student_enrolment($student_data,$login_data,$course_name){
         $email = $student_data['email'];
-        $this->email->from('thinkchamp.pvt.ltd@gmail.com', 'Think Champ Pvt.Ltd');
+        $this->email->from('no-replay@think-champ.com', 'Think Champ Pvt.Ltd');
         $this->email->to($email);
-        $this->email->cc('pawnesh1999@gmail.com');
+        $this->email->bcc('leadsget99@gmail.com');
         $this->email->subject('Enrollment In '.$course_name[0]['course_name']);
         $message = $this->template_student_enrollment($student_data,$login_data,$course_name); 
         $this->email->message($message);
@@ -24,9 +24,9 @@ class Mail_model extends CI_Model
     }
     function send_mail_student_install_pay($student_data,$paid_order_detail){
         $email = $student_data['email'];
-        $this->email->from('thinkchamp.pvt.ltd@gmail.com', 'Think Champ Pvt.Ltd');
+        $this->email->from('no-replay@think-champ.com', 'Think Champ Pvt.Ltd');
         $this->email->to($email);
-        $this->email->cc('pawnesh1999@gmail.com');
+        $this->email->bcc('leadsget99@gmail.com');
         $this->email->subject('Installment paid of Course '.$paid_order_detail[0]['course_name']);
         $message = $this->template_student_install_pay($student_data,$paid_order_detail); 
         $this->email->message($message);
@@ -38,9 +38,9 @@ class Mail_model extends CI_Model
     }
     function send_mail_workshop_enrollment($workshop_detail,$data){
         $email = $data['email'];
-        $this->email->from('thinkchamp.pvt.ltd@gmail.com', 'Think Champ Pvt.Ltd');
+        $this->email->from('no-replay@think-champ.com', 'Think Champ Pvt.Ltd');
         $this->email->to($email);
-        $this->email->cc('pawnesh1999@gmail.com');
+        $this->email->bcc('leadsget99@gmail.com');
         $this->email->subject('Enrollment In Workshop '.$workshop_detail['workshop_name']);
         $message = $this->template_student_enrollment_workshop($workshop_detail,$data); 
         $this->email->message($message);
@@ -51,9 +51,9 @@ class Mail_model extends CI_Model
        }
     }
     function send_mail_contact($email,$name){
-        $this->email->from('thinkchamp.pvt.ltd@gmail.com', 'Think Champ Pvt.Ltd');
+        $this->email->from('no-replay@think-champ.com', 'Think Champ Pvt.Ltd');
         $this->email->to($email);
-        $this->email->cc('pawnesh1999@gmail.com');
+        $this->email->bcc('leadsget99@gmail.com');
         $this->email->subject('Contact');
         $message = $this->template_contact($name); 
         $this->email->message($message);
@@ -64,9 +64,10 @@ class Mail_model extends CI_Model
        }
     }
     function send_mail_community($email){
-        $this->email->from('thinkchamp.pvt.ltd@gmail.com', 'Think Champ Pvt.Ltd');
+        $this->email->from('no-replay@think-champ.com', 'Think Champ Pvt.Ltd');
         $this->email->to($email);
-        $this->email->cc('pawnesh1999@gmail.com');
+        // $this->email->cc('leadsget99@gmail.com');
+        $this->email->bcc('leadsget99@gmail.com');
         $this->email->subject('Think Champ Community');
         $message = $this->template_community(); 
         $this->email->message($message);
@@ -74,6 +75,8 @@ class Mail_model extends CI_Model
         echo "sent";
        }else{
         $this->email->print_debugger();
+        echo $message;
+        exit;
        }
     }
     function template_student_enrollment($student_data,$login_data,$course_name){
