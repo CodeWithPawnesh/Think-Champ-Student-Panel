@@ -257,7 +257,9 @@
         </div>
         <br>
         <div class="container">
-            <?php foreach($order_details AS $od){
+            <?php
+            if(!empty($order_details)){
+            foreach($order_details AS $od){
                 $DueDate = date("y-m-d",$od['due_date']);
                 $newDueDate = date("y-m-d",strtotime($DueDate. '- 3 days'));
                 if($currDate>=$newDueDate){
@@ -269,9 +271,11 @@
                     href="<?= base_url("Order") ?>" class="btn btn-sm btn-danger">This</a> Button<br>
                 Live Classes Will be <strong> Stop On <?= date('d M, Y',$od['due_date']) ?></strong>
             </div>
-            <?php } } ?>
+            <?php } } } ?>
             <!-- Modal -->
-            <?php foreach($order_details AS $od){
+            <?php
+            if(!empty($order_details)){
+            foreach($order_details AS $od){
             $DueDate = date("y-m-d",$od['due_date']);
             if($currDate>$DueDate){
             ?>
@@ -289,7 +293,7 @@
                     </div>
                 </div>
             </div>
-            <?php } } ?>
+            <?php } } } ?>
             <script src="assets/dashboard/js/jquery1-3.4.1.min.js"></script>
             <script>
             $(document).ready(function() {

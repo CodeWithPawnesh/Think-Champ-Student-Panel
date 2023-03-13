@@ -23,6 +23,9 @@ class StudentPanel extends CI_Controller {
 		$order_details = $this->SPM->read_user_order_details($student_id);
 		if($order_details !=false){
 			$this->session->set_userdata('order_details',$order_details);
+		}else{
+			$order_details = "";
+			$this->session->set_userdata('order_details',$order_details);
 		}
 		if(isset($_GET['id']) && isset($_GET['cl_l'])){
             $class_id=$_GET['id'];

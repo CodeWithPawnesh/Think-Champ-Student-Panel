@@ -236,6 +236,7 @@ class Subscription extends CI_Controller {
 				$data['key_id'] = $key_id;
 				$data['secret'] = $secret;
 				$data['student_data'] = $student_data;
+				$this->session->set_userdata('inst_raz_pending_amount', $pending_amount);
 				$this->session->set_userdata('inst_raz_order_id', $order_id);
 				$this->session->set_userdata('inst_raz_student_data', $student_data);
 						// $this->SBM->insert_student($user_data,$student_data);
@@ -245,6 +246,7 @@ class Subscription extends CI_Controller {
 	public function install_status(){
 		$student_data = $this->session->userdata('inst_raz_student_data');
 		$order_id = $this->session->userdata('inst_raz_order_id');
+		$pending_amount = $this->session->userdata('inst_raz_pending_amount');
 		if($email=='pawnesh1999@gmail.com'){
 			$key_id = "rzp_test_GUx0qaLfzdvD5u"; //test
 			$secret = "ZmujxFz5T9sDjLufIkorzoe8";//test
@@ -264,6 +266,7 @@ class Subscription extends CI_Controller {
 		$status = $payment->captured;
 		$capture_tc = $payment->created_at;
 		$order_date = date('y-m-d');
+		$newPendingAmount = $pending_amount - $amount;
 		//Signature Verification
 		$roz_data = $roz_order_id. "|" . $roz_payment_id;
 		$generated_signature = hash_hmac("sha256",$roz_data,$secret);
@@ -271,6 +274,7 @@ class Subscription extends CI_Controller {
 			"pay_order_id"=>$roz_order_id,
 			"payment_id"=>$roz_payment_id,
 			"fee_paid"=>$amount,
+			"pending_amount"=>$newPendingAmount,
 			"method"=>$method,
 			"order_date"=>$order_date,
 			"order_tc"=>$capture_tc,
